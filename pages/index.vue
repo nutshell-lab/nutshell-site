@@ -1,24 +1,19 @@
 <template>
-  <v-layout
-    col
-    wrap>
-    <v-flex xs12><building-alert /></v-flex>
-    <v-layout
-      column
-      justify-center
-      align-center>
-      <v-flex class="mt-5 pt-5"><logo /></v-flex>
-      <h1 class="display-1">Nutshell</h1>
-    </v-layout>
+  <v-layout fill-height col wrap>
+    <header-bar />
+    <v-flex xs12 fill-height><bloc-title /></v-flex>
+    <v-flex xs12 fill-height><bloc-targets /></v-flex>
   </v-layout>
 </template>
 
 <script>
 import BuildingAlert from '../components/BuildingAlert'
-import Logo from '../components/Logo'
+import HeaderBar from '../components/HeaderBar'
+import BlocTitle from '../components/BlocTitle'
+import BlocTargets from '../components/BlocTargets'
 
 export default {
-  components: { BuildingAlert, Logo }
+  components: { BuildingAlert, HeaderBar, BlocTitle, BlocTargets }
 }
 </script>
 
