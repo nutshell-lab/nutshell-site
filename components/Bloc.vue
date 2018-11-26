@@ -5,7 +5,9 @@
     :aspect-ratio="aspect-ratio"
     :height="height"
   >
-  <slot></slot>
+  <v-layout row wrap justify-center align-center>
+    <v-flex xs11 sm10><slot></slot></v-flex>
+  </v-layout>
   </v-responsive>
 </template>
 

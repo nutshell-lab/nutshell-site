@@ -1,5 +1,5 @@
 <template>
-  <v-layout class="secondary">
+  <v-layout>
     <h2 class="display-3">A day at Nutshell</h2>
   </v-layout>
 </template>
@@ -8,7 +8,7 @@
 export default {
 
 }
-</script>
+</script> 
 
 <style>
 
