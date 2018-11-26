@@ -1,18 +1,14 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-content>
       <nuxt />
     </v-content>
-    <v-footer
-      :fixed="fixed"
-      app
-    >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <generic-footer />
   </v-app>
 </template>
 
 <script>
+import GenericFooter from '../components/GenericFooter'
 export default {
   data() {
     return {
@@ -28,6 +24,7 @@ export default {
       rightDrawer: false,
       title: 'Vuetify.js'
     }
-  }
+  },
+  components: { GenericFooter }
 }
 </script>
