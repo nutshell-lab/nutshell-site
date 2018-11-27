@@ -1,12 +1,11 @@
 <template>
   <v-layout col wrap fill-height>
       <header-bar />
-      <bloc color="secondary" height="50%"><bloc-title /></bloc>
+      <bloc color="secondary organic" :aspectRatio="16/9"><bloc-title /></bloc>
       <bloc height="300"><bloc-targets /></bloc>
       <bloc color="whitish" height="300"><bloc-daily-routine /></bloc>
       <bloc height="300"><bloc-how /></bloc>
       <bloc color='black' height="300"><bloc-contact /></bloc>
-      <bloc><generic-footer /></bloc>
   </v-layout>
 </template>
 
