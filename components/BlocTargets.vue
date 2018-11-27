@@ -1,8 +1,8 @@
 <template>
-  <v-layout row wrap class="primary">
+  <v-layout row wrap class="primary" align-center>
     <v-flex xs12 sm6 v-for="title in titles" :key="title">
-      <v-layout wrap>
-        <v-flex xs12 class="text-xs-center">{{ title }}</v-flex>
+      <v-layout row wrap>
+        <v-flex xs12 class="display-1 text-xs-center mb-5">{{ title }}</v-flex>
         <v-flex xs12 v-for="item in content[title]" :key="item"> {{ item }}</v-flex>
       </v-layout>
     </v-flex>
