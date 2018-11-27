@@ -2,10 +2,10 @@
   <v-responsive
     :class="color"
     :width="width"
-    :aspect-ratio="aspect-ratio"
+    :aspect-ratio="aspectRatio"
     :height="height"
   >
-  <v-layout row wrap justify-center align-center>
+  <v-layout row wrap fill-height justify-center align-center>
     <v-flex xs11 sm10><slot></slot></v-flex>
   </v-layout>
   </v-responsive>
@@ -23,7 +23,7 @@ export default {
     color: {
       default: () => 'primary'
     },
-    'aspect-ratio': {}
+    'aspectRatio': {}
   }
 }
 </script>
