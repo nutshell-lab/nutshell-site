@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar app flat height="75px">
+  <v-toolbar app light flat height="75px" color="whitish">
     <logo :size="50" />
     <v-spacer></v-spacer>
     <v-toolbar-items>
@@ -20,6 +20,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.v-btn * {
+  font-family: 'Neue Plak Bold'!important;
+}
 </style>
