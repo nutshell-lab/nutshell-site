@@ -6,9 +6,9 @@
     align-center
     justify-left
     class="primary--text">
-    <h1 class="display-3">WE</h1>
-    <h1 class="display-3">BUILD</h1>
-    <h1 class="display-3 lighter">THINGS</h1>
+    <v-flex xs12 class="display-4">WE</v-flex>
+    <v-flex xs12 class="display-4">BUILD</v-flex>
+    <v-flex xs12 class="display-4 lighter">THINGS</v-flex>
   </v-layout>
 </template>
 
@@ -25,5 +25,9 @@ export default {
 
   .lighter {
     font-family: 'Neue Plak Wide Thin'!important;
+  }
+
+  .display-4 {
+    font-size: 2.5em
   }
 </style>
