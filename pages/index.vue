@@ -1,8 +1,8 @@
 <template>
   <v-layout col wrap fill-height>
       <header-bar />
-      <bloc color="secondary organic" :aspectRatio="16/9"><bloc-title /></bloc>
-      <bloc height="300"><bloc-targets /></bloc>
+      <bloc color="secondary organic" :aspectRatio="16/7"><bloc-title /></bloc>
+      <bloc :aspect-ratio="16/10"><bloc-targets /></bloc>
       <bloc color="whitish" height="300"><bloc-daily-routine /></bloc>
       <bloc height="300"><bloc-how /></bloc>
       <bloc color='black' height="300"><bloc-contact /></bloc>
