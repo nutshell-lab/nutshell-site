@@ -1,7 +1,7 @@
 <template>
   <v-avatar
     :size="size">
-    <img src="~assets/logo.jpg" >
+    <img src="/logo.jpg" >
   </v-avatar>
 </template>
 
