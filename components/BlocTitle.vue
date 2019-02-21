@@ -1,18 +1,30 @@
 <template>
   <v-layout row wrap align-center justify-center>
-    <v-flex shrink>
+    <v-flex xs11 sm10 lg8 class="py-5 my-5">
       <v-layout column wrap align-start justify-center class="primary--text">
-        <v-flex class="display-4">WE</v-flex>
-        <v-flex class="display-4">BUILD</v-flex>
-        <v-flex class="display-4 lighter">PROTOTYPES</v-flex>
-        <v-flex class="title mt-5 accent--text">Prouvez votre concept avant de lancer le dévelopement de votre produit.</v-flex>
+        <v-flex shrink class="py-5 my-5">
+          <div class="display-4">WE</div>
+          <div class="display-4">BUILD</div>
+          <no-ssr>
+            <vue-typer class="display-4" text="COOKIES" :typeDelay="120" :preTypeDelay="1000" eraseStyle="backspace" :eraseDelay="70"></vue-typer>
+          </no-ssr>
+          <div class="display-2 mt-5 secondary--text regular">Chocolate, fruits even grapes... they're all delicious.</div>
+        </v-flex>
       </v-layout>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
-export default {}
+if (process.browser) {
+  var VueTyper = require('vue-typer').VueTyper
+}
+
+export default {
+  components: {
+    VueTyper
+  }
+}
 </script>
 
 <style scoped>
@@ -20,7 +32,7 @@ export default {}
   font-family: 'Neue Plak Wide ExtraBlack' !important;
 }
 
-.lighter {
-  font-family: 'Neue Plak Wide Thin' !important;
+.regular {
+  font-family: 'Neue Plak Regular' !important;
 }
 </style>

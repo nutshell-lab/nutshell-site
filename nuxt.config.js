@@ -31,7 +31,7 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: ['~/assets/style/app.styl', '~/assets/style/gradient.styl'],
+  css: ['~/assets/style/app.styl', '~/assets/style/gradient.styl', '~/assets/style/vue-typer.styl'],
 
   /*
   ** Plugins to load before mounting the App
