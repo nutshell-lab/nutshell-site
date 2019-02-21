@@ -6,9 +6,19 @@
           <div class="display-4">WE</div>
           <div class="display-4">BUILD</div>
           <no-ssr>
-            <vue-typer class="display-4" text="COOKIES" :typeDelay="120" :preTypeDelay="1000" eraseStyle="backspace" :eraseDelay="70"></vue-typer>
+            <vue-typer class="typer-title display-4" text="COOKIES" :typeDelay="120" :preTypeDelay="1000" eraseStyle="backspace" :eraseDelay="70" caretAnimation="solid"></vue-typer>
           </no-ssr>
-          <div class="display-2 mt-5 secondary--text regular">Chocolate, fruits even grapes... they're all delicious.</div>
+          <div class="mt-5">
+            <no-ssr>
+              <vue-typer class="typer-subtitle display-2"  text="Chocolate, fruits even grapes... they're all delicious."
+                :typeDelay="20" 
+                :preTypeDelay="1100" 
+                eraseStyle="backspace"
+                :eraseDelay="20"
+                caretAnimation="expand"
+              ></vue-typer>
+            </no-ssr>
+          </div>
         </v-flex>
       </v-layout>
     </v-flex>
