@@ -19,11 +19,11 @@
                     :preEraseDelay="titlePreEraseDelay"
                     :eraseDelay="titleEraseDelay"
                     @typed="startTypingDescription"
-                    @erased="done = true"
+                    @erased="rotate"
                   ></vue-typer>
                 </no-ssr>
                 <div class="mt-5 h-130">
-                  <no-ssr>
+                  <!-- <no-ssr>
                     <vue-typer class="typer-subtitle display-1" :text="showDescription ? item.description : ''"
                       :typeDelay="descriptionTypeDelay" 
                       :preTypeDelay="0" 
@@ -32,7 +32,7 @@
                       :preEraseDelay="descriptionPreEraseDelay"
                       @erased="rotate"
                     ></vue-typer>
-                  </no-ssr>
+                  </no-ssr> -->
                 </div>
               </template>
             </div>
@@ -74,7 +74,7 @@ export default {
       currentItem: 0,
       showDescription: false,
       titlePreEraseDelay: 0,
-      titleEraseDelay: 120,
+      titleEraseDelay: 80,
       descriptionEraseDelay: 5,
       descriptionPreEraseDelay: 5000,
       descriptionTypeDelay: 5,

@@ -8,6 +8,7 @@ Vue.use(Vuetify, {
     accent: '#fddd3a',
     secondary: '#e69632',
     white: '#fffdef',
+    orange: '#fb347',
     info: colors.teal.lighten1,
     warning: colors.amber.base,
     error: colors.deepOrange.accent4,

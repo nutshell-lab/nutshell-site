@@ -7,22 +7,19 @@
       <v-layout class="text-xs-right">
         <v-flex class="text-xs-right">
           <v-hover>
-            <span slot-scope="{ hover }" flat :class="hover ? 'text-underlined' : ''" class="btn primary--text clickable mx-3 text-uppercase">Quoi ?</span>
+            <span slot-scope="{ hover }" flat :class="hover ? 'text-underlined' : ''" class="btn primary--text clickable mx-3 text-uppercase">à propos</span>
           </v-hover>
           <v-hover>
-            <span slot-scope="{ hover }" flat :class="hover ? 'text-underlined' : ''" class="btn primary--text clickable mx-3 text-uppercase">Références</span>
+            <span slot-scope="{ hover }" flat :class="hover ? 'text-underlined' : ''" class="btn primary--text clickable mx-3 text-uppercase">philosopie</span>
           </v-hover>
           <v-hover>
-            <span slot-scope="{ hover }" flat :class="hover ? 'text-underlined' : ''" class="btn primary--text clickable mx-3 text-uppercase">Pourquoi ?</span>
+            <span slot-scope="{ hover }" flat :class="hover ? 'text-underlined' : ''" class="btn primary--text clickable mx-3 text-uppercase">notre travail</span>
           </v-hover>
           <v-hover>
-            <span slot-scope="{ hover }" flat :class="hover ? 'text-underlined' : ''" class="btn primary--text clickable mx-3 text-uppercase">Qui ?</span>
+            <span slot-scope="{ hover }" flat :class="hover ? 'text-underlined' : ''" class="btn primary--text clickable mx-3 text-uppercase">comment nous travaillons</span>
           </v-hover>
           <v-hover>
-            <span slot-scope="{ hover }" flat :class="hover ? 'text-underlined' : ''" class="btn primary--text clickable mx-3 text-uppercase">Comment ?</span>
-          </v-hover>
-          <v-hover>
-            <span slot-scope="{ hover }" flat :class="hover ? 'text-underlined' : ''" class="btn secondary--text clickable mx-3 text-uppercase">Contact</span>
+            <span slot-scope="{ hover }" flat :class="hover ? 'text-underlined' : ''" class="btn primary--text clickable mx-3 text-uppercase">blog</span>
           </v-hover>
         </v-flex>
       </v-layout>
