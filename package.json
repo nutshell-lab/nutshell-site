@@ -13,8 +13,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "cross-env": "^5.2.0",
+    "lodash": "^4.17.11",
     "nuxt": "^2.0.0",
+    "vue-particles": "^1.0.9",
     "vue-typer": "^1.2.0",
     "vuetify": "^1.5.1"
   },

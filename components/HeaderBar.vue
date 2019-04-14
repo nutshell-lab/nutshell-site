@@ -1,7 +1,7 @@
 <template>
   <v-toolbar height="90px" color="white">
     <v-flex>
-      <logo :size="50" />
+      <logo :size="27" />
     </v-flex>
     <v-flex>
       <v-layout class="text-xs-right">
@@ -43,7 +43,7 @@ export default {
 }
 
 .text-underlined {
-  border-bottom: 3px solid
+  border-bottom: 2px solid
 }
 
 .clickable {

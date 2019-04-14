@@ -3,12 +3,10 @@
     <v-content>
       <nuxt />
     </v-content>
-    <generic-footer />
   </v-app>
 </template>
 
 <script>
-import GenericFooter from '../components/GenericFooter'
 export default {
   data() {
     return {
@@ -24,7 +22,6 @@ export default {
       rightDrawer: false,
       title: 'Vuetify.js'
     }
-  },
-  components: { GenericFooter }
+  }
 }
 </script>
