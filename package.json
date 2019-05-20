@@ -1,11 +1,11 @@
 {
-  "name": "institutional",
+  "name": "nutshell",
   "version": "1.0.0",
   "description": "Official Nutshell website",
   "author": "Nutshell",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "cross-env HOST=0.0.0.0 PORT=3000 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -13,17 +13,25 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
     "aos": "^2.3.4",
-    "cross-env": "^5.2.0",
+    "fs": "^0.0.1-security",
+    "ky": "^0.11.0",
     "lodash": "^4.17.11",
-    "nuxt": "^2.0.0",
-    "vue-particles": "^1.0.9",
+    "net": "^1.0.2",
+    "nuxt": "^2.6.3",
+    "punycode": "^2.1.1",
+    "tls": "^0.0.1",
+    "vee-validate": "^2.2.4",
+    "vue-loading-overlay": "^3.2.0",
+    "vue-router": "^3.0.6",
     "vue-typer": "^1.2.0",
     "vuetify": "^1.5.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "eslint": "^5.0.1",
+    "cross-env": "^5.2.0",
     "eslint-config-prettier": "^3.1.0",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-prettier": "2.6.2",

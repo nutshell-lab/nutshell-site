@@ -1,37 +1,41 @@
 const pkg = require('./package')
 
 module.exports = {
-  mode: 'universal',
-
   /*
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'Nutshell Lab - We build things',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/nut-logo.png' },
       {
         rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
       }
-    ]
+    ],
+    // script: [{ src: '/js/crisp.js' }]
   },
 
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#5e2e70' },
 
   /*
   ** Global CSS
   */
-  css: ['~/assets/style/app.styl', '~/assets/style/gradient.styl', '~/assets/style/vue-typer.styl'],
+  css: [
+    '~/assets/style/app.styl',
+    '~/assets/style/gradient.styl',
+    '~/assets/style/vue-typer.styl',
+    '~/assets/style/animation.styl'
+  ],
 
   /*
   ** Plugins to load before mounting the App
@@ -43,6 +47,8 @@ module.exports = {
       ssr: false
     }
   ],
+
+  mode: 'spa',
 
   /*
   ** Nuxt.js modules
@@ -67,5 +73,12 @@ module.exports = {
         })
       }
     }
-  }
+  },
+
+  /*
+  ** Nuxt.js middlewares
+  */
+  serverMiddleware: [
+    '~/api/index.js'
+  ]
 }
