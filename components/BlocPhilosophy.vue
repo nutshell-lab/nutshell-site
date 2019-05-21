@@ -1,8 +1,8 @@
 <template>
   <v-layout 
+    :class="mediaSpacing" 
     wrap 
     row 
-    :class="mediaSpacing" 
     justify-center>
     <v-flex 
       xs11
@@ -23,7 +23,9 @@
         <v-card-text class="primary--text pt-1">
           Les valeurs de Nutshell s'orientent autour de l'expertise technique et de l'entrepreneuriat de ses membres, qui n'en sont qu'aux premiers pas de leur périple et ont la volonté d'acquérir toujours plus de compétences et de connaissances dans ces deux domaines.
         </v-card-text>
-        <v-card-text :class="mediaTitle" class="primary--text text-xs-center semibold">
+        <v-card-text 
+          :class="mediaTitle" 
+          class="primary--text text-xs-center semibold">
           Un projet <span class="secondary--text bold">ambitieux</span> est construit sur <span class="secondary--text bold">trois piliers solides</span>.
         </v-card-text>
       </v-card>
@@ -35,20 +37,40 @@
         <v-flex 
           v-for="(value, index) in values"
           :key="index"
-          xs12 sm6 md4 lg4 :class="mediaMargin"
+          :class="mediaMargin" 
+          xs12 
+          sm6 
+          md4 
+          lg4
         >
-          <v-layout row wrap justify-center>
+          <v-layout 
+            row 
+            wrap 
+            justify-center>
             <v-flex shrink>
               <center>
-                <svg :height="mediaPictoSize" :width="mediaPictoSize">
-                  <image x="0" y="0" :height="mediaPictoSize" :width="mediaPictoSize" :xlink:href="`/picto/${value.picto}`"/>
+                <svg 
+                  :height="mediaPictoSize" 
+                  :width="mediaPictoSize">
+                  <image 
+                    :height="mediaPictoSize" 
+                    :width="mediaPictoSize" 
+                    :xlink:href="`/picto/${value.picto}`" 
+                    x="0" 
+                    y="0"/>
                 </svg>
               </center>
-              <div :class="mediaItemSize" class="relative category bold primary--text" v-html="value.title"></div>
-              <v-card flat class="relative description transparent semibold subheading primary--text py-1 pt-1">
-                <div class="relative item string"
+              <div 
+                :class="mediaItemSize" 
+                class="relative category bold primary--text" 
+                v-html="value.title"/>
+              <v-card 
+                flat 
+                class="relative description transparent semibold subheading primary--text py-1 pt-1">
+                <div 
                   v-for="(item, i) in value.items"
                   :key="i"
+                  class="relative item string"
                 >{{ item }}</div>
               </v-card>
             </v-flex>
@@ -91,11 +113,11 @@ export default {
           picto: 'help.svg',
           items: [
             'La réactivité',
-            "Le devoir de conseil",
+            'Le devoir de conseil',
             "L'automatisation",
-            "Le suivi"
+            'Le suivi'
           ]
-        },
+        }
       ]
     }
   },

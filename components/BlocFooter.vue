@@ -12,8 +12,8 @@
       class="py-5">
       <v-layout
         id="footer"
-        class="animated"
         :style="`${transform}`"
+        class="animated"
         row 
         wrap 
         align-start
@@ -23,20 +23,29 @@
             v-for="(social, index) in socials"
             :key="index"
             :title="social.name" 
-            class="mr-1 d-block"
             :href="social.url"
+            class="mr-1 d-block"
             target="_blank"
           >
             <v-hover>
-              <svg height="32" width="32" slot-scope="{ hover }">
-                <image x="0" y="0" height="32" width="32"
-                  :xlink:href="hover ? social.iconOnHover  : social.icon"
+              <svg 
+                slot-scope="{ hover }" 
+                height="32" 
+                width="32">
+                <image 
+                  :xlink:href="hover ? social.iconOnHover : social.icon" 
+                  x="0" 
+                  y="0" 
+                  height="32"
+                  width="32"
                 />
               </svg>
             </v-hover>
           </a>
         </div>
-        <v-flex xs12 sm6>
+        <v-flex 
+          xs12 
+          sm6>
           <v-card 
             flat  
             class="transparent wide subheading">
@@ -59,12 +68,11 @@
                 class="menu relative clickable" 
                 @click="$vuetify.goTo('#philosophy', options)">philosopie</span>
             </v-card-text>
-            <v-card-text class="px-0 pb-1 pt-0 text-uppercase">
-              <span class="menu relative clickable">blog</span>
-            </v-card-text>
           </v-card>
         </v-flex>
-        <v-flex xs12 sm6>
+        <v-flex 
+          xs12 
+          sm6>
           <v-layout 
             row 
             wrap 
@@ -77,8 +85,9 @@
                 color="accent" 
                 large>location_on</v-icon>
             </v-flex>
-            <v-flex xs12 class="pt-2 pb-3 hidden-sm-and-up">
-            </v-flex>
+            <v-flex 
+              xs12 
+              class="pt-2 pb-3 hidden-sm-and-up"/>
             <v-flex>
               <v-card 
                 flat 
@@ -92,14 +101,21 @@
                     v-for="(social, index) in socials"
                     :key="index"
                     :title="social.name" 
-                    class="mr-1"
                     :href="social.url"
+                    class="mr-1"
                     target="_blank"
                   >
                     <v-hover>
-                      <svg height="32" width="32" slot-scope="{ hover }">
-                        <image x="0" y="0" height="32" width="32"
-                          :xlink:href="hover ? social.iconOnHover  : social.icon"
+                      <svg 
+                        slot-scope="{ hover }" 
+                        height="32" 
+                        width="32">
+                        <image 
+                          :xlink:href="hover ? social.iconOnHover : social.icon" 
+                          x="0" 
+                          y="0" 
+                          height="32"
+                          width="32"
                         />
                       </svg>
                     </v-hover>
@@ -114,8 +130,9 @@
             align-end>
             <v-flex>
               <v-flex 
+                :class="mediaLink" 
                 xs12 
-                class="regular" :class="mediaLink">
+                class="regular">
                 <span 
                   class="work-together relative clickable" 
                   @click="openContact()">Démarrer un projet !</span>
@@ -134,9 +151,9 @@
                   </a>
                   | 
                   <a 
-                    @click.stop="routerPush(`/legals`)" 
-                    class="secondary--text body-2 px-2"
-                    >
+                    class="secondary--text body-2 px-2" 
+                    @click.stop="routerPush(`/legals`)"
+                  >
                     mentions légales
                   </a>
                 </div>
@@ -206,7 +223,7 @@ export default {
     height() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
-          return 515
+          return 490
         case 'sm':
           return 434
         default:
@@ -238,11 +255,14 @@ export default {
   },
   methods: {
     ...mapActions({
-      routerPush: 'router/push',
+      routerPush: 'router/push'
     }),
     handleScroll() {
       if (window.scrollY >= this.top()) {
-        const scrollPercentage = 100 * (1 - (this.top() + this.height) / (window.scrollY + this.offset)) * 4
+        const scrollPercentage =
+          100 *
+          (1 - (this.top() + this.height) / (window.scrollY + this.offset)) *
+          4
         this.percentage = scrollPercentage >= 0 ? 0 : scrollPercentage
       }
     },
@@ -267,7 +287,7 @@ export default {
     },
     top() {
       return this.position() - this.height
-    },
+    }
   }
 }
 </script>

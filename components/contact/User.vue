@@ -23,7 +23,10 @@
             <v-card-text class="pa-0 extrablack subheading primary--text">{{ user.name }}</v-card-text>
             <v-card-text class="pa-0 regular subheading primary--text">{{ user.role }}</v-card-text>
             <!-- <v-card-text class="pa-0 extrablack subheading primary--text">{{ user.phone }}</v-card-text> -->
-            <v-card-text class="pa-0 extrablack subheading primary--text"><a target="_blank" :href="user.github.url" class="no-decoration">{{ user.github.name }}</a></v-card-text>
+            <v-card-text class="pa-0 extrablack subheading primary--text"><a 
+              :href="user.github.url" 
+              target="_blank" 
+              class="no-decoration">{{ user.github.name }}</a></v-card-text>
           </v-card>
           <v-card
             v-if="!isSmall"
@@ -43,10 +46,8 @@
 </template>
 
 <script>
-
-
 function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
+  return Math.floor(Math.random() * Math.floor(max))
 }
 
 export default {
@@ -92,11 +93,13 @@ export default {
       return this.users[getRandomInt(this.users.length)]
     },
     isSmall() {
-      return this.$vuetify.breakpoint.name === 'sm' || this.$vuetify.breakpoint.name === 'xs'
+      return (
+        this.$vuetify.breakpoint.name === 'sm' ||
+        this.$vuetify.breakpoint.name === 'xs'
+      )
     }
   }
 }
-
 </script>  
 
 <style lang="stylus" scoped>

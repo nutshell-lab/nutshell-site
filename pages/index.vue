@@ -3,7 +3,9 @@
     col 
     wrap 
     fill-height>
-    <nut-header @openContact="contactTrigger = true" class="header"/>
+    <nut-header 
+      class="header" 
+      @openContact="contactTrigger = true"/>
     <bloc 
       :divider-px="mediaDividerPx" 
       divider="white" 
@@ -63,7 +65,9 @@
       divider="primary" 
       color="accent" 
       class="organic2 middle-site"><bloc-techs /></bloc>
-    <bloc color="" class="footer"><bloc-footer @openContact="contactTrigger = true"/></bloc>
+    <bloc 
+      color="" 
+      class="footer"><bloc-footer @openContact="contactTrigger = true"/></bloc>
     <v-slide-y-reverse-transition>
       <v-btn
         v-if="showGoTop"
@@ -72,17 +76,18 @@
         bottom
         right
         color="white"
-        @click="$vuetify.goTo('#title', options)"
         class="hover-site hidden-sm-and-down"
+        @click="$vuetify.goTo('#title', options)"
       >
-        <v-icon large color="primary">expand_less</v-icon>
+        <v-icon 
+          large 
+          color="primary">expand_less</v-icon>
       </v-btn>
     </v-slide-y-reverse-transition>
   </v-layout>
 </template>
 
 <script>
-
 // const HeaderBar = () => import("~/components/HeaderBar.vue");
 // const BlocTitle = () => import("~/components/BlocTitle.vue");
 // const BlocTechs = () => import("~/components/BlocTechs.vue");
@@ -130,7 +135,7 @@ export default {
     marginBottom() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs':
-          return 'margin-bottom:515px;'
+          return 'margin-bottom:490px;'
         case 'sm':
           return 'margin-bottom:434px;'
         default:
@@ -163,17 +168,17 @@ export default {
       }
     }
   },
-  methods: {
-    handleScroll() {
-      this.showGoTop = window.scrollY >= 50
-    }
-  },
   created() {
     window.addEventListener('scroll', this.handleScroll)
   },
   destroyed() {
     window.removeEventListener('scroll', this.handleScroll)
   },
+  methods: {
+    handleScroll() {
+      this.showGoTop = window.scrollY >= 50
+    }
+  }
 }
 </script>
 

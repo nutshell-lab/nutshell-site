@@ -5,10 +5,21 @@
     color="white">
     <v-layout align-center>
       <v-flex>
-        <logo :size="27" @click.native="routerPush(`/`)" class="clickable"/>
+        <logo 
+          :size="27" 
+          class="clickable" 
+          @click.native="routerPush(`/`)"/>
       </v-flex>
-      <drawer v-if="isDrawer" @openContact="openContact()" @goTo="goTo" :items="items"/>
-      <bar v-else @openContact="openContact()" @goTo="goTo" :items="items"/>
+      <drawer 
+        v-if="isDrawer" 
+        :items="items" 
+        @openContact="openContact()" 
+        @goTo="goTo"/>
+      <bar 
+        v-else 
+        :items="items" 
+        @openContact="openContact()" 
+        @goTo="goTo"/>
     </v-layout>
   </v-toolbar>
 </template>
@@ -45,7 +56,7 @@ export default {
   },
   methods: {
     ...mapActions({
-      routerPush: 'router/push',
+      routerPush: 'router/push'
     }),
     goTo(anchor) {
       this.$vuetify.goTo(anchor, this.options)

@@ -1,130 +1,191 @@
 <template>
-  <v-layout row wrap align-center>
-    <v-flex xs12 class="py-3 mb-3">
+  <v-layout 
+    row 
+    wrap 
+    align-center>
+    <v-flex>
+      <v-card flat class="transparent">
+        <v-card-text class="pl-4 secondary-light--text title">
+          Que votre idée soit mature ou encore à l'état de bourgeon, tous nos projets commence par les meilleures d'entre elles ! 
+        </v-card-text>
+      </v-card>
+    </v-flex>
+    <v-flex 
+      xs12 
+      class="py-3 mb-3">
       <v-layout>
         <v-flex class="number-container relative">
           <span class="number underline primary--text">01</span>
         </v-flex>
-        <v-flex xs12 class="pl-4">
-          <span class="category secondary-light--text" :class="mediaTitleSize">Analyse</span>
+        <v-flex 
+          xs12 
+          class="pl-4">
+          <span 
+            :class="mediaTitleSize" 
+            class="category secondary-light--text">Analyse</span>
         </v-flex>
       </v-layout>
       <v-layout class="mt-1">
         <v-flex class="number-container">
-          <span class="number"></span>
+          <span class="number"/>
         </v-flex>
-        <v-flex xs12 class="pl-4 article">
-          <span class="primary--text" :class="mediaSize">
-            <span class="secondary-light--text bold">Description&nbsp;:</span>
-            &nbsp;Phase initiale du projet, nous prenons le temps de l'étude et surtout de vous connaitre, vous, votre métier, et votre projet.
+        <v-flex 
+          xs12 
+          class="pl-4 article">
+          <span 
+            :class="mediaSize" 
+            class="primary--text">
+            Phase initiale du projet, nous prenons le temps de l'étude et surtout de vous connaitre, vous, votre métier, et votre projet.
           </span>
         </v-flex>
       </v-layout>
-      <v-layout class="mt-1">
+      <v-layout class="mt-3">
         <v-flex class="number-container">
-          <span class="number"></span>
+          <span class="number"/>
         </v-flex>
-        <v-flex xs12 class="pl-4 article">
-          <span class="primary--text" :class="mediaSize">
+        <v-flex 
+          xs12 
+          class="pl-4 article">
+          <span 
+            :class="mediaSize" 
+            class="primary--text">
             <span class="secondary-light--text bold">Objectifs&nbsp;:</span>
-            &nbsp;Nous découvrons et dévrivons ensemble les problèmatiques de votre projet et leurs pistes de résolutions.
+            &nbsp;Découvrir et décrire ensemble les problèmatiques de votre projet et leurs pistes de résolutions.
           </span>
         </v-flex>
       </v-layout>
-      <v-layout class="mt-1">
+      <v-layout class="mt-3">
         <v-flex class="number-container">
-          <span class="number"></span>
+          <span class="number"/>
         </v-flex>
-        <v-flex xs12 class="pl-4 article">
-          <span class="primary--text" :class="mediaSize">
+        <v-flex 
+          xs12 
+          class="pl-4 article">
+          <span 
+            :class="mediaSize" 
+            class="primary--text">
             <span class="secondary-light--text bold">Livrable&nbsp;:</span>
-            &nbsp;À la fin de cette phase vous recevez votre carnet d'analyse.
+            &nbsp;À la fin de cette phase vous recevez nos spécifications détaillées.
           </span>
         </v-flex>
       </v-layout>
     </v-flex>
-    <v-flex xs12 lg6 class="py-3 my-3 pr-3">
+    <v-flex 
+      xs12
+      class="py-3 my-3 pr-3">
       <v-layout>
         <v-flex class="number-container relative">
           <span class="number underline primary--text">02</span>
         </v-flex>
-        <v-flex xs12 class="pl-4">
-          <span class="category secondary-light--text" :class="mediaTitleSize">Réalisation</span>
+        <v-flex 
+          xs12 
+          class="pl-4">
+          <span 
+            :class="mediaTitleSize" 
+            class="category secondary-light--text">Réalisation</span>
         </v-flex>
       </v-layout>
       <v-layout class="mt-1">
         <v-flex class="number-container">
-          <span class="number $$"></span>
+          <span class="number $$"/>
         </v-flex>
-        <v-flex xs12 class="pl-4 article">
-          <span class="primary--text" :class="mediaSize">
-            <span class="secondary-light--text bold">Description&nbsp;:</span>
-            &nbsp;Phase initiale du projet, nous prenons le temps de l'étude et surtout de vous connaitre, vous, votre métier, et votre projet.
+        <v-flex 
+          xs12 
+          class="pl-4 article">
+          <span 
+            :class="mediaSize" 
+            class="primary--text">
+            Le développement commence mais nos échanges ne s'arrêtent pas là, nous continuons de dialoguer et vous restez maître de l'orientation que prend votre projet.
           </span>
         </v-flex>
       </v-layout>
-      <v-layout class="mt-1">
+      <v-layout class="mt-3">
         <v-flex class="number-container">
-          <span class="number $$"></span>
+          <span class="number $$"/>
         </v-flex>
-        <v-flex xs12 class="pl-4 article">
-          <span class="primary--text" :class="mediaSize">
+        <v-flex 
+          xs12 
+          class="pl-4 article">
+          <span 
+            :class="mediaSize" 
+            class="primary--text">
             <span class="secondary-light--text bold">Objectifs&nbsp;:</span>
-            &nbsp;Nous découvrons et dévrivons ensemble les problèmatiques de votre projet et leurs pistes de résolutions.
+            &nbsp;S'assurer, lot après lot, de l'atteinte des objectifs de votre idée.
           </span>
         </v-flex>
       </v-layout>
-      <v-layout class="mt-1">
+      <v-layout class="mt-3">
         <v-flex class="number-container">
-          <span class="number"></span>
+          <span class="number"/>
         </v-flex>
-        <v-flex xs12 class="pl-4 article">
-          <span class="primary--text" :class="mediaSize">
-            <span class="secondary-light--text bold">Livrable&nbsp;:</span>
-            &nbsp;À la fin de cette phase vous recevez votre carnet d'analyse.
+        <v-flex 
+          xs12 
+          class="pl-4 article">
+          <span 
+            :class="mediaSize" 
+            class="primary--text">
+            <span class="secondary-light--text bold">Livrables&nbsp;:</span>
+            &nbsp;Tout au long de la réalisation vous recevrez des lots de fonctionnalités que vous pourrez tester et faire évoluer lors des itérations qui suivent.
           </span>
         </v-flex>
       </v-layout>
     </v-flex>
-    <v-flex xs12 lg6 class="py-3 my-3">
+    <v-flex 
+      xs12
+      class="py-3 my-3">
       <v-layout>
         <v-flex class="number-container relative">
           <span class="number underline primary--text">03</span>
         </v-flex>
-        <v-flex xs12 class="pl-4">
-          <span class="category secondary-light--text" :class="mediaTitleSize">Suivi</span>
+        <v-flex 
+          xs12 
+          class="pl-4">
+          <span 
+            :class="mediaTitleSize" 
+            class="category secondary-light--text">Suivi</span>
         </v-flex>
       </v-layout>
       <v-layout class="mt-1">
         <v-flex class="number-container">
-          <span class="number"></span>
+          <span class="number"/>
         </v-flex>
-        <v-flex xs12 class="pl-4 article">
-          <span class="primary--text" :class="mediaSize">
-            <span class="secondary-light--text bold">Description&nbsp;:</span>
-            &nbsp;Phase initiale du projet, nous prenons le temps de l'étude et surtout de vous connaitre, vous, votre métier, et votre projet.
+        <v-flex 
+          xs12 
+          class="pl-4 article">
+          <span 
+            :class="mediaSize" 
+            class="primary--text">
+            La réalisation stabilisée, nous ne vous abandonons pas à votre sort, nous mettons en place ensemble les modalités de suivi et d'améliorations de votre projet.
           </span>
         </v-flex>
       </v-layout>
-      <v-layout class="mt-1">
+      <v-layout class="mt-3">
         <v-flex class="number-container">
-          <span class="number"></span>
+          <span class="number"/>
         </v-flex>
-        <v-flex xs12 class="pl-4 article">
-          <span class="primary--text" :class="mediaSize">
+        <v-flex 
+          xs12 
+          class="pl-4 article">
+          <span 
+            :class="mediaSize" 
+            class="primary--text">
             <span class="secondary-light--text bold">Objectifs&nbsp;:</span>
-            &nbsp;Nous découvrons et dévrivons ensemble les problèmatiques de votre projet et leurs pistes de résolutions.
+            &nbsp;S'incrire dans une collaboration à long terme.
           </span>
         </v-flex>
       </v-layout>
-      <v-layout class="mt-1">
+      <v-layout class="mt-3">
         <v-flex class="number-container">
-          <span class="number"></span>
+          <span class="number"/>
         </v-flex>
-        <v-flex xs12 class="pl-4 article">
-          <span class="primary--text" :class="mediaSize">
+        <v-flex 
+          xs12 
+          class="pl-4 article">
+          <span 
+            :class="mediaSize" 
+            class="primary--text">
             <span class="secondary-light--text bold">Livrable&nbsp;:</span>
-            &nbsp;À la fin de cette phase vous recevez votre carnet d'analyse.
+            &nbsp;Vous recevez nos conseils et les versions corrigées de votre applicatif.
           </span>
         </v-flex>
       </v-layout>
@@ -156,6 +217,10 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+
+.light {
+  font-family: 'Neue Plak Light' !important
+}
 
 .number {
   font-family: 'Neue Plak Extended Bold' !important

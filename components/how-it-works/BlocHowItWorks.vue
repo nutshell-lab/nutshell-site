@@ -1,34 +1,68 @@
 <template>
-  <v-layout row wrap :class="mediaSpacing">
+  <v-layout 
+    :class="mediaSpacing" 
+    row 
+    wrap>
     <v-flex>
       <v-layout 
         wrap 
         row 
         justify-center>
-        <v-flex xs11 sm10 md9 lg8 xl7 class="px-1 relative">
+        <v-flex 
+          xs11 
+          sm10 
+          md9 
+          lg8 
+          xl7 
+          class="px-1 relative">
           <display-title color="accent">
             <span 
               id="how-it-works" 
               class="primary--text">Comment ça marche ?</span>
           </display-title>
-          <v-layout row wrap justify-end :class="mediaSize">
-            <v-flex xs6 :class="[move, small]" class="panel">
-              <v-layout row wrap justify-end>
+          <v-layout 
+            :class="mediaSize" 
+            row 
+            wrap 
+            justify-end>
+            <v-flex 
+              :class="[move, small]" 
+              xs6 
+              class="panel">
+              <v-layout 
+                row 
+                wrap 
+                justify-end>
                 <v-flex shrink>
-                  <v-card flat class="transparent clickable" @click="select('project')">
+                  <v-card 
+                    flat 
+                    class="transparent clickable" 
+                    @click="select('project')">
                     <v-card-text class="py-2 secondary-light--text">
-                      <span class="text-uppercase relative item bold item-advice" :class="selectedClass('project')">Je veux un projet</span>
+                      <span 
+                        :class="selectedClass('project')" 
+                        class="text-uppercase relative item bold item-advice">J'ai un projet</span>
                     </v-card-text>
                   </v-card>
                 </v-flex>
               </v-layout>
             </v-flex>
-            <v-flex xs6 :class="[move, small]" class="panel">
-              <v-layout row wrap>
+            <v-flex 
+              :class="[move, small]" 
+              xs6 
+              class="panel">
+              <v-layout 
+                row 
+                wrap>
                 <v-flex shrink>
-                  <v-card flat class="transparent clickable" @click="select('advice')">
+                  <v-card 
+                    flat 
+                    class="transparent clickable" 
+                    @click="select('advice')">
                     <v-card-text class="py-2 primary--text">
-                      <span class="text-uppercase relative item bold item-project" :class="selectedClass('advice')">Je veux du conseil</span>
+                      <span 
+                        :class="selectedClass('advice')" 
+                        class="text-uppercase relative item bold item-project">Je veux du conseil</span>
                     </v-card-text>
                   </v-card>
                 </v-flex>
@@ -37,26 +71,59 @@
           </v-layout>
         </v-flex>
       </v-layout>
-      <v-tabs v-model="active" class="tabs pt-2">
+      <v-tabs 
+        v-model="active" 
+        class="tabs pt-2">
         <v-tab :key="0">advice</v-tab>
         <v-tab :key="1">project</v-tab>
         <v-tab-item :key="0">
-          <v-layout wrap row justify-center class="tab tab-project py-4">
-            <v-flex xs11 sm10 md9 lg8 xl7 class="px-1 relative">
+          <v-layout 
+            wrap 
+            row 
+            justify-center 
+            class="tab tab-project py-4">
+            <v-flex 
+              xs11 
+              sm10 
+              md9 
+              lg8 
+              xl7 
+              class="px-1 relative">
               <how-project />
             </v-flex>
           </v-layout>
         </v-tab-item>
         <v-tab-item :key="1">
-          <v-layout wrap row justify-center class="tab tab-advice py-4">
-            <v-flex xs11 sm10 md9 lg8 xl7 class="px-1 relative">
+          <v-layout 
+            wrap 
+            row 
+            justify-center 
+            class="tab tab-advice py-4">
+            <v-flex 
+              xs11 
+              sm10 
+              md9 
+              lg8 
+              xl7 
+              class="px-1 relative">
               <how-advice />
             </v-flex>
           </v-layout>
         </v-tab-item>
       </v-tabs>
-      <v-layout row wrap class="px-3 pt-5 my-3 text-xs-center" justify-center>
-        <v-flex xs11 sm10 md7 lg6 xl5 class="relative" :class="mediaSize">
+      <v-layout 
+        row 
+        wrap 
+        class="px-3 pt-5 my-3 text-xs-center" 
+        justify-center>
+        <v-flex 
+          :class="mediaSize" 
+          xs11 
+          sm10 
+          md7 
+          lg6 
+          xl5 
+          class="relative">
           <v-icon 
             color="secondary-light" 
             class="absolute xx-large bottom opacity-0-5"
@@ -85,22 +152,11 @@ export default {
       default: false
     }
   },
-  watch: {
-    adviceTriggered: function(val) {
-      if (val) {
-        this.select('advice')
-        this.$emit('advised', true)
-      }
-    },
-    active: function(val) {
-      this.select(getKeyByValue(this.tabs, val))
-    }
-  },
   data() {
     return {
       tabs: {
-        'project': 0,
-        'advice': 1
+        project: 0,
+        advice: 1
       },
       selected: 'project',
       active: 0
@@ -131,6 +187,17 @@ export default {
     },
     move() {
       return this.selected ? `move-${this.selected}` : null
+    }
+  },
+  watch: {
+    adviceTriggered: function(val) {
+      if (val) {
+        this.select('advice')
+        this.$emit('advised', true)
+      }
+    },
+    active: function(val) {
+      this.select(getKeyByValue(this.tabs, val))
     }
   },
   methods: {

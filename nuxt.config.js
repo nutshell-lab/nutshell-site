@@ -18,7 +18,7 @@ module.exports = {
         href:
           'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
       }
-    ],
+    ]
     // script: [{ src: '/js/crisp.js' }]
   },
 
@@ -42,10 +42,8 @@ module.exports = {
   */
   plugins: [
     '@/plugins/vuetify',
-    {
-      src: '@/plugins/vue-particles',
-      ssr: false
-    }
+    '@/plugins/analytics',
+    '@/plugins/analytics-facebook'
   ],
 
   mode: 'spa',
@@ -78,7 +76,5 @@ module.exports = {
   /*
   ** Nuxt.js middlewares
   */
-  serverMiddleware: [
-    '~/api/index.js'
-  ]
+  serverMiddleware: ['~/api/index.js']
 }

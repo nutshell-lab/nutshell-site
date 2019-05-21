@@ -4,8 +4,8 @@
     class="top"
   >
     <v-parallax
-      dark
       :height="mediaHeight"
+      dark
       src="/patternSecondary.svg"
       class="width-100 secondary-light bottom"
     >
@@ -14,7 +14,12 @@
         row 
         justify-center>
         <v-flex>
-          <v-layout row wrap justify-center fill-height align-center>
+          <v-layout 
+            row 
+            wrap 
+            justify-center 
+            fill-height 
+            align-center>
             <!-- <v-flex
               @click.stop="triggered()"
               @mouseover="enlarged = true" @mouseout="leave()"
@@ -37,29 +42,6 @@ export default {
     clicked: false,
     enlarged: false
   }),
-  watch: {
-    enlarged: function() {
-      this.applyStyleVariables()
-    }
-  },
-  methods: {
-    triggered() {
-      this.$vuetify.goTo('#how-it-works', this.options)
-      this.$emit('needAdvice')
-    },
-    leave() {
-      this.clicked = false
-      this.enlarged = false
-      this.applyStyleVariables()
-    },
-    applyStyleVariables () {
-      const scope = document.getElementById('news-container').style
-      const width = this.clicked || this.enlarged
-        ? '270px'
-        : this.isXs ? '150px' : '220px'
-      scope.setProperty('--separator-width', width)
-    }
-  },
   computed: {
     isXs() {
       return this.$vuetify.breakpoint.name === 'xs'
@@ -68,7 +50,7 @@ export default {
       return this.isXs ? 'subheading' : 'title'
     },
     mediaHeight() {
-      return this.isXs ? 45 : 60//this.isXs ? 70 : 100
+      return this.isXs ? 45 : 60 //this.isXs ? 70 : 100
     },
     options() {
       return {
@@ -88,8 +70,30 @@ export default {
       }
     }
   },
+  watch: {
+    enlarged: function() {
+      this.applyStyleVariables()
+    }
+  },
   mounted() {
     this.applyStyleVariables()
+  },
+  methods: {
+    triggered() {
+      this.$vuetify.goTo('#how-it-works', this.options)
+      this.$emit('needAdvice')
+    },
+    leave() {
+      this.clicked = false
+      this.enlarged = false
+      this.applyStyleVariables()
+    },
+    applyStyleVariables() {
+      const scope = document.getElementById('news-container').style
+      const width =
+        this.clicked || this.enlarged ? '270px' : this.isXs ? '150px' : '220px'
+      scope.setProperty('--separator-width', width)
+    }
   }
 }
 </script> 

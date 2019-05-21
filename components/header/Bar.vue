@@ -2,12 +2,14 @@
   <v-flex>
     <v-layout class="text-xs-right">
       <v-flex class="text-xs-right">
-        <span v-for="item in items" :key="item.name"
+        <span 
+          v-for="item in items" 
+          :key="item.name"
           class="btn primary--text clickable mx-3 text-uppercase relative" 
           @click="goTo(item.anchor)">{{ item.name }}</span>
         <span 
           class="btn secondary--text clickable mx-3 text-uppercase relative" 
-          @click="openContact()">contact</span>
+          @click="openContact()">nous contacter</span>
       </v-flex>
     </v-layout>
   </v-flex>
@@ -48,6 +50,11 @@ export default {
 
 .relative {
   position: relative
+}
+
+
+.btn.secondary--text::after {
+  background: #e69632 !important
 }
 
 .btn::after {

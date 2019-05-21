@@ -31,12 +31,18 @@
         justify-center 
         class="primary--text">
         <v-flex 
-          shrink 
-          :class="mediaSpacing">
+          :class="mediaSpacing" 
+          shrink>
           <template class="front">
-            <div class="extra-black" :class="mediaTitleSize">WE</div>
-            <div class="extra-black" :class="mediaTitleSize">BUILD</div>
-            <div class="pt-1" :class="mediaItemContainer">
+            <div 
+              :class="mediaTitleSize" 
+              class="extra-black">WE</div>
+            <div 
+              :class="mediaTitleSize" 
+              class="extra-black">BUILD</div>
+            <div 
+              :class="mediaItemContainer" 
+              class="pt-1">
               <template>
                 <no-ssr>
                   <vue-typer
@@ -46,8 +52,8 @@
                     :pre-type-delay="2500"
                     :pre-erase-delay="titlePreEraseDelay"
                     :erase-delay="titleEraseDelay"
-                    class="typer"
                     :class="[mediaItemSize]"
+                    class="typer"
                     erase-style="backspace"
                     @typed-char="onTypedChar"
                     @erased="rotate"
@@ -185,7 +191,7 @@ export default {
       const typer = document.getElementById('typer')
       const lessNodes = typer.lastChild.childNodes
 
-      if (typedCharIndex == 0 || typedChar == " " || lessNodes.length == 1) {
+      if (typedCharIndex == 0 || typedChar == ' ' || lessNodes.length == 1) {
         const finalNodes = typer.firstChild
         const listNodes = finalNodes.childNodes
         const newNode = document.createElement('span')
@@ -194,10 +200,12 @@ export default {
         let x = this.countWord
         const countNodes = listNodes.length
         while (x < countNodes) {
-          if (listNodes[this.countWord].innerHTML != " ")
-              newNode.insertAdjacentElement('beforeend', listNodes[this.countWord])
-          else
-              this.countWord++
+          if (listNodes[this.countWord].innerHTML != ' ')
+            newNode.insertAdjacentElement(
+              'beforeend',
+              listNodes[this.countWord]
+            )
+          else this.countWord++
           x++
         }
 

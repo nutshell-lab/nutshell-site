@@ -3,12 +3,12 @@
     <v-bottom-sheet v-model="sheet">
       <template v-slot:activator>
         <v-btn
+          :class="mediaSize"
           fixed
           fab
           bottom
           right
           color="white"
-          :class="mediaSize"
         >
           <v-icon color="primary">menu</v-icon>
         </v-btn>
@@ -39,7 +39,7 @@ export default {
       default: () => []
     }
   },
-  data () {
+  data() {
     return {
       sheet: false
     }

@@ -1,5 +1,11 @@
 <template>
-  <v-layout row wrap justify-center class="relative static" id="contact-container" :class="color">
+  <v-layout 
+    id="contact-container" 
+    :class="color" 
+    row 
+    wrap 
+    justify-center 
+    class="relative static">
     <svg 
       :height="1300" 
       :width="500" 
@@ -23,24 +29,25 @@
         wrap 
         justify-center>
         <v-flex 
-          shrink
-          :class="mediaSpacing">
+          :class="mediaSpacing"
+          shrink>
           <div 
             class="clickable"
             @click.stop="expand(true)"
-            @mouseover="enlarged = true" @mouseout="enlarged = false"
+            @mouseover="enlarged = true" 
+            @mouseout="enlarged = false"
           >
             <v-flex 
               id="contact" 
-              xs12 
-              :class="mediaSize"
+              :class="mediaSize" 
+              xs12
               class="text-uppercase secondary--text">
               <span 
                 class="wide">Nous contacter</span>
             </v-flex>
             <v-flex 
-              xs12 
-              :class="mediaMailSize"
+              :class="mediaMailSize" 
+              xs12
               class="primary--text narrow -mt-1">
               <span>hello@nutshell-lab.com</span>
             </v-flex>
@@ -63,9 +70,18 @@
                 xs12 
                 lg8 
                 light>
-                <v-layout row wrap class="hidden-md-and-up mt-4" align-center justify-center>
-                  <v-flex xs6 class="hidden-xs-only"><location/></v-flex>
-                  <v-flex sm6 shrink><user /></v-flex>
+                <v-layout 
+                  row 
+                  wrap 
+                  class="hidden-md-and-up mt-4" 
+                  align-center 
+                  justify-center>
+                  <v-flex 
+                    xs6 
+                    class="hidden-xs-only"><location/></v-flex>
+                  <v-flex 
+                    sm6 
+                    shrink><user /></v-flex>
                 </v-layout>
                 <form class="pt-5">
                   <v-layout 
@@ -255,17 +271,19 @@ export default {
   methods: {
     async submit() {
       const valid = await this.$validator.validateAll()
-      if(valid) {
+      if (valid) {
         try {
           ky.post('/api/mail/send', { json: this.mail }).json()
-          
-        } catch(e) {
+        } catch (e) {
           this.error()
         }
       }
     },
     error() {
-      this.$emit('error', 'Ooops, ça ne semble pas fonctionner, revenez plus tard...')
+      this.$emit(
+        'error',
+        'Ooops, ça ne semble pas fonctionner, revenez plus tard...'
+      )
     },
     clear() {
       this.name = ''
@@ -281,7 +299,7 @@ export default {
       if (cancelIfExpanded && this.expanded) {
         this.expanded = false
         this.enlarged = false
-      } else { 
+      } else {
         this.$emit('expanded')
         this.expanded = true
       }
@@ -292,13 +310,19 @@ export default {
       this.applyStyleVariables()
       this.clear()
     },
-    applyStyleVariables () {
+    applyStyleVariables() {
       const scope = document.getElementById('contact-container').style
       const width = this.expanded
-        ? this.isXs || this.isSm ? '50%' : '33%'
-        : this.enlarged 
+        ? this.isXs || this.isSm
+          ? '50%'
+          : '33%'
+        : this.enlarged
           ? '320px'
-          : this.isXs ? '150px' : this.isSm ? '200px' : '270px'
+          : this.isXs
+            ? '150px'
+            : this.isSm
+              ? '200px'
+              : '270px'
       scope.setProperty('--separator-width', width)
     }
   }

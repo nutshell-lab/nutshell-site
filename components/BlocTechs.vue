@@ -17,12 +17,13 @@
         xlink:href="/flash.svg"/>
     </svg>
     <v-flex 
+      :class="mediaSpacing"
       xs11
       sm10
       md9
       lg8
-      xl7
-      class="front" :class="mediaSpacing">
+      xl7 
+      class="front">
       <v-layout 
         column 
         wrap 
@@ -33,17 +34,31 @@
           shrink 
           class="pt-5">
           <template>
-            <div class="extra-black" :class="mediaTitleSize">WE LOVE <span class="hidden-sm-and-down">TECHNOLOGIES</span><span class="hidden-md-and-up">TECHS</span></div>
-            <div class="secondary--text regular" :class="mediaSize">
+            <div 
+              :class="mediaTitleSize" 
+              class="extra-black">WE LOVE <span class="hidden-sm-and-down">TECHNOLOGIES</span><span class="hidden-md-and-up">TECHS</span></div>
+            <div 
+              :class="mediaSize" 
+              class="secondary--text regular">
               Mais c'est <span class="primary--text bold">votre projet</span> qui déterminera la technologie que nous utiliserons pour le mener à bien !
             </div>
           </template>
         </v-flex>
       </v-layout>
-      <v-layout row wrap justify-center>
-        <v-flex xs12 lg12>
-          <v-card flat class="transparent" :class="mediaSubtitleSpacing">
-            <v-card-text class="pa-0 primary--text text-xs-center" :class="mediaSubtitleSize">
+      <v-layout 
+        row 
+        wrap 
+        justify-center>
+        <v-flex 
+          xs12 
+          lg12>
+          <v-card 
+            :class="mediaSubtitleSpacing" 
+            flat 
+            class="transparent">
+            <v-card-text 
+              :class="mediaSubtitleSize" 
+              class="pa-0 primary--text text-xs-center">
               Voici celles avec lesquelles nos derniers projets ont été réalisés
             </v-card-text>
           </v-card>
@@ -56,11 +71,13 @@
         align-center 
         class="pb-4">
         <v-flex 
+          v-for="tech in techs"
+          :key="tech.id" 
           shrink
-          v-for="tech in techs" 
-          :key="tech.id"
           class="mb-4 px-3">
-          <v-card flat class="transparent">
+          <v-card 
+            flat 
+            class="transparent">
             <v-card-text class="pa-0 text-xs-center">
               <v-img
                 :src="`/techs/${tech.image}`"

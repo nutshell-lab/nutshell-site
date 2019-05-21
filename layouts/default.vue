@@ -47,9 +47,8 @@ export default {
     })
   },
   watch: {
-    route (to) {
-      if (to === null || to === this.$route.path)
-        return this.reset()
+    route(to) {
+      if (to === null || to === this.$route.path) return this.reset()
       this.isLoading = true
       setTimeout(() => {
         this.$router.push(to)

@@ -62,7 +62,9 @@ export default {
       return this.divider && !this.dividerFill ? `bordered-${this.divider}` : ''
     },
     backgrounded() {
-      return this.background ? `background: repeat url("${this.background}");` : ''
+      return this.background
+        ? `background: repeat url("${this.background}");`
+        : ''
     }
   }
 }
