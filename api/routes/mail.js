@@ -1,14 +1,11 @@
 import { Router, json } from 'express'
-import { api } from '../../config/sendgrid'
-import sgMail from '@sendgrid/mail'
+import sendEmail from '../send-email'
 
-sgMail.setApiKey(api)
 const router = Router()
 
 router.use(json())
-
 router.post('/mail/send', async (req, res) => {
-  const result = await sgMail.send(req.body)
+  const result = await sendEmail(req.body)
   return res.json({ data: result[0] })
 })
 
