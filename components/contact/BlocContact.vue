@@ -164,7 +164,6 @@
 
 <script>
 import Vue from 'vue'
-import { to } from '~/config/sendgrid'
 import Location from './Location'
 import User from './User'
 import VeeValidate from 'vee-validate'
@@ -243,7 +242,7 @@ export default {
     },
     mail() {
       return {
-        to,
+        to: 'hello@nutshell-lab.com', //hotfix
         from: this.email,
         subject: 'Hello from our beautiful website !',
         text: `
