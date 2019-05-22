@@ -164,7 +164,7 @@ export default {
                 De l'idée au MVP
               </div>
               <div class="subheading regular">
-                Lorsque Louis et Augustin de chez Jitips sont venus nous trouver pour nous présenter leur concept d'achat social, nous avons tout de suite été emballés par le projet. Afin de concrétiser leur produit technologique, nous les avons accompagner dans la selection des "killer features" afin de réaliser leur MVP et leur permettre ainsi de valider leur marché.
+                Lorsque Louis et Augustin de chez <a href="https://jitips.com" target="_blank" class="secondary--text">Jitips</a> sont venus nous trouver pour nous présenter leur concept d'achat social, nous avons tout de suite été emballés par le projet. Afin de concrétiser leur produit technologique, nous les avons accompagner dans la selection des "killer features" afin de réaliser leur MVP et leur permettre ainsi de valider leur marché.
               </div>
               <div class="mt-4 headline secondary--text">
                 Une api, des modules...

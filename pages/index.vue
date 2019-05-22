@@ -62,8 +62,8 @@
     <bloc 
       :divider-percent="40" 
       :style="marginBottom" 
-      divider="primary" 
-      color="accent" 
+      divider="primary"
+      color="secondary"
       class="organic2 middle-site"><bloc-techs /></bloc>
     <bloc 
       color="" 
