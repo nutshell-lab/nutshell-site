@@ -263,9 +263,9 @@ export default {
     }
   },
   watch: {
-    expandTriggered: function(val) {
-      if (val) this.expand()
-    },
+    // expandTriggered: function(val) { hotfix
+    //   if (val) this.expand()
+    // },
     enlarged: function() {
       this.applyStyleVariables()
     }
