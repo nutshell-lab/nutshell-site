@@ -21,7 +21,7 @@
         class="transparent regular" 
         flat>
         <v-card-text class="primary--text pt-1">
-          Les valeurs de Nutshell s'orientent autour de l'expertise technique et de l'entrepreneuriat de ses membres, qui n'en sont qu'aux premiers pas de leur périple et ont la volonté d'acquérir toujours plus de compétences et de connaissances dans ces deux domaines.
+          Les valeurs de Nutshell s'orientent autour de l'expertise technique de ses membres et de leur goût pour l'entrepreneuriat. Encore aux premiers pas de son périple, l'équipe a la volonté d'acquérir toujours plus de compétences et de connaissances dans ces deux domaines.
         </v-card-text>
         <v-card-text 
           :class="mediaTitle" 
@@ -89,7 +89,7 @@ export default {
     return {
       values: [
         {
-          title: "L'expertise tech",
+          title: "L'expertise tech.",
           picto: 'expertise.svg',
           items: [
             "L'art du code",
@@ -99,7 +99,7 @@ export default {
           ]
         },
         {
-          title: 'La vision métier',
+          title: 'La vision métier.',
           picto: 'vision.svg',
           items: [
             'La connaissance du métier',
@@ -109,7 +109,7 @@ export default {
           ]
         },
         {
-          title: "L'encadrement",
+          title: "L'encadrement.",
           picto: 'help.svg',
           items: [
             'La réactivité',

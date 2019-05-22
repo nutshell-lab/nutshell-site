@@ -6,7 +6,7 @@
     <v-flex>
       <v-card flat class="transparent">
         <v-card-text class="pl-4 secondary-light--text title">
-          Que votre idée soit mature ou encore à l'état de bourgeon, tous nos projets commence par les meilleures d'entre elles ! 
+          Qu'elle soit mature ou bougeonnante, votre idée est l'origine d'un projet bien exécuté ! 
         </v-card-text>
       </v-card>
     </v-flex>
@@ -35,7 +35,7 @@
           <span 
             :class="mediaSize" 
             class="primary--text">
-            Phase initiale du projet, nous prenons le temps de l'étude et surtout de vous connaitre, vous, votre métier, et votre projet.
+            Phase initiale du projet, nous prenons le temps d'étudier votre idée et surtout de vous connaitre, vous, votre métier, et vos besoins.
           </span>
         </v-flex>
       </v-layout>
@@ -50,7 +50,7 @@
             :class="mediaSize" 
             class="primary--text">
             <span class="secondary-light--text bold">Objectifs&nbsp;:</span>
-            &nbsp;Découvrir et décrire ensemble les problèmatiques de votre projet et leurs pistes de résolutions.
+            &nbsp;Découvrir et décrire ensemble les problèmatiques de votre projet, leurs pistes de résolutions et les enjeux stratégiques qui en découlent.
           </span>
         </v-flex>
       </v-layout>
@@ -65,7 +65,7 @@
             :class="mediaSize" 
             class="primary--text">
             <span class="secondary-light--text bold">Livrable&nbsp;:</span>
-            &nbsp;À la fin de cette phase vous recevez nos spécifications détaillées.
+            &nbsp;À la fin d'une phase d'analyse technique, vous recevez les spécifications détaillées de notre solution.
           </span>
         </v-flex>
       </v-layout>
@@ -185,7 +185,7 @@
             :class="mediaSize" 
             class="primary--text">
             <span class="secondary-light--text bold">Livrable&nbsp;:</span>
-            &nbsp;Vous recevez nos conseils et les versions corrigées de votre applicatif.
+            &nbsp;Vous recevez nos conseils et les versions corrigées de votre applicatif tout au long de son cycle de vie.
           </span>
         </v-flex>
       </v-layout>

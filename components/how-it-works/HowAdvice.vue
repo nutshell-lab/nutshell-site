@@ -5,8 +5,10 @@
     <v-flex>
       <v-card flat class="transparent">
         <v-card-text class="pl-4 primary--text title">
-          La technologie est un domaine des moins trivial pour tout business qui veut pérenniser son activité dans le temps.
-          Que vous cherchiez à résoudre une problématique, à anticiper les transformations digitales à venir ou à stabiliser votre activité... Nous vous proposons de vous accompagner pour faire face à tous ces enjeux.
+          <p>La technologie est un domaine des moins trivial pour tout business qui veut pérenniser son activité dans le temps.
+          Le conseil est cependant un investissement toujours très conséquent qu'il soit réalisé par une agence ou par une embauche.
+          <p>C'est pourquoi chez Nutshell, nous proposons une offre de conseil tarifée à l'année : pas de compteur qui tourne, pas de surprise à la réception de la facture.
+          </p>
         </v-card-text>
       </v-card>
     </v-flex>
@@ -41,7 +43,7 @@
             :class="mediaSize" 
             class="primary--text">
             <span class="secondary-light--text bold">Objectif&nbsp;:</span>
-            &nbsp;Comprendre votre métier, vos ambitions et vos rêves
+            &nbsp;Comprendre votre métier, vos ambitions et vos rêves.
           </span>
         </v-flex>
       </v-layout>
@@ -53,7 +55,7 @@
             :class="mediaSize" 
             class="primary--text">
             <span class="secondary-light--text bold">Livrable&nbsp;:</span>
-            &nbsp;À la suite de cet audit, nous vous remettons notre avis objectif sur votre technologie.
+            &nbsp;À la suite de cet audit, nous vous remettons notre rapport sur votre système d'information.
           </span>
         </v-flex>
       </v-layout>
@@ -77,7 +79,7 @@
           <span 
             :class="mediaSize" 
             class="primary--text">
-            Pendant toute la durée du contrat nous sommes à votre disposition pour répondre à vos questions téchnologiques.
+            Pendant toute la durée du contrat nous sommes à votre disposition pour répondre à vos questions technologiques.
           </span>
         </v-flex>
       </v-layout>
@@ -124,7 +126,7 @@
           <span 
             :class="mediaSize" 
             class="primary--text">
-            À chaque atelier son objectif... Durant une journée nous analysons de concert avec vous les tenants et aboutissants d'une problématique technologique que nous avons décelée.
+            Nous réflechissons ensemble durant une demi-journée sur les tenants et aboutisants d'une problématique que nous avons décelée.
           </span>
         </v-flex>
       </v-layout>
@@ -148,7 +150,7 @@
             :class="mediaSize" 
             class="primary--text">
             <span class="secondary-light--text bold">Livrable&nbsp;:</span>
-            &nbsp;Chaque atelier fait l'objet d'un compte rendu de la journée de travail ainsi que de l'analyse de notre équipe d'expert. Si cela est judicieux, nous mettons en place un <span class="secondary--text">projet de réalisation</span> de ce plan d'actions.
+            &nbsp;Chaque atelier fait l'objet d'un compte rendu ainsi que de l'analyse de notre équipe d'expert. Si cela est judicieux, nous vous proposons la mise en place d'un <span class="secondary--text">projet</span> pour éxecuter un plan d'action préconisé.
           </span>
         </v-flex>
       </v-layout>

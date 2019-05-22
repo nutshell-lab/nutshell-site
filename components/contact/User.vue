@@ -70,10 +70,10 @@ export default {
         role: 'Développeur - Alchimiste',
         phone: '(+33)6 64 81 23 79',
         github: {
-          name: '#RaisonBlue',
+          name: '#Blue',
           url: 'https://github.com/RaisonBlue'
         },
-        quote: "Tant qu'il y a des lardons... c'est bon !"
+        quote: "Quoi ? Il fait déjà nuit !?"
       },
       {
         name: 'Victor',

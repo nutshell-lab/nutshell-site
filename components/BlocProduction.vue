@@ -19,7 +19,7 @@
         class="transparent pb-1" 
         flat>
         <v-card-text class="regular">
-          De la startup à la holding en passant par la PME, ils nous ont fait confiance pour réaliser leurs projets. Quelque soit leurs envergures, ils sont souvent d'une <span class="secondary--text bold">importance cruciale</span> pour nos clients... Retrouvez une selection de ces idées que nous avons concrétisées.
+          De la startup à la holding en passant par la PME, retrouvez une sélection des idées que nous avons concrétisées avec ceux qui nous ont fait confiance.
         </v-card-text>
       </v-card>
       <div 
@@ -164,13 +164,20 @@ export default {
                 De l'idée au MVP
               </div>
               <div class="subheading regular">
-                Jitips est venu nous trouver afin que nous concrétisions leur produit téchnologique. Nous les avons accompagner dans la selection des "killer feature" afin de réaliser leur MVP et leur permettre de valider leur marché.
+                Lorsque Louis et Augustin de chez Jitips sont venus nous trouver pour nous présenter leur concept d'achat social, nous avons tout de suite été emballés par le projet. Afin de concrétiser leur produit technologique, nous les avons accompagner dans la selection des "killer features" afin de réaliser leur MVP et leur permettre ainsi de valider leur marché.
               </div>
               <div class="mt-4 headline secondary--text">
                 Une api, des modules...
               </div>
               <div class="subheading regularreg">
-                Réalisation d'une api permettant aux e-commerçant de proposer un service de recommandation de leur produits afin de fidéliser leurs clients et d'en acquérir de nouveau.
+                <p>Après une analyse technique efficace et une étude du marché, nous avons implémenté le concept Jitips avec une API permettant aux e-commerçant de proposer un service de recommandation de leur produits. Le but ? Fidéliser leur clients et les encourager à acheter avec des proches grâce à un système de parrainage astucieux.
+                <p>En développant un module pour le CMS Prestashop, les partenaires e-commercant peuvent intégrer et configurer le concept Jitips chez eux en quelques minutes.
+              </div>
+              <div class="mt-4 headline secondary--text">
+                Un soutien renforcé pour les startup
+              </div>
+              <div class="subheading regularreg">
+                <p>En tant que porteur, votre projet vous tient à coeur. Et comme tout est encore à faire, nous faisons un effort pour être le plus réactif possible dans nos conseils.
               </div>
             `
         },
@@ -186,13 +193,13 @@ export default {
                 Du papier au numérique
               </div>
               <div class="subheading regular">
-                Pour <a href="https://actinuum.com" target="_blank" class="secondary--text">Actinuum</a>, nous sommes intervenu afin de digitaliser la plus grande partie de leurs processus de formations. Graĉe à l'ERP sur mesure que nous avons réalisé pour eux, ils ont pu abandonner leur gestion de formation par fichiers word/excel et augmenter considérablement le nombre de sessions de formation qu'ils pouvaient gérer.
+                Pour <a href="https://actinuum.com" target="_blank" class="secondary--text">Actinuum</a>, Nutshell est intervenue afin de digitaliser leurs processus de formations. Graĉe à l'ERP sur mesure que nous avons réalisé pour eux, ils ont pu abandonner leur gestion de formation par fichiers word/excel et augmenter considérablement le nombre de sessions de formation qu'ils pouvaient gérer.
               </div>
               <div class="mt-4 headline secondary--text pt-2">
                 Un ERP et un LMS
               </div>
               <div class="subheading regular">
-                Parmi toutes les fonctionnalités que propose cet outil permettant la gestion des sessions de formation comme : 
+                Voici quelques fonctionnalités parmi toutes celles proposées par cet outil de gestion des sessions de formation :
                 <ul>
                   <li>la reprographie</li>
                   <li>la gestion des intervenants</li>
@@ -237,8 +244,8 @@ export default {
                 Sécurisé et autonome
               </div>
               <div class="subheading regular">
-                Le candidat peut passer son examen sur son poste de travail ou chez lui sur son téléphone, c'est pourquoi des sécurités ont été mises en place afin d'éviter la triche...
-                <br />Si tout se passe bien les résultats de l'examen sont calculés de façon complétement automatisé et un rapport est présenté au candidat lui permettant de prendre connaissance de ses points forts et de ses lacunes.
+                Le candidat peut passer son examen sur son poste de travail ou bien chez lui sur son téléphone ou sa tablette, c'est pourquoi des sécurités ont été mises en place afin d'éviter la triche...
+                <br />Les résultats de l'examen sont calculés de façon complétement automatisée et un rapport est présenté au candidat lui permettant de prendre connaissance de ses points forts et de ses lacunes.
                 <br />
                 <br />Si la tentative s'avère infructueuse, le candidat se vera proposer un ensemble de formations spécifiquement choisies pour combler les manques et le préparer à sa prochaine tentative.
               </div>
