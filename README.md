@@ -14,7 +14,7 @@ $ yarn dev
 
 # build for production and launch server
 $ yarn build
-$ yarn start
+$ yarn start // Do not forget to set SENDGRID_APIKEY environment variable
 
 # generate static project
 $ yarn generate
