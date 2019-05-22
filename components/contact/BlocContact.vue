@@ -31,27 +31,34 @@
         <v-flex 
           :class="mediaSpacing"
           shrink>
-          <div 
-            class="clickable"
-            @click.stop="expand(true)"
-            @mouseover="enlarged = true" 
-            @mouseout="enlarged = false"
-          >
-            <v-flex 
-              id="contact" 
-              :class="mediaSize" 
-              xs12
-              class="text-uppercase secondary--text">
-              <span 
-                class="wide">Nous contacter</span>
-            </v-flex>
-            <v-flex 
-              :class="mediaMailSize" 
-              xs12
-              class="primary--text narrow -mt-1">
-              <span>hello@nutshell-lab.com</span>
-            </v-flex>
-          </div>
+            <a href="mailto:hello@nutshell-lab.com" style="text-decoration:none">
+              <!-- <div
+                HOTFIX bad middleware in SPA. Remove <a> above as well.
+                class="clickable"
+                @click.stop="expand(true)"
+                @mouseover="enlarged = true" 
+                @mouseout="enlarged = false"
+              > -->
+              <div 
+                class="clickable"
+                @mouseover="enlarged = true" 
+                @mouseout="enlarged = false"
+              >
+              <v-flex 
+                id="contact" 
+                :class="mediaSize" 
+                xs12
+                class="text-uppercase secondary--text">
+                <span 
+                  class="wide">Nous contacter</span>
+              </v-flex>
+              <v-flex 
+                :class="mediaMailSize" 
+                xs12
+                class="primary--text narrow -mt-1"><span>hello@nutshell-lab.com</span>
+              </v-flex>
+            </div>
+          </a>
           <v-expand-transition>
             <v-layout 
               v-show="expanded" 
