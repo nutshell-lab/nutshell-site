@@ -1,22 +1,23 @@
-# institutional
+<p align="center">
+  <img src="https://nutshell-lab.com/logo.svg" height="128">
+  <p align="center">The official nutshell website.<p>
+</p>
 
-> Official Nutshell website
-
-## Build Setup
+# Getting started
 
 ``` bash
 # install dependencies
 $ yarn install
 
 # serve with hot reload at localhost:3000
-$ yarn run dev
+$ yarn dev
 
 # build for production and launch server
-$ yarn run build
+$ yarn build
 $ yarn start
 
 # generate static project
-$ yarn run generate
+$ yarn generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
