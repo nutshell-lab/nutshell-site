@@ -84,7 +84,7 @@ export default {
           name: '#BlitzBanana',
           url: 'https://github.com/BlitzBanana'
         },
-        quote: "Hey ! Regardez ce que j'ai trouvé sur github discovery"
+        quote: "Hey, regardez ce que j'ai trouvé sur github !"
       }
     ]
   }),
