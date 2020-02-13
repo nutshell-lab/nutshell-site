@@ -21,28 +21,35 @@
 export default {
   props: {
     dividerFill: {
+      type: Boolean,
       default: () => true
     },
     dividerPercent: {
+      type: Number,
       default: () => null
     },
     dividerPx: {
+      type: Number,
       default: () => null
     },
     divider: {
+      type: [Boolean, String],
       default: () => false
     },
     height: {
+      type: String,
       default: () => 'wrap-content'
     },
     width: {
+      type: String,
       default: () => '100%'
     },
     color: {
+      type: String,
       default: () => 'primary'
     },
-    aspectRatio: {},
     background: {
+      type: [Boolean, String],
       default: () => false
     }
   },

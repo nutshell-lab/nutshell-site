@@ -34,13 +34,6 @@ export default {
       isLoading: true
     }
   },
-  created() {
-    if (process.browser) {
-      window.addEventListener('load', event => {
-        this.show(1500)
-      })
-    } else this.show(1500)
-  },
   computed: {
     ...mapGetters({
       route: 'router/route'
@@ -56,6 +49,13 @@ export default {
         this.show(500)
       }, 400)
     }
+  },
+  created() {
+    if (process.browser) {
+      window.addEventListener('load', event => {
+        this.show(1500)
+      })
+    } else this.show(1500)
   },
   methods: {
     ...mapActions({

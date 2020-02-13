@@ -4,7 +4,9 @@
     wrap 
     align-center>
     <v-flex>
-      <v-card flat class="transparent">
+      <v-card 
+        flat 
+        class="transparent">
         <v-card-text class="pl-4 secondary-light--text title">
           Qu'elle soit mature ou bourgeonnante, votre idée est l'origine d'un projet bien exécuté ! 
         </v-card-text>

@@ -73,7 +73,7 @@ export default {
           name: '#Blue',
           url: 'https://github.com/RaisonBlue'
         },
-        quote: "Quoi ? Il fait déjà nuit !?"
+        quote: 'Quoi ? Il fait déjà nuit !?'
       },
       {
         name: 'Victor',

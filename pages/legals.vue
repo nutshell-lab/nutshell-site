@@ -1112,11 +1112,6 @@ export default {
       }
     }
   },
-  methods: {
-    ...mapActions({
-      routerPush: 'router/push'
-    })
-  },
   computed: {
     mediaTitle() {
       switch (this.$vuetify.breakpoint.name) {
@@ -1156,6 +1151,11 @@ export default {
           return ''
       }
     }
+  },
+  methods: {
+    ...mapActions({
+      routerPush: 'router/push'
+    })
   }
 }
 </script>

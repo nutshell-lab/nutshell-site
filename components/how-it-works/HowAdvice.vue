@@ -1,13 +1,16 @@
 <template>
   <v-layout 
     row 
-    wrap justify-center>
+    wrap 
+    justify-center>
     <v-flex>
-      <v-card flat class="transparent">
+      <v-card 
+        flat 
+        class="transparent">
         <v-card-text class="pl-4 primary--text title">
           <p>La technologie est un domaine des moins trivial pour tout business qui veut pérenniser son activité dans le temps.
           Le conseil est cependant un investissement toujours très conséquent qu'il soit réalisé par une agence ou par une embauche.
-          <p>C'est pourquoi chez Nutshell, nous proposons une offre de conseil tarifée à l'année : pas de compteur qui tourne, pas de surprise à la réception de la facture.
+          </p><p>C'est pourquoi chez Nutshell, nous proposons une offre de conseil tarifée à l'année : pas de compteur qui tourne, pas de surprise à la réception de la facture.
           </p>
         </v-card-text>
       </v-card>

@@ -54,20 +54,6 @@ export default {
       ]
     }
   },
-  methods: {
-    ...mapActions({
-      routerPush: 'router/push'
-    }),
-    goTo(anchor) {
-      this.$vuetify.goTo(anchor, this.options)
-    },
-    openContact() {
-      this.goTo('#contact')
-      setTimeout(() => {
-        this.$emit('openContact')
-      }, this.options.duration)
-    }
-  },
   computed: {
     options() {
       return {
@@ -103,6 +89,20 @@ export default {
         default:
           return 150
       }
+    }
+  },
+  methods: {
+    ...mapActions({
+      routerPush: 'router/push'
+    }),
+    goTo(anchor) {
+      this.$vuetify.goTo(anchor, this.options)
+    },
+    openContact() {
+      this.goTo('#contact')
+      setTimeout(() => {
+        this.$emit('openContact')
+      }, this.options.duration)
     }
   }
 }

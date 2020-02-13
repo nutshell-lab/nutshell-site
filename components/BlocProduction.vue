@@ -255,35 +255,6 @@ export default {
       projectActivated: 0
     }
   },
-  mounted() {
-    this.projectActivated = getRandomInt(this.projects.length)
-  },
-  methods: {
-    ...mapActions({
-      routerPush: 'router/push'
-    }),
-    isOdd(val) {
-      return val % 2 === 1
-    },
-    visibleLeft(index) {
-      return this.isOdd(index)
-    },
-    visibleRight(index) {
-      return !this.isOdd(index)
-    },
-    isActive(index) {
-      return this.projectActivated === index
-    },
-    select(index) {
-      this.projectActivated = index
-    },
-    openContact() {
-      this.$vuetify.goTo('#contact', this.options)
-      setTimeout(() => {
-        this.$emit('openContact')
-      }, this.options.duration)
-    }
-  },
   computed: {
     options() {
       return {
@@ -332,6 +303,35 @@ export default {
         default:
           return 150
       }
+    }
+  },
+  mounted() {
+    this.projectActivated = getRandomInt(this.projects.length)
+  },
+  methods: {
+    ...mapActions({
+      routerPush: 'router/push'
+    }),
+    isOdd(val) {
+      return val % 2 === 1
+    },
+    visibleLeft(index) {
+      return this.isOdd(index)
+    },
+    visibleRight(index) {
+      return !this.isOdd(index)
+    },
+    isActive(index) {
+      return this.projectActivated === index
+    },
+    select(index) {
+      this.projectActivated = index
+    },
+    openContact() {
+      this.$vuetify.goTo('#contact', this.options)
+      setTimeout(() => {
+        this.$emit('openContact')
+      }, this.options.duration)
     }
   }
 }

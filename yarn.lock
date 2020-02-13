@@ -1100,6 +1100,13 @@
     webpack-node-externals "^1.7.2"
     webpackbar "^3.2.0"
 
+"@nuxtjs/google-analytics@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.npmjs.org/@nuxtjs/google-analytics/-/google-analytics-2.2.3.tgz#05496c5a33ce4dc4f9ef6838d432ed501a307778"
+  integrity sha512-dPwgsRNECtZqHdmnbJRFy3T4DDVakrpeN7vM1DwAIV1FXYlIBMKvdi8nt1v8TPU4IZdaoXrQodfeNMCooPo/7g==
+  dependencies:
+    vue-analytics "^5.22.1"
+
 "@nuxtjs/youch@^4.2.3":
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/@nuxtjs/youch/-/youch-4.2.3.tgz#36f8b22df5a0efaa81373109851e1d857aca6bed"
@@ -5216,6 +5223,11 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
+nuxt-facebook-pixel-module@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.npmjs.org/nuxt-facebook-pixel-module/-/nuxt-facebook-pixel-module-1.3.0.tgz#14643b82a257b9b79619978bb4ecab3db4995524"
+  integrity sha512-ooIg5s7d3D2oyjAWRNQFQGQA/7JvtnuRN/NQqxhft9z+bkQjw2VI1UaQ7ZwZMu2gJ+Z1Dm0WdRnyKKoknWiusg==
+
 nuxt@^2.6.3:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.6.3.tgz#4d9c26bade778f93c559cec354491a05b13a18ec"
@@ -7676,10 +7688,10 @@ vue-analytics-facebook-pixel@^1.0.1:
   resolved "https://registry.yarnpkg.com/vue-analytics-facebook-pixel/-/vue-analytics-facebook-pixel-1.0.1.tgz#a49cf55108792eedd1072b1a6123af95baa2f58a"
   integrity sha1-pJz1UQh5Lu3RBysaYSOvlbqi9Yo=
 
-vue-analytics@^5.16.4:
-  version "5.16.4"
-  resolved "https://registry.yarnpkg.com/vue-analytics/-/vue-analytics-5.16.4.tgz#7f9e197cbc64afac96884a05214b17efaf8e9d09"
-  integrity sha512-M67cUqpPeyk2rftrvlx2uU+BQ/C4E8SkF2Ct9LizOYUoTccZtCCJwhMJfQ3XL8xep6p3K8KYz58FzRWvx5zlPw==
+vue-analytics@^5.22.1:
+  version "5.22.1"
+  resolved "https://registry.npmjs.org/vue-analytics/-/vue-analytics-5.22.1.tgz#9d6b32da56daee1b9dfb23a267b50349a03f710f"
+  integrity sha512-HPKQMN7gfcUqS5SxoO0VxqLRRSPkG1H1FqglsHccz6BatBatNtm/Vyy8brApktZxNCfnAkrSVDpxg3/FNDeOgQ==
 
 vue-eslint-parser@^2.0.3:
   version "2.0.3"

@@ -40,18 +40,29 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-    '@/plugins/vuetify',
-    '@/plugins/analytics',
-    '@/plugins/analytics-facebook'
-  ],
+  plugins: ['@/plugins/vuetify'],
 
   mode: 'spa',
 
   /*
   ** Nuxt.js modules
   */
-  modules: [],
+  modules: [
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-139712399-1'
+      }
+    ],
+    [
+      'nuxt-facebook-pixel-module',
+      {
+        track: 'PageView',
+        pixelId: '838209666535750',
+        disabled: false
+      }
+    ]
+  ],
 
   /*
   ** Build configuration
