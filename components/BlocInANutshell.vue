@@ -43,7 +43,9 @@
               flat 
               class="transparent pt-4 hidden-sm-and-down pr-4">
               <v-card-text class="pa-0 white--text text-xs-justify">
-                Fondée par trois amis pendant leurs études en ingénieurie logicielle, Nutshell est la résultante d'un constat d'inefficacité du marché du projet informatique et a pour essentielle valeur d'axer ses oeuvres vers la qualité du produit. Pour ce faire, le projet est le centre de toutes les reflexions, même les plus fondamentales, jusque dans le choix de la technologie la plus adaptée.
+                Au travers de différents services de conseils et de conception logicielle, Nutshell propose à ses clients une équipe de projet dédiée. 
+                Les maîtres-mots de notre travail sont accompagnement et qualité : des valeurs indispensables pour nourrir la dimension technique de vos stratégies actuelles. Ainsi, en 
+                mettant l'analyse et l'ingénieurie en avant plutôt que la production massive et insensée de lignes de code, Nutshell vous promet un travail d'une qualité supérieure.
               </v-card-text>
             </v-card>
           </v-flex>
@@ -66,8 +68,9 @@
           flat 
           class="transparent pt-4 hidden-md-and-up">
           <v-card-text class="py-0 white--text text-xs-justify">
-            Fondée par trois amis pendant leurs études en ingénieurie logicielle, Nutshell est la résultante d'un constat d'inefficacité du marché du projet informatique et a pour essentielle valeur d'axer ses oeuvres vers la qualité du produit. Pour ce faire, le projet est le centre nerveux de toutes les reflexions, même les plus fondamentales, jusque dans le choix de la technologie la plus adaptée.
-          </v-card-text>
+            Au travers de différents services de conseils et de conception logicielle, Nutshell propose à ses clients une équipe de projet dédiée. 
+            Les maîtres-mots de notre travail sont accompagnement et qualité : des valeurs indispensables pour nourrir la dimension technique de vos stratégies actuelles. Ainsi, en 
+            mettant l'analyse et l'ingénieurie en avant plutôt que la production massive et insensée de lignes de code, Nutshell vous promet un travail d'une qualité supérieure.          </v-card-text>
         </v-card>
         <v-layout 
           class="px-3 pt-4 my-3 text-xs-center" 
