@@ -92,9 +92,9 @@
               <v-card 
                 flat 
                 class="transparent subheading extended">
-                <v-card-text class="pa-0">Nutshell House</v-card-text>
-                <v-card-text class="pa-0">292 Rue du Général de Gaulle</v-card-text>
-                <v-card-text class="pa-0">59370 Mons en Baroeul</v-card-text>
+                <v-card-text class="pa-0">Nutshell Lab</v-card-text>
+                <v-card-text class="pa-0">229 rue Solférino</v-card-text>
+                <v-card-text class="pa-0">59000 Lille</v-card-text>
                 <v-card-text class="pa-0">France</v-card-text>
                 <v-card-text class="pa-0 pt-3 hidden-xs-only">
                   <a
