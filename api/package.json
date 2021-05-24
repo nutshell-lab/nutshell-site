@@ -1,0 +1,13 @@
+{
+  "name": "nutshell",
+  "version": "1.0.0",
+  "description": "Official Nutshell website",
+  "author": "Nutshell",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.4",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0"
+  }
+}

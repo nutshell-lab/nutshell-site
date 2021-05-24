@@ -81,3 +81,4 @@ dist
 .idea
 
 .editorconfig
+sendgrid.env

@@ -43,6 +43,7 @@ module.exports = {
   plugins: ['@/plugins/vuetify'],
 
   mode: 'spa',
+  target: 'static',
 
   /*
   ** Nuxt.js modules
@@ -87,5 +88,5 @@ module.exports = {
   /*
   ** Nuxt.js middlewares
   */
-  serverMiddleware: ['~/api/index.js']
+  // serverMiddleware: ['~/api/index.js']
 }

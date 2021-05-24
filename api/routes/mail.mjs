@@ -1,10 +1,10 @@
 import { Router, json } from 'express'
-import sendEmail from '../send-email'
+import sendEmail from '../send-email.mjs'
 
 const router = Router()
 
 router.use(json())
-router.post('/mail/send', async (req, res) => {
+router.post('/api/mail/send', async (req, res) => {
   const result = await sendEmail(req.body)
   return res.json({ data: result[0] })
 })
