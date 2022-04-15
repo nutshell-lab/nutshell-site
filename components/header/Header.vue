@@ -48,7 +48,7 @@ export default {
           anchor: '#in-production'
         },
         {
-          name: 'philosopie',
+          name: 'philosophie',
           anchor: '#philosophy'
         }
       ]

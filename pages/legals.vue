@@ -154,7 +154,7 @@
         <v-flex 
           xs12 
           class="pl-4 article">
-          <span class="subheading"><span class="accent--text bold">Propriétaire&nbsp;:</span>&nbsp;SAS Nutshell Lab Capital social de 3000€  – 292 Rue du Général de Gaulle 59370 Mons en Baroeul</span>
+          <span class="subheading"><span class="accent--text bold">Propriétaire&nbsp;:</span>&nbsp;SAS Nutshell Lab Capital social de 3000€  – 229, rue Solférino 59000 Lille</span>
         </v-flex>
       </v-layout>
       <v-layout class="mt-1">
@@ -664,7 +664,7 @@
               class="link clickable relative" 
               @click="routerPush('/')">Nutshell Lab</div> par écrit à l’adresse suivante
             <div class="ml-4">Nutshell Lab – DPO, Victor Rebiard--Crépin</div>
-            <div class="ml-4">292 Rue du Général de Gaulle 59370 Mons en baroeul</div>
+            <div class="ml-4">229, rue Solférino 59000 Lille</div>
           </span>
         </v-flex>
       </v-layout>

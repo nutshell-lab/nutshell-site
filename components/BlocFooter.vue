@@ -66,7 +66,7 @@
             </v-card-text><v-card-text class="px-0 pb-1 pt-0 text-uppercase">
               <span 
                 class="menu relative clickable" 
-                @click="$vuetify.goTo('#philosophy', options)">philosopie</span>
+                @click="$vuetify.goTo('#philosophy', options)">philosophie</span>
             </v-card-text>
           </v-card>
         </v-flex>
