@@ -17,6 +17,11 @@ module.exports = {
         rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
+      },
+      {
+        'data-domain': 'nutshell-lab.com',
+        src: 'https://plausible.nutshell-lab.com/js/plausible.js',
+        defer: true
       }
     ]
     // script: [{ src: '/js/crisp.js' }]
