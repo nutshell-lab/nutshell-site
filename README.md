@@ -1,23 +1,63 @@
-<p align="center">
-  <img src="https://nutshell-lab.com/logo.svg" height="128">
-  <p align="center">The official nutshell website.<p>
-</p>
+# Nuxt 3 Minimal Starter
 
-# Getting started
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-``` bash
-# install dependencies
-$ yarn install
+## Setup
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+Make sure to install the dependencies:
 
-# build for production and launch server
-$ yarn build
-$ yarn start // Do not forget to set SENDGRID_APIKEY environment variable
+```bash
+# npm
+npm install
 
-# generate static project
-$ yarn generate
+# pnpm
+pnpm install
+
+# yarn
+yarn install
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

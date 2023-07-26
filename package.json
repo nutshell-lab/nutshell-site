@@ -1,42 +1,17 @@
 {
-  "name": "nutshell",
-  "version": "1.0.0",
-  "description": "Official Nutshell website",
-  "author": "Nutshell",
+  "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "dev": "PORT=3000 nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
-  },
-  "dependencies": {
-    "@nuxtjs/google-analytics": "^2.2.3",
-    "@sendgrid/mail": "^6.4.0",
-    "aos": "^2.3.4",
-    "helmet": "^4.6.0",
-    "ky": "^0.11.0",
-    "lodash": "^4.17.11",
-    "nuxt": "^2.14.0",
-    "nuxt-facebook-pixel-module": "^1.3.0",
-    "vee-validate": "^2.2.4",
-    "vue-analytics-facebook-pixel": "^1.0.1",
-    "vue-loading-overlay": "^3.2.0",
-    "vue-router": "^3.0.6",
-    "vue-typer": "^1.2.0",
-    "vuetify": "^1.5.1"
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "eslint": "^5.0.1",
-    "eslint-config-prettier": "^3.1.0",
-    "eslint-loader": "^2.0.0",
-    "eslint-plugin-prettier": "2.6.2",
-    "eslint-plugin-vue": "^4.0.0",
-    "prettier": "1.14.3",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2"
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/plausible": "^0.2.1",
+    "@types/node": "^18.17.0",
+    "nuxt": "^3.6.5"
   }
 }
