@@ -1,8 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/plausible'],
+  modules: ['@nuxtjs/plausible', '@nuxtjs/tailwindcss'],
   plausible: {
-    domain: 'plausible.nutshell-lab.com'
+    domain: 'nutshell-lab.com',
+    apiHost: 'https://plausible.nutshell-lab.com'
   }
 })
