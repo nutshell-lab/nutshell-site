@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Silka';
+	font-weight: 400;
+	src: local('Silka Regular'), url('~/assets/fonts/Silka/silka-regular-webfont.ttf') format('truetype');
+}
+
+.vertical-text {
+	writing-mode: vertical-lr;
+}

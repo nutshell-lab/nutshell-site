@@ -5,7 +5,8 @@ const props = defineProps<{
 </script>
 
 <template>
-	<div :class="`text-${color} font-black uppercase font-silka text-4xl`">
+	<div :class="`text-${color} font-inter text-xs`">
 		<slot />
   </div>
 </template>
+

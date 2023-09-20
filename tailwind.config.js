@@ -1,15 +1,27 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        'cinnabar': '#E0492B',
-        'isabelline': '#EDEBE8',
-        'night': '#161616',
-        'onyx': '#3C3C3F',
-        'raisin-black': '#2A2A2D',
-        'lime': '#C2FF2E',
-      }
-    }
-  }
+	content: [
+		"./components/**/*.{js,vue,ts}",
+		"./layouts/**/*.vue",
+		"./pages/**/*.vue",
+		"./plugins/**/*.{js,ts}",
+		"./app.vue",
+	],
+	theme: {
+		colors: {
+			current: 'currentColor',
+			cinnabar: '#E0492B',
+			alabaster: '#EDEBE8',
+			'chinese-black': '#161616',
+			onyx: '#3C3C3F',
+			'raisin-black': '#2A2A2D',
+			lime: '#DBF447'
+		},
+		fontFamily: {
+			silka: ['Silka', 'Roboto'],
+			inter: ['Inter', 'Roboto'],
+		},
+		extend: {},
+	},
+	plugins: [],
 }

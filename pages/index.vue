@@ -1,14 +1,32 @@
+<script lang="ts" setup>
+import NuLogo from '~/components/NuLogo.vue'
+import NuButton from '~/components/NuButton.vue'
+import NuTitle from '~/components/NuTitle.vue'
+import NuCaption from '~/components/NuCaption.vue'
+import NuHeroSection from '~/components/NuHeroSection.vue'
+import NuSectionBreak from '~/components/NuSectionBreak.vue'
+import NuSplash from '~/components/NuSplash.vue'
+</script>
+
+
 <template>
-  <div class="w-full h-full flex flex-col bg-zinc-950">
-    <div class="w-full h-16 flex justify-end px-10 py-2">
-      <BurgerIcon class="block fill-white" :width="48" :height="48" />
-    </div>
-    <div class="w-full grow flex items-center justify-center">
-      <Logo :width="300" :height="100" />
-    </div>
-    <div class="w-full flex flex-col items-center justify-center gap-4 my-8">
-      <span class="text-white text-lg text-center">Un studio de développement logiciel sur mesure.</span>
-      <img class="block animate-bounce" src="/arrow.svg" width="48" height="48" />
-    </div>
-  </div>
+	<div class="">
+		<nu-splash />
+		<div class="mx-2">
+			<nu-hero-section
+				title="Comprendre le métier et le valoriser avec la tech."
+				cta="valorisons le votre"
+				>
+				<template #caption>
+					Un studio de <b class="font-bold">développement sur-mesure</b> à votre service.
+				</template>
+				<template #text>
+					Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment  pertinentes.
+				</template>
+			</nu-hero-section>
+			<nu-section-break>
+				Ils ont crée de la valeur.
+			</nu-section-break>
+		</div>
+	</div>
 </template>
