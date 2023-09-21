@@ -2,8 +2,8 @@
 defineProps({
   width: { type: Number, default: 150 },
   height: { type: Number, default: 50 },
-  primaryColor: { type: String, default: '#fff' },
-  secondaryColor: { type: String, default: '#f45353' },
+  primaryColor: { type: String, default: "#fff" },
+  secondaryColor: { type: String, default: "#f45353" },
 })
 </script>
 

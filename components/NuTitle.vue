@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-const props = defineProps<{
-	color: {type: String, default: 'chinese-black'},
+defineProps<{
+  color: { type: String; default: "chinese-black" }
 }>()
 </script>
 
