@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+	import NuTitle from '~/components/NuTitle.vue'
+
 	export interface Props {
 		breaks: string[]
 	}
@@ -14,8 +16,8 @@
 <template>
 	<div>
 		<hr v-if="breakTop" class="text-chinese-black border-2" />
-		<div class="mx-8 py-48 text-center font-bold text-silka text-5xl">
-			<slot />
+		<div class="mx-8 py-48 text-center text-5xl">
+			<nu-title><slot /></nu-title>
 		</div>
 		<hr v-if="breakBottom" class="text-chinese-black border-2" />
 	</div>

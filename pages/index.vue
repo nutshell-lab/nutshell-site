@@ -74,9 +74,7 @@ const services = [
 				</template>
 			</nu-hero-section>
 
-			<nu-section-break>
-				Ils ont crée de la valeur.
-			</nu-section-break>
+			<nu-section-break>Ils ont crée de la valeur.</nu-section-break>
 
 			<nu-project-preview v-for="(p, i) in projects.slice(0, 2)" :line-break="i != 1" :title="p.title" :highlight="p.highlight" :picture="p.picture" :description="p.description"></nu-project-preview>
 
