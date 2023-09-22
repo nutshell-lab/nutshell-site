@@ -21,6 +21,23 @@ module.exports = {
 			silka: ['Silka', 'Roboto'],
 			inter: ['Inter', 'Roboto'],
 		},
+		// Force below class to be loaded during build phase so that they can be
+		// used dynamically (nu-logo).
+		safelist: [
+			'text-lime',
+			'text-cinnabar',
+			'text-chinese-black',
+			'text-onyx',
+			'text-raisin-black',
+			'text-lime',
+			'bg-lime',
+			'bg-cinnabar',
+			'bg-chinese-black',
+			'bg-onyx',
+			'bg-raisin-black',
+			'bg-lime',
+		],
+
 		extend: {},
 	},
 	plugins: [],
