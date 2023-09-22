@@ -15,7 +15,8 @@ module.exports = {
 			'chinese-black': '#161616',
 			onyx: '#3C3C3F',
 			'raisin-black': '#2A2A2D',
-			lime: '#DBF447'
+			lime: '#DBF447',
+			white: '#FFF'
 		},
 		fontFamily: {
 			silka: ['Silka', 'Roboto'],

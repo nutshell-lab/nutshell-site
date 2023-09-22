@@ -7,9 +7,6 @@
 		colors: string[]
 		height: number
 		width: number
-		dim_s: number[]
-		dim_t: number[]
-		dim_su: number[]
 	}
 
 	const props = withDefaults(defineProps<Props>(), {

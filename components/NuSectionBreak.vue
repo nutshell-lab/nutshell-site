@@ -1,10 +1,22 @@
 <script lang="ts" setup>
+	export interface Props {
+		breaks: string[]
+	}
+
+	const props = withDefaults(defineProps<Props>(), {
+		breaks: ['top', 'bottom']
+	})
+
+	const breakTop = props.breaks.includes('top')
+	const breakBottom = props.breaks.includes('bottom')
 </script>
 
 <template>
-	<hr class="border-2" />
-		<div class="mx-8 my-48 text-center font-bold text-silka text-5xl">
-			Ils ont crée de la valeur.
+	<div>
+		<hr v-if="breakTop" class="text-chinese-black border-2" />
+		<div class="mx-8 py-48 text-center font-bold text-silka text-5xl">
+			<slot />
 		</div>
-	<hr class="border-2" />
+		<hr v-if="breakBottom" class="text-chinese-black border-2" />
+	</div>
 </template>
