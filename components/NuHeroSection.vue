@@ -12,8 +12,8 @@ defineProps({
 </script>
 
 <template>
-	<div class="h-screen px-4 py-20 flex flex-col">
-		<nu-caption class="h-1/3">
+	<div class="h-screen px-4 py-10 flex flex-col">
+		<nu-caption class="h-1/4">
 			<slot name="caption">
 				{{ caption }}
 			</slot>

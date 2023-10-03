@@ -15,10 +15,10 @@
 
 <template>
 	<div>
-		<hr v-if="breakTop" class="text-chinese-black border-2" />
+		<hr v-if="breakTop" class="text-chinese-black border-1" />
 		<div class="mx-8 py-48 text-center text-5xl">
 			<nu-title><slot /></nu-title>
 		</div>
-		<hr v-if="breakBottom" class="text-chinese-black border-2" />
+		<hr v-if="breakBottom" class="text-chinese-black border-1" />
 	</div>
 </template>

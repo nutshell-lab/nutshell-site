@@ -61,7 +61,7 @@ const services = [
 					<img src="arrow.svg" class="mx-auto animate-bounce"/>
 				</div>
 		</div>
-		<div class="mx-2">
+		<div class="mx-4">
 			<nu-hero-section
 				title="Comprendre le métier et le valoriser avec la tech."
 				cta="valorisons le votre"
@@ -94,7 +94,7 @@ const services = [
 			</div>
 			</nu-section-break>
 
-			<div class="bg-white py-20">
+			<div class="py-20">
 				<div class="h-full flex flex-col justify-between py-20">
 					<nu-title class="px-10 pb-40">Si vous en avez besoin, on peut sûrement vous le fabriquer.</nu-title>
 					<div class="bg-onyx w-full h-80" />
