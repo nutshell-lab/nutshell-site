@@ -1,24 +1,22 @@
 <script lang="ts" setup>
-	import NuTitle from '~/components/NuTitle.vue'
+	import NuLogoChip from '~/components/NuLogoChip.vue'
 
-	export interface Props {
-		breaks: string[]
-	}
-
-	const props = withDefaults(defineProps<Props>(), {
-		breaks: ['top', 'bottom']
+	defineProps({
+		variant: {type: String, default: "dark"}
 	})
-
-	const breakTop = props.breaks.includes('top')
-	const breakBottom = props.breaks.includes('bottom')
 </script>
 
 <template>
-	<div>
-		<hr v-if="breakTop" class="text-chinese-black border-1" />
-		<div class="mx-8 py-48 text-center text-5xl">
-			<nu-title><slot /></nu-title>
+	<div v-if="variant == 'light'">
+		<div class="flex flex-col items-center text-center font-black h-[504px] text-[40px] justify-center uppercase gap-6">
+			<slot />
 		</div>
-		<hr v-if="breakBottom" class="text-chinese-black border-1" />
+	</div>
+	<div v-else>
+		<div class="flex flex-col font-black h-[504px] text-[40px] justify-center gap-6">
+			<nu-logo-chip class="text-cinnabar"/>
+			<slot />
+		</div>
 	</div>
 </template>
+

@@ -8,26 +8,11 @@ defineProps({
 </script>
 
 <template>
-  <svg
-    class="cursor-pointer"
-    :width="width" :height="height"
-    version="1.1"
-    viewBox="0 0 8.4667 8.4667"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <g transform="translate(0 .64253)">
-      <rect
-        transform="matrix(.99874 -.05023 .054529 .99851 0 0)"
-        x="-.07982" y="3.15"
-        width="8.092" height="3.6819"
-        :fill="secondaryColor"
-        stroke-width=".29418"
-      />
-      <g :fill="primaryColor" stroke-width=".26458">
-        <rect x=".91666" y="3.2022" width="6.6333" height=".7772"/>
-        <rect x=".91666" y="1.6986" width="6.6333" height=".7772"/>
-        <rect x=".91666" y="4.7058" width="6.6333" height=".7772"/>
-      </g>
-    </g>
-  </svg>
+	<div class="cursor-pointer">
+		<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M0 11.6667H31.6667V10H0V11.6667Z" fill="currentColor"/>
+			<path d="M31.6667 30.9997H0V29.333H31.6667V30.9997Z" fill="currentColor"/>
+			<path d="M8.33325 21.3332V19.6665H39.9999V21.3332H8.33325Z" fill="currentColor"/>
+		</svg>
+	</div>
 </template>

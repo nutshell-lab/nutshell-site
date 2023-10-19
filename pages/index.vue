@@ -8,6 +8,9 @@ import NuSectionBreak from '~/components/NuSectionBreak.vue'
 import NuSplash from '~/components/NuSplash.vue'
 import NuProjectPreview from '~/components/NuProjectPreview.vue'
 import NuFooter from '~/components/NuFooter.vue'
+import NuTopBar from '~/components/NuTopBar.vue'
+import NuArrow from '~/components/NuArrow.vue'
+import NuSwipper from '~/components/NuSwipper.vue'
 
 const projects = [
 	{
@@ -16,7 +19,7 @@ const projects = [
 		picture: '',
 		description: 'Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.'
 	},
-	{
+	{ 
 		title: 'Brokers',
 		highlight: '131Md€',
 		picture: '',
@@ -52,54 +55,57 @@ const services = [
 
 <template>
 	<div class="">
+		<nav class="w-full fixed z-30">
+			<nu-top-bar>
+				<nu-logo :symbol="true" :text="true" :width="162" :colors="['cinnabar', 'alabaster', 'alabaster']" />
+			</nu-top-bar>
+		</nav>
 		<div class="relative">
-			<nu-splash class="bg-chinese-black" />
-				<div class="absolute text-alabaster bottom-4 w-full columns-1 text-center">
-					<nu-caption class="mx-auto py-4">
-						Un studio de <b class="font-bold">développement sur-mesure</b> à votre service.
-					</nu-caption>
-					<img src="arrow.svg" class="mx-auto animate-bounce"/>
+			<nu-splash class="bg-chinese-black">
+				<div class="text-center nu-stroke-title font-black uppercase">
+					Un studio de développement sur-mesure à votre service.
 				</div>
+			</nu-splash>
+			<div class="absolute text-alabaster bottom-4 w-full columns-1 text-center">
+				<nu-arrow />
+			</div>
 		</div>
-		<div class="mx-4">
+		<div class="wrapper">
 			<nu-hero-section
 				title="Comprendre le métier et le valoriser avec la tech."
 				cta="valorisons le votre"
 				>
 				<template #caption>
-					Un studio de <b class="font-bold">développement sur-mesure</b> à votre service.
+					<div class="w-2/3 text-sm">
+						Un studio de <b class="font-black">développement sur-mesure</b> à votre service.
+					</div>
 				</template>
 				<template #text>
 					Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment  pertinentes.
 				</template>
 			</nu-hero-section>
 
-			<nu-section-break>Ils ont crée de la valeur.</nu-section-break>
-
-			<nu-project-preview v-for="(p, i) in projects.slice(0, 2)" :line-break="i != 1" :title="p.title" :highlight="p.highlight" :picture="p.picture" :description="p.description"></nu-project-preview>
-
-			<nu-section-break>
-			<div class="flex flex-col gap-28">
-				<span class="">Apprenez-nous votre métier</span>
-				<nu-button>Créons de la valeur</nu-button>
-			</div>
-			</nu-section-break>
-
-			<nu-project-preview v-for="(p, i) in projects.slice(2, 4)" :line-break="i != 1" :title="p.title" :highlight="p.highlight" :picture="p.picture" :description="p.description"></nu-project-preview>
-
-			<nu-section-break>
-			<div class="flex flex-col gap-28">
-				<span class="">Découvez nos autres projets.</span>
-				<nu-button>On adore en parler</nu-button>
-			</div>
-			</nu-section-break>
-
-			<div class="py-20">
-				<div class="h-full flex flex-col justify-between py-20">
-					<nu-title class="px-10 pb-40">Si vous en avez besoin, on peut sûrement vous le fabriquer.</nu-title>
-					<div class="bg-onyx w-full h-80" />
+			<div class="bg-chinese-black text-alabaster">
+				<nu-title class="py-16">Ils ont crée<br/>de la valeur.</nu-title>
+				<div class="flex flex-col gap-6">
+					<nu-project-preview v-for="(p, i) in projects.slice(0, 4)" :line-break="i != 1" :title="p.title" :highlight="p.highlight" :picture="p.picture" :description="p.description"></nu-project-preview>
 				</div>
-				<div class="w-full flex flex-col gap-12">
+				<div class="uppercase my-8 flex items-center gap-4 font-normal justify-center">Découvrez nos autres projets<nu-arrow :right="true" /></div>
+			</div>
+
+			<nu-section-break>
+				<nu-title>Apprenez-nous votre métier</nu-title>
+				<nu-button>Créons de la valeur</nu-button>
+			</nu-section-break>
+
+			<div class="py-20 bg-chinese-black text-alabaster">
+				<div class="h-full flex flex-col justify-between py-20 gap-16">
+					<nu-title>Si vous en avez besoin, on peut sûrement vous le fabriquer.</nu-title>
+					<nu-swipper />
+				</div>
+				<div class="w-full flex flex-col gap-12 pb-32">
+					<hr />
+					<nu-title class="py-10">Lorem ipsum dolor</nu-title>
 					<div v-for="service in services" class="flex flex-col">
 						<hr />
 						<div>{{service}}</div>
@@ -107,13 +113,24 @@ const services = [
 				</div>
 			</div>
 
-		</div>
-		<nu-section-break class="bg-chinese-black text-alabaster" :breaks="['top']">
-			<div class="flex flex-col gap-28">
+			<nu-section-break variant="light">
 				<span class="">Commençons à discuter.</span>
-				<nu-button>Par chat</nu-button>
-			</div>
-		</nu-section-break>
+				<nu-button class="border-cinnabar text-cinnabar">Par chat</nu-button>
+			</nu-section-break>
+		</div>
 		<nu-footer />
 	</div>
 </template>
+
+<style>
+.nu-stroke-title {
+	-webkit-text-stroke: 2px #edebe8;
+	text-stroke: 2px #edebe8;
+	font-size: 40px;
+	line-height: 50px;
+}
+
+.wrapper > * {
+	padding: 24px;
+}
+</style>
