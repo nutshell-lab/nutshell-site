@@ -4,11 +4,114 @@
 @tailwind components;
 @tailwind utilities;
 
+/* SILKA */
+
+/* thin */
+@font-face {
+	font-family: 'Silka';
+	font-weight: 100;
+	src: local('Silka Thin'), url('~/assets/fonts/Silka/silka-thin-webfont.ttf') format('truetype');
+}
+/* extra-light */
+@font-face {
+	font-family: 'Silka';
+	font-weight: 200;
+	src: local('Silka ExtraLight'), url('~/assets/fonts/Silka/silka-extralight-webfont.ttf') format('truetype');
+}
+/* light */
+@font-face {
+	font-family: 'Silka';
+	font-weight: 300;
+	src: local('Silka Light'), url('~/assets/fonts/Silka/silka-light-webfont.ttf') format('truetype');
+}
+/* normal */
 @font-face {
 	font-family: 'Silka';
 	font-weight: 400;
 	src: local('Silka Regular'), url('~/assets/fonts/Silka/silka-regular-webfont.ttf') format('truetype');
 }
+/* medium */
+@font-face {
+	font-family: 'Silka';
+	font-weight: 500;
+	src: local('Silka Medium'), url('~/assets/fonts/Silka/silka-medium-webfont.ttf') format('truetype');
+}
+/* semibold */
+@font-face {
+	font-family: 'Silka';
+	font-weight: 600;
+	src: local('Silka SemiBold'), url('~/assets/fonts/Silka/silka-semibold-webfont.ttf') format('truetype');
+}
+/* bold */
+@font-face {
+	font-family: 'Silka';
+	font-weight: 700;
+	src: local('Silka Bold'), url('~/assets/fonts/Silka/silka-bold-webfont.ttf') format('truetype');
+}
+/* black */
+@font-face {
+	font-family: 'Silka';
+	font-weight: 800 900;
+	src: local('Silka Black'), url('~/assets/fonts/Silka/silka-black-webfont.ttf') format('truetype');
+}
+
+/* Inter */
+
+/* thin */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 100;
+	src: local('Inter Thin'), url('~/assets/fonts/Inter/Inter-Thin.ttf') format('truetype');
+}
+/* extra-light */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 200;
+	src: local('Inter ExtraLight'), url('~/assets/fonts/Inter/Inter-Extralight.ttf') format('truetype');
+}
+/* light */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 300;
+	src: local('Inter Light'), url('~/assets/fonts/Inter/Inter-Light.ttf') format('truetype');
+}
+/* normal */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 400;
+	src: local('Inter Regular'), url('~/assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
+}
+/* medium */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 500;
+	src: local('Inter Medium'), url('~/assets/fonts/Inter/Inter-Medium.ttf') format('truetype');
+}
+/* semibold */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 600;
+	src: local('Inter SemiBold'), url('~/assets/fonts/Inter/Inter-Semibold.ttf') format('truetype');
+}
+/* bold */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 700;
+	src: local('Inter Bold'), url('~/assets/fonts/Inter/Inter-Bold.ttf') format('truetype');
+}
+/* extrabold */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 700;
+	src: local('Inter ExtraBold'), url('~/assets/fonts/Inter/Inter-Extrabold.ttf') format('truetype');
+}
+/* black */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 800 900;
+	src: local('Inter Black'), url('~/assets/fonts/Inter/Inter-Black.ttf') format('truetype');
+}
+
 
 .vertical-text {
 	writing-mode: vertical-lr;

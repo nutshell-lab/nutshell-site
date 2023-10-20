@@ -142,6 +142,37 @@ import NuSectionBreak from '~/components/NuSectionBreak.vue'
 						</div>
 					</div>
 				</div>
+
+				<div>
+					<div class="flex flex-col">
+						<div class="font-silka bg-chinese-black text-alabaster flex flex-col gap-8 py-20 px-20">
+							<span>Silka</span>
+							<div class="flex flex-col">
+								<span class="font-thin">This is thin</span>
+								<span class="font-extralight">This is extralight</span>
+								<span class="font-light">This is light</span>
+								<span class="font-normal">This is normal</span>
+								<span class="font-medium">This is medium</span>
+								<span class="font-semibold">This is semibold</span>
+								<span class="font-bold">This is bold</span>
+								<span class="font-black">This is black</span>
+							</div>
+						</div>
+					</div>
+					<div class="font-inter bg-cinnabar text-alabaster flex flex-col gap-8 py-20 px-20">
+						<span>Inter</span>
+						<div class="flex flex-col">
+							<span class="font-thin">This is thin</span>
+							<span class="font-extralight">This is extralight</span>
+							<span class="font-light">This is light</span>
+							<span class="font-normal">This is normal</span>
+							<span class="font-medium">This is medium</span>
+							<span class="font-semibold">This is semibold</span>
+							<span class="font-bold">This is bold</span>
+							<span class="font-black">This is black</span>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
