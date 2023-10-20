@@ -4,6 +4,7 @@ import NuButton from '~/components/NuButton.vue'
 import NuTitle from '~/components/NuTitle.vue'
 import NuCaption from '~/components/NuCaption.vue'
 import NuHeroSection from '~/components/NuHeroSection.vue'
+import NuTypography from '~/components/NuTypography.vue'
 import NuSectionBreak from '~/components/NuSectionBreak.vue'
 </script>
 
@@ -170,6 +171,42 @@ import NuSectionBreak from '~/components/NuSectionBreak.vue'
 							<span class="font-semibold">This is semibold</span>
 							<span class="font-bold">This is bold</span>
 							<span class="font-black">This is black</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="border px-8 py-5">
+					<div class="my-10">
+						<nu-typography type="title">Typographic system</nu-typography>
+					</div>
+					<div class="grid grid-cols-2">
+						<nu-typography>hero-title:</nu-typography>
+						<div class="bg-chinese-black">
+							<nu-typography type="hero-title">Hero Title</nu-typography>
+						</div>
+						<nu-typography>hero-title-dark:</nu-typography>
+						<div>
+							<nu-typography type="hero-title-dark">Hero Title</nu-typography>
+						</div>
+						<nu-typography>title:</nu-typography>
+						<div>
+							<nu-typography type="title">This is a Title</nu-typography>
+						</div>
+						<nu-typography>regular:</nu-typography>
+						<div>
+							<nu-typography type="regular">This is a regular text</nu-typography>
+						</div>
+						<nu-typography>text-link:</nu-typography>
+						<div>
+							<nu-typography type="text-link">click on this link</nu-typography>
+						</div>
+						<nu-typography>caption:</nu-typography>
+						<div>
+							<nu-typography type="caption">this is a caption</nu-typography>
+						</div>
+						<nu-typography>mention:</nu-typography>
+						<div>
+							<nu-typography type="mention">this is a mention</nu-typography>
 						</div>
 					</div>
 				</div>

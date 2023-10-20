@@ -3,7 +3,7 @@
 </script>
 
 <template>
-	<div class="border hover:text-cinnabar cursor-pointer font-medium text-sm w-fit px-8 py-4 uppercase text-center" >
+	<div class="font-inter border hover:text-cinnabar cursor-pointer text-sm w-fit px-6 py-4 uppercase text-center" >
 		<slot />
 	</div>
 </template>

@@ -11,31 +11,37 @@ import NuFooter from '~/components/NuFooter.vue'
 import NuTopBar from '~/components/NuTopBar.vue'
 import NuArrow from '~/components/NuArrow.vue'
 import NuSwipper from '~/components/NuSwipper.vue'
+import NuTypography from '~/components/NuTypography.vue'
+import NuLink from '~/components/NuLink.vue'
 
 const projects = [
 	{
 		title: 'Actinuum',
 		highlight: '+2M€',
 		picture: '',
-		description: 'Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.'
+		description: 'Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.',
+		link: "#",
 	},
 	{ 
 		title: 'Brokers',
 		highlight: '131Md€',
 		picture: '',
-		description: 'Les marchés financiers tradent chaque jours des centaines de milliards d’actifs. En analysant les chats de ses traders, notre solution prépare des trades pertinents en temps réel.'
+		description: 'Les marchés financiers tradent chaque jours des centaines de milliards d’actifs. En analysant les chats de ses traders, notre solution prépare des trades pertinents en temps réel.',
+		link: "#",
 	},
 	{
 		title: 'Atlas',
 		highlight: '300k',
 		picture: '',
-		description: 'L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié 300 000 apprenants.'
+		description: 'L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié 300 000 apprenants.',
+		link: "#",
 	},
 	{
 		title: 'Constructys',
 		highlight: '180',
 		picture: '',
-		description: 'Pour préparer les JO 2024, il faut augmenter massivement la masse salariale de la branche BTP. Pour se faire Constructys nous fait mettre en place une solution de reconversion de métier à 180 métiers cibles.'
+		description: 'Pour préparer les JO 2024, il faut augmenter massivement la masse salariale de la branche BTP. Pour se faire Constructys nous fait mettre en place une solution de reconversion de métier à 180 métiers cibles.',
+		link: "#",
 	}
 ]
 
@@ -54,7 +60,7 @@ const services = [
 
 
 <template>
-	<div class="">
+	<div class="bg-alabaster font-inter">
 		<nav class="w-full fixed z-30">
 			<nu-top-bar>
 				<nu-logo :symbol="true" :text="true" :width="162" :colors="['cinnabar', 'alabaster', 'alabaster']" />
@@ -62,9 +68,9 @@ const services = [
 		</nav>
 		<div class="relative">
 			<nu-splash class="bg-chinese-black">
-				<div class="text-center nu-stroke-title font-black uppercase">
-					Un studio de développement sur-mesure à votre service.
-				</div>
+				<nu-typography type="hero-title" class="text-center">
+					Un studio de développement sur-mesure à votre service
+				</nu-typography>
 			</nu-splash>
 			<div class="absolute text-alabaster bottom-4 w-full columns-1 text-center">
 				<nu-arrow />
@@ -76,45 +82,54 @@ const services = [
 				cta="valorisons le votre"
 				>
 				<template #caption>
-					<div class="w-2/3 text-sm">
-						Un studio de <b class="font-black">développement sur-mesure</b> à votre service.
-					</div>
+					<nu-typography type="caption">
+						Un studio de <b class="font-bold">développement <br/>sur-mesure</b> à votre service.
+					</nu-typography>
 				</template>
 				<template #text>
-					Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment  pertinentes.
+					<nu-typography>
+						Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment  pertinentes.
+					</nu-typography>
 				</template>
 			</nu-hero-section>
 
 			<div class="bg-chinese-black text-alabaster">
-				<nu-title class="py-16">Ils ont crée<br/>de la valeur.</nu-title>
+				<nu-typography type="title" class="py-16">Ils ont crée<br/>de la valeur.</nu-typography>
 				<div class="flex flex-col gap-6">
-					<nu-project-preview v-for="(p, i) in projects.slice(0, 4)" :line-break="i != 1" :title="p.title" :highlight="p.highlight" :picture="p.picture" :description="p.description"></nu-project-preview>
+					<nu-link :aria-label="`Découvrez le projet ${p.title}`" :href="p.link" v-for="(p, i) in projects.slice(0, 4)" >
+						<nu-project-preview :line-break="i != 1" :title="p.title" :highlight="p.highlight" :picture="p.picture" :description="p.description"></nu-project-preview>
+					</nu-link>
 				</div>
-				<div class="uppercase my-8 flex items-center gap-4 font-normal justify-center">Découvrez nos autres projets<nu-arrow :right="true" /></div>
+				<nu-link aria-label="Découvrez nos autres projets" href="#">
+					<div class="my-8 flex items-center gap-4 justify-center">
+						<nu-typography type="text-link" class="">Découvrez nos autres projets</nu-typography>
+						<nu-arrow :right="true" />
+					</div>
+				</nu-link>
 			</div>
 
 			<nu-section-break>
-				<nu-title>Apprenez-nous votre métier</nu-title>
+				<nu-typography type="title">Apprenez-nous votre métier</nu-typography>
 				<nu-button>Créons de la valeur</nu-button>
 			</nu-section-break>
 
 			<div class="py-20 bg-chinese-black text-alabaster">
 				<div class="h-full flex flex-col justify-between py-20 gap-16">
-					<nu-title>Si vous en avez besoin, on peut sûrement vous le fabriquer.</nu-title>
+					<nu-typography type="title">Si vous en avez besoin, on peut sûrement vous le fabriquer.</nu-typography>
 					<nu-swipper />
 				</div>
 				<div class="w-full flex flex-col gap-12 pb-32">
 					<hr />
-					<nu-title class="py-10">Lorem ipsum dolor</nu-title>
+					<nu-typography type="title" class="py-10">Lorem ipsum dolor</nu-typography>
 					<div v-for="service in services" class="flex flex-col">
 						<hr />
-						<div>{{service}}</div>
+						<nu-typography>{{service}}</nu-typography>
 					</div>
 				</div>
 			</div>
 
 			<nu-section-break variant="light">
-				<span class="">Commençons à discuter.</span>
+				<nu-typography type="hero-title-dark">Commençons à discuter.</nu-typography>
 				<nu-button class="border-cinnabar text-cinnabar">Par chat</nu-button>
 			</nu-section-break>
 		</div>
@@ -128,6 +143,9 @@ const services = [
 	text-stroke: 2px #edebe8;
 	font-size: 40px;
 	line-height: 50px;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-family: 'Silka'
 }
 
 .wrapper > * {

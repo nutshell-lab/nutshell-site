@@ -67,7 +67,7 @@
 @font-face {
 	font-family: 'Inter';
 	font-weight: 200;
-	src: local('Inter ExtraLight'), url('~/assets/fonts/Inter/Inter-Extralight.ttf') format('truetype');
+	src: local('Inter ExtraLight'), url('~/assets/fonts/Inter/Inter-ExtraLight.ttf') format('truetype');
 }
 /* light */
 @font-face {
@@ -91,7 +91,7 @@
 @font-face {
 	font-family: 'Inter';
 	font-weight: 600;
-	src: local('Inter SemiBold'), url('~/assets/fonts/Inter/Inter-Semibold.ttf') format('truetype');
+	src: local('Inter SemiBold'), url('~/assets/fonts/Inter/Inter-SemiBold.ttf') format('truetype');
 }
 /* bold */
 @font-face {
@@ -103,7 +103,7 @@
 @font-face {
 	font-family: 'Inter';
 	font-weight: 700;
-	src: local('Inter ExtraBold'), url('~/assets/fonts/Inter/Inter-Extrabold.ttf') format('truetype');
+	src: local('Inter ExtraBold'), url('~/assets/fonts/Inter/Inter-ExtraBold.ttf') format('truetype');
 }
 /* black */
 @font-face {
