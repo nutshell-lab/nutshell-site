@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+	import {computed} from 'vue'
+	import {breakpointsTailwind, useBreakpoints} from '@vueuse/core'
 	/*
 	typography | size (mobile) | size (desktop) | font | extra
 	-----------|---------------|----------------|------|------
@@ -10,17 +12,20 @@
 	caption | 14 | 14 | Inter Regular | uppercase
 	mention | 12 | 12 | Inter Light
 	*/
+	const breakpoints = useBreakpoints(breakpointsTailwind)
 	const props = defineProps({
 		type: {type: String, default: "regular"},
 		class: {type: String, default: ""}
 	})
 
-	const makeClass = (c: string) => `${props.class} ${c}`
+	const makeClass = (c) => `${props.class} ${c}`
+
+	const on = (breakpoint) => (c, def) => computed(() => breakpoints.greaterOrEqual(breakpoint).value ? c : def)
 </script>
 
 <template>
-	<h2 v-if="type == 'hero-title'" :class="makeClass('text-hero-title-light')"><slot /></h2>
-	<h2 v-if="type == 'hero-title-dark'" :class="makeClass('text-hero-title-dark')"><slot /></h2>
+	<h2 v-if="type == 'hero-title'" :class="makeClass(`text-hero-title-light ${on('md')('text-[80px] leading-[76px]', 'text-[40px]').value}`)"><slot /></h2>
+	<h2 v-if="type == 'hero-title-dark'" :class="makeClass(`text-hero-title-dark ${on('md')('text-[80px] leading-[76px]', 'text-[40px]').value}`)"><slot /></h2>
 	<h3 v-if="type == 'title'" :class="makeClass('font-black font-silka text-4xl md:text-5xl')"><slot /></h3>
 	<span v-if="type == 'regular'" :class="makeClass('font-inter font-normal')"><slot /></span>
 	<span v-if="type == 'text-link'" :class="makeClass('font-inter uppercase font-normal')"><slot /></span>
@@ -33,8 +38,6 @@
 .text-hero-title-light {
 	-webkit-text-stroke: 1.5px #edebe8;
 	text-stroke: 1.5px #edebe8;
-	font-size: 40px;
-	line-height: 50px;
 	font-weight: 900;
 	text-transform: uppercase;
 	font-family: 'Silka';
@@ -44,8 +47,6 @@
 .text-hero-title-dark {
 	-webkit-text-stroke: 1.5px #161616;
 	text-stroke: 1.5px #161616;
-	font-size: 40px;
-	line-height: 50px;
 	font-weight: 900;
 	text-transform: uppercase;
 	font-family: 'Silka';

@@ -22,6 +22,9 @@ module.exports = {
 			silka: ['Silka', 'Roboto'],
 			inter: ['Inter', 'Roboto'],
 		},
+		container: {
+			center: true,
+		},
 		// Force below class to be loaded during build phase so that they can be
 		// used dynamically (nu-logo).
 		safelist: [

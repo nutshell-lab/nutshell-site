@@ -1,8 +1,6 @@
 <script lang="ts" setup>
 import NuLogo from '~/components/NuLogo.vue'
 import NuButton from '~/components/NuButton.vue'
-import NuTitle from '~/components/NuTitle.vue'
-import NuCaption from '~/components/NuCaption.vue'
 import NuHeroSection from '~/components/NuHeroSection.vue'
 import NuTypography from '~/components/NuTypography.vue'
 import NuSectionBreak from '~/components/NuSectionBreak.vue'

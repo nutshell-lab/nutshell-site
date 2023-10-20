@@ -4,7 +4,7 @@ import NuLink from '~/components/NuLink.vue'
 </script>
 
 <template>
-	<div class="bg-chinese-black text-alabaster flex flex-col justify-center items-center px-8 py-12">
+	<footer class="bg-chinese-black text-alabaster flex flex-col justify-center items-center px-8 py-12">
 		<div class="py-20">
 			<div class="flex flex-col gap-6 items-center">
 				<nu-logo class="pb-6" :width="56"/>
@@ -19,5 +19,5 @@ import NuLink from '~/components/NuLink.vue'
 			<div><nu-typography type="mention">© {{new Date().getFullYear()}} Nutshell Lab</nu-typography></div>
 			<div><nu-typography type="mention">Tous droits réservés - <nu-link href="#" aria-label="Accédez aux mentions légales">Mentions légales</nu-link></nu-typography></div>
 		</div>
-	</div>
+	</footer>
 </template>
