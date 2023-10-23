@@ -19,13 +19,11 @@
 	})
 
 	const makeClass = (c) => `${props.class} ${c}`
-
-	const on = (breakpoint) => (c, def) => computed(() => breakpoints.greaterOrEqual(breakpoint).value ? c : def)
 </script>
 
 <template>
-	<h2 v-if="type == 'hero-title'" :class="makeClass(`text-hero-title-light ${on('md')('text-[80px] leading-[76px]', 'text-[40px]').value}`)"><slot /></h2>
-	<h2 v-if="type == 'hero-title-dark'" :class="makeClass(`text-hero-title-dark ${on('md')('text-[80px] leading-[76px]', 'text-[40px]').value}`)"><slot /></h2>
+	<h2 v-if="type == 'hero-title'" :class="makeClass('text-hero-title-light md:text-[80px] md:leading-[76px] text-[40px]')"><slot /></h2>
+	<h2 v-if="type == 'hero-title-dark'" :class="makeClass('text-hero-title-dark md:text-[80px] md:leading-[76px] text-[40px]')"><slot /></h2>
 	<h3 v-if="type == 'title'" :class="makeClass('font-black font-silka text-4xl md:text-5xl')"><slot /></h3>
 	<span v-if="type == 'regular'" :class="makeClass('font-inter font-normal')"><slot /></span>
 	<span v-if="type == 'text-link'" :class="makeClass('font-inter uppercase font-normal')"><slot /></span>
