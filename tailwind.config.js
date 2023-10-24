@@ -16,7 +16,7 @@ module.exports = {
 			onyx: '#3C3C3F',
 			'raisin-black': '#2A2A2D',
 			lime: '#DBF447',
-			white: '#FFF'
+			white: '#FFF',
 		},
 		fontFamily: {
 			silka: ['Silka', 'Roboto'],
