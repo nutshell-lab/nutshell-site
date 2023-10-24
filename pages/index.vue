@@ -18,28 +18,28 @@ const projects = [
 	{
 		title: 'Actinuum',
 		highlight: '+2M€',
-		picture: '',
+		picture: '_nuxt/assets/illustrations/prjct_actinuum.png',
 		description: 'Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.',
 		link: "#",
 	},
 	{ 
 		title: 'Brokers',
 		highlight: '131Md€',
-		picture: '',
+		picture: '_nuxt/assets/illustrations/prjct_broker.png',
 		description: 'Les marchés financiers tradent chaque jours des centaines de milliards d’actifs. En analysant les chats de ses traders, notre solution prépare des trades pertinents en temps réel.',
 		link: "#",
 	},
 	{
 		title: 'Atlas',
 		highlight: '300k',
-		picture: '',
+		picture: '_nuxt/assets/illustrations/prjct_atlas.png',
 		description: 'L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié 300 000 apprenants.',
 		link: "#",
 	},
 	{
 		title: 'Constructys',
 		highlight: '180',
-		picture: '',
+		picture: '_nuxt/assets/illustrations/prjct_constructys.png',
 		description: 'Pour préparer les JO 2024, il faut augmenter massivement la masse salariale de la branche BTP. Pour se faire Constructys nous fait mettre en place une solution de reconversion de métier à 180 métiers cibles.',
 		link: "#",
 	}
@@ -80,8 +80,8 @@ const isDesktop = !isMobile.value
 				<nu-arrow />
 			</div>
 		</div>
-		<div class="wrapper">
-			<div class="container">
+		<div class="wrapper flex flex-col">
+			<div class="container self-center ">
 			<nu-hero-section
 				title="Comprendre le métier et le valoriser avec la tech."
 				cta="valorisons le votre"
@@ -108,48 +108,61 @@ const isDesktop = !isMobile.value
 			</nu-hero-section>
 			</div>
 
-			<div class="bg-chinese-black text-alabaster">
-				<nu-typography type="title" class="py-16">Ils ont crée<br/>de la valeur.</nu-typography>
-				<div class="flex flex-col gap-6">
-					<nu-link :aria-label="`Découvrez le projet ${p.title}`" :href="p.link" v-for="(p, i) in projects.slice(0, 4)" >
-						<nu-project-preview :line-break="i != 1" :title="p.title" :highlight="p.highlight" :picture="p.picture" :description="p.description"></nu-project-preview>
-					</nu-link>
-				</div>
-				<nu-link aria-label="Découvrez nos autres projets" href="#">
-					<div class="my-8 flex items-center gap-4 justify-center">
-						<nu-typography type="text-link" class="">Découvrez nos autres projets</nu-typography>
-						<nu-arrow :right="true" />
+			<div class="px-6 bg-chinese-black text-alabaster flex flex-col">
+				<div class="container self-center flex flex-col items-center md:items-end">
+					<nu-typography type="title" class="py-16 self-start">Ils ont crée<br/>de la valeur.</nu-typography>
+					<div class="flex flex-col items-end md:pr-10">
+						<div class="md:pl-32 flex flex-col md:grid md:grid-cols-2 gap-6">
+							<nu-link :aria-label="`Découvrez le projet ${p.title}`" :href="p.link" v-for="(p, i) in projects.slice(0, 4)" >
+								<nu-project-preview 
+									class="" 
+									:line-break="i != 1" 
+									:title="p.title" 
+									:highlight="p.highlight" 
+									:picture="p.picture" 
+									:description="p.description"
+								></nu-project-preview>
+							</nu-link>
+						</div>
+						<nu-link aria-label="Découvrez nos autres projets" href="#">
+							<div class="my-8 flex items-center gap-4 justify-center">
+								<nu-typography type="text-link" class="">Découvrez nos autres projets</nu-typography>
+								<nu-arrow :right="true" />
+							</div>
+						</nu-link>
 					</div>
-				</nu-link>
+				</div>
 			</div>
 
-			<nu-section-break>
+			<nu-section-break class="container px-6 self-center ">
 				<nu-typography type="title">Apprenez-nous <br v-if="isDesktop" />votre métier</nu-typography>
 				<nu-button>Créons de la valeur</nu-button>
 			</nu-section-break>
 
-			<div class="py-20 bg-chinese-black text-alabaster">
-				<div class="h-full flex flex-col justify-between py-20 gap-16">
-					<nu-typography type="title" class="container max-w-[776px]">Si vous en avez besoin, on peut sûrement vous le fabriquer.</nu-typography>
-					<nu-swipper />
+			<div class="py-20 bg-chinese-black text-alabaster flex flex-col">
+				<div class="container px-6 h-[700px] self-center flex flex-col justify-between py-20 gap-16">
+					<nu-typography type="title" class="max-w-[776px]">Si vous en avez besoin, on peut sûrement vous le fabriquer.</nu-typography>
+					<nu-swipper class="" />
 				</div>
-				<div class="w-full container flex flex-col gap-12 pb-32">
+				<div class="container px-6 self-center w-full md:pl-64 flex flex-col gap-12 pb-32">
 					<hr />
-					<nu-typography type="title" class="py-10">Lorem ipsum dolor</nu-typography>
-					<div v-for="service in services" class="flex flex-col">
-						<hr />
-						<nu-typography>{{service}}</nu-typography>
+					<div class="flex flex-col gap-12 md:pr-64">
+						<nu-typography type="title" class="py-10">Lorem ipsum dolor</nu-typography>
+						<div v-for="service in services" class="flex flex-col">
+							<hr />
+							<nu-typography>{{service}}</nu-typography>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<nu-section-break variant="light">
+			<nu-section-break class="container place-self-center" variant="light">
 				<nu-typography type="hero-title-dark">Commençons <br v-if="isDesktop" />à discuter.</nu-typography>
 				<nu-button class="border-cinnabar text-cinnabar">Par chat</nu-button>
 			</nu-section-break>
 		</div>
 
-		<footer class="bg-chinese-black text-alabaster flex flex-col justify-center items-center px-8 py-12 ">
+		<footer class="bg-chinese-black text-alabaster flex flex-col justify-center items-center px-8 py-12 md:bg-[url('assets/logo_nutshell_bottom_right_red_outline.svg')] bg-no-repeat bg-right-bottom">
 			<div class="py-20 md:w-full max-w-5xl">
 				<div class="flex flex-col md:grid md:grid-rows-4 md:grid-flow-col gap-6 items-center md:items-start">
 					<nu-logo class="row-span-4 pb-6" :width="56"/>
@@ -182,6 +195,5 @@ const isDesktop = !isMobile.value
 }
 
 .wrapper > * {
-	padding: 24px;
 }
 </style>
