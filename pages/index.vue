@@ -45,6 +45,33 @@ const projects = [
 	}
 ]
 
+const use_cases = [
+			{
+				title: "Un ERP sur-mesure est-il iunchoix judicieux pour votre entreprise ?",
+				subtitle: "ERP",
+				picture: "_nuxt/assets/illustrations/use_case_erp.png",
+				id: "use case 001",
+			},
+			{
+				title: "Un CRM personnalisé vous permet de proposer la meilleure expérience à vos clients.",
+				subtitle: "CRM",
+				picture: "_nuxt/assets/illustrations/use_case_crm.png",
+				id: "use case 002",
+			},
+			{
+				title: "Tracker le progrès avec des sondes pensées pour votre métier.",
+				subtitle: "ANALYTICS",
+				picture: "_nuxt/assets/illustrations/use_case_analytics.png",
+				id: "use case 003",
+			},
+			{
+				title: "Introduction au marché du projet informatique.",
+				subtitle: "STRATÉGIE",
+				picture: "_nuxt/assets/illustrations/use_case_strategy.png",
+				id: "use case 004",
+			},
+]
+
 const services = [
 	'Produits et SasS',
 	'Dévelopement',
@@ -77,7 +104,7 @@ const isDesktop = !isMobile.value
 				</nu-typography>
 			</nu-splash>
 			<div class="absolute text-alabaster bottom-4 w-full columns-1 text-center">
-				<nu-arrow />
+				<nu-arrow class="animate-bounce" />
 			</div>
 		</div>
 		<div class="wrapper flex flex-col">
@@ -142,14 +169,14 @@ const isDesktop = !isMobile.value
 			<div class="py-20 bg-chinese-black text-alabaster flex flex-col">
 				<div class="container px-6 h-[700px] self-center flex flex-col justify-between py-20 gap-16">
 					<nu-typography type="title" class="max-w-[776px]">Si vous en avez besoin, on peut sûrement vous le fabriquer.</nu-typography>
-					<nu-swipper class="" />
+					<nu-swipper :items="use_cases" class="" />
 				</div>
 				<div class="container px-6 self-center w-full md:pl-64 flex flex-col gap-12 pb-32">
 					<hr />
 					<div class="flex flex-col gap-12 md:pr-64">
 						<nu-typography type="title" class="py-10">Lorem ipsum dolor</nu-typography>
 						<div v-for="service in services" class="flex flex-col">
-							<hr />
+							<hr class="h-[2px]" />
 							<nu-typography>{{service}}</nu-typography>
 						</div>
 					</div>

@@ -20,7 +20,7 @@
 				</div>
 			</div>
 			<div class="flex justify-between items-center">
-				<div><nu-arrow :top-right="true" /></div>
+				<div class="px-2"><nu-arrow :top-right="true" /></div>
 				<div class="font-black text-5xl">{{highlight}}</div>
 			</div>
 		</div>
