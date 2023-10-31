@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-	import {computed} from 'vue'
-	import {breakpointsTailwind, useBreakpoints} from '@vueuse/core'
-	/*
+import { breakpointsTailwind, useBreakpoints } from "@vueuse/core"
+import { computed } from "vue"
+/*
 	typography | size (mobile) | size (desktop) | font | extra
 	-----------|---------------|----------------|------|------
 	Hero Title | 40 | 80 | Silka Black | outlined uppercase
@@ -12,13 +12,13 @@
 	caption | 14 | 14 | Inter Regular | uppercase
 	mention | 12 | 12 | Inter Light
 	*/
-	const breakpoints = useBreakpoints(breakpointsTailwind)
-	const props = defineProps({
-		type: {type: String, default: "regular"},
-		class: {type: String, default: ""}
-	})
+const breakpoints = useBreakpoints(breakpointsTailwind)
+const props = defineProps({
+    type: { type: String, default: "regular" },
+    class: { type: String, default: "" },
+})
 
-	const makeClass = (c) => `${props.class} ${c}`
+const makeClass = (c) => `${props.class} ${c}`
 </script>
 
 <template>

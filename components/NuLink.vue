@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-	/*
+/*
 		Embed an a tag but force you to define aria-label
 		for accessibility and SEO purpose
 	*/
-	defineProps({
-		ariaLabel: {type: String, required: true},
-		href: {type: String, required: true},
-	})
+defineProps({
+    ariaLabel: { type: String, required: true },
+    href: { type: String, required: true },
+})
 </script>
 
 <template>

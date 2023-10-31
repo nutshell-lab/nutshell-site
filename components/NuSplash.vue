@@ -1,5 +1,4 @@
-<script lang="ts" setup>
-</script>
+<script lang="ts" setup></script>
 
 <template>
 	<div class="bg-right-top bg-bottom h-screen flex flex-col items-center justify-center md:bg-[url('assets/logo_nutshell_top_right_red_full.svg')] w-full bg-contain bg-no-repeat">

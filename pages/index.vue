@@ -1,100 +1,89 @@
 <script lang="ts" setup>
-import NuLogo from '~/components/NuLogo.vue'
-import NuButton from '~/components/NuButton.vue'
-import NuHeroSection from '~/components/NuHeroSection.vue'
-import NuSectionBreak from '~/components/NuSectionBreak.vue'
-import NuSplash from '~/components/NuSplash.vue'
-import NuProjectPreview from '~/components/NuProjectPreview.vue'
-import NuFooter from '~/components/NuFooter.vue'
-import NuTopBar from '~/components/NuTopBar.vue'
-import NuArrow from '~/components/NuArrow.vue'
-import NuSwipper from '~/components/NuSwipper.vue'
-import NuTypography from '~/components/NuTypography.vue'
-import NuLink from '~/components/NuLink.vue'
-
-import {breakpointsTailwind, useBreakpoints} from '@vueuse/core'
+import { breakpointsTailwind, useBreakpoints } from "@vueuse/core"
 
 const projects = [
-	{
-		title: 'Actinuum',
-		highlight: '+2M€',
-		picture: '_nuxt/assets/illustrations/prjct_actinuum.png',
-		description: 'Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.',
-		link: "#",
-	},
-	{ 
-		title: 'Brokers',
-		highlight: '131Md€',
-		picture: '_nuxt/assets/illustrations/prjct_broker.png',
-		description: 'Les marchés financiers tradent chaque jours des centaines de milliards d’actifs. En analysant les chats de ses traders, notre solution prépare des trades pertinents en temps réel.',
-		link: "#",
-	},
-	{
-		title: 'Atlas',
-		highlight: '300k',
-		picture: '_nuxt/assets/illustrations/prjct_atlas.png',
-		description: 'L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié 300 000 apprenants.',
-		link: "#",
-	},
-	{
-		title: 'Constructys',
-		highlight: '180',
-		picture: '_nuxt/assets/illustrations/prjct_constructys.png',
-		description: 'Pour préparer les JO 2024, il faut augmenter massivement la masse salariale de la branche BTP. Pour se faire Constructys nous fait mettre en place une solution de reconversion de métier à 180 métiers cibles.',
-		link: "#",
-	}
+    {
+        title: "Actinuum",
+        highlight: "+2M€",
+        picture: "_nuxt/assets/illustrations/prjct_actinuum.png",
+        description:
+            "Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.",
+        link: "#",
+    },
+    {
+        title: "Brokers",
+        highlight: "131Md€",
+        picture: "_nuxt/assets/illustrations/prjct_broker.png",
+        description:
+            "Les marchés financiers tradent chaque jours des centaines de milliards d’actifs. En analysant les chats de ses traders, notre solution prépare des trades pertinents en temps réel.",
+        link: "#",
+    },
+    {
+        title: "Atlas",
+        highlight: "300k",
+        picture: "_nuxt/assets/illustrations/prjct_atlas.png",
+        description:
+            "L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié 300 000 apprenants.",
+        link: "#",
+    },
+    {
+        title: "Constructys",
+        highlight: "180",
+        picture: "_nuxt/assets/illustrations/prjct_constructys.png",
+        description:
+            "Pour préparer les JO 2024, il faut augmenter massivement la masse salariale de la branche BTP. Pour se faire Constructys nous fait mettre en place une solution de reconversion de métier à 180 métiers cibles.",
+        link: "#",
+    },
 ]
 
 const use_cases = [
-			{
-				title: "Un ERP sur-mesure est-il iunchoix judicieux pour votre entreprise ?",
-				subtitle: "ERP",
-				picture: "_nuxt/assets/illustrations/use_case_erp.png",
-				id: "use case 001",
-			},
-			{
-				title: "Un CRM personnalisé vous permet de proposer la meilleure expérience à vos clients.",
-				subtitle: "CRM",
-				picture: "_nuxt/assets/illustrations/use_case_crm.png",
-				id: "use case 002",
-			},
-			{
-				title: "Tracker le progrès avec des sondes pensées pour votre métier.",
-				subtitle: "ANALYTICS",
-				picture: "_nuxt/assets/illustrations/use_case_analytics.png",
-				id: "use case 003",
-			},
-			{
-				title: "Introduction au marché du projet informatique.",
-				subtitle: "STRATÉGIE",
-				picture: "_nuxt/assets/illustrations/use_case_strategy.png",
-				id: "use case 004",
-			},
+    {
+        title: "Un ERP sur-mesure est-il iunchoix judicieux pour votre entreprise ?",
+        subtitle: "ERP",
+        picture: "_nuxt/assets/illustrations/use_case_erp.png",
+        id: "use case 001",
+    },
+    {
+        title: "Un CRM personnalisé vous permet de proposer la meilleure expérience à vos clients.",
+        subtitle: "CRM",
+        picture: "_nuxt/assets/illustrations/use_case_crm.png",
+        id: "use case 002",
+    },
+    {
+        title: "Tracker le progrès avec des sondes pensées pour votre métier.",
+        subtitle: "ANALYTICS",
+        picture: "_nuxt/assets/illustrations/use_case_analytics.png",
+        id: "use case 003",
+    },
+    {
+        title: "Introduction au marché du projet informatique.",
+        subtitle: "STRATÉGIE",
+        picture: "_nuxt/assets/illustrations/use_case_strategy.png",
+        id: "use case 004",
+    },
 ]
 
 const services = [
-	'Produits et SasS',
-	'Dévelopement',
-	'Design et ergonomie',
-	'Data et Business Intelligence',
-	'Innovation',
-	'Branding et Strategy',
-	'Analyse et Audit',
-	'Analytics et SEO'
+    "Produits et SasS",
+    "Dévelopement",
+    "Design et ergonomie",
+    "Data et Business Intelligence",
+    "Innovation",
+    "Branding et Strategy",
+    "Analyse et Audit",
+    "Analytics et SEO",
 ]
 
 const breakpoints = useBreakpoints(breakpointsTailwind)
-const isMobile = breakpoints.smaller('md')
+const isMobile = breakpoints.smaller("md")
 const isDesktop = !isMobile.value
-
 </script>
-
 
 <template>
 	<div class="bg-alabaster font-inter">
 		<nav class="w-full fixed z-30">
 			<nu-top-bar>
-				<nu-logo :symbol="true" :text="true" :width="162" :colors="['cinnabar', 'alabaster', 'alabaster']" />
+				<nu-logo symbol text :width="162" :colors="['cinnabar', 'alabaster', 'alabaster']" />
 			</nu-top-bar>
 		</nav>
 		<div class="relative">
@@ -192,7 +181,7 @@ const isDesktop = !isMobile.value
 		<footer class="bg-chinese-black text-alabaster flex flex-col justify-center items-center px-8 py-12 md:bg-[url('assets/logo_nutshell_bottom_right_red_outline.svg')] bg-no-repeat bg-right-bottom">
 			<div class="py-20 md:w-full max-w-5xl">
 				<div class="flex flex-col md:grid md:grid-rows-4 md:grid-flow-col gap-6 items-center md:items-start">
-					<nu-logo class="row-span-4 pb-6" :width="56"/>
+					<nu-logo symbol class="row-span-4 pb-6" :width="56"/>
 					<div><nu-link href="#" aria-label="Découvrez tous nos projets">Projets</nu-link></div>
 					<div><nu-link href="#" aria-label="Parcourez nos études de cas">Études de cas</nu-link></div>
 					<div><nu-link href="#" aria-label="Accédez à nos ressources">Ressources</nu-link></div>

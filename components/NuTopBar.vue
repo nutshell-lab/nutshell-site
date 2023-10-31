@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-	import BurgerIcon from "./BurgerIcon.vue"
+import BurgerIcon from "./BurgerIcon.vue"
 </script>
 
 <template>

@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-	import NuLogoChip from '~/components/NuLogoChip.vue'
+import NuLogoChip from "~/components/NuLogoChip.vue"
 
-	defineProps({
-		variant: {type: String, default: "dark"}
-	})
+defineProps({
+    variant: { type: String, default: "dark" },
+})
 </script>
 
 <template>
@@ -23,4 +23,3 @@
 		</div>
 	</div>
 </template>
-

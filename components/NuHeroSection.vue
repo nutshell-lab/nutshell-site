@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import NuLogo from '~/components/NuLogo.vue'
-import NuButton from '~/components/NuButton.vue'
-import NuTypography from '~/components/NuTypography.vue'
+import NuButton from "~/components/NuButton.vue"
+import NuLogo from "~/components/NuLogo.vue"
+import NuTypography from "~/components/NuTypography.vue"
 defineProps({
-	caption: String,
-	title: String,
-	text: String,
-	cta: String,
+    caption: String,
+    title: String,
+    text: String,
+    cta: String,
 })
 </script>
 

@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-	defineProps({
-		title: String,
-		highlight: String,
-		picture: String,
-		description: String,
-		lineBreak: {type: Boolean, default: true}
-	})
+defineProps({
+    title: String,
+    highlight: String,
+    picture: String,
+    description: String,
+    lineBreak: { type: Boolean, default: true },
+})
 </script>
 
 <template>

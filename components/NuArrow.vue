@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-	defineProps({
-		topRight: {type: Boolean, default: false},
-		bottom: {type: Boolean, default: true},
-		right: {type: Boolean, default: false},
-	})
+defineProps({
+    topRight: { type: Boolean, default: false },
+    bottom: { type: Boolean, default: true },
+    right: { type: Boolean, default: false },
+})
 </script>
 
 <template>

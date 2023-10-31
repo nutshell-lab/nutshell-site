@@ -1,11 +1,3 @@
-<script lang="ts" setup>
-import NuLogo from '~/components/NuLogo.vue'
-import NuButton from '~/components/NuButton.vue'
-import NuHeroSection from '~/components/NuHeroSection.vue'
-import NuTypography from '~/components/NuTypography.vue'
-import NuSectionBreak from '~/components/NuSectionBreak.vue'
-</script>
-
 <template>
 	<div class="bg-chinese-black gap-8 w-full h-96 flex justify-center items-center">
 		<nu-logo />
@@ -17,24 +9,24 @@ import NuSectionBreak from '~/components/NuSectionBreak.vue'
 				<h2 class="text-5xl uppercase font-black">logo</h2>
 				<div class="my-20 grid grid-cols-2 gap-8">
 					<div class="col-span-2 font-silka text-3xl">Default to Picto</div>
-					<div class="text-2xl bg-raisin-black text-alabaster flex pl-4 items-center">&lt;nu-logo /&gt;</div>
-					<div class="w-fit"><nu-logo class=""/></div>
+					<div class="text-2xl bg-raisin-black text-alabaster flex pl-4 items-center">&lt;nu-logo symbol /&gt;</div>
+					<div class="w-fit"><nu-logo symbol/></div>
 
 					<div class="col-span-2 font-silka text-3xl">With text</div>
-					<div class="text-2xl bg-raisin-black text-alabaster flex pl-4 items-center">&lt;nu-logo :text="true" /&gt;</div>
-					<nu-logo :text="true" />
+					<div class="text-2xl bg-raisin-black text-alabaster flex pl-4 items-center">&lt;nu-logo symbol text /&gt;</div>
+					<nu-logo symbol text />
 
 					<div class="col-span-2 font-silka text-3xl">With text and suffix</div>
-					<div class="text-2xl bg-raisin-black text-alabaster flex pl-4 items-center">&lt;nu-logo <br/>:text="true" <br/>:suffix="true"/&gt;</div>
-					<nu-logo :text="true" :suffix="true" />
+					<div class="text-2xl bg-raisin-black text-alabaster flex pl-4 items-center">&lt;nu-logo <br/> symbol <br/>text <br/>suffix/&gt;</div>
+					<nu-logo symbol text suffix />
 
 					<div class="col-span-2 font-silka text-3xl">Only text and suffix</div>
-					<div class="text-2xl bg-raisin-black text-alabaster flex pl-4 items-center">&lt;nu-logo <br/> :symbol="false" <br/> :text="true" <br/> :suffix="true"/&gt;</div>
-					<nu-logo :symbol="false" :text="true" :suffix="true" />
+					<div class="text-2xl bg-raisin-black text-alabaster flex pl-4 items-center">&lt;nu-logo <br/> text <br/> suffix/&gt;</div>
+					<nu-logo text suffix />
 
 					<div class="col-span-2 font-silka text-3xl">Apply colors</div>
-					<div class="text-2xl bg-raisin-black text-alabaster flex pl-4 items-center">&lt;nu-logo <br/> :symbol="true" <br/> :text="true" <br/> :suffix="true" <br/> :colors="['lime', 'cinnabar', 'onyx']" /&gt;</div>
-					<nu-logo :symbol="true" :text="true" :suffix="true" :colors="['lime', 'cinnabar', 'onyx']" />
+					<div class="text-2xl bg-raisin-black text-alabaster flex pl-4 items-center">&lt;nu-logo <br/> :colors="['lime', 'cinnabar', 'onyx']" <br/> symbol <br/> text <br/> suffix /&gt;</div>
+					<nu-logo symbol text suffix :colors="['lime', 'cinnabar', 'onyx']" />
 				</div>
 			</div>
 			<div class="my-20">
@@ -212,6 +204,6 @@ import NuSectionBreak from '~/components/NuSectionBreak.vue'
 		</div>
 	</div>
 	<div class="bg-cinnabar gap-8 w-full h-96 flex justify-center items-center">
-		<nu-logo color="alabaster"/>
+		<nu-logo :colors="['alabaster']"/>
 	</div>
 </template>

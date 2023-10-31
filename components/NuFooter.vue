@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import NuLogo from '~/components/NuLogo.vue'
-import NuLink from '~/components/NuLink.vue'
+import NuLink from "~/components/NuLink.vue"
+import NuLogo from "~/components/NuLogo.vue"
 </script>
 
 <template>

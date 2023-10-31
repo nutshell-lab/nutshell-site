@@ -1,13 +1,14 @@
 <script lang="ts" setup>
-	import NuArrow from "./NuArrow.vue"
+import NuArrow from "./NuArrow.vue"
 
-	defineProps({
-		picture: String,
-		title: String,
-		subtitle: String,
-		id: String,
-	})
+defineProps({
+    picture: String,
+    title: String,
+    subtitle: String,
+    id: String,
+})
 </script>
+
 <template>
 	<div class="border border-alabaster w-full h-[380px] max-w-[375px] flex flex-col justify-between">
 		<div :style="{'--image-url': `url(${picture})`}" class="bg-raisin-black h-full bg-[image:var(--image-url)]" />

@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 defineProps({
-  width: { type: Number, default: 32 },
-  height: { type: Number, default: 32 },
-  primaryColor: { type: String, default: "#fff" },
-  secondaryColor: { type: String, default: "#2e2e2e" },
+    width: { type: Number, default: 32 },
+    height: { type: Number, default: 32 },
+    primaryColor: { type: String, default: "#fff" },
+    secondaryColor: { type: String, default: "#2e2e2e" },
 })
 </script>
 

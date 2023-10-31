@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-	import NuUseCaseTile from "./NuUseCaseTile.vue"
-	import {Swiper, SwiperSlide} from 'swiper/vue'
-	import 'swiper/css'
+import { Swiper, SwiperSlide } from "swiper/vue"
+import NuUseCaseTile from "./NuUseCaseTile.vue"
+import "swiper/css"
 
-	defineProps({
-		items: {type: Array, default: []}
-	})
+defineProps({
+    items: { type: Array, default: [] },
+})
 </script>
 
 <template>

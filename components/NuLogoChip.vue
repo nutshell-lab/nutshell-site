@@ -1,15 +1,16 @@
 <script lang="ts" setup>
-	export interface Props {
-		width: number 
-	}
+export interface Props {
+    width: number
+}
 
-	const props = withDefaults(defineProps<Props>(), {
-		width: 31
-	})
+const props = withDefaults(defineProps<Props>(), {
+    width: 31,
+})
 
-	const height = props.width * 1.42
-	const viewbox = "0 0 ${width} ${height}"
+const height = props.width * 1.42
+const viewbox = "0 0 ${width} ${height}"
 </script>
+
 <template>
 	<div>
 		<svg :width="width" :height="height" :viewBox="viewbox" fill="none" xmlns="http://www.w3.org/2000/svg">

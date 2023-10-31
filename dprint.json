@@ -1,9 +1,12 @@
 {
   "typescript": {
-    "semiColons": "asi"
+    "semiColons": "asi",
+    "indentWidth": 4
   },
   "json": {},
-  "vue": {},
+  "vue": {
+    "indentWidth": 4
+  },
   "includes": [
     "**/*.vue"
   ],

@@ -1,47 +1,45 @@
 <script lang="ts" setup>
-	export interface Props {
-		symbol: bool
-		text: bool
-		suffix: bool
-		style: 'filled' | 'outlined'
-		colors: string[]
-		height: number
-		width: number
-	}
+export interface Props {
+    symbol: boolean
+    text: boolean
+    suffix: boolean
+    style: "filled" | "outlined"
+    colors: string[]
+    width: number
+}
 
-	const props = withDefaults(defineProps<Props>(), {
-		style: 'filled',
-		colors: ['cinnabar', 'chinese-black', 'chinese-black'],
-		symbol: true,
-		text: false,
-		suffix: false,
-		width: 256,
-	})
+const props = withDefaults(defineProps<Props>(), {
+    style: "filled",
+    colors: () => ["cinnabar", "chinese-black", "chinese-black"],
+    symbol: false,
+    text: false,
+    suffix: false,
+    width: 256,
+})
 
-	const [w_sym, w_tex, w_suf] = [325, 1100, 172]
-	const [ml, mr, mb] = [85, 26, 100]
-	const [hmax, hmin] = [380, 56]
+const [w_sym, w_tex, w_suf] = [325, 1100, 172]
+const [ml, mr, mb] = [85, 26, 100]
+const [hmax, hmin] = [380, 56]
 
-	const _key = ([symbol, text, suffix]) => `${symbol}:${text}:${suffix}`
-	const matrix = new Map([
-		[_key([true, true, true]), [0, 0, (w_sym+ml+w_tex+mr+w_suf), hmax]],
-		[_key([true, true, false]), [0, 0, (w_sym+ml+w_tex), hmax]],
-		[_key([true, false, false]), [0, 0, w_sym + 30, hmax + 6]],
-		[_key([false, false, true]), [(w_sym+ml+w_tex+mr), mb, w_suf, hmin]],
-		[_key([false, true, true]), [(w_sym+ml), 0, (w_tex+w_suf+mr), hmax]],
-		[_key([true, false, true]), [0, 0, (w_sym+w_tex+w_suf), hmax]],
-		[_key([false, true, false]), [(w_sym+ml), 0, w_tex, hmax]],
-		[_key([false, false, false]), [0, 0, 0, 0]]
-	])
+const _key = ([symbol, text, suffix]: [boolean, boolean, boolean]) => `${symbol}:${text}:${suffix}`
+const matrix = new Map([
+    [_key([true, true, true]), [0, 0, w_sym + ml + w_tex + mr + w_suf, hmax]],
+    [_key([true, true, false]), [0, 0, w_sym + ml + w_tex, hmax]],
+    [_key([true, false, false]), [0, 0, w_sym + 30, hmax + 6]],
+    [_key([false, false, true]), [w_sym + ml + w_tex + mr, mb, w_suf, hmin]],
+    [_key([false, true, true]), [w_sym + ml, 0, w_tex + w_suf + mr, hmax]],
+    [_key([true, false, true]), [0, 0, w_sym + w_tex + w_suf, hmax]],
+    [_key([false, true, false]), [w_sym + ml, 0, w_tex, hmax]],
+    [_key([false, false, false]), [0, 0, 0, 0]],
+])
 
-	const viewbox = matrix.get(_key([props.symbol, props.text, props.suffix])).join(" ")
-	const [logoColor, textColor, suffixColor] = props.colors
+const viewbox = computed(() => (matrix.get(_key([props.symbol, props.text, props.suffix])) as number[]).join(" "))
+const [logoColor, textColor, suffixColor] = props.colors
 </script>
 
 <template>
 	<div class="">
 		<!-- Hack to load theme colors at build time for this component. TODO: force inclusion in build -->
-		<div class="hidden text-lime text-cinnabar text-chinese-black text-raisin-black text-onyx text-alabaster" />
 		<svg :width="width" height="auto" :viewBox="viewbox" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<g v-if="symbol" :class="`text-${logoColor} `">
 				<path d="M212 0.300049L191.89 11.8301C185.905 15.2547 180.987 20.2715 177.683 26.3231C174.378 32.3747 172.816 39.224 173.17 46.1101L178.23 149.11L72.5299 80.42L32.6299 103.37L170.15 191.55L219 163.52L212 0.300049Z" fill="currentColor"/>
