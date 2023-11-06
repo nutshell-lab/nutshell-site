@@ -14,22 +14,44 @@ import { computed } from "vue"
 	*/
 const breakpoints = useBreakpoints(breakpointsTailwind)
 const props = defineProps({
-    type: { type: String, default: "regular" },
-    class: { type: String, default: "" },
+	type: { type: String, default: "regular" },
+	class: { type: String, default: "" },
 })
 
 const makeClass = (c) => `${props.class} ${c}`
 </script>
 
 <template>
-	<h2 v-if="type == 'hero-title'" :class="makeClass('text-hero-title-light md:text-[80px] md:leading-[76px] text-[40px]')"><slot /></h2>
-	<h2 v-if="type == 'hero-title-dark'" :class="makeClass('text-hero-title-dark md:text-[80px] md:leading-[76px] text-[40px]')"><slot /></h2>
-	<h3 v-if="type == 'title'" :class="makeClass('font-black font-silka text-4xl md:text-5xl')"><slot /></h3>
-	<span v-if="type == 'regular'" :class="makeClass('font-inter font-normal')"><slot /></span>
-	<span v-if="type == 'text-link'" :class="makeClass('font-inter uppercase font-normal')"><slot /></span>
-	<span v-if="type == 'cta-text'" :class="makeClass('text-sm uppercase font-inter font-normal')"><slot /></span>
-	<span v-if="type == 'caption'" :class="makeClass('text-sm font-inter font-normal')"><slot /></span>
-	<span v-if="type == 'mention'" :class="makeClass('text-xs font-inter font-light')"><slot /></span>
+	<h2 v-if="type == 'hero-title'"
+		:class="makeClass('text-hero-title-light md:text-[80px] md:leading-[76px] text-[40px]')">
+		<slot />
+	</h2>
+	<h2 v-if="type == 'hero-title-filled'"
+		:class="makeClass('text-hero-title-light filled md:text-[80px] md:leading-[76px] text-[40px]')">
+		<slot />
+	</h2>
+	<h2 v-if="type == 'hero-title-dark'"
+		:class="makeClass('text-hero-title-dark md:text-[80px] md:leading-[76px] text-[40px]')">
+		<slot />
+	</h2>
+	<h3 v-if="type == 'title'" :class="makeClass('font-black font-silka text-4xl md:text-5xl')">
+		<slot />
+	</h3>
+	<span v-if="type == 'regular'" :class="makeClass('font-inter font-normal')">
+		<slot />
+	</span>
+	<span v-if="type == 'text-link'" :class="makeClass('font-inter uppercase font-normal')">
+		<slot />
+	</span>
+	<span v-if="type == 'cta-text'" :class="makeClass('text-sm uppercase font-inter font-normal')">
+		<slot />
+	</span>
+	<span v-if="type == 'caption'" :class="makeClass('text-sm font-inter font-normal')">
+		<slot />
+	</span>
+	<span v-if="type == 'mention'" :class="makeClass('text-xs font-inter font-light')">
+		<slot />
+	</span>
 </template>
 
 <style>
@@ -42,6 +64,10 @@ const makeClass = (c) => `${props.class} ${c}`
 	color: transparent;
 }
 
+.text-hero-title-light.filled {
+	color: #edebe8;
+}
+
 .text-hero-title-dark {
 	-webkit-text-stroke: 1.5px #161616;
 	text-stroke: 1.5px #161616;
@@ -49,5 +75,4 @@ const makeClass = (c) => `${props.class} ${c}`
 	text-transform: uppercase;
 	font-family: 'Silka';
 	color: transparent;
-}
-</style>
+}</style>
