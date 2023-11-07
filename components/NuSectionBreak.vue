@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import NuLogoChip from "~/components/NuLogoChip.vue"
-
 defineProps({
     variant: { type: String, default: "dark" },
 })

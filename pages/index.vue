@@ -160,7 +160,7 @@ const isDesktop = !isMobile.value
 				<div class="container md:pl-28 px-6 self-center w-full md:pl-64 flex flex-col gap-12 pb-32">
 					<hr />
 					<div class="flex flex-col gap-12 md:pr-64">
-						<nu-typography type="title" class="py-10">Lorem ipsum dolor</nu-typography>
+						<nu-typography type="title" class="py-10">Les services Nutshell</nu-typography>
 						<div v-for="service in services" class="flex flex-col">
 							<hr class="h-[2px]" />
 							<nu-typography>{{ service }}</nu-typography>
