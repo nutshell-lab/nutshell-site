@@ -80,16 +80,11 @@ const services = [
 
 const breakpoints = useBreakpoints(breakpointsTailwind)
 const isMobile = breakpoints.smaller("md")
-const isDesktop = !isMobile.value
 </script>
 
 <template>
 	<div class="bg-alabaster font-inter">
-		<nav class="w-full pointer-events-none fixed z-30">
-			<nu-top-bar>
-				<nu-logo symbol text :width="162" :colors="['cinnabar', 'alabaster', 'alabaster']" />
-			</nu-top-bar>
-		</nav>
+		<nu-top-bar />
 		<div class="relative">
 			<nu-splash class="bg-chinese-black">
 				<nu-typography type="hero-title" class="text-center">
@@ -159,7 +154,7 @@ const isDesktop = !isMobile.value
 				</div>
 				<div class="container md:items-center px-6 self-center w-full flex flex-col gap-12 pb-32">
 					<div class="flex flex-col gap-12 md:max-w-[364px]">
-						<nu-typography type="title" class="py-10">Lorem ipsum dolor</nu-typography>
+						<nu-typography type="title" class="py-10">Nos services</nu-typography>
 						<nu-lined-list :entries="services" />
 					</div>
 				</div>

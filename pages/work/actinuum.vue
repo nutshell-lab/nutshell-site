@@ -65,11 +65,7 @@ const project = {
 </script>
 <template>
 	<div class="bg-chinese-black h-full leading-7">
-		<nav class="w-full pointer-events-none fixed z-30">
-			<nu-top-bar>
-				<nu-logo symbol text :width="162" :colors="['cinnabar', 'alabaster', 'alabaster']" />
-			</nu-top-bar>
-		</nav>
+		<nu-top-bar />
 		<div class="wrapper">
 			<div class="pt-44 pb-12 md:h-screen bg-chinese-black text-alabaster flex flex-col gap-12">
 				<div class="flex gap-14 overflow-hidden">
