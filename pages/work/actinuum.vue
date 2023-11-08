@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+import { breakpointsTailwind, useBreakpoints } from "@vueuse/core"
+const breakpoints = useBreakpoints(breakpointsTailwind)
+
+const isMobile = computed(() => breakpoints.smallerOrEqual('sm'))
 const results = [
 	"Chiffre d'affaire x3",
 	"Absorption de 3x plus de volume de formation",
@@ -60,7 +64,7 @@ const project = {
 }
 </script>
 <template>
-	<div class="bg-chinese-black h-full">
+	<div class="bg-chinese-black h-full leading-7">
 		<nav class="w-full pointer-events-none fixed z-30">
 			<nu-top-bar>
 				<nu-logo symbol text :width="162" :colors="['cinnabar', 'alabaster', 'alabaster']" />
@@ -82,17 +86,17 @@ const project = {
 							<nu-typography type="title" class="text-alabaster font-normal"> {{ project.short_description }}
 							</nu-typography>
 						</div>
-						<div class="px-6 grid grid-cols-2">
-							<nu-typography type="caption">Transformation digitale</nu-typography>
-							<nu-typography type="caption">Automatisation</nu-typography>
+						<div class="px-6 grid grid-cols-2 uppercase text-onyx gap-2">
+							<nu-typography type="caption">Logiciel ERP</nu-typography>
+							<nu-typography type="caption">Qualopi</nu-typography>
+							<nu-typography type="caption">Digitalisation</nu-typography>
 							<nu-typography type="caption">Plateforme</nu-typography>
-							<nu-typography type="caption">Logiciel ERP</nu-typography>
-							<nu-typography type="caption">Logiciel ERP</nu-typography>
-							<nu-typography type="caption">Logiciel ERP</nu-typography>
-							<nu-typography type="caption">Logiciel ERP</nu-typography>
-							<nu-typography type="caption">Logiciel ERP</nu-typography>
-							<nu-typography type="caption">Logiciel ERP</nu-typography>
-							<nu-typography type="caption">Logiciel ERP</nu-typography>
+							<nu-typography type="caption">Analyse d'assiduité</nu-typography>
+							<nu-typography type="caption">CRM</nu-typography>
+							<nu-typography type="caption">BPF automatique</nu-typography>
+							<nu-typography type="caption">Visioconférences</nu-typography>
+							<nu-typography type="caption">LMS intégré</nu-typography>
+							<nu-typography type="caption">Sur-mesure</nu-typography>
 						</div>
 						<div class="px-6 w-full flex justify-start">
 							<nu-button>
@@ -143,29 +147,28 @@ const project = {
 					</div>
 					<div class="py-10 flex flex-col md:flex-row">
 						<p class="my-6 md:w-1/2">
-							Pour permettre à Actinuum <em>d'avoir la main mise sur son outil opérationnel</em>, Nutshell a mis en place
+							Pour permettre à Actinuum <strong>d'avoir la main mise sur son outil opérationnel</strong>, Nutshell a mis
+							en place
 							un
 							centre
-							de contrôle permettant de <em>gérer l'ensemble de l'activité de formation.</em>
+							de contrôle permettant de <strong>gérer l'ensemble de l'activité de formation.</strong>
 							Véritable ERP de la formation, la solution précise le programme de chaque formation, leurs modalités
-							pédagogiques,
-							les dates des sessions, le choix des intervenants internes ou externes. Il fournit les
+							pédagogiques, les dates des sessions, le choix des intervenants internes ou externes. Il fournit les
 							renseignements nécessaires aux futurs participants et leur indique les moyens de financement possibles.
-							C'est ainsi qu'Actinuum peut <em>gérer l'ensemble de son catalogue de formations, de formateurs, de clients
-								et
-								de
-								participants.</em>
+							C'est ainsi qu'Actinuum peut <strong>gérer l'ensemble de son catalogue</strong> de formations, de
+							formateurs, de
+							clients et de participants.
 
 						</p>
 						<ul class="list-disc px-10 md:w-1/2">
-							<li>Durant le cycle de vie de la session de formation, <em>plusieurs déclencheurs ont été paramétrés pour
-									l’envoi
-									des convocations, des conventions, etc.</em> Cette automatisation permet de se passer de l’action
+							<li>Durant le cycle de vie de la session de formation, plusieurs déclencheurs ont été paramétrés pour
+								l’envoi
+								des convocations, des conventions, etc. Cette automatisation permet de se passer de l’action
 								humaine.
 							</li>
-							<li> L’ERP prend en charge <em>l’automatisation complète des formalités administratives : génération de
-									documents PDF et leur envoi par e-mail.</em></li>
-							<li> Un centre d’actions à réaliser <em>permet aux administrateurs de ne rien oublier</em>. Il s’agit d’une
+							<li> L’ERP prend en charge l’automatisation complète des formalités administratives : génération de
+								documents PDF et leur envoi par e-mail.</li>
+							<li> Un centre d’actions à réaliser permet aux administrateurs de ne rien oublier. Il s’agit d’une
 								véritable todo-list qui évite les erreurs.</li>
 						</ul>
 					</div>
@@ -179,20 +182,17 @@ const project = {
 				<div class="flex flex-col md:flex-row items-center justify-center gap-12">
 					<div class="md:w-1/2">
 						<p class="py-6">
-							Afin d'engager un maximum de qualité tout au long du processus de formation, nous avons conçu pour Actinuum
-							un
-							LMS (Learning Management System) integré avec son ERP qui permet aux participants et au formateurs de
-							disposer
-							d'un support pour toute la durée de la formation, qu'elle soit en présentielle ou bien à distance.
+							Afin d'engager un <strong>maximum de qualité</strong> tout au long du processus de formation, nous avons conçu pour Actinuum
+							un LMS (Learning Management System) integré avec son ERP qui permet aux participants et au formateurs de
+							disposer d'un <strong>support</strong> pour toute la durée de la formation, qu'elle soit en présentielle ou
+							bien à distance.
 						</p>
 						<p class="pb-6">
-							Permettant de collecter du même coup un ensemble de donnhees propres à la session de formation, le LMS
-							traque
-							l'assiduité des utilisateurs et la qualité de la prestation effectuée par le formateur. L'humain est au
-							coeur de
-							cette collecte d'information grâce à des entretiens réguliers entre formateur et apprenant, des
-							questionnaires
-							de satisfaction et des groupes de discussion dans un chat intégré.
+							Permettant de collecter du même coup un ensemble de <strong>données propres à la session</strong> de
+							formation, le LMS traque <strong>l'assiduité des utilisateurs</strong> et la qualité de la prestation
+							effectuée par le formateur. L'humain est au coeur de cette collecte d'information grâce à des entretiens
+							réguliers entre formateur et apprenant, des <strong>questionnaires de satisfaction</strong> et des groupes
+							de discussion dans un chat intégré.
 						</p>
 					</div>
 					<div class="md:w-1/2">
@@ -247,7 +247,7 @@ const project = {
 			<div class="container md:pl-32 flex flex-col md:grid md:grid-cols-2 gap-[1px]">
 				<nu-link :aria-label="`Découvrez le projet ${p.title}`" :href="`/projects/${p.slug}`"
 					v-for="(p, i) in other_projects.slice(0, 4)">
-					<nu-project-preview class="text-alabaster" :expand="true" :active_image="true" :line-break="i != 1"
+					<nu-project-preview class="border-chinese-black" :expand="true" :active_image="true" :line-break="i != 1"
 						:title="p.title" :highlight="p.highlight" :picture="p.picture"
 						:description="p.description"></nu-project-preview>
 				</nu-link>
@@ -279,3 +279,10 @@ const project = {
 		</footer>
 	</div>
 </template>
+
+<style>
+strong {
+	font-style: normal;
+	font-size: 20px;
+}
+</style>

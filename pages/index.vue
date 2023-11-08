@@ -126,11 +126,11 @@ const isDesktop = !isMobile.value
 			</div>
 
 			<div class="px-6 bg-chinese-black text-alabaster flex flex-col">
-				<div class="container md:pl-28 self-center flex flex-col items-center md:items-end">
+				<div class="container lg:pl-28 self-center flex flex-col items-center md:items-end">
 					<nu-typography type="title" class="py-16 self-start">Ils ont crée<br />de la valeur.</nu-typography>
 					<div class="flex flex-col items-end md:pr-10">
-						<div class="md:pl-32 flex flex-col md:grid md:grid-cols-2 gap-6">
-							<nu-link :aria-label="`Découvrez le projet ${p.title}`" :href="`/projects/${p.slug}`"
+						<div class="lg:pl-32 flex flex-col md:grid md:grid-cols-2 gap-6">
+							<nu-link :aria-label="`Découvrez le projet ${p.title}`" :href="`/work/${p.slug}`"
 								v-for="(p, i) in projects.slice(0, 4)">
 								<nu-project-preview class="" :line-break="i != 1" :title="p.title" :highlight="p.highlight"
 									:picture="p.picture" :description="p.description"></nu-project-preview>
@@ -146,7 +146,7 @@ const isDesktop = !isMobile.value
 				</div>
 			</div>
 
-			<nu-section-break class="container md:pl-28 px-6 self-center ">
+			<nu-section-break class="container md:pl-28 px-6 self-center">
 				<nu-typography type="title">Apprenez-nous <br class="md:hidden" />votre métier</nu-typography>
 				<nu-button>Créons de la valeur</nu-button>
 			</nu-section-break>
@@ -157,14 +157,10 @@ const isDesktop = !isMobile.value
 						fabriquer.</nu-typography>
 					<nu-swipper :items="use_cases" class="" />
 				</div>
-				<div class="container md:pl-28 px-6 self-center w-full md:pl-64 flex flex-col gap-12 pb-32">
-					<hr />
-					<div class="flex flex-col gap-12 md:pr-64">
-						<nu-typography type="title" class="py-10">Les services Nutshell</nu-typography>
-						<div v-for="service in services" class="flex flex-col">
-							<hr class="h-[2px]" />
-							<nu-typography>{{ service }}</nu-typography>
-						</div>
+				<div class="container md:items-center px-6 self-center w-full flex flex-col gap-12 pb-32">
+					<div class="flex flex-col gap-12 md:max-w-[364px]">
+						<nu-typography type="title" class="py-10">Lorem ipsum dolor</nu-typography>
+						<nu-lined-list :entries="services" />
 					</div>
 				</div>
 			</div>

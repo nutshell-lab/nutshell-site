@@ -13,7 +13,7 @@ defineProps({
 
 <template>
 	<div :style="{ '--image-url': `url(${picture})` }"
-		:class="`tile relative bg-chinese-black border border-alabaster ${expand ? 'w-full' : 'max-w-[375px]'} h-[376px] px-6 py-10 flex flex-col ${active_image ? 'bg-[image:var(--image-url)]' : 'hover:bg-[image:var(--image-url)]'}`">
+		:class="`tile relative bg-chinese-black text-alabaster border border-alabaster min-w-[300px] ${expand ? 'w-full' : 'max-w-[375px]'} h-[376px] px-6 py-10 flex flex-col ${active_image ? 'bg-[image:var(--image-url)]' : 'hover:bg-[image:var(--image-url)]'}`">
 		<div class="z-10 h-full flex flex-col justify-between">
 			<div class="flex flex-col gap-4">
 				<div class="font-bold text-2xl">
