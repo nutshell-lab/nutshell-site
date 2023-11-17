@@ -2,80 +2,80 @@
 import { breakpointsTailwind, useBreakpoints } from "@vueuse/core"
 
 const projects = [
-	{
-		title: "Actinuum",
-		highlight: "+2M€",
-		picture: "_nuxt/assets/illustrations/prjct_actinuum.png",
-		description:
-			"Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.",
-		link: "#",
-		slug: "actinuum",
-	},
-	{
-		title: "Brokers",
-		highlight: "131Md€",
-		picture: "_nuxt/assets/illustrations/prjct_broker.png",
-		description:
-			"Les marchés financiers tradent chaque jours des centaines de milliards d’actifs. En analysant les chats de ses traders, notre solution prépare des trades pertinents en temps réel.",
-		link: "#",
-		slug: "brokers",
-	},
-	{
-		title: "Atlas",
-		highlight: "300k",
-		picture: "_nuxt/assets/illustrations/prjct_atlas.png",
-		description:
-			"L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié 300 000 apprenants.",
-		link: "#",
-		slug: "atlas",
-	},
-	{
-		title: "Constructys",
-		highlight: "180",
-		picture: "_nuxt/assets/illustrations/prjct_constructys.png",
-		description:
-			"Pour préparer les JO 2024, il faut augmenter massivement la masse salariale de la branche BTP. Pour se faire Constructys nous fait mettre en place une solution de reconversion de métier à 180 métiers cibles.",
-		link: "#",
-		slug: "constructys",
-	},
+    {
+        title: "Actinuum",
+        highlight: "+2M€",
+        picture: "url(~/assets/illustrations/prjct_actinuum.png)",
+        description:
+            "Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.",
+        link: "#",
+        slug: "actinuum",
+    },
+    {
+        title: "Brokers",
+        highlight: "131Md€",
+        picture: "url(~/assets/illustrations/prjct_broker.png)",
+        description:
+            "Les marchés financiers tradent chaque jours des centaines de milliards d’actifs. En analysant les chats de ses traders, notre solution prépare des trades pertinents en temps réel.",
+        link: "#",
+        slug: "brokers",
+    },
+    {
+        title: "Atlas",
+        highlight: "300k",
+        picture: "url(~/assets/illustrations/prjct_atlas.png)",
+        description:
+            "L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié 300 000 apprenants.",
+        link: "#",
+        slug: "atlas",
+    },
+    {
+        title: "Constructys",
+        highlight: "180",
+        picture: "url(~/assets/illustrations/prjct_constructys.png)",
+        description:
+            "Pour préparer les JO 2024, il faut augmenter massivement la masse salariale de la branche BTP. Pour se faire Constructys nous fait mettre en place une solution de reconversion de métier à 180 métiers cibles.",
+        link: "#",
+        slug: "constructys",
+    },
 ]
 
 const use_cases = [
-	{
-		title: "Un ERP sur-mesure est-il iunchoix judicieux pour votre entreprise ?",
-		subtitle: "ERP",
-		picture: "_nuxt/assets/illustrations/use_case_erp.png",
-		id: "use case 001",
-	},
-	{
-		title: "Un CRM personnalisé vous permet de proposer la meilleure expérience à vos clients.",
-		subtitle: "CRM",
-		picture: "_nuxt/assets/illustrations/use_case_crm.png",
-		id: "use case 002",
-	},
-	{
-		title: "Tracker le progrès avec des sondes pensées pour votre métier.",
-		subtitle: "ANALYTICS",
-		picture: "_nuxt/assets/illustrations/use_case_analytics.png",
-		id: "use case 003",
-	},
-	{
-		title: "Introduction au marché du projet informatique.",
-		subtitle: "STRATÉGIE",
-		picture: "_nuxt/assets/illustrations/use_case_strategy.png",
-		id: "use case 004",
-	},
+    {
+        title: "Un ERP sur-mesure est-il iunchoix judicieux pour votre entreprise ?",
+        subtitle: "ERP",
+        picture: "url(~/assets/illustrations/use_case_erp.png)",
+        id: "use case 001",
+    },
+    {
+        title: "Un CRM personnalisé vous permet de proposer la meilleure expérience à vos clients.",
+        subtitle: "CRM",
+        picture: "url(~/assets/illustrations/use_case_crm.png)",
+        id: "use case 002",
+    },
+    {
+        title: "Tracker le progrès avec des sondes pensées pour votre métier.",
+        subtitle: "ANALYTICS",
+        picture: "url(~/assets/illustrations/use_case_analytics.png)",
+        id: "use case 003",
+    },
+    {
+        title: "Introduction au marché du projet informatique.",
+        subtitle: "STRATÉGIE",
+        picture: "url(~/assets/illustrations/use_case_strategy.png)",
+        id: "use case 004",
+    },
 ]
 
 const services = [
-	"Produits et SasS",
-	"Dévelopement",
-	"Design et ergonomie",
-	"Data et Business Intelligence",
-	"Innovation",
-	"Branding et Strategy",
-	"Analyse et Audit",
-	"Analytics et SEO",
+    "Produits et SasS",
+    "Dévelopement",
+    "Design et ergonomie",
+    "Data et Business Intelligence",
+    "Innovation",
+    "Branding et Strategy",
+    "Analyse et Audit",
+    "Analytics et SEO",
 ]
 
 const breakpoints = useBreakpoints(breakpointsTailwind)

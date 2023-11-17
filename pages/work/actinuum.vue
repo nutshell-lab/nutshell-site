@@ -2,67 +2,68 @@
 import { breakpointsTailwind, useBreakpoints } from "@vueuse/core"
 const breakpoints = useBreakpoints(breakpointsTailwind)
 
-const isMobile = computed(() => breakpoints.smallerOrEqual('sm'))
+const isMobile = computed(() => breakpoints.smallerOrEqual("sm"))
 const results = [
-	"Chiffre d'affaire x3",
-	"Absorption de 3x plus de volume de formation",
-	"Suppression signigicative d'erreurs humaines",
-	"Augmentation de la rapidité d'on-boarding collaborateur",
-	"Satisfaction clients et apprenants",
-	"Fidélisation des formateurs",
-	"Légitimité auprès des acteurs publiques"
+    "Chiffre d'affaire x3",
+    "Absorption de 3x plus de volume de formation",
+    "Suppression signigicative d'erreurs humaines",
+    "Augmentation de la rapidité d'on-boarding collaborateur",
+    "Satisfaction clients et apprenants",
+    "Fidélisation des formateurs",
+    "Légitimité auprès des acteurs publiques",
 ]
 
 const other_projects = [
-	{
-		title: "Keyro",
-		highlight: "10k",
-		picture: "../_nuxt/assets/illustrations/prjct_actinuum.png",
-		description:
-			"Keyro est l'émergence d'un produit SAAS pour fournir aux organismes de formation un logiciel ERP+LMS pour digitaliser leur sessions de formations. Grâce à ses nombreuses foncitonnalités, son ergnomie et son expérience concentrée autour de la pédagogie, le plateforme accueille déjà plus de 10k apprenant tous les ans.",
-		link: "#",
-		slug: "keyro",
-	},
-	{
-		title: "Atlas",
-		highlight: "300k",
-		picture: "../_nuxt/assets/illustrations/prjct_atlas.png",
-		description:
-			"L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié 300 000 apprenants.",
-		link: "#",
-		slug: "atlas",
-	},
-	{
-		title: "Constructys",
-		highlight: "180",
-		picture: "../_nuxt/assets/illustrations/prjct_constructys.png",
-		description:
-			"Pour préparer les JO 2024, il faut augmenter massivement la masse salariale de la branche BTP. Pour se faire Constructys nous fait mettre en place une solution de reconversion de métier à 180 métiers cibles.",
-		link: "#",
-		slug: "constructys",
-	},
-	{
-		title: "Olecio",
-		highlight: "500",
-		picture: "../_nuxt/assets/illustrations/prjct_broker.png",
-		description:
-			"La plateforme Olecio permet à chacun de découvrir le métier de ses rêve en parcourant des milliers de contenus gratuits. En fonction du profil des visiteurs et de leur appétance pour certains domaines, des métiers puis des formations leurs sont suggérés tout au long de leur expérience de navigation.",
-		link: "#",
-		slug: "olecio",
-	},
+    {
+        title: "Keyro",
+        highlight: "10k",
+        picture: "url(~/assets/illustrations/prjct_actinuum.png)",
+        description:
+            "Keyro est l'émergence d'un produit SAAS pour fournir aux organismes de formation un logiciel ERP+LMS pour digitaliser leur sessions de formations. Grâce à ses nombreuses foncitonnalités, son ergnomie et son expérience concentrée autour de la pédagogie, le plateforme accueille déjà plus de 10k apprenant tous les ans.",
+        link: "#",
+        slug: "keyro",
+    },
+    {
+        title: "Atlas",
+        highlight: "300k",
+        picture: "url(~/assets/illustrations/prjct_atlas.png)",
+        description:
+            "L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié 300 000 apprenants.",
+        link: "#",
+        slug: "atlas",
+    },
+    {
+        title: "Constructys",
+        highlight: "180",
+        picture: "url(~/assets/illustrations/prjct_constructys.png)",
+        description:
+            "Pour préparer les JO 2024, il faut augmenter massivement la masse salariale de la branche BTP. Pour se faire Constructys nous fait mettre en place une solution de reconversion de métier à 180 métiers cibles.",
+        link: "#",
+        slug: "constructys",
+    },
+    {
+        title: "Olecio",
+        highlight: "500",
+        picture: "url(~/assets/illustrations/prjct_broker.png)",
+        description:
+            "La plateforme Olecio permet à chacun de découvrir le métier de ses rêve en parcourant des milliers de contenus gratuits. En fonction du profil des visiteurs et de leur appétance pour certains domaines, des métiers puis des formations leurs sont suggérés tout au long de leur expérience de navigation.",
+        link: "#",
+        slug: "olecio",
+    },
 ]
 const project = {
-	title: "Actinuum",
-	highlight: "+2M€",
-	picture: "_nuxt/assets/illustrations/prjct_actinuum.png",
-	description:
-		"Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.",
-	link: "#",
-	short_description: "Automatiser l'administratif de la formation professionnelle",
-	slug: "actinuum",
-	external_url: "https://actinuum.com/",
+    title: "Actinuum",
+    highlight: "+2M€",
+    picture: "url(~/assets/illustrations/prjct_actinuum.png)",
+    description:
+        "Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.",
+    link: "#",
+    short_description: "Automatiser l'administratif de la formation professionnelle",
+    slug: "actinuum",
+    external_url: "https://actinuum.com/",
 }
 </script>
+
 <template>
 	<div class="bg-chinese-black h-full leading-7">
 		<nu-top-bar />
@@ -75,7 +76,7 @@ const project = {
 				</div>
 				<div class="flex flex-col md:flex-row items-center justify-between h-full gap-6">
 					<div class="px-6 w-full h-44 md:h-full">
-						<div :class="`w-full bg-cover h-full bg-[url('assets/illustrations/prjct_actinuum.png')]`" />
+						<div :class="`w-full bg-cover h-full bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
 					</div>
 					<div class="md:w-1/3 h-[600px] pb-12 flex flex-col justify-between">
 						<div class="px-6">
@@ -123,7 +124,7 @@ const project = {
 						sessions de formations.
 					</p>
 					<div class="h-full w-full md:w-1/3 lg:w-1/2 flex justify-center items-center">
-						<div :class="`w-full bg-contain h-full md:h-96 bg-[url('assets/illustrations/prjct_actinuum.png')]`" />
+						<div :class="`w-full bg-contain h-full md:h-96 bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
 					</div>
 				</div>
 
@@ -132,14 +133,14 @@ const project = {
 				<div class="container">
 					<nu-typography type="title" class="py-6">Un centre de contrôle de la formation</nu-typography>
 					<div class="pt-4 grid grid-cols-2 gap-2 justify-items-center h-screen">
-						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('assets/illustrations/prjct_actinuum.png')]`" />
-						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('assets/illustrations/prjct_actinuum.png')]`" />
-						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('assets/illustrations/prjct_actinuum.png')]`" />
-						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('assets/illustrations/prjct_actinuum.png')]`" />
-						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('assets/illustrations/prjct_actinuum.png')]`" />
-						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('assets/illustrations/prjct_actinuum.png')]`" />
-						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('assets/illustrations/prjct_actinuum.png')]`" />
-						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('assets/illustrations/prjct_actinuum.png')]`" />
+						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
+						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
+						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
+						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
+						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
+						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
+						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
+						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
 					</div>
 					<div class="py-10 flex flex-col md:flex-row">
 						<p class="my-6 md:w-1/2">
@@ -171,7 +172,7 @@ const project = {
 				</div>
 			</div>
 		</div>
-		<div :class="`container w-full bg-cover h-96 bg-[url('assets/illustrations/prjct_actinuum.png')]`" />
+		<div :class="`container w-full bg-cover h-96 bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
 		<div class="container flex flex-col justify-center gap-6 py-12">
 			<div class="px-6 flex flex-col justify-center gap-12">
 				<nu-typography type="title">Un espace d'apprentissage en ligne</nu-typography>
