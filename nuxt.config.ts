@@ -7,4 +7,15 @@ export default defineNuxtConfig({
 		domain: 'nutshell-lab.com',
 		apiHost: 'https://plausible.nutshell-lab.com'
 	},
+	app: {
+		head: {
+			script: [
+				{
+					defer: true,
+					src: 'https://static.cloudflareinsights.com/beacon.min.js',
+					'data-cf-beacon': '{"token": "165b78a79b8741cea254d27e292c3442"}'
+				}
+			]
+		}
+	}
 })
