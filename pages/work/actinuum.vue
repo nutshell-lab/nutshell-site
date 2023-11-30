@@ -1,66 +1,62 @@
 <script lang="ts" setup>
-import { breakpointsTailwind, useBreakpoints } from "@vueuse/core"
-const breakpoints = useBreakpoints(breakpointsTailwind)
-
-const isMobile = computed(() => breakpoints.smallerOrEqual("sm"))
 const results = [
-    "Chiffre d'affaire x3",
-    "Absorption de 3x plus de volume de formation",
-    "Suppression signigicative d'erreurs humaines",
-    "Augmentation de la rapidité d'on-boarding collaborateur",
-    "Satisfaction clients et apprenants",
-    "Fidélisation des formateurs",
-    "Légitimité auprès des acteurs publiques",
+	"Chiffre d'affaire x3",
+	"Absorption de 3x plus de volume de formation",
+	"Suppression signigicative d'erreurs humaines",
+	"Augmentation de la rapidité d'on-boarding collaborateur",
+	"Satisfaction clients et apprenants",
+	"Fidélisation des formateurs",
+	"Légitimité auprès des acteurs publiques",
 ]
 
 const other_projects = [
-    {
-        title: "Keyro",
-        highlight: "10k",
-        picture: "url(~/assets/illustrations/prjct_actinuum.png)",
-        description:
-            "Keyro est l'émergence d'un produit SAAS pour fournir aux organismes de formation un logiciel ERP+LMS pour digitaliser leur sessions de formations. Grâce à ses nombreuses foncitonnalités, son ergnomie et son expérience concentrée autour de la pédagogie, le plateforme accueille déjà plus de 10k apprenant tous les ans.",
-        link: "#",
-        slug: "keyro",
-    },
-    {
-        title: "Atlas",
-        highlight: "300k",
-        picture: "url(~/assets/illustrations/prjct_atlas.png)",
-        description:
-            "L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié 300 000 apprenants.",
-        link: "#",
-        slug: "atlas",
-    },
-    {
-        title: "Constructys",
-        highlight: "180",
-        picture: "url(~/assets/illustrations/prjct_constructys.png)",
-        description:
-            "Pour préparer les JO 2024, il faut augmenter massivement la masse salariale de la branche BTP. Pour se faire Constructys nous fait mettre en place une solution de reconversion de métier à 180 métiers cibles.",
-        link: "#",
-        slug: "constructys",
-    },
-    {
-        title: "Olecio",
-        highlight: "500",
-        picture: "url(~/assets/illustrations/prjct_broker.png)",
-        description:
-            "La plateforme Olecio permet à chacun de découvrir le métier de ses rêve en parcourant des milliers de contenus gratuits. En fonction du profil des visiteurs et de leur appétance pour certains domaines, des métiers puis des formations leurs sont suggérés tout au long de leur expérience de navigation.",
-        link: "#",
-        slug: "olecio",
-    },
+	{
+		title: "Keyro",
+		highlight: "10k",
+		picture: "url(~/assets/illustrations/prjct_actinuum.png)",
+		description:
+			"Keyro est l'émergence d'un produit SAAS pour fournir aux organismes de formation un logiciel ERP+LMS pour digitaliser leur sessions de formations. Grâce à ses nombreuses foncitonnalités, son ergnomie et son expérience concentrée autour de la pédagogie, le plateforme accueille déjà plus de 10k apprenant tous les ans.",
+		link: "#",
+		slug: "keyro",
+	},
+	{
+		title: "Atlas",
+		highlight: "300k",
+		picture: "url(~/assets/illustrations/prjct_atlas.png)",
+		description:
+			"L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié 300 000 apprenants.",
+		link: "#",
+		slug: "atlas",
+	},
+	{
+		title: "Constructys",
+		highlight: "180",
+		picture: "url(~/assets/illustrations/prjct_constructys.png)",
+		description:
+			"Pour préparer les JO 2024, il faut augmenter massivement la masse salariale de la branche BTP. Pour se faire Constructys nous fait mettre en place une solution de reconversion de métier à 180 métiers cibles.",
+		link: "#",
+		slug: "constructys",
+	},
+	{
+		title: "Olecio",
+		highlight: "500",
+		picture: "url(~/assets/illustrations/prjct_broker.png)",
+		description:
+			"La plateforme Olecio permet à chacun de découvrir le métier de ses rêve en parcourant des milliers de contenus gratuits. En fonction du profil des visiteurs et de leur appétance pour certains domaines, des métiers puis des formations leurs sont suggérés tout au long de leur expérience de navigation.",
+		link: "#",
+		slug: "olecio",
+	},
 ]
 const project = {
-    title: "Actinuum",
-    highlight: "+2M€",
-    picture: "url(~/assets/illustrations/prjct_actinuum.png)",
-    description:
-        "Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.",
-    link: "#",
-    short_description: "Automatiser l'administratif de la formation professionnelle",
-    slug: "actinuum",
-    external_url: "https://actinuum.com/",
+	title: "Actinuum",
+	highlight: "+2M€",
+	picture: "url(~/assets/illustrations/prjct_actinuum.png)",
+	description:
+		"Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.",
+	link: "#",
+	short_description: "Automatiser l'administratif de la formation professionnelle",
+	slug: "actinuum",
+	external_url: "https://actinuum.com/",
 }
 </script>
 
@@ -142,7 +138,7 @@ const project = {
 						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
 						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
 					</div>
-					<div class="py-10 flex flex-col md:flex-row">
+					<div class="py-10 flex flex-col md:flex-row items-center">
 						<p class="my-6 md:w-1/2">
 							Pour permettre à Actinuum <strong>d'avoir la main mise sur son outil opérationnel</strong>, Nutshell a mis
 							en place
@@ -179,7 +175,8 @@ const project = {
 				<div class="flex flex-col md:flex-row items-center justify-center gap-12">
 					<div class="md:w-1/2">
 						<p class="py-6">
-							Afin d'engager un <strong>maximum de qualité</strong> tout au long du processus de formation, nous avons conçu pour Actinuum
+							Afin d'engager un <strong>maximum de qualité</strong> tout au long du processus de formation, nous avons
+							conçu pour Actinuum
 							un LMS (Learning Management System) integré avec son ERP qui permet aux participants et au formateurs de
 							disposer d'un <strong>support</strong> pour toute la durée de la formation, qu'elle soit en présentielle ou
 							bien à distance.
@@ -207,8 +204,8 @@ const project = {
 			</div>
 		</div>
 		<div
-			class="px-6 bg-chinese-black text-alabaster flex flex-col py-20 gap-28 bg-right-bottom bg-no-repeat bg-contain md:bg-[url('assets/logo_nutshell_bottom_right_red_outline.svg')]">
-			<div class="flex flex-col md:flex-row gap-28 md:px-28 justify-center">
+			class="px-6 bg-chinese-black text-alabaster flex flex-col items-center py-20 gap-28 bg-right-bottom bg-no-repeat bg-contain md:bg-[url('assets/logo_nutshell_bottom_right_red_outline.svg')]">
+			<div class="flex flex-col md:flex-row gap-28 md:px-28 justify-between items-center">
 				<div class="flex flex-col gap-12">
 					<nu-typography type="title">Résultats constatés</nu-typography>
 					<div>
@@ -241,7 +238,7 @@ const project = {
 					arsenal pour concevoir des solutions sur-mesures pour le secteur.
 				</p>
 			</div>
-			<div class="container md:pl-32 flex flex-col md:grid md:grid-cols-2 gap-[1px]">
+			<div class="container leading-5 md:pl-32 flex flex-col md:grid md:grid-cols-2 gap-[1px]">
 				<nu-link :aria-label="`Découvrez le projet ${p.title}`" :href="`/projects/${p.slug}`"
 					v-for="(p, i) in other_projects.slice(0, 4)">
 					<nu-project-preview class="border-chinese-black" :expand="true" :active_image="true" :line-break="i != 1"
