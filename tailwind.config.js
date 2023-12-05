@@ -10,6 +10,7 @@ module.exports = {
 	theme: {
 		colors: {
 			current: 'currentColor',
+			transparent: 'transparent',
 			cinnabar: '#E0492B',
 			alabaster: '#EDEBE8',
 			'chinese-black': '#161616',
@@ -43,7 +44,15 @@ module.exports = {
 			{pattern: /bg-.*/},
 		],
 
-		extend: {},
+		extend: {
+			containers: {
+				'sm': '640px',
+				'md': '768px',
+				'lg': '1024px',
+				'xl': '1280px',
+				'2xl': '1536px',
+			},
+		},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/container-queries')],
 }

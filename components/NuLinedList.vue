@@ -5,8 +5,10 @@ defineProps({
 })
 </script>
 <template>
-	<div v-for="entry in entries" :class="class" class="flex flex-col">
-		<hr class="h-[2px]" />
-		<nu-typography>{{ entry }}</nu-typography>
+	<div class="flex flex-col @md:grid @md:grid-cols-2 gap-x-12 gap-y-16">
+		<div v-for="(entry, index) in entries" :class="class">
+			<hr class="h-[2px] mb-1" />
+			<nu-typography type="large">{{ entry }}</nu-typography>
+		</div>
 	</div>
 </template>

@@ -13,10 +13,11 @@ defineProps({
 		</div>
 		<div v-else>
 			<div class="flex flex-col h-[504px] justify-center gap-6">
-				<nu-logo-chip class="text-cinnabar relative top-14 right-4 z-0"/>
+				<nu-logo-chip class="text-cinnabar relative z-0"/>
 				<div class="z-10 flex flex-col justify-center gap-6">
 					<slot />
 				</div>
+				<nu-watermark />
 			</div>
 		</div>
 	</div>

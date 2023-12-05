@@ -11,7 +11,9 @@
   <Meta name="twitter:description" content="Nutshell digital agency" />
   <Meta name="twitter:image" content="https://nutshell-lab.com/nutshell.png" />
   <Meta name="twitter:card" content="summary_large_image" />
-  <NuxtPage />
+  <nu-layout>
+    <NuxtPage />
+  </nu-layout>
 </template>
 
 <style>

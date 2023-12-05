@@ -32,7 +32,7 @@
 			<div class="my-20">
 				<div class="text-xs uppercase font-inter">nutshell_system</div>
 				<h2 class="text-5xl uppercase font-black">colors</h2>
-				<div class="py-8 grid grid-flow-row-dense grid-cols-3 md:grid-cols-6 gap-6">
+				<div class="py-8 grid grid-flow-row-dense grid-cols-3 @md:grid-cols-6 gap-6">
 					<div class="flex">
 						<div class="bg-cinnabar w-20 h-20" />
 						<span class="vertical-text font-bold text-xs">cinnabar</span>

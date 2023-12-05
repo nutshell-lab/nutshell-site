@@ -62,19 +62,18 @@ const project = {
 
 <template>
 	<div class="bg-chinese-black h-full leading-7">
-		<nu-top-bar />
 		<div class="wrapper">
-			<div class="pt-44 pb-12 md:h-screen bg-chinese-black text-alabaster flex flex-col gap-12">
+			<div class="pt-44 pb-12 @md:h-screen bg-chinese-black text-alabaster flex flex-col gap-12">
 				<div class="flex gap-14 overflow-hidden">
 					<nu-typography type="hero-title">{{ project.title }}</nu-typography>
 					<nu-typography type="hero-title-filled">{{ project.title }}</nu-typography>
 					<nu-typography type="hero-title">{{ project.title }}</nu-typography>
 				</div>
-				<div class="flex flex-col md:flex-row items-center justify-between h-full gap-6">
-					<div class="px-6 w-full h-44 md:h-full">
+				<div class="flex flex-col @md:flex-row items-center justify-between h-full gap-6">
+					<div class="px-6 w-full h-44 @md:h-full">
 						<div :class="`w-full bg-cover h-full bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
 					</div>
-					<div class="md:w-1/3 h-[600px] pb-12 flex flex-col justify-between">
+					<div class="@md:w-1/3 h-[600px] pb-12 flex flex-col justify-between">
 						<div class="px-6">
 							<nu-typography type="title" class="text-alabaster font-normal"> {{ project.short_description }}
 							</nu-typography>
@@ -101,17 +100,17 @@ const project = {
 					</div>
 				</div>
 			</div>
-			<div class="px-6 container py-12 flex flex-col gap-6 md:py-40 justify-center">
+			<div class="px-6 container py-12 flex flex-col gap-6 @md:py-40 justify-center">
 				<nu-typography type="title">Parce qu'Excel ne scale pas.</nu-typography>
-				<div class="flex flex-col md:flex-row gap-6 h-full md:items-center">
-					<div class="md:w-1/3 lg:w-1/4">
+				<div class="flex flex-col @md:flex-row gap-6 h-full @md:items-center">
+					<div class="@md:w-1/3 @lg:w-1/4">
 						À ces débuts, l'organisme de formation Actinuum, comme beaucoup d'entreprise par ailleurs, utilise Excel
 						comme
 						outil principal pour planifier et suivre son activité.
 						Planing des formations, entreprises clients, compétences et disponibilité des formateurs, suivi des envois
 						administratifs, pilotage de l'activité et décompte des indicateurs pour le bilan pédagogique et financier.
 					</div>
-					<p class="md:w-1/3 lg:w-1/4">
+					<p class="@md:w-1/3 @lg:w-1/4">
 						Autant d'éléments où les erreurs humaines viennent se glisser exponentiellement avec la croissance du volume
 						de
 						formation. Actinuum, portée par ses dirigeant ambitieux détermine alors que faire développer son propre ERP
@@ -119,8 +118,8 @@ const project = {
 						rentabilisé en quelques années tout en augmentant significativement leur capacité à absorber du volume de
 						sessions de formations.
 					</p>
-					<div class="h-full w-full md:w-1/3 lg:w-1/2 flex justify-center items-center">
-						<div :class="`w-full bg-contain h-full md:h-96 bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
+					<div class="h-full w-full @md:w-1/3 @lg:w-1/2 flex justify-center items-center">
+						<div :class="`w-full bg-contain h-full @md:h-96 bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
 					</div>
 				</div>
 
@@ -138,8 +137,8 @@ const project = {
 						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
 						<div :class="`bg-cover w-full h-full bg-no-repeat bg-[url('~/assets/illustrations/prjct_actinuum.png')]`" />
 					</div>
-					<div class="py-10 flex flex-col md:flex-row items-center">
-						<p class="my-6 md:w-1/2">
+					<div class="py-10 flex flex-col @md:flex-row items-center">
+						<p class="my-6 @md:w-1/2">
 							Pour permettre à Actinuum <strong>d'avoir la main mise sur son outil opérationnel</strong>, Nutshell a mis
 							en place
 							un
@@ -153,7 +152,7 @@ const project = {
 							clients et de participants.
 
 						</p>
-						<ul class="list-disc px-10 md:w-1/2">
+						<ul class="list-disc px-10 @md:w-1/2">
 							<li>Durant le cycle de vie de la session de formation, plusieurs déclencheurs ont été paramétrés pour
 								l’envoi
 								des convocations, des conventions, etc. Cette automatisation permet de se passer de l’action
@@ -172,8 +171,8 @@ const project = {
 		<div class="container flex flex-col justify-center gap-6 py-12">
 			<div class="px-6 flex flex-col justify-center gap-12">
 				<nu-typography type="title">Un espace d'apprentissage en ligne</nu-typography>
-				<div class="flex flex-col md:flex-row items-center justify-center gap-12">
-					<div class="md:w-1/2">
+				<div class="flex flex-col @md:flex-row items-center justify-center gap-12">
+					<div class="@md:w-1/2">
 						<p class="py-6">
 							Afin d'engager un <strong>maximum de qualité</strong> tout au long du processus de formation, nous avons
 							conçu pour Actinuum
@@ -189,7 +188,7 @@ const project = {
 							de discussion dans un chat intégré.
 						</p>
 					</div>
-					<div class="md:w-1/2">
+					<div class="@md:w-1/2">
 						<ul class="list-disc px-10">
 							<li>Comprend 16 modalités d’apprentissages différentes : micro-learning, certification, exercices en ligne,
 								évaluation ou autre module SCORM.</li>
@@ -204,15 +203,16 @@ const project = {
 			</div>
 		</div>
 		<div
-			class="px-6 bg-chinese-black text-alabaster flex flex-col items-center py-20 gap-28 bg-right-bottom bg-no-repeat bg-contain md:bg-[url('assets/logo_nutshell_bottom_right_red_outline.svg')]">
-			<div class="flex flex-col md:flex-row gap-28 md:px-28 justify-between items-center">
+			class="px-6 bg-chinese-black text-alabaster flex flex-col items-center py-20 gap-28 bg-right-bottom bg-no-repeat bg-contain @md:bg-[url('assets/logo_nutshell_bottom_right_red_outline.svg')]">
+			<div class="flex flex-col @md:flex-row gap-28 @md:px-28 justify-between items-center">
+
 				<div class="flex flex-col gap-12">
 					<nu-typography type="title">Résultats constatés</nu-typography>
 					<div>
 						<nu-lined-list :entries="results" class="gap-12" />
 					</div>
 				</div>
-				<div class="flex flex-col gap-6 md:w-1/4 ">
+				<div class="flex flex-col gap-6 @md:w-1/4 ">
 					<nu-typography type="title">Prêt à monter en puissance?</nu-typography>
 					<nu-button>Commençons à parler</nu-button>
 				</div>
@@ -238,23 +238,23 @@ const project = {
 					arsenal pour concevoir des solutions sur-mesures pour le secteur.
 				</p>
 			</div>
-			<div class="container leading-5 md:pl-32 flex flex-col md:grid md:grid-cols-2 gap-[1px]">
+			<div class="container leading-5 @md:pl-32 flex flex-col @md:grid @md:grid-cols-2 gap-[1px]">
 				<nu-link :aria-label="`Découvrez le projet ${p.title}`" :href="`/projects/${p.slug}`"
 					v-for="(p, i) in other_projects.slice(0, 4)">
-					<nu-project-preview class="border-chinese-black" :expand="true" :active_image="true" :line-break="i != 1"
+					<nu-project-preview class="border-chinese-black" :expand="true" :line-break="i != 1"
 						:title="p.title" :highlight="p.highlight" :picture="p.picture"
 						:description="p.description"></nu-project-preview>
 				</nu-link>
 			</div>
 		</div>
-		<footer
-			class="bg-chinese-black text-alabaster flex flex-col justify-center items-center px-8 py-12 md:bg-[url('assets/logo_nutshell_bottom_right_red_outline.svg')] bg-no-repeat bg-right-bottom">
-			<nu-section-break class="container md:pl-28 place-self-center text-center" variant="dark">
-				<nu-typography type="hero-title">Consultez <br class="md:hidden" />nous.</nu-typography>
+		<!-- <footer
+			class="bg-chinese-black text-alabaster flex flex-col justify-center items-center px-8 py-12 @md:bg-[url('assets/logo_nutshell_bottom_right_red_outline.svg')] bg-no-repeat bg-right-bottom">
+			<nu-section-break class="container @md:pl-28 place-self-center text-center" variant="dark">
+				<nu-typography type="hero-title">Consultez <br class="@md:hidden" />nous.</nu-typography>
 				<nu-button class="place-self-center border-cinnabar text-cinnabar">Par chat</nu-button>
 			</nu-section-break>
-			<div class="py-20 md:w-full max-w-5xl">
-				<div class="flex flex-col md:grid md:grid-rows-4 md:grid-flow-col gap-6 items-center md:items-start">
+			<div class="py-20 @md:w-full max-w-5xl">
+				<div class="flex flex-col @md:grid @md:grid-rows-4 @md:grid-flow-col gap-6 items-center @md:items-start">
 					<nu-logo symbol class="row-span-4 pb-6" :width="56" />
 					<div><nu-link href="#" aria-label="Découvrez tous nos projets">Projets</nu-link></div>
 					<div><nu-link href="#" aria-label="Parcourez nos études de cas">Études de cas</nu-link></div>
@@ -265,12 +265,12 @@ const project = {
 			</div>
 			<div class="text-xs text-onyx w-full columns-1 text-center">
 				<nu-typography type="mention">© {{ new Date().getFullYear() }} Nutshell Lab </nu-typography>
-				<span class="md:hidden"> - </span>
-				<br class="hidden md:block" />
+				<span class="@md:hidden"> - </span>
+				<br class="hidden @md:block" />
 				<nu-typography type="mention">Tous droits réservés - <nu-link href="#"
 						aria-label="Accédez aux mentions légales">Mentions légales</nu-link></nu-typography>
 			</div>
-		</footer>
+		</footer> -->
 	</div>
 </template>
 

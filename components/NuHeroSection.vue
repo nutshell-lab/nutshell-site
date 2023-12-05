@@ -1,7 +1,5 @@
 <script lang="ts" setup>
-import NuButton from "~/components/NuButton.vue"
-import NuLogo from "~/components/NuLogo.vue"
-import NuTypography from "~/components/NuTypography.vue"
+import Parallaxy from '@lucien144/vue3-parallaxy';
 defineProps({
     caption: String,
     title: String,
@@ -11,8 +9,8 @@ defineProps({
 </script>
 
 <template>
-	<div class="h-screen px-4 py-32 flex flex-col justify-center">
-		<div class="flex flex-col gap-14">
+	<div class="h-auto py-32 flex flex-col justify-center">
+		<div class="flex flex-col gap-14 py-16 relative">
 			<nu-typography type="caption">
 				<slot name="caption">
 					{{ caption }}
@@ -34,6 +32,13 @@ defineProps({
 						{{ cta }}
 					</nu-button>
 				</slot>
+			</div>
+			<div class="bg-chinese-black h-full w-[1px] absolute right-0 top-0 overflow-hidden hidden lg:block">
+				<ClientOnly>
+					<Parallaxy :speed="300" axis="y" direction="opposite">
+						<div class="bg-cinnabar h-[30px] w-[1px] z-20 relative"/>
+					</Parallaxy>
+				</ClientOnly>
 			</div>
 		</div>
 	</div>

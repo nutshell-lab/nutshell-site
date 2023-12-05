@@ -4,22 +4,28 @@ import NuUseCaseTile from "./NuUseCaseTile.vue"
 import "swiper/css"
 
 defineProps({
-    items: { type: Array, default: [] },
+    items: { type: Array as PropType<{ disabled: boolean, slug: string, title: string, subtitle: string, picture: string, id: string }[]>, default: [] },
 })
 </script>
 
 <template>
 	<div class="flex flex-col gap-4">
-		<!--div class="grid grid-flow-col grid-rows-1 gap-6"-->
 		<div>
 			<swiper
-				:space-between="24">
-				<swiper-slide class="max-w-[375px]" v-for="i in items">
-					<nu-use-case-tile :title="i.title" :subtitle="i.subtitle" :picture="i.picture" :id="i.id" />
+				:slides-per-view="'auto'"
+				:space-between="24"
+				class="!overflow-visible"
+			>
+				<swiper-slide class="max-w-[375px]" v-for="(i, index) in items">
+					<div data-aos="slide-up" :data-aos-delay="50 * index">
+						<nu-link :aria-label="`Découvrez le cas ${i.title}`" :href="`/work/${i.slug}`" :disabled="i.disabled">
+							<nu-use-case-tile :title="i.title" :subtitle="i.subtitle" :picture="i.picture" :id="i.id" :disabled="i.disabled"/>
+						</nu-link>
+					</div>
 				</swiper-slide>
 			</swiper>
 		</div>
-		<div class="flex items-center gap-4 justify-start md:justify-end md:px-32">
+		<div class="flex items-center gap-4 justify-start @md:justify-end @md:px-32">
 			<div class="uppercase font-light">SWIPE</div><nu-arrow :right="true" />
 		</div>
 	</div>
