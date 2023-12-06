@@ -5,7 +5,7 @@
 		<div class="z-10">
 			<slot>
 				<div class="flex items-center gap-4">
-					<nu-logo :width="300" :symbol="true" :text="true" :suffix="false" :colors="['cinnabar', 'alabaster', 'alabaster']"/>
+					<nu-logo :width="300" symbol text :colors="['cinnabar', 'alabaster', 'alabaster']"/>
 				</div>
 			</slot>
 		</div>

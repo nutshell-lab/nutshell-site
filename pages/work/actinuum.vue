@@ -6,6 +6,16 @@ import prjct_broker from '~/assets/illustrations/prjct_broker.webp'
 import prjct_atlas from '~/assets/illustrations/prjct_atlas.webp'
 import prjct_constructys from '~/assets/illustrations/prjct_constructys.webp'
 
+import logo_nutshell from '~/assets/logo_nutshell.png'
+
+useSeoMeta({
+  title: 'Actinuum - Automatiser l’administratif de la formation professionnelle par Nutshell',
+  ogTitle: 'Actinuum - Automatiser l’administratif de la formation professionnelle par Nutshell',
+  description: 'Découvrez comment Nutshell a analysé les processus métier d\'un organisme de formation pour développer un logiciel type ERP sur mesure',
+  ogDescription: 'Découvrez comment Nutshell a analysé les processus métier d\'un organisme de formation pour développer un logiciel type ERP sur mesure',
+  ogImage: logo_nutshell,
+})
+
 const results = [
 	"Chiffre d'affaire x3",
 	"Absorption de 3x plus de volume de formation",
@@ -22,17 +32,17 @@ const other_projects = [
 		highlight: "10k",
         picture: `url('${prjct_actinuum}')`,
 		description:
-			"Keyro est l'émergence d'un produit SAAS pour fournir aux organismes de formation un logiciel ERP+LMS pour digitaliser leur sessions de formations. Grâce à ses nombreuses foncitonnalités, son ergnomie et son expérience concentrée autour de la pédagogie, le plateforme accueille déjà plus de 10k apprenant tous les ans.",
+			"Keyro est l'émergence d'un produit SAAS pour fournir aux organismes de formation un logiciel ERP+LMS pour digitaliser leur sessions de formations. La plateforme accueille déjà plus de 10k apprenant tous les ans.",
 		link: "#",
 		slug: "keyro",
 		disabled: true
 	},
 	{
 		title: "Atlas",
-		highlight: "300k",
+		highlight: "1000+",
         picture: `url('${prjct_atlas}')`,
 		description:
-			"L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié 300 000 apprenants.",
+			"L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié plus de 1000 apprenants.",
 		link: "#",
 		slug: "atlas",
 		disabled: true
@@ -52,7 +62,7 @@ const other_projects = [
 		highlight: "500",
         picture: `url('${prjct_broker}')`,
 		description:
-			"La plateforme Olecio permet à chacun de découvrir le métier de ses rêve en parcourant des milliers de contenus gratuits. En fonction du profil des visiteurs et de leur appétance pour certains domaines, des métiers puis des formations leurs sont suggérés tout au long de leur expérience de navigation.",
+			"La plateforme Olecio permet à chacun de découvrir le métier de ses rêve en parcourant des milliers de contenus gratuits. En fonction du profil des visiteurs, des métiers puis des formations leurs sont suggérés tout au long de leur expérience de navigation.",
 		link: "#",
 		slug: "olecio",
 		disabled: true
@@ -61,7 +71,6 @@ const other_projects = [
 const project = {
 	title: "Actinuum",
 	highlight: "+2M€",
-	picture: `url('${prjct_actinuum}')`,
 	description:
 		"Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.",
 	link: "#",
@@ -114,7 +123,7 @@ const keywords = [
 					</div>
 					<nu-lined-list :entries="keywords" class="!gap-10" />
 					<div class="w-full flex justify-start">
-						<nu-link target="_blank" :href="project.external_url" aria-label="Découvrez le site Actinnuum">
+						<nu-link target="_blank" :to="project.external_url" label="Découvrez le site Actinnuum">
 							<nu-button class="!text-alabaster !border-alabaster bg-chinese-black">
 									Découvrir le site
 							</nu-button>
@@ -122,11 +131,13 @@ const keywords = [
 					</div>
 				</div>
 				<div class="flex-1 overflow-visible relative">
-					<div :style="`--image-url: ${project.picture}`" :class="`absolute w-screen bg-cover h-full bg-cinnabar`" />
+					<div class="absolute w-screen h-full bg-cinnabar">
+						<div :class="`w-full h-full bg-[url('~/assets/illustrations/prjct_actinuum/header.webp')] mix-blend-multiply`" />
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container @2xl:px-28 @xl:px-24 @lg:px-20 @md:px-12 @sm:px-10 px-6 py-12 flex flex-col gap-12 @md:py-40 justify-center">
+		<div class="container px-layout py-12 flex flex-col gap-12 @md:py-40 justify-center">
 			<div data-aos="slide-up">
 				<nu-typography type="title">Parce qu'Excel ne scale pas.</nu-typography>
 			</div>
@@ -146,12 +157,12 @@ const keywords = [
 					</p>
 				</div>
 				<div class="w-full h-[300px] @2xl:w-[500px]">
-					<div :class="`w-full bg-contain h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_actinuum.webp')]`" />
+					<div :class="`w-full bg-cover bg-center h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_actinuum/board.webp')]`" />
 				</div>
 			</div>
 
 		</div>
-		<div class="container py-12 @2xl:px-28 @xl:px-24 @lg:px-20 @md:px-12 @sm:px-10 px-6">
+		<div class="container py-12 px-layout">
 			<div data-aos="slide-up">
 				<nu-typography type="title" class="py-6">Un centre de contrôle de la formation</nu-typography>
 			</div>
@@ -183,8 +194,14 @@ const keywords = [
 				</div>
 			</div>
 		</div>
-		<div :class="`container bg-cinnabar w-full bg-cover h-96 bg-[url('~/assets/illustrations/prjct_actinuum.webp')] my-20`" />
-		<div class="container @2xl:px-28 @xl:px-24 @lg:px-20 @md:px-12 @sm:px-10 px-6 py-12 pb-32">
+		<div :class="`container w-full h-[400px] my-20 overflow-hidden`">
+			<ClientOnly>
+				<Parallaxy :speed="100" axis="y">
+					<div class="w-screen h-[700px] bg-center bg-cover bg-[url('~/assets/illustrations/prjct_actinuum/group.webp')]" />
+				</Parallaxy>
+			</ClientOnly>
+		</div>
+		<div class="container px-layout py-12 pb-32">
 			<div class="flex flex-col justify-center gap-12">
 				<div data-aos="slide-up">
 					<nu-typography type="title">Un espace d'apprentissage en ligne</nu-typography>
@@ -221,7 +238,7 @@ const keywords = [
 			</div>
 		</div>
 		<div class="bg-chinese-black text-alabaster py-32 my-12">
-			<div class="container @2xl:px-28 @xl:px-24 @lg:px-20 @md:px-12 @sm:px-10 px-6 flex flex-col @xl:flex-row gap-28 justify-between mb-32">
+			<div class="container px-layout flex flex-col @xl:flex-row gap-28 justify-between mb-32">
 				<div class="flex flex-col gap-12">
 					<div data-aos="slide-up">
 						<nu-typography type="title">Résultats constatés</nu-typography>
@@ -232,7 +249,7 @@ const keywords = [
 				</div>
 				<div class="flex-1 flex flex-col gap-12">
 					<nu-typography type="title">Prêt à monter en puissance?</nu-typography>
-					<nu-link aria-label="Envoyer nous un mail" href="mailto:hello@nutshell-lab.com">
+					<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
 						<nu-button class="!text-alabaster !border-alabaster bg-chinese-black">
 							Commençons à parler
 						</nu-button>
@@ -258,13 +275,13 @@ const keywords = [
 				</Parallaxy>
 			</ClientOnly>
 		</div>
-		<div class="@2xl:px-28 @xl:px-24 @lg:px-20 @md:px-12 @sm:px-10 px-6 container py-40 flex flex-col gap-12">
+		<div class="px-layout container py-40 flex flex-col gap-12">
 			<div data-aos="slide-up">
 				<nu-typography type="title">La recette pour digitaliser votre organisme de formation</nu-typography>
 			</div>
 			<div class="flex flex-col @lg:flex-row gap-12 items-center">
-				<div class="w-full h-[200px] @2xl:w-[500px]">
-					<div :class="`w-full bg-contain h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_actinuum.webp')]`" />
+				<div class="w-full h-[250px] @2xl:w-[500px]">
+					<div :class="`w-full bg-cover h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_actinuum/notes.webp')]`" />
 				</div>
 				<ul class="pl-4 list-disc">
 					<li>Auditer et revisiter l'ensemble de vos processus avec la méthodologie LEAN</li>
@@ -276,7 +293,7 @@ const keywords = [
 			</div>
 		</div>
 		<div class="bg-chinese-black text-alabaster">
-			<div class="@2xl:px-28 @xl:px-24 @lg:px-20 @md:px-12 @sm:px-10 px-6 container flex flex-col gap-12 py-20">
+			<div class="px-layout container flex flex-col gap-12 py-20">
 				<div data-aos="slide-up">
 					<nu-typography type="title">10 ans d'expérience<br />dans la formation
 						professionelle</nu-typography>
@@ -288,7 +305,7 @@ const keywords = [
 				</p>
 				<div class="flex flex-col items-end gap-8">
 					<div class="@lg:pl-32 flex flex-col @lg:grid @lg:grid-cols-2 gap-6">
-						<nu-link :aria-label="`Découvrez le projet ${p.title}`" :href="`/work/${p.slug}`" :disabled="p.disabled"
+						<nu-link :label="`Découvrez le projet ${p.title}`" :to="`/work/${p.slug}`" :disabled="p.disabled"
 							v-for="(p, i) in other_projects.slice(0, 4)">
 							<nu-project-preview :class="{ '@lg:mt-8': i === 0, '@lg:-mt-8': i === 3 }" :line-break="i != 1" :title="p.title" :highlight="p.highlight"
 								:picture="p.picture" :description="p.description" :disabled="p.disabled" data-aos="slide-up"></nu-project-preview>
@@ -301,7 +318,7 @@ const keywords = [
 		<div class="overflow-hidden relative">
 			<nu-section-break class="container @md:px-28 place-self-center" variant="light">
 				<nu-typography type="hero-title-dark">Commençons <br />à discuter.</nu-typography>
-				<nu-link aria-label="Envoyer nous un mail" href="mailto:hello@nutshell-lab.com">
+				<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
 					<nu-button class="border-cinnabar text-cinnabar">Par email</nu-button>
 				</nu-link>
 				<nu-watermark class="hidden @2xl:block"/>

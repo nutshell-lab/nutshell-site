@@ -6,6 +6,7 @@ import { computed } from "vue"
 	-----------|---------------|----------------|------|------
 	Hero Title | 40 | 80 | Silka Black | outlined uppercase
 	title | 32 | 48 | Silka Black |
+	subtitle | 24 | 40 | Silka Black |
 	large | 18 | 21 | Inter Regular
 	regular | 16 | 16 | Inter Regular
 	text-link | 16 | 16 | Inter Regular
@@ -23,25 +24,28 @@ const makeClass = (c: string) => `${props.class} ${c}`
 </script>
 
 <template>
-	<h2 v-if="type == 'hero-title'"
+	<span v-if="type == 'hero-title'"
 		:class="makeClass('text-hero-title-light @md:text-[80px] @md:leading-[76px] text-[40px]')">
 		<slot />
-	</h2>
-	<h2 v-if="type == 'hero-title-filled'"
+	</span>
+	<span v-if="type == 'hero-title-filled'"
 		:class="makeClass('text-hero-title-light filled @md:text-[80px] @md:leading-[76px] text-[40px]')">
 		<slot />
-	</h2>
-	<h2 v-if="type == 'hero-title-dark'"
+	</span>
+	<span v-if="type == 'hero-title-dark'"
 		:class="makeClass('text-hero-title-dark @md:text-[80px] @md:leading-[76px] text-[40px]')">
 		<slot />
-	</h2>
-	<h2 v-if="type == 'hero-title-dark-filled'"
+	</span>
+	<span v-if="type == 'hero-title-dark-filled'"
 		:class="makeClass('text-hero-title-dark filled @md:text-[80px] @md:leading-[76px] text-[40px]')">
 		<slot />
-	</h2>
-	<h3 v-if="type == 'title'" :class="makeClass('font-black font-silka text-4xl @md:text-5xl')">
+	</span>
+	<span v-if="type == 'title'" :class="makeClass('font-black font-silka text-4xl @md:text-5xl')">
 		<slot />
-	</h3>
+	</span>
+	<span v-if="type == 'subtitle'" :class="makeClass('font-black font-silka text-2xl @md:text-3xl')">
+		<slot />
+	</span>
 	<span v-if="type == 'large'" :class="makeClass('font-inter text-lg leading-[21px]')">
 		<slot />
 	</span>

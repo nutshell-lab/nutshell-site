@@ -1,20 +1,11 @@
 <script lang="ts" setup>
-export interface Props {
-    symbol: boolean
-    text: boolean
-    suffix: boolean
-    style: "filled" | "outlined"
-    colors: string[]
-    width: number
-}
-
-const props = withDefaults(defineProps<Props>(), {
-    style: "filled",
-    colors: () => ["cinnabar", "chinese-black", "chinese-black"],
-    symbol: false,
-    text: false,
-    suffix: false,
-    width: 256,
+const props = defineProps({
+    style: { type: String as PropType<"filled" | "outlined">, default: "filled" },
+    colors: { type: Array as PropType<string[]>, default: () => ["cinnabar", "chinese-black", "chinese-black"] },
+    symbol: { type: Boolean, default: false },
+    text: { type: Boolean, default: false },
+    suffix: { type: Boolean, default: false },
+    width: { type: Number, default: 256 },
 })
 
 const [w_sym, w_tex, w_suf] = [325, 1100, 172]
@@ -40,7 +31,7 @@ const [logoColor, textColor, suffixColor] = props.colors
 <template>
 	<div class="">
 		<!-- Hack to load theme colors at build time for this component. TODO: force inclusion in build -->
-		<svg :width="width" height="auto" :viewBox="viewbox" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<svg :width="width" :viewBox="viewbox" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<g v-if="symbol" :class="`text-${logoColor} `">
 				<path d="M212 0.300049L191.89 11.8301C185.905 15.2547 180.987 20.2715 177.683 26.3231C174.378 32.3747 172.816 39.224 173.17 46.1101L178.23 149.11L72.5299 80.42L32.6299 103.37L170.15 191.55L219 163.52L212 0.300049Z" fill="currentColor"/>
 				<path d="M323.63 294.73L211.38 237.36L319.38 182.12L323.64 179.93V133.93L203.72 196.16C196.14 200.075 189.787 206.004 185.359 213.296C180.931 220.588 178.599 228.959 178.62 237.49V265.49L323.62 340.72L323.63 294.73Z" fill="currentColor"/>

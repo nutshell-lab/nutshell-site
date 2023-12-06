@@ -9,24 +9,29 @@ const open = ref(false)
 		<div :class="{ 'left-0': open, '-left-[517px]': !open }" class="transition-all z-40 bg-alabaster fixed w-auto max-w-[calc(100vw-100px)] lg:w-[517px] lg:px-32 md:px-24 px-16 h-screen py-12 flex flex-col justify-between">
 			<nu-logo symbol text :width="162" :colors="['cinnabar', 'chinese-black', 'chinese-black']" />
 			<nav class="flex flex-col items-center jusitfy-center gap-6">
-				<nu-link href="/" aria-label="Découvrez tous nos projets" hover>
+				<nu-link to="/#agency" label="Découvrez tous nos projets" hover>
 					<nu-typography type="title" class="text-center">
 						L'agence
 					</nu-typography>
 				</nu-link>
-				<nu-link href="/#projects" aria-label="Découvrez tous nos projets" hover>
+				<nu-link to="/#projects" label="Découvrez tous nos projets" hover>
 					<nu-typography type="title" class="text-center">
-						Projects
+						Projets
 					</nu-typography>
 				</nu-link>
-				<nu-link href="/#use-cases" aria-label="Parcourez nos études de cas" hover>
+				<nu-link to="/#use-cases" label="Parcourez nos études de cas" hover>
 					<nu-typography type="title" class="text-center">
 						Études de cas
 					</nu-typography>
 				</nu-link>
-				<!-- <nu-link href="#" aria-label="Accédez à nos ressources">Ressources</nu-link> -->
+				<nu-link to="/#services" label="Trouvez votre service" hover>
+					<nu-typography type="title" class="text-center">
+						Services
+					</nu-typography>
+				</nu-link>
+				<!-- <nu-link to="#" label="Accédez à nos ressources">Ressources</nu-link> -->
 			</nav>
-			<nu-link aria-label="Envoyer nous un mail" href="mailto:hello@nutshell-lab.com">
+			<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
 				<nu-button class="border-chinese-black text-chinese-black w-full mt-auto">
 					Contactez-nous
 				</nu-button>

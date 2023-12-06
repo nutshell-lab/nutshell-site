@@ -1,14 +1,10 @@
 <script lang="ts" setup>
-export interface Props {
-    width: number
-}
-
-const props = withDefaults(defineProps<Props>(), {
-    width: 31,
+const props = defineProps({
+    width: { type: Number, default: 31 },
 })
 
 const height = props.width * 1.42
-const viewbox = "0 0 ${width} ${height}"
+const viewbox = `0 0 ${props.width} ${height}`
 </script>
 
 <template>

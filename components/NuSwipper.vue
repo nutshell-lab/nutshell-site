@@ -18,7 +18,7 @@ defineProps({
 			>
 				<swiper-slide class="max-w-[375px]" v-for="(i, index) in items">
 					<div data-aos="slide-up" :data-aos-delay="50 * index">
-						<nu-link :aria-label="`Découvrez le cas ${i.title}`" :href="`/work/${i.slug}`" :disabled="i.disabled">
+						<nu-link :label="`Découvrez le cas ${i.title}`" :to="`/work/${i.slug}`" :disabled="i.disabled">
 							<nu-use-case-tile :title="i.title" :subtitle="i.subtitle" :picture="i.picture" :id="i.id" :disabled="i.disabled"/>
 						</nu-link>
 					</div>

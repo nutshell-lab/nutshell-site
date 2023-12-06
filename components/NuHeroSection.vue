@@ -22,11 +22,9 @@ defineProps({
 						{{ title }}
 					</nu-typography>
 				</slot>
-				<p class="">
-					<slot name="text">
-						{{ text }}
-					</slot>
-				</p>
+				<slot name="text">
+					{{ text }}
+				</slot>
 				<slot name="cta">
 					<nu-button>
 						{{ cta }}

@@ -11,6 +11,16 @@ import use_case_crm from '~/assets/illustrations/use_case_crm.webp'
 import use_case_analytics from '~/assets/illustrations/use_case_analytics.webp'
 import use_case_strategy from '~/assets/illustrations/use_case_strategy.webp'
 
+import logo_nutshell from '~/assets/logo_nutshell.png'
+
+useSeoMeta({
+  title: 'Nutshell - Agence digitale spécialisé dans le developpement sur mesure',
+  ogTitle: 'Nutshell - Agence digitale spécialisé dans le developpement sur mesure',
+  description: 'Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment pertinentes',
+  ogDescription: 'Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment pertinentes',
+  ogImage: logo_nutshell,
+})
+
 const projects = [
     {
         title: "Actinuum",
@@ -31,10 +41,10 @@ const projects = [
     },
     {
         title: "Atlas",
-        highlight: "300k",
+        highlight: "1000+",
         picture: `url('${prjct_atlas}')`,
         description:
-            "L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié 300 000 apprenants.",
+            "L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié plus de 1000 apprenants.",
         slug: "atlas",
 		disabled: true,
     },
@@ -99,11 +109,13 @@ const services = [
 
 <template>
 	<div class="bg-alabaster font-inter">
-		<div class="relative">
+		<div id="agency" class="relative">
 			<nu-splash class="bg-chinese-black">
-				<nu-typography type="hero-title" class="text-center">
-					Un studio de <br />développement<br /> sur-mesure à<br /> votre service
-				</nu-typography>
+				<h1 class="text-center">
+					<nu-typography type="hero-title">
+						Un studio de <br />développement<br /> sur-mesure à<br /> votre service
+					</nu-typography>
+				</h1>
 			</nu-splash>
 			<div class="absolute text-alabaster bottom-8 w-full columns-1 text-center">
 				<nu-arrow class="animate-bounce" />
@@ -111,18 +123,18 @@ const services = [
 		</div>
 		<div class="flex flex-col">
 			<div class="container @md:px-28 px-6">
-				<nu-hero-section title="Comprendre le métier et le valoriser avec la tech." cta="valorisons le votre">
+				<nu-hero-section cta="valorisons le votre">
 					<template #caption>
 						<nu-typography type="caption">
 							Un studio de <b class="font-bold">développement <br class="@md:hidden" />sur-mesure</b> à votre service.
 						</nu-typography>
 					</template>
 					<template #title>
-						<div class="max-w-[700px]" data-aos="slide-up">
+						<h2 class="max-w-[700px]" data-aos="slide-up">
 							<nu-typography type="title">
 								Comprendre le métier et le valoriser avec la tech.
 							</nu-typography>
-						</div>
+						</h2>
 					</template>
 					<template #text>
 						<div class="max-w-[486px]">
@@ -136,42 +148,42 @@ const services = [
 
 			<div id="projects" class="bg-chinese-black text-alabaster">
 				<div class="container @md:px-28 px-6 py-16 flex flex-col gap-16">
-					<div data-aos="slide-up">
+					<h2 data-aos="slide-up">
 						<nu-typography type="title" class="self-start">Ils ont crée<br />de la valeur.</nu-typography>
-					</div>
+					</h2>
 					<div class="flex flex-col items-end gap-8">
 						<div class="@lg:pl-32 flex flex-col @lg:grid @lg:grid-cols-2 gap-6">
-							<nu-link :aria-label="`Découvrez le projet ${p.title}`" :href="`/work/${p.slug}`" :disabled="p.disabled"
+							<nu-link :label="`Découvrez le projet ${p.title}`" :to="`/work/${p.slug}`" :disabled="p.disabled"
 								v-for="(p, i) in projects.slice(0, 4)">
 								<nu-project-preview :class="{ '@lg:mt-8': i === 0, '@lg:-mt-8': i === 3 }" :line-break="i != 1" :title="p.title" :highlight="p.highlight"
 									:picture="p.picture" :description="p.description" :disabled="p.disabled" data-aos="slide-up"></nu-project-preview>
 							</nu-link>
 						</div>
-						<nu-link aria-label="Découvrez nos autres projets" href="#">
+						<!-- <nu-link label="Découvrez nos autres projets" to="#"> -->
 							<div class="flex items-center gap-4 justify-center">
 								<nu-typography type="text-link" class="">Découvrez (Bientôt) nos autres projets</nu-typography>
 								<nu-arrow :right="true" />
 							</div>
-						</nu-link>
+						<!-- </nu-link> -->
 					</div>
 				</div>
 			</div>
 
 			<nu-section-break class="container @md:px-28 px-6 self-center overflow-hidden relative">
-				<div data-aos="slide-up">
+				<h2 data-aos="slide-up">
 					<nu-typography type="title">Apprenez-nous <br />votre métier</nu-typography>
-				</div>
-				<nu-link aria-label="Envoyer nous un mail" href="mailto:hello@nutshell-lab.com">
+				</h2>
+				<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
 					<nu-button>Créons de la valeur</nu-button>
 				</nu-link>
 			</nu-section-break>
 
-			<div class="py-20 bg-chinese-black text-alabaster flex flex-col">
-				<div class="container @md:px-28 px-6 self-center flex flex-col justify-between py-20 gap-16 relative">
-					<div data-aos="slide-up">
+			<div id="use-cases" class="py-20 bg-chinese-black text-alabaster flex flex-col">
+				<div class="container @md:px-28 px-6 self-center flex flex-col justify-between pt-20 gap-16 relative">
+					<h2 data-aos="slide-up">
 						<nu-typography type="title" class="max-w-[776px]">Si vous en avez besoin, on peut sûrement vous le
 						fabriquer.</nu-typography>
-					</div>
+					</h2>
 					<nu-swipper :items="use_cases" class="" />
 					<div class="relative">
 						<div class="absolute h-[1px] bg-alabaster w-screen left-0 bottom-0">
@@ -183,7 +195,7 @@ const services = [
 						</div>
 					</div>
 				</div>
-				<div class="container @md:px-28 px-6 w-full flex flex-col gap-12 pb-20">
+				<div id="services" class="container @md:px-28 px-6 w-full flex flex-col gap-12 py-20">
 					<div class="flex flex-col gap-12">
 						<div data-aos="slide-up">
 							<nu-typography type="title" class="py-10">Nos services</nu-typography>
@@ -195,7 +207,7 @@ const services = [
 
 			<nu-section-break class="container @md:px-28 place-self-center" variant="light">
 				<nu-typography type="hero-title-dark">Commençons <br />à discuter.</nu-typography>
-				<nu-link aria-label="Envoyer nous un mail" href="mailto:hello@nutshell-lab.com">
+				<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
 					<nu-button class="border-cinnabar text-cinnabar">Par email</nu-button>
 				</nu-link>
 			</nu-section-break>

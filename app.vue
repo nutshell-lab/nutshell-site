@@ -1,5 +1,13 @@
+<script setup lang="ts">
+useHead({
+  htmlAttrs: {
+    lang: 'fr'
+  }
+})
+</script>
+
 <template>
-  <Meta name="title" content="Nutshell digital agency" />
+  <!-- <Meta name="title" content="Nutshell - Agence digitale spécialisé dans le developpement sur mesure" />
   <Meta name="description" content="Nutshell digital agency" />
   <Meta name="lang" content="fr" />
   <Meta name="icon" content="https://nutshell-lab.com/favicon.ico" />
@@ -10,7 +18,7 @@
   <Meta name="twitter:title" content="Nutshell digital agency" />
   <Meta name="twitter:description" content="Nutshell digital agency" />
   <Meta name="twitter:image" content="https://nutshell-lab.com/nutshell.webp" />
-  <Meta name="twitter:card" content="summary_large_image" />
+  <Meta name="twitter:card" content="summary_large_image" /> -->
   <nu-layout>
     <NuxtPage />
   </nu-layout>

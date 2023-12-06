@@ -4,9 +4,11 @@
 		for accessibility and SEO purpose
 	*/
 defineProps({
-    href: { type: String, required: true },
+    to: { type: String, required: true },
+    target: { type: String, default: '_self' },
 	hover: { type: Boolean, default: false },
-	disabled: { type: Boolean, default: false }
+	disabled: { type: Boolean, default: false },
+	label: { type: String, required: true },
 })
 </script>
 
@@ -14,7 +16,7 @@ defineProps({
 	<slot v-if="disabled"/>
 	<span v-else class="link" :class="{ 'hover': hover }">
 		<span class="link__inner relative">
-			<a class="relative z-10" :href="href"><slot /></a>
+			<nuxt-link class="relative z-10" :to="to" :target="target" :aria-label="label"><slot /></nuxt-link>
 		</span>
 	</span>
 </template>
