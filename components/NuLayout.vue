@@ -32,7 +32,7 @@ const open = ref(false)
 				<!-- <nu-link to="#" label="Accédez à nos ressources">Ressources</nu-link> -->
 			</nav>
 			<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
-				<nu-button class="border-chinese-black text-chinese-black w-full mt-auto">
+				<nu-button class="w-full mt-auto">
 					Contactez-nous
 				</nu-button>
 			</nu-link>

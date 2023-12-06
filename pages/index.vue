@@ -208,7 +208,7 @@ const services = [
 			<nu-section-break class="container @md:px-28 place-self-center" variant="light">
 				<nu-typography type="hero-title-dark">Commençons <br />à discuter.</nu-typography>
 				<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
-					<nu-button class="border-cinnabar text-cinnabar">Par email</nu-button>
+					<nu-button>Par email</nu-button>
 				</nu-link>
 			</nu-section-break>
 		</div>

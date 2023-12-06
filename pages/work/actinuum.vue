@@ -124,15 +124,15 @@ const keywords = [
 					<nu-lined-list :entries="keywords" class="!gap-10" />
 					<div class="w-full flex justify-start">
 						<nu-link target="_blank" :to="project.external_url" label="Découvrez le site Actinnuum">
-							<nu-button class="!text-alabaster !border-alabaster bg-chinese-black">
-									Découvrir le site
+							<nu-button color="alabaster">
+								Découvrir le site
 							</nu-button>
 						</nu-link>
 					</div>
 				</div>
 				<div class="flex-1 overflow-visible relative">
-					<div class="absolute w-screen h-full bg-cinnabar">
-						<div :class="`w-full h-full bg-[url('~/assets/illustrations/prjct_actinuum/header.webp')] mix-blend-multiply`" />
+					<div class="absolute w-[1200px] h-full bg-cinnabar">
+						<div :class="`w-full h-full bg-cover bg-right bg-[url('~/assets/illustrations/prjct_actinuum/header.webp')] mix-blend-multiply`" />
 					</div>
 				</div>
 			</div>
@@ -319,7 +319,7 @@ const keywords = [
 			<nu-section-break class="container @md:px-28 place-self-center" variant="light">
 				<nu-typography type="hero-title-dark">Commençons <br />à discuter.</nu-typography>
 				<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
-					<nu-button class="border-cinnabar text-cinnabar">Par email</nu-button>
+					<nu-button>Par email</nu-button>
 				</nu-link>
 				<nu-watermark class="hidden @2xl:block"/>
 			</nu-section-break>
