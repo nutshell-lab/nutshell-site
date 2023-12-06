@@ -110,7 +110,7 @@ const services = [
 			</div>
 		</div>
 		<div class="flex flex-col">
-			<div class="container @md:px-28 px-6 self-center ">
+			<div class="container @md:px-28 px-6">
 				<nu-hero-section title="Comprendre le métier et le valoriser avec la tech." cta="valorisons le votre">
 					<template #caption>
 						<nu-typography type="caption">

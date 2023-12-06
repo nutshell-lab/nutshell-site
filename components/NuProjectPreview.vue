@@ -42,7 +42,7 @@ defineProps({
 	content: '';
 }
 .tile:hover .tile__inner::before {
-	transform: translate3d(500px, 0px, 0px) rotate(5deg);
+	transform: translate3d(400px, 0px, 0px) rotate(5deg);
 }
 
 </style>

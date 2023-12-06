@@ -35,6 +35,10 @@ const makeClass = (c: string) => `${props.class} ${c}`
 		:class="makeClass('text-hero-title-dark @md:text-[80px] @md:leading-[76px] text-[40px]')">
 		<slot />
 	</h2>
+	<h2 v-if="type == 'hero-title-dark-filled'"
+		:class="makeClass('text-hero-title-dark filled @md:text-[80px] @md:leading-[76px] text-[40px]')">
+		<slot />
+	</h2>
 	<h3 v-if="type == 'title'" :class="makeClass('font-black font-silka text-4xl @md:text-5xl')">
 		<slot />
 	</h3>
@@ -79,4 +83,11 @@ const makeClass = (c: string) => `${props.class} ${c}`
 	text-transform: uppercase;
 	font-family: 'Silka';
 	color: transparent;
-}</style>
+}
+
+.text-hero-title-dark.filled {
+	color: #161616;
+}
+
+
+</style>
