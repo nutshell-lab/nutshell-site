@@ -96,7 +96,7 @@ const use_cases = [
 
 const services = [
     "Produits et SasS",
-    "Dévelopement",
+    "Développement",
     "Design et ergonomie",
     "Data et Business Intelligence",
     "Innovation",
