@@ -21,7 +21,7 @@ import NuLogo from "~/components/NuLogo.vue"
 			</div>
 		</div>
 		<div class="text-xs w-full text-center">
-			<nu-typography type="mention">© {{ new Date().getFullYear() }} Nutshell Lab </nu-typography>
+			<nu-typography type="mention">© 2018 - {{ new Date().getFullYear() }} Nutshell Lab </nu-typography>
 			<span class="hidden @md:inline"> - </span>
 			<br class="block @md:hidden" />
 			<nu-typography type="mention">Tous droits réservés - <nu-link to="/mentions-legales"
