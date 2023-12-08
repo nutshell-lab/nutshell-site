@@ -65,7 +65,7 @@
 @font-face {
 	font-family: 'Silka';
 	font-weight: 800 900;
-	src: local('Inter Regular'),
+	src: local('Silka Black'),
 		url('~/assets/fonts/Silka/silka-black-webfont.woff2') format('woff2'),
 		url('~/assets/fonts/Silka/silka-black-webfont.woff') format('woff');
 	font-display: swap;
@@ -74,7 +74,7 @@
 @font-face {
 	font-family: 'Silka';
 	font-weight: 800 900;
-	src: local('Inter Regular'),
+	src: local('Silka Black'),
 		url('~/assets/fonts/Silka/silka-black-webfont.woff2') format('woff2'),
 		url('~/assets/fonts/Silka/silka-black-webfont.woff') format('woff');
 	font-display: swap;
@@ -111,6 +111,25 @@
 	src: local('Inter Regular'), url('~/assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
 	font-display: swap;
 }
+@font-face {
+	font-family: 'Inter';
+	font-weight: 400;
+	src: local('Inter Regular'),
+		url('~/assets/fonts/Inter/Inter-Regular.woff2') format('woff2'),
+		url('~/assets/fonts/Inter/Inter-Regular.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+000-5FF;
+}
+@font-face {
+	font-family: 'Inter';
+	font-weight: 400;
+	src: local('Inter Regular'),
+		url('~/assets/fonts/Inter/Inter-Regular.woff2') format('woff2'),
+		url('~/assets/fonts/Inter/Inter-Regular.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+3000-9FFF, U+ff??;
+}
+
 /* medium */
 @font-face {
 	font-family: 'Inter';
