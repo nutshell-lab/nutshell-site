@@ -173,7 +173,7 @@ const services = [
 				<h2 data-aos="slide-up">
 					<nu-typography type="title">Apprenez-nous <br />votre métier</nu-typography>
 				</h2>
-				<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
+				<nu-link label="Envoyez-nous un mail" to="mailto:hello@nutshell-lab.com">
 					<nu-button>Créons de la valeur</nu-button>
 				</nu-link>
 			</nu-section-break>
