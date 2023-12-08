@@ -23,7 +23,7 @@
 				<span class="font-bold">Responsable publication</span> : Sorian Slimani – sorian@nutshell-lab.com
 			</div>
 			<div>
-				<span class="font-bold">Webmaster</span> : Victor Rebiard--Crépin – victor@nutshell-lab.com
+				<span class="font-bold">Webmaster</span> : Victor Crépin – victor@nutshell-lab.com
 			</div>
 			<div>
 				<span class="font-bold">Hébergeur</span> : Cloudflare – 101 Townsend Street, San Francisco
@@ -117,7 +117,7 @@
 			</div>
 			<div class="flex flex-col gap-4 ml-12">
 				<div>
-					Pour les Données Personnelles collectées dans le cadre de la création du compte personnel de l’Utilisateur et de sa navigation sur le Site, le responsable du traitement des Données Personnelles est : Nutshell Lab. Nutshell Lab est représenté par Victor Rebiard--Crépin, son représentant légal.
+					Pour les Données Personnelles collectées dans le cadre de la création du compte personnel de l’Utilisateur et de sa navigation sur le Site, le responsable du traitement des Données Personnelles est : Nutshell Lab. Nutshell Lab est représenté par Victor Crépin, son représentant légal.
 				</div>
 				<div>
 					En tant que responsable du traitement des données qu’il collecte, Nutshell Lab s’engage à respecter le cadre des dispositions légales en vigueur. Il lui appartient notamment au Client d’établir les finalités de ses traitements de données, de fournir à ses prospects et clients, à partir de la collecte de leurs consentements, une information complète sur le traitement de leurs données personnelles et de maintenir un registre des traitements conforme à la réalité.
@@ -186,7 +186,7 @@
 				</div>
 				<div>
 					Si l’Utilisateur souhaite savoir comment Nutshell Lab utilise ses Données Personnelles, demander à les rectifier ou s’oppose à leur traitement, l’Utilisateur peut contacter Nutshell Lab par écrit à l’adresse suivante
-					Nutshell Lab – DPO, Victor Rebiard--Crépin
+					Nutshell Lab – DPO, Victor Crépin
 					229, rue Solférino 59000 Lille
 				</div>
 				<div>
