@@ -61,7 +61,7 @@ const projects = [
 
 const use_cases = [
     {
-        title: "Un ERP sur-mesure est-il iunchoix judicieux pour votre entreprise ?",
+        title: "Un ERP sur-mesure est-il un choix judicieux pour votre entreprise ?",
         subtitle: "ERP",
         picture: `url('${use_case_erp}')`,
         id: "use case 001",
