@@ -2,10 +2,13 @@
 export default defineNuxtConfig({
 	devtools: { enabled: true },
 	css: ['~/assets/css/main.css'],
-	modules: ['@nuxtjs/plausible', '@nuxtjs/tailwindcss'],
+	modules: ['@nuxtjs/plausible', '@nuxtjs/tailwindcss', 'nuxt-simple-sitemap'],
 	plausible: {
 		domain: 'nutshell-lab.com',
 		apiHost: 'https://plausible.nutshell-lab.com'
+	},
+	site: {
+		url: 'https://nutshell-lab.com',
 	},
 	app: {
 		head: {

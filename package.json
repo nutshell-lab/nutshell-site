@@ -14,7 +14,9 @@
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/aos": "^3.0.7",
     "@types/node": "^18.17.0",
-    "nuxt": "^3.8.0"
+    "nuxt": "^3.8.0",
+    "nuxt-simple-sitemap": "^4.1.10",
+    "vite-plugin-vsharp": "^1.6.0"
   },
   "dependencies": {
     "@lucien144/vue3-parallaxy": "^0.1.1",
