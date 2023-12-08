@@ -94,7 +94,7 @@ const keywords = [
 </script>
 
 <template>
-	<div class="h-full leading-7">
+	<div class="h-full">
 		<div class="pt-32 pb-32 bg-chinese-black text-alabaster flex flex-col gap-20">
 			<ClientOnly>
 				<Parallaxy :speed="300" axis="x">
@@ -114,7 +114,7 @@ const keywords = [
 					</div>
 				</Parallaxy>
 			</ClientOnly>
-			<div class="container @md:px-28 px-6 flex gap-16 overflow-visible">
+			<div class="container px-layout flex gap-16 overflow-visible">
 				<div class="flex-shrink w-[680px] gap-16 flex flex-col justify-between">
 					<div>
 						<nu-typography type="title" class="text-alabaster font-normal">
@@ -130,14 +130,14 @@ const keywords = [
 						</nu-link>
 					</div>
 				</div>
-				<div class="flex-1 overflow-visible relative">
+				<div class="flex-1 overflow-visible relative hidden @sm:block">
 					<div class="absolute w-[1200px] h-full bg-cinnabar">
 						<div :class="`w-full h-full bg-cover bg-right bg-[url('~/assets/illustrations/prjct_actinuum/header.webp')] mix-blend-multiply`" />
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container px-layout py-12 flex flex-col gap-12 @md:py-40 justify-center">
+		<div class="container px-layout py-20 flex flex-col gap-12 @md:py-40 justify-center">
 			<div data-aos="slide-up">
 				<nu-typography type="title">Parce qu'Excel ne scale pas.</nu-typography>
 			</div>
@@ -162,11 +162,11 @@ const keywords = [
 			</div>
 
 		</div>
-		<div class="container py-12 px-layout">
+		<div class="container py-8 px-layout">
 			<div data-aos="slide-up">
 				<nu-typography type="title" class="py-6">Un centre de contrôle de la formation</nu-typography>
 			</div>
-			<div class="py-10 flex flex-col @lg:flex-row gap-12">
+			<div class="py-10 flex flex-col @lg:flex-row gap-12 leading-7">
 				<p class="@lg:w-1/2">
 					Pour permettre à Actinuum <strong>d'avoir la main mise sur son outil opérationnel</strong>, Nutshell a mis
 					en place un centre
@@ -194,19 +194,19 @@ const keywords = [
 				</div>
 			</div>
 		</div>
-		<div :class="`container w-full h-[400px] my-20 overflow-hidden`">
+		<div :class="`container w-full h-[400px] lg:my-20 my-12 overflow-hidden`">
 			<ClientOnly>
 				<Parallaxy :speed="100" axis="y">
 					<div class="w-screen h-[700px] bg-center bg-cover bg-[url('~/assets/illustrations/prjct_actinuum/group.webp')]" />
 				</Parallaxy>
 			</ClientOnly>
 		</div>
-		<div class="container px-layout py-12 pb-32">
+		<div class="container px-layout py-12 lg:pb-32 mb-20">
 			<div class="flex flex-col justify-center gap-12">
 				<div data-aos="slide-up">
 					<nu-typography type="title">Un espace d'apprentissage en ligne</nu-typography>
 				</div>
-				<div class="flex flex-col @xl:flex-row items-center justify-center gap-12">
+				<div class="flex flex-col @xl:flex-row items-center justify-center gap-12 leading-7">
 					<div class="@xl:w-1/2 flex flex-col gap-6">
 						<p>
 							Afin d'engager un <strong>maximum de qualité</strong> tout au long du processus de formation, nous avons
@@ -237,7 +237,7 @@ const keywords = [
 				</div>
 			</div>
 		</div>
-		<div class="bg-chinese-black text-alabaster py-32 my-12">
+		<div class="bg-chinese-black text-alabaster py-32 mt-12">
 			<div class="container px-layout flex flex-col @xl:flex-row gap-28 justify-between mb-32">
 				<div class="flex flex-col gap-12">
 					<div data-aos="slide-up">
@@ -250,7 +250,7 @@ const keywords = [
 				<div class="flex-1 flex flex-col gap-12">
 					<nu-typography type="title">Prêt à monter en puissance?</nu-typography>
 					<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
-						<nu-button class="!text-alabaster !border-alabaster bg-chinese-black">
+						<nu-button color="alabaster">
 							Commençons à parler
 						</nu-button>
 					</nu-link>
@@ -275,11 +275,11 @@ const keywords = [
 				</Parallaxy>
 			</ClientOnly>
 		</div>
-		<div class="px-layout container py-40 flex flex-col gap-12">
+		<div class="px-layout container lg:py-40 py-20 flex flex-col gap-12">
 			<div data-aos="slide-up">
 				<nu-typography type="title">La recette pour digitaliser votre organisme de formation</nu-typography>
 			</div>
-			<div class="flex flex-col @lg:flex-row gap-12 items-center">
+			<div class="flex flex-col @lg:flex-row gap-12 items-center leading-7">
 				<div class="w-full h-[250px] @2xl:w-[500px]">
 					<div :class="`w-full bg-cover h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_actinuum/notes.webp')]`" />
 				</div>
@@ -293,7 +293,7 @@ const keywords = [
 			</div>
 		</div>
 		<div class="bg-chinese-black text-alabaster">
-			<div class="px-layout container flex flex-col gap-12 py-20">
+			<div class="px-layout container flex flex-col gap-12 py-20 leading-7">
 				<div data-aos="slide-up">
 					<nu-typography type="title">10 ans d'expérience<br />dans la formation
 						professionelle</nu-typography>
@@ -316,7 +316,7 @@ const keywords = [
 		</div>
 
 		<div class="overflow-hidden relative">
-			<nu-section-break class="container @md:px-28 place-self-center" variant="light">
+			<nu-section-break class="container px-layout place-self-center" variant="light">
 				<nu-typography type="hero-title-dark">Commençons <br />à discuter.</nu-typography>
 				<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
 					<nu-button>Par email</nu-button>

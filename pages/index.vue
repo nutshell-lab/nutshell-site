@@ -13,12 +13,15 @@ import use_case_strategy from '~/assets/illustrations/use_case_strategy.webp'
 
 import logo_nutshell from '~/assets/logo_nutshell.png'
 
+const route = useRoute()
 useSeoMeta({
-  title: 'Nutshell - Agence digitale spécialisée en sur mesure',
-  ogTitle: 'Nutshell - Agence digitale spécialisée en sur mesure',
+  title: 'Nutshell - Agence digitale sur-mesure',
+  ogTitle: 'Nutshell - Agence digitale sur-mesure',
   description: 'Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment pertinentes. ERP, CRM, logiciel Saas, si vous en avez besoin, on peut sûrement vous le fabriquer.',
   ogDescription: 'Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment pertinentes. ERP, CRM, logiciel Saas, si vous en avez besoin, on peut sûrement vous le fabriquer.',
   ogImage: logo_nutshell,
+  ogUrl: 'https://nutshell-lab.com' + route.path,
+  ogType: 'website'
 })
 
 const projects = [
@@ -69,7 +72,7 @@ const use_cases = [
 		disabled: true,
     },
     {
-        title: "Un CRM personnalisé vous permet de proposer la meilleure expérience à vos clients.",
+        title: "Un CRM personnalisé vous permet de proposer le meilleur à vos clients.",
         subtitle: "CRM",
         picture: `url('${use_case_crm}')`,
         id: "use case 002",
@@ -109,7 +112,7 @@ const services = [
 
 <template>
 	<div class="bg-alabaster font-inter">
-		<div id="agency" class="relative">
+		<section id="agency" class="relative">
 			<nu-splash class="bg-chinese-black">
 				<h1 class="text-center">
 					<nu-typography type="hero-title">
@@ -120,13 +123,13 @@ const services = [
 			<div class="absolute text-alabaster bottom-8 w-full columns-1 text-center">
 				<nu-arrow class="animate-bounce" />
 			</div>
-		</div>
+		</section>
 		<div class="flex flex-col">
-			<div class="container @md:px-28 px-6">
+			<section class="container px-layout">
 				<nu-hero-section cta="valorisons le votre">
 					<template #caption>
 						<nu-typography type="caption">
-							Un studio de <b class="font-bold">développement <br class="@md:hidden" />sur-mesure</b> à votre service.
+							Une agence digitale de <b class="font-bold">développement <br class="@md:hidden" />sur-mesure</b> à votre service.
 						</nu-typography>
 					</template>
 					<template #title>
@@ -144,10 +147,10 @@ const services = [
 						</div>
 					</template>
 				</nu-hero-section>
-			</div>
+			</section>
 
-			<div id="projects" class="bg-chinese-black text-alabaster">
-				<div class="container @md:px-28 px-6 py-16 flex flex-col gap-16">
+			<section id="projects" class="bg-chinese-black text-alabaster">
+				<div class="container px-layout py-16 flex flex-col gap-16">
 					<h2 data-aos="slide-up">
 						<nu-typography type="title" class="self-start">Ils ont crée<br />de la valeur.</nu-typography>
 					</h2>
@@ -167,19 +170,21 @@ const services = [
 						<!-- </nu-link> -->
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<nu-section-break class="container @md:px-28 px-6 self-center overflow-hidden relative">
-				<h2 data-aos="slide-up">
-					<nu-typography type="title">Apprenez-nous <br />votre métier</nu-typography>
-				</h2>
-				<nu-link label="Envoyez-nous un mail" to="mailto:hello@nutshell-lab.com">
-					<nu-button>Créons de la valeur</nu-button>
-				</nu-link>
-			</nu-section-break>
+			<section>
+				<nu-section-break class="container px-layout self-center overflow-hidden relative">
+					<h2 data-aos="slide-up">
+						<nu-typography type="title">Apprenez-nous <br />votre métier</nu-typography>
+					</h2>
+					<nu-link label="Envoyez-nous un mail" to="mailto:hello@nutshell-lab.com">
+						<nu-button>Créons de la valeur</nu-button>
+					</nu-link>
+				</nu-section-break>
+			</section>
 
-			<div id="use-cases" class="py-20 bg-chinese-black text-alabaster flex flex-col">
-				<div class="container @md:px-28 px-6 self-center flex flex-col justify-between pt-20 gap-16 relative">
+			<section id="cases" class="py-20 bg-chinese-black text-alabaster flex flex-col">
+				<div class="container px-layout self-center flex flex-col justify-between pt-16 gap-16 relative">
 					<h2 data-aos="slide-up">
 						<nu-typography type="title" class="max-w-[776px]">Si vous en avez besoin, on peut sûrement vous le
 						fabriquer.</nu-typography>
@@ -195,7 +200,7 @@ const services = [
 						</div>
 					</div>
 				</div>
-				<div id="services" class="container @md:px-28 px-6 w-full flex flex-col gap-12 py-20">
+				<div id="services" class="container px-layout w-full flex flex-col gap-12 py-20">
 					<div class="flex flex-col gap-12">
 						<div data-aos="slide-up">
 							<nu-typography type="title" class="py-10">Nos services</nu-typography>
@@ -203,14 +208,16 @@ const services = [
 						<nu-lined-list :entries="services" />
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<nu-section-break class="container @md:px-28 place-self-center" variant="light">
-				<nu-typography type="hero-title-dark">Commençons <br />à discuter.</nu-typography>
-				<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
-					<nu-button>Par email</nu-button>
-				</nu-link>
-			</nu-section-break>
+			<section>
+				<nu-section-break class="container px-layout place-self-center" variant="light">
+					<nu-typography type="hero-title-dark">Commençons <br />à discuter.</nu-typography>
+					<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
+						<nu-button>Par email</nu-button>
+					</nu-link>
+				</nu-section-break>
+			</section>
 		</div>
 	</div>
 </template>

@@ -10,13 +10,13 @@ import NuLogo from "~/components/NuLogo.vue"
 				<nu-link label="Retourner sur la homepage" to="/#agency">
 					<nu-logo symbol class="row-span-4 pb-6" :width="56" />
 				</nu-link>
-				<div class="flex flex-col gap-6 items-center @md:items-start">
+				<nav class="flex flex-col gap-6 items-center @md:items-start">
 					<nu-link to="/#agency" label="Apprenez-en plus sur notre société">L'agence</nu-link>
 					<nu-link to="/#projects" label="Découvrez tous nos projets">Projets</nu-link>
-					<nu-link to="/#use-cases" label="Parcourez nos études de cas">Études de cas</nu-link>
+					<nu-link to="/#cases" label="Parcourez nos études de cas">Études de cas</nu-link>
 					<nu-link to="/#services" label="Trouvez votre service">Services</nu-link>
 					<!-- <nu-link to="#" label="Accédez à nos ressources">Ressources</nu-link> -->
-				</div>
+				</nav>
 				<nu-link target="_blank" to="https://www.linkedin.com/company/nutshell-lab/" label="Suivez-nous sur LinkedIn">LinkedIn</nu-link>
 			</div>
 		</div>

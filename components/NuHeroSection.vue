@@ -9,7 +9,7 @@ defineProps({
 </script>
 
 <template>
-	<div class="h-auto py-32 flex flex-col justify-center">
+	<div class="h-auto py-20 flex flex-col justify-center">
 		<div class="flex flex-col gap-14 py-16 relative">
 			<nu-typography type="caption">
 				<slot name="caption">
@@ -31,7 +31,7 @@ defineProps({
 					</nu-link>
 				</slot>
 			</div>
-			<div class="bg-chinese-black h-full w-[1px] absolute right-0 top-0 overflow-hidden hidden lg:block">
+			<div class="bg-chinese-black h-full w-[1px] absolute right-0 top-0 overflow-hidden hidden @lg:block">
 				<ClientOnly>
 					<Parallaxy :speed="300" axis="y" direction="opposite">
 						<div class="bg-cinnabar h-[30px] w-[1px] z-20 relative"/>

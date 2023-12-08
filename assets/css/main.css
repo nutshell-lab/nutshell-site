@@ -138,5 +138,5 @@ body {
 }
 
 .px-layout {
-	@apply @2xl:px-28 @xl:px-24 @lg:px-20 @md:px-12 @sm:px-10 px-6
+	@apply @2xl:px-28 @xl:px-24 @lg:px-20 @md:px-12 @sm:px-10 px-8
 }
