@@ -1,24 +1,19 @@
 <script setup lang="ts">
+const route = useRoute()
 useHead({
   htmlAttrs: {
     lang: 'fr'
-  }
+  },
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://nutshell-lab.com' + route.path,
+    },
+  ],
 })
 </script>
 
 <template>
-  <!-- <Meta name="title" content="Nutshell - Agence digitale spécialisé dans le developpement sur mesure" />
-  <Meta name="description" content="Nutshell digital agency" />
-  <Meta name="lang" content="fr" />
-  <Meta name="icon" content="https://nutshell-lab.com/favicon.ico" />
-  <Meta name="og:title" content="Nutshell digital agency" />
-  <Meta name="og:description" content="Nutshell digital agency" />
-  <Meta name="og:image" content="https://nutshell-lab.com/nutshell.webp" />
-  <Meta name="og:url" content="https://nutshell-lab.com" />
-  <Meta name="twitter:title" content="Nutshell digital agency" />
-  <Meta name="twitter:description" content="Nutshell digital agency" />
-  <Meta name="twitter:image" content="https://nutshell-lab.com/nutshell.webp" />
-  <Meta name="twitter:card" content="summary_large_image" /> -->
   <nu-layout>
     <NuxtPage />
   </nu-layout>

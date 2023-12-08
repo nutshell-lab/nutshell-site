@@ -10,6 +10,9 @@ export default defineNuxtConfig({
 	site: {
 		url: 'https://nutshell-lab.com',
 	},
+	generate: {
+		exclude: ['/__dev/*']
+	},
 	app: {
 		head: {
 			script: [
