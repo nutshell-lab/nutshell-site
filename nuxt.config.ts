@@ -10,8 +10,11 @@ export default defineNuxtConfig({
 	site: {
 		url: 'https://nutshell-lab.com',
 	},
+	sitemap: {
+		exclude: ['/__dev/**', '/mentions-legales'],
+	},
 	generate: {
-		exclude: ['/__dev/*']
+		exclude: ['/__dev/**']
 	},
 	app: {
 		head: {

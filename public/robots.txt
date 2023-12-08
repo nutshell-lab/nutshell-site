@@ -3,3 +3,4 @@ User-agent: *
 Allow: /*
 
 Disallow: /mentions-legales
+Disallow: /__dev/*
