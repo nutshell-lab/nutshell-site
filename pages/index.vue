@@ -14,10 +14,10 @@ import use_case_strategy from '~/assets/illustrations/use_case_strategy.webp'
 import logo_nutshell from '~/assets/logo_nutshell.png'
 
 useSeoMeta({
-  title: 'Nutshell - Agence digitale spécialisé dans le developpement sur mesure',
-  ogTitle: 'Nutshell - Agence digitale spécialisé dans le developpement sur mesure',
-  description: 'Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment pertinentes',
-  ogDescription: 'Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment pertinentes',
+  title: 'Nutshell - Agence digitale spécialisée en sur mesure',
+  ogTitle: 'Nutshell - Agence digitale spécialisée en sur mesure',
+  description: 'Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment pertinentes. ERP, CRM, logiciel Saas, si vous en avez besoin, on peut sûrement vous le fabriquer.',
+  ogDescription: 'Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment pertinentes. ERP, CRM, logiciel Saas, si vous en avez besoin, on peut sûrement vous le fabriquer.',
   ogImage: logo_nutshell,
 })
 
