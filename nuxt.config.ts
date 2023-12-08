@@ -11,10 +11,7 @@ export default defineNuxtConfig({
 		url: 'https://nutshell-lab.com',
 	},
 	sitemap: {
-		exclude: ['/__dev/**', '/mentions-legales'],
-	},
-	generate: {
-		exclude: ['/__dev/**']
+		exclude: ['/mentions-legales'],
 	},
 	app: {
 		head: {
