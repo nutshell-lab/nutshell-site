@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { breakpointsTailwind, useBreakpoints } from "@vueuse/core"
-import { computed } from "vue"
 /*
 	typography | size (mobile) | size (desktop) | font | extra
 	-----------|---------------|----------------|------|------
@@ -14,7 +12,6 @@ import { computed } from "vue"
 	caption | 14 | 14 | Inter Regular | uppercase
 	mention | 12 | 12 | Inter Light
 	*/
-const breakpoints = useBreakpoints(breakpointsTailwind)
 const props = defineProps({
 	type: { type: String, default: "regular" },
 	class: { type: String, default: "" },

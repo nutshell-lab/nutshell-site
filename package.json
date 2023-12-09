@@ -21,7 +21,6 @@
   "dependencies": {
     "@lucien144/vue3-parallaxy": "^0.1.1",
     "@tailwindcss/container-queries": "^0.1.1",
-    "@vueuse/core": "^10.4.1",
     "aos": "^2.3.4",
     "swiper": "^11.0.0"
   }
