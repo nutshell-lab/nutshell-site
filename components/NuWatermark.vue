@@ -3,7 +3,7 @@ import Parallaxy from '@lucien144/vue3-parallaxy';
 </script>
 
 <template>
-	<div class="absolute @md:right-[14px] bottom-0 -right-[200px] flex flex-col watermark text-[12rem] leading-[6.75rem] rotate-180" :style="{writingMode: 'vertical-rl'}">
+	<div class="absolute @md:right-[14px] bottom-0 -right-[200px] flex flex-col watermark text-[12rem] leading-[6.75rem] rotate-180 vertical-text">
 		<div>
 			nutshellnutshellnutshell
 		</div>

@@ -23,7 +23,7 @@ defineProps({
 
 <style>
 .link.hover .link__inner::before {
-	@apply bg-cinnabar w-[0%] absolute left-[-10%] transition-all ease-in-out z-10 duration-500 h-[45%] bottom-[1%];
+	@apply bg-cinnabar w-[0%] absolute left-[-10%] transition-all ease-in-out z-10 duration-500 h-[18px] bottom-[1%];
 	transform: rotate(-2deg);
 	content: '';
 }

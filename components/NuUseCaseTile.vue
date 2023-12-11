@@ -16,7 +16,7 @@ defineProps({
 			<div class="picture__inner" :class="{ 'bg-cinnabar': !disabled, 'bg-onyx': disabled }"/>
 		</div>
 		<div class="flex gap-6 py-8">
-			<div :style="{writingMode: 'vertical-rl'}" class="rotate-180 font-inter font-bold text-cinnabar h-40 text-center px-2 uppercase">{{id}}</div>
+			<div class="vertical-text rotate-180 font-inter font-bold text-cinnabar h-40 text-center px-2 uppercase">{{id}}</div>
 			<div class="flex flex-col gap-4 pr-6">
 				<div>{{subtitle}}</div>
 				<header class="text-xl font-semibold font-inter">{{title}}</header>

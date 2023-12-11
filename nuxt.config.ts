@@ -19,6 +19,7 @@ export default defineNuxtConfig({
 		exclude: ['/mentions-legales'],
 	},
 	app: {
+		pageTransition: { name: 'page', mode: 'out-in' },
 		head: {
 			script: [
 				{

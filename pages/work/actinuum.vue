@@ -94,9 +94,19 @@ const keywords = [
 </script>
 
 <template>
-	<div class="h-full">
-		<div class="pt-32 pb-32 bg-chinese-black text-alabaster flex flex-col gap-20">
+	<div class="h-full bg-alabaster">
+		<div class="pt-32 pb-32 bg-chinese-black text-alabaster flex flex-col @md:gap-20 gap-12 relative">
 			<ClientOnly>
+				<template #fallback>
+        <!-- this will be rendered on server side -->
+        <div class="flex gap-14 relative left-[-267px]">
+						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
+						<nu-typography type="hero-title-filled">{{ project.title }}</nu-typography>
+						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
+						<nu-typography type="hero-title-filled">{{ project.title }}</nu-typography>
+						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
+					</div>
+      </template>
 				<Parallaxy :speed="300" axis="x">
 					<div class="flex gap-14">
 						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
@@ -197,7 +207,7 @@ const keywords = [
 		<div :class="`container w-full h-[400px] lg:my-20 my-12 overflow-hidden`">
 			<ClientOnly>
 				<Parallaxy :speed="100" axis="y">
-					<div class="w-screen h-[700px] bg-center bg-cover bg-[url('~/assets/illustrations/prjct_actinuum/group.webp')]" />
+					<div class="w-screen h-[700px] bg-onyx bg-center bg-cover bg-[url('~/assets/illustrations/prjct_actinuum/group.webp')]" />
 				</Parallaxy>
 			</ClientOnly>
 		</div>
