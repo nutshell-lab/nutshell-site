@@ -7,53 +7,179 @@
 /* SILKA */
 
 /* thin */
-@font-face {
+/* @font-face {
 	font-family: 'Silka';
 	font-weight: 100;
 	src: local('Silka Thin'), url('~/assets/fonts/Silka/silka-thin-webfont.ttf') format('truetype');
 	font-display: swap;
+} */
+@font-face {
+	font-family: 'Silka';
+	font-weight: 100;
+	src: local('Silka Thin'),
+		url('~/assets/fonts/Silka/silka-thin-webfont.woff2') format('woff2'),
+		url('~/assets/fonts/Silka/silka-thin-webfont.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+000-5FF;
+}
+@font-face {
+	font-family: 'Silka';
+	font-weight: 100;
+	src: local('Silka Thin'),
+		url('~/assets/fonts/Silka/silka-thin-webfont.woff2') format('woff2'),
+		url('~/assets/fonts/Silka/silka-thin-webfont.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+3000-9FFF, U+ff??;
 }
 /* extra-light */
-@font-face {
+/* @font-face {
 	font-family: 'Silka';
 	font-weight: 200;
 	src: local('Silka ExtraLight'), url('~/assets/fonts/Silka/silka-extralight-webfont.ttf') format('truetype');
 	font-display: swap;
+} */
+@font-face {
+	font-family: 'Silka';
+	font-weight: 200;
+	src: local('Silka ExtraLight'),
+		url('~/assets/fonts/Silka/silka-extralight-webfont.woff2') format('woff2'),
+		url('~/assets/fonts/Silka/silka-extralight-webfont.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+000-5FF;
+}
+@font-face {
+	font-family: 'Silka';
+	font-weight: 200;
+	src: local('Silka ExtraLight'),
+		url('~/assets/fonts/Silka/silka-extralight-webfont.woff2') format('woff2'),
+		url('~/assets/fonts/Silka/silka-extralight-webfont.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+3000-9FFF, U+ff??;
 }
 /* light */
-@font-face {
+/* @font-face {
 	font-family: 'Silka';
 	font-weight: 300;
 	src: local('Silka Light'), url('~/assets/fonts/Silka/silka-light-webfont.ttf') format('truetype');
 	font-display: swap;
+} */
+@font-face {
+	font-family: 'Silka';
+	font-weight: 300;
+	src: local('Silka Light'),
+		url('~/assets/fonts/Silka/silka-light-webfont.woff2') format('woff2'),
+		url('~/assets/fonts/Silka/silka-light-webfont.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+000-5FF;
+}
+@font-face {
+	font-family: 'Silka';
+	font-weight: 300;
+	src: local('Silka Light'),
+		url('~/assets/fonts/Silka/silka-light-webfont.woff2') format('woff2'),
+		url('~/assets/fonts/Silka/silka-light-webfont.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+3000-9FFF, U+ff??;
 }
 /* normal */
-@font-face {
+/* @font-face {
 	font-family: 'Silka';
 	font-weight: 400;
 	src: local('Silka Regular'), url('~/assets/fonts/Silka/silka-regular-webfont.ttf') format('truetype');
 	font-display: swap;
+} */
+@font-face {
+	font-family: 'Silka';
+	font-weight: 400;
+	src: local('Silka Regular'),
+		url('~/assets/fonts/Silka/silka-regular-webfont.woff2') format('woff2'),
+		url('~/assets/fonts/Silka/silka-regular-webfont.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+000-5FF;
+}
+@font-face {
+	font-family: 'Silka';
+	font-weight: 300;
+	src: local('Silka Regular'),
+		url('~/assets/fonts/Silka/silka-regular-webfont.woff2') format('woff2'),
+		url('~/assets/fonts/Silka/silka-regular-webfont.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+3000-9FFF, U+ff??;
 }
 /* medium */
-@font-face {
+/* @font-face {
 	font-family: 'Silka';
 	font-weight: 500;
 	src: local('Silka Medium'), url('~/assets/fonts/Silka/silka-medium-webfont.ttf') format('truetype');
 	font-display: swap;
+} */
+@font-face {
+	font-family: 'Silka';
+	font-weight: 500;
+	src: local('Silka Medium'),
+		url('~/assets/fonts/Silka/silka-medium-webfont.woff2') format('woff2'),
+		url('~/assets/fonts/Silka/silka-medium-webfont.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+000-5FF;
+}
+@font-face {
+	font-family: 'Silka';
+	font-weight: 500;
+	src: local('Silka Medium'),
+		url('~/assets/fonts/Silka/silka-medium-webfont.woff2') format('woff2'),
+		url('~/assets/fonts/Silka/silka-medium-webfont.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+3000-9FFF, U+ff??;
 }
 /* semibold */
-@font-face {
+/* @font-face {
 	font-family: 'Silka';
 	font-weight: 600;
 	src: local('Silka SemiBold'), url('~/assets/fonts/Silka/silka-semibold-webfont.ttf') format('truetype');
 	font-display: swap;
+} */
+@font-face {
+	font-family: 'Silka';
+	font-weight: 600;
+	src: local('Silka SemiBold'),
+		url('~/assets/fonts/Silka/silka-semibold-webfont.woff2') format('woff2'),
+		url('~/assets/fonts/Silka/silka-semibold-webfont.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+000-5FF;
+}
+@font-face {
+	font-family: 'Silka';
+	font-weight: 600;
+	src: local('Silka SemiBold'),
+		url('~/assets/fonts/Silka/silka-semibold-webfont.woff2') format('woff2'),
+		url('~/assets/fonts/Silka/silka-semibold-webfont.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+3000-9FFF, U+ff??;
 }
 /* bold */
-@font-face {
+/* @font-face {
 	font-family: 'Silka';
 	font-weight: 700;
 	src: local('Silka Bold'), url('~/assets/fonts/Silka/silka-bold-webfont.ttf') format('truetype');
 	font-display: swap;
+} */
+@font-face {
+	font-family: 'Silka';
+	font-weight: 700;
+	src: local('Silka Bold'),
+		url('~/assets/fonts/Silka/silka-bold-webfont.woff2') format('woff2'),
+		url('~/assets/fonts/Silka/silka-bold-webfont.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+000-5FF;
+}
+@font-face {
+	font-family: 'Silka';
+	font-weight: 700;
+	src: local('Silka Bold'),
+		url('~/assets/fonts/Silka/silka-bold-webfont.woff2') format('woff2'),
+		url('~/assets/fonts/Silka/silka-bold-webfont.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+3000-9FFF, U+ff??;
 }
 /* black */
 /* @font-face {
@@ -84,33 +210,87 @@
 /* Inter */
 
 /* thin */
-@font-face {
+/* @font-face {
 	font-family: 'Inter';
 	font-weight: 100;
 	src: local('Inter Thin'), url('~/assets/fonts/Inter/Inter-Thin.ttf') format('truetype');
 	font-display: swap;
+} */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 100;
+	src: local('Inter Thin'),
+		url('~/assets/fonts/Inter/Inter-Thin.woff2') format('woff2'),
+		url('~/assets/fonts/Inter/Inter-Thin.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+000-5FF;
+}
+@font-face {
+	font-family: 'Inter';
+	font-weight: 100;
+	src: local('Inter Thin'),
+		url('~/assets/fonts/Inter/Inter-Thin.woff2') format('woff2'),
+		url('~/assets/fonts/Inter/Inter-Thin.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+3000-9FFF, U+ff??;
 }
 /* extra-light */
-@font-face {
+/* @font-face {
 	font-family: 'Inter';
 	font-weight: 200;
 	src: local('Inter ExtraLight'), url('~/assets/fonts/Inter/Inter-ExtraLight.ttf') format('truetype');
 	font-display: swap;
+} */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 200;
+	src: local('Inter ExtraLight'),
+		url('~/assets/fonts/Inter/Inter-ExtraLight.woff2') format('woff2'),
+		url('~/assets/fonts/Inter/Inter-ExtraLight.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+000-5FF;
+}
+@font-face {
+	font-family: 'Inter';
+	font-weight: 200;
+	src: local('Inter ExtraLight'),
+		url('~/assets/fonts/Inter/Inter-ExtraLight.woff2') format('woff2'),
+		url('~/assets/fonts/Inter/Inter-ExtraLight.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+3000-9FFF, U+ff??;
 }
 /* light */
-@font-face {
+/* @font-face {
 	font-family: 'Inter';
 	font-weight: 300;
 	src: local('Inter Light'), url('~/assets/fonts/Inter/Inter-Light.ttf') format('truetype');
 	font-display: swap;
+} */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 300;
+	src: local('Inter Light'),
+		url('~/assets/fonts/Inter/Inter-Light.woff2') format('woff2'),
+		url('~/assets/fonts/Inter/Inter-Light.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+000-5FF;
+}
+@font-face {
+	font-family: 'Inter';
+	font-weight: 300;
+	src: local('Inter Light'),
+		url('~/assets/fonts/Inter/Inter-Light.woff2') format('woff2'),
+		url('~/assets/fonts/Inter/Inter-Light.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+3000-9FFF, U+ff??;
 }
 /* normal */
-@font-face {
+/* @font-face {
 	font-family: 'Inter';
 	font-weight: 400;
 	src: local('Inter Regular'), url('~/assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
 	font-display: swap;
-}
+} */
 @font-face {
 	font-family: 'Inter';
 	font-weight: 400;
@@ -131,39 +311,104 @@
 }
 
 /* medium */
-@font-face {
+/* @font-face {
 	font-family: 'Inter';
 	font-weight: 500;
 	src: local('Inter Medium'), url('~/assets/fonts/Inter/Inter-Medium.ttf') format('truetype');
 	font-display: swap;
+} */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 500;
+	src: local('Inter Medium'),
+		url('~/assets/fonts/Inter/Inter-Medium.woff2') format('woff2'),
+		url('~/assets/fonts/Inter/Inter-Medium.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+000-5FF;
+}
+@font-face {
+	font-family: 'Inter';
+	font-weight: 500;
+	src: local('Inter Medium'),
+		url('~/assets/fonts/Inter/Inter-Medium.woff2') format('woff2'),
+		url('~/assets/fonts/Inter/Inter-Medium.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+3000-9FFF, U+ff??;
 }
 /* semibold */
-@font-face {
+/* @font-face {
 	font-family: 'Inter';
 	font-weight: 600;
 	src: local('Inter SemiBold'), url('~/assets/fonts/Inter/Inter-SemiBold.ttf') format('truetype');
 	font-display: swap;
+} */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 600;
+	src: local('Inter SemiBold'),
+		url('~/assets/fonts/Inter/Inter-SemiBold.woff2') format('woff2'),
+		url('~/assets/fonts/Inter/Inter-SemiBold.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+000-5FF;
+}
+@font-face {
+	font-family: 'Inter';
+	font-weight: 600;
+	src: local('Inter SemiBold'),
+		url('~/assets/fonts/Inter/Inter-SemiBold.woff2') format('woff2'),
+		url('~/assets/fonts/Inter/Inter-SemiBold.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+3000-9FFF, U+ff??;
 }
 /* bold */
-@font-face {
+/* @font-face {
 	font-family: 'Inter';
 	font-weight: 700;
 	src: local('Inter Bold'), url('~/assets/fonts/Inter/Inter-Bold.ttf') format('truetype');
 	font-display: swap;
-}
-/* extrabold */
+} */
 @font-face {
 	font-family: 'Inter';
 	font-weight: 700;
-	src: local('Inter ExtraBold'), url('~/assets/fonts/Inter/Inter-ExtraBold.ttf') format('truetype');
+	src: local('Inter Bold'),
+		url('~/assets/fonts/Inter/Inter-Bold.woff2') format('woff2'),
+		url('~/assets/fonts/Inter/Inter-Bold.woff') format('woff');
 	font-display: swap;
+	unicode-range: U+000-5FF;
+}
+@font-face {
+	font-family: 'Inter';
+	font-weight: 700;
+	src: local('Inter Bold'),
+		url('~/assets/fonts/Inter/Inter-Bold.woff2') format('woff2'),
+		url('~/assets/fonts/Inter/Inter-Bold.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+3000-9FFF, U+ff??;
 }
 /* black */
-@font-face {
+/* @font-face {
 	font-family: 'Inter';
 	font-weight: 800 900;
 	src: local('Inter Black'), url('~/assets/fonts/Inter/Inter-Black.ttf') format('truetype');
 	font-display: swap;
+} */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 800 900;
+	src: local('Inter Black'),
+		url('~/assets/fonts/Inter/Inter-Black.woff2') format('woff2'),
+		url('~/assets/fonts/Inter/Inter-Black.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+000-5FF;
+}
+@font-face {
+	font-family: 'Inter';
+	font-weight: 800 900;
+	src: local('Inter Black'),
+		url('~/assets/fonts/Inter/Inter-Black.woff2') format('woff2'),
+		url('~/assets/fonts/Inter/Inter-Black.woff') format('woff');
+	font-display: swap;
+	unicode-range: U+3000-9FFF, U+ff??;
 }
 
 body {
