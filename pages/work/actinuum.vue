@@ -9,8 +9,8 @@ import prjct_constructys from '~/assets/illustrations/prjct_constructys.webp'
 import logo_nutshell from '~/assets/logo_nutshell.png'
 
 useSeoMeta({
-  title: 'Actinuum - Automatiser l’administratif de la formation professionnelle par Nutshell',
-  ogTitle: 'Actinuum - Automatiser l’administratif de la formation professionnelle par Nutshell',
+  title: 'Actinuum - Automatiser la formation professionnelle par Nutshell',
+  ogTitle: 'Actinuum - Automatiser la formation professionnelle par Nutshell',
   description: 'Découvrez comment Nutshell a analysé les processus métier d\'un organisme de formation pour développer un logiciel type ERP sur mesure',
   ogDescription: 'Découvrez comment Nutshell a analysé les processus métier d\'un organisme de formation pour développer un logiciel type ERP sur mesure',
   ogImage: logo_nutshell,
@@ -126,11 +126,11 @@ const keywords = [
 			</ClientOnly>
 			<div class="container px-layout flex gap-16 overflow-visible">
 				<div class="flex-shrink w-[680px] gap-16 flex flex-col justify-between">
-					<div>
+					<h1>
 						<nu-typography type="title" class="text-alabaster font-normal">
 							{{ project.short_description }}
 						</nu-typography>
-					</div>
+					</h1>
 					<nu-lined-list :entries="keywords" class="!gap-10" />
 					<div class="w-full flex justify-start">
 						<nu-link target="_blank" :to="project.external_url" label="Découvrez le site Actinnuum">
@@ -148,9 +148,9 @@ const keywords = [
 			</div>
 		</div>
 		<div class="container px-layout py-20 flex flex-col gap-12 @md:py-40 justify-center">
-			<div data-aos="slide-up">
+			<h2 data-aos="slide-up">
 				<nu-typography type="title">Parce qu'Excel ne scale pas.</nu-typography>
-			</div>
+			</h2>
 			<div class="flex flex-col @2xl:flex-row gap-12 h-full items-center">
 				<div class="flex flex-col @lg:flex-row gap-12 flex-1">
 					<p class="@lg:w-1/2">
@@ -173,9 +173,9 @@ const keywords = [
 
 		</div>
 		<div class="container py-8 px-layout">
-			<div data-aos="slide-up">
+			<h2 data-aos="slide-up">
 				<nu-typography type="title" class="py-6">Un centre de contrôle de la formation</nu-typography>
-			</div>
+			</h2>
 			<div class="py-10 flex flex-col @lg:flex-row gap-12 leading-7">
 				<p class="@lg:w-1/2">
 					Pour permettre à Actinuum <strong>d'avoir la main mise sur son outil opérationnel</strong>, Nutshell a mis
@@ -213,9 +213,9 @@ const keywords = [
 		</div>
 		<div class="container px-layout py-12 lg:pb-32 mb-20">
 			<div class="flex flex-col justify-center gap-12">
-				<div data-aos="slide-up">
+				<h2 data-aos="slide-up">
 					<nu-typography type="title">Un espace d'apprentissage en ligne</nu-typography>
-				</div>
+				</h2>
 				<div class="flex flex-col @xl:flex-row items-center justify-center gap-12 leading-7">
 					<div class="@xl:w-1/2 flex flex-col gap-6">
 						<p>
@@ -250,9 +250,9 @@ const keywords = [
 		<div class="bg-chinese-black text-alabaster py-32 mt-12">
 			<div class="container px-layout flex flex-col @xl:flex-row gap-28 justify-between mb-32">
 				<div class="flex flex-col gap-12">
-					<div data-aos="slide-up">
+					<h2 data-aos="slide-up">
 						<nu-typography type="title">Résultats constatés</nu-typography>
-					</div>
+					</h2>
 					<div>
 						<nu-lined-list :entries="results" class="gap-12" />
 					</div>
@@ -286,9 +286,9 @@ const keywords = [
 			</ClientOnly>
 		</div>
 		<div class="px-layout container lg:py-40 py-20 flex flex-col gap-12">
-			<div data-aos="slide-up">
+			<h2 data-aos="slide-up">
 				<nu-typography type="title">La recette pour digitaliser votre organisme de formation</nu-typography>
-			</div>
+			</h2>
 			<div class="flex flex-col @lg:flex-row gap-12 items-center leading-7">
 				<div class="w-full h-[250px] @2xl:w-[500px]">
 					<div :class="`w-full bg-cover h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_actinuum/notes.webp')]`" />
@@ -304,10 +304,10 @@ const keywords = [
 		</div>
 		<div class="bg-chinese-black text-alabaster">
 			<div class="px-layout container flex flex-col gap-12 py-20 leading-7">
-				<div data-aos="slide-up">
+				<h2 data-aos="slide-up">
 					<nu-typography type="title">10 ans d'expérience<br />dans la formation
 						professionelle</nu-typography>
-				</div>
+				</h2>
 				<p>
 					Avec près d'une vingtaine de projets pour différents acteur de la formation professionnel : des organismes de
 					formations, aux organes publiques en passant par les EdStartup, les équipes de Nutshell disposent d'un solide
