@@ -8,12 +8,15 @@ import prjct_constructys from '~/assets/illustrations/prjct_constructys.webp'
 
 import logo_nutshell from '~/assets/logo_nutshell.png'
 
+const route = useRoute()
 useSeoMeta({
   title: 'Actinuum - Automatiser la formation professionnelle par Nutshell',
   ogTitle: 'Actinuum - Automatiser la formation professionnelle par Nutshell',
   description: 'Découvrez comment Nutshell a analysé les processus métier d\'un organisme de formation pour développer un logiciel type ERP sur mesure',
   ogDescription: 'Découvrez comment Nutshell a analysé les processus métier d\'un organisme de formation pour développer un logiciel type ERP sur mesure',
   ogImage: logo_nutshell,
+  ogUrl: 'https://nutshell-lab.com' + route.path,
+  ogType: 'website'
 })
 
 const results = [
