@@ -8,7 +8,7 @@ import Parallaxy from '@lucien144/vue3-parallaxy';
 			nutshellnutshellnutshell
 		</div>
 		<ClientOnly>
-			<Parallaxy :speed="100" axis="y">
+			<Parallaxy :speed="200" axis="y">
 				<div>
 					nutshellnutshellnutshell
 				</div>
@@ -18,7 +18,7 @@ import Parallaxy from '@lucien144/vue3-parallaxy';
 			nutshellnutshellnutshell
 		</div>
 		<ClientOnly>
-			<Parallaxy :speed="300" axis="y">
+			<Parallaxy :speed="400" axis="y">
 				<div>
 					nutshellnutshellnutshell
 				</div>

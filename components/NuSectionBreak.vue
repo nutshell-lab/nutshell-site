@@ -7,7 +7,7 @@ defineProps({
 <template>
 	<div class="container">
 		<div v-if="variant == 'light'">
-			<div class="flex flex-col items-center text-center h-[504px] justify-center uppercase gap-6">
+			<div class="flex flex-col items-center text-center h-[504px] justify-center gap-6">
 				<slot />
 			</div>
 		</div>

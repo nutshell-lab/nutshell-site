@@ -4,7 +4,7 @@ import NuUseCaseTile from "./NuUseCaseTile.vue"
 import "swiper/css"
 
 defineProps({
-    items: { type: Array as PropType<{ disabled: boolean, slug: string, title: string, subtitle: string, picture: string, id: string }[]>, default: [] },
+    items: { type: Array as PropType<{ disabled?: boolean, slug: string, title: string, subtitle: string, picture: string, id: string }[]>, default: [] },
 })
 </script>
 
@@ -18,7 +18,7 @@ defineProps({
 			>
 				<swiper-slide class="max-w-[375px]" v-for="(i, index) in items">
 					<div data-aos="slide-up" :data-aos-delay="50 * index">
-						<nu-link :label="`Découvrez le cas ${i.title}`" :to="`/work/${i.slug}`" :disabled="i.disabled">
+						<nu-link :label="`Découvrez le cas ${i.title}`" :to="`/cases/${i.slug}`" :disabled="i.disabled">
 							<nu-use-case-tile :title="i.title" :subtitle="i.subtitle" :picture="i.picture" :id="i.id" :disabled="i.disabled"/>
 						</nu-link>
 					</div>

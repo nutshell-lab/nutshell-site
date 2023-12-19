@@ -68,7 +68,7 @@ const use_cases = [
         subtitle: "ERP",
         picture: `url('${use_case_erp}')`,
         id: "use case 001",
-		slug: "erp",
+		slug: "enterprise-resource-planning",
 		disabled: true,
     },
     {
@@ -127,11 +127,6 @@ const services = [
 		<div class="flex flex-col">
 			<section class="container px-layout">
 				<nu-hero-section cta="valorisons le votre">
-					<template #caption>
-						<nu-typography type="caption">
-							Une agence digitale de <b class="font-bold">développement <br class="@md:hidden" />sur-mesure</b> à votre service.
-						</nu-typography>
-					</template>
 					<template #title>
 						<h2 class="max-w-[700px]" data-aos="slide-up">
 							<nu-typography type="title">
@@ -155,7 +150,7 @@ const services = [
 						<nu-typography type="title" class="self-start">Ils ont crée<br />de la valeur.</nu-typography>
 					</h2>
 					<div class="flex flex-col items-end gap-8">
-						<div class="@lg:pl-32 flex flex-col @lg:grid @lg:grid-cols-2 gap-6">
+						<div class="flex flex-col @lg:grid @lg:grid-cols-2 gap-6">
 							<nu-link :label="`Découvrez le projet ${p.title}`" :to="`/work/${p.slug}`" :disabled="p.disabled"
 								v-for="(p, i) in projects.slice(0, 4)">
 								<nu-project-preview :class="{ '@lg:mt-8': i === 0, '@lg:-mt-8': i === 3 }" :line-break="i != 1" :title="p.title" :highlight="p.highlight"
@@ -178,7 +173,7 @@ const services = [
 						<nu-typography type="title">Apprenez-nous <br />votre métier</nu-typography>
 					</h2>
 					<nu-link label="Envoyez-nous un mail" to="mailto:hello@nutshell-lab.com">
-						<nu-button>Créons de la valeur</nu-button>
+						<nu-button class="mt-4">Créons de la valeur</nu-button>
 					</nu-link>
 				</nu-section-break>
 			</section>
@@ -214,7 +209,7 @@ const services = [
 				<nu-section-break class="container px-layout place-self-center" variant="light">
 					<nu-typography type="hero-title-dark">Commençons <br />à discuter.</nu-typography>
 					<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
-						<nu-button>Par email</nu-button>
+						<nu-button class="mt-4">Par email</nu-button>
 					</nu-link>
 				</nu-section-break>
 			</section>

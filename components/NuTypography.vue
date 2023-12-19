@@ -21,6 +21,10 @@ const makeClass = (c: string) => `${props.class} ${c}`
 </script>
 
 <template>
+	<span v-if="type == 'gigantic'"
+		:class="makeClass('text-gigantic @md:text-[120px]')">
+		<slot />
+	</span>
 	<span v-if="type == 'hero-title'"
 		:class="makeClass('text-hero-title-light @md:text-[80px] @md:leading-[76px] text-[40px]')">
 		<slot />
@@ -29,9 +33,11 @@ const makeClass = (c: string) => `${props.class} ${c}`
 		:class="makeClass('text-hero-title-light filled @md:text-[80px] @md:leading-[76px] text-[40px]')">
 		<slot />
 	</span>
-	<span v-if="type == 'hero-title-dark'"
-		:class="makeClass('text-hero-title-dark @md:text-[80px] @md:leading-[76px] text-[40px]')">
-		<slot />
+	<span class="text-cinnabar">
+		<span v-if="type == 'hero-title-dark'"
+			:class="makeClass('text-hero-title-dark @md:text-[80px] @md:leading-[76px] text-[40px]')">
+			<slot />
+		</span>
 	</span>
 	<span v-if="type == 'hero-title-dark-filled'"
 		:class="makeClass('text-hero-title-dark filled @md:text-[80px] @md:leading-[76px] text-[40px]')">
@@ -46,7 +52,7 @@ const makeClass = (c: string) => `${props.class} ${c}`
 	<span v-if="type == 'large'" :class="makeClass('font-inter text-lg leading-[21px]')">
 		<slot />
 	</span>
-	<span v-if="type == 'regular'" :class="makeClass('font-inter font-normal')">
+	<span v-if="type == 'regular'" :class="makeClass('font-inter font-normal leading-7')">
 		<slot />
 	</span>
 	<span v-if="type == 'text-link'" :class="makeClass('font-inter uppercase font-normal')">
@@ -78,8 +84,8 @@ const makeClass = (c: string) => `${props.class} ${c}`
 }
 
 .text-hero-title-dark {
-	-webkit-text-stroke: 1.5px #161616;
-	text-stroke: 1.5px #161616;
+	-webkit-text-stroke: 1.5px currentColor;
+	text-stroke: 1.5px currentColor;
 	font-weight: 900;
 	text-transform: uppercase;
 	font-family: 'Silka';
@@ -87,7 +93,7 @@ const makeClass = (c: string) => `${props.class} ${c}`
 }
 
 .text-hero-title-dark.filled {
-	color: #161616;
+	color: #E0492B;
 }
 
 

@@ -101,15 +101,15 @@ const keywords = [
 		<div class="pt-32 pb-32 bg-chinese-black text-alabaster flex flex-col @md:gap-20 gap-12 relative">
 			<ClientOnly>
 				<template #fallback>
-        <!-- this will be rendered on server side -->
-        <div class="flex gap-14 relative left-[-267px]">
+					<!-- this will be rendered on server side -->
+					<div class="flex gap-14 relative left-[-267px]">
 						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
 						<nu-typography type="hero-title-filled">{{ project.title }}</nu-typography>
 						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
 						<nu-typography type="hero-title-filled">{{ project.title }}</nu-typography>
 						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
 					</div>
-      </template>
+      			</template>
 				<Parallaxy :speed="300" axis="x">
 					<div class="flex gap-14">
 						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
@@ -173,7 +173,6 @@ const keywords = [
 					<div :class="`w-full bg-cover bg-center h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_actinuum/board.webp')]`" />
 				</div>
 			</div>
-
 		</div>
 		<div class="container py-8 px-layout">
 			<h2 data-aos="slide-up">
@@ -332,9 +331,9 @@ const keywords = [
 			<nu-section-break class="container px-layout place-self-center" variant="light">
 				<nu-typography type="hero-title-dark">Commençons <br />à discuter.</nu-typography>
 				<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
-					<nu-button>Par email</nu-button>
+					<nu-button class="mt-4">Par email</nu-button>
 				</nu-link>
-				<nu-watermark class="hidden @2xl:block"/>
+				<nu-watermark class="font-normal hidden @2xl:block"/>
 			</nu-section-break>
 		</div>
 	</div>

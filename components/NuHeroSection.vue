@@ -27,7 +27,7 @@ defineProps({
 				</slot>
 				<slot name="cta">
 					<nu-link label="Envoyez-nous un email" to="mailto:hello@nutshell-lab.com">
-						<nu-button>{{ cta }}</nu-button>
+						<nu-button class="mt-4">{{ cta }}</nu-button>
 					</nu-link>
 				</slot>
 			</div>
