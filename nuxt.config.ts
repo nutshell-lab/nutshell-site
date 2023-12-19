@@ -18,6 +18,10 @@ export default defineNuxtConfig({
 	sitemap: {
 		exclude: ['/mentions-legales'],
 	},
+	ignore: [
+        process.env.VITE_ENVIROMENT == "production" ? 'pages/dev/*' : '',
+        process.env.VITE_ENVIROMENT == "production" ? 'pages/cases/enterprise-resource-planning.vue' : ''
+    ],
 	app: {
 		pageTransition: { name: 'page', mode: 'out-in' },
 		head: {
