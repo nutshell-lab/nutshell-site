@@ -41,6 +41,14 @@ const makeClass = (c: string) => `${props.class} ${c}`
 		:class="makeClass('text-hero-title-dark filled @md:text-[80px] @md:leading-[76px] text-[40px]')">
 		<slot />
 	</span>
+	<span v-if="type == 'hero-title-primary'"
+		:class="makeClass('text-hero-title-primary @md:text-[80px] @md:leading-[76px] text-[40px]')">
+		<slot />
+	</span>
+	<span v-if="type == 'hero-title-primary-filled'"
+		:class="makeClass('text-hero-title-primary filled @md:text-[80px] @md:leading-[76px] text-[40px]')">
+		<slot />
+	</span>
 	<span v-if="type == 'title'" :class="makeClass('font-black font-silka text-4xl @md:text-5xl')">
 		<slot />
 	</span>
@@ -78,6 +86,8 @@ const makeClass = (c: string) => `${props.class} ${c}`
 }
 
 .text-hero-title-light.filled {
+	-webkit-text-stroke: unset;
+	text-stroke: unset;
 	color: #edebe8;
 }
 
@@ -91,7 +101,24 @@ const makeClass = (c: string) => `${props.class} ${c}`
 }
 
 .text-hero-title-dark.filled {
+	-webkit-text-stroke: unset;
+	text-stroke: unset;
 	color: #161616;
+}
+
+.text-hero-title-primary {
+	-webkit-text-stroke: 1.5px #E0492B;
+	text-stroke: 1.5px #E0492B;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-family: 'Silka';
+	color: transparent;
+}
+
+.text-hero-title-primary.filled {
+	-webkit-text-stroke: unset;
+	text-stroke: unset;
+	color: #E0492B;
 }
 
 

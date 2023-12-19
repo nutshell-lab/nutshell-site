@@ -115,7 +115,7 @@ const project = {
         <div class="pl-layout container relative pt-20">
             <div class="flex flex-row items-end relative">
                 <div class="absolute top-[-30px]">
-                    <nu-typography type="hero-title-dark">Un outil ultra connecté</nu-typography>
+                    <nu-typography type="hero-title-primary">Un outil ultra connecté</nu-typography>
                 </div>
                 <div class="w-full h-[300px] @2xl:w-[500px]">
                     <div :class="`w-full bg-cover h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_actinuum/notes.webp')]`" />
