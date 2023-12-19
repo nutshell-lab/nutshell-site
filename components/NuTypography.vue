@@ -33,11 +33,9 @@ const makeClass = (c: string) => `${props.class} ${c}`
 		:class="makeClass('text-hero-title-light filled @md:text-[80px] @md:leading-[76px] text-[40px]')">
 		<slot />
 	</span>
-	<span class="text-cinnabar">
-		<span v-if="type == 'hero-title-dark'"
-			:class="makeClass('text-hero-title-dark @md:text-[80px] @md:leading-[76px] text-[40px]')">
-			<slot />
-		</span>
+	<span v-if="type == 'hero-title-dark'"
+		:class="makeClass('text-hero-title-dark @md:text-[80px] @md:leading-[76px] text-[40px]')">
+		<slot />
 	</span>
 	<span v-if="type == 'hero-title-dark-filled'"
 		:class="makeClass('text-hero-title-dark filled @md:text-[80px] @md:leading-[76px] text-[40px]')">
@@ -84,8 +82,8 @@ const makeClass = (c: string) => `${props.class} ${c}`
 }
 
 .text-hero-title-dark {
-	-webkit-text-stroke: 1.5px currentColor;
-	text-stroke: 1.5px currentColor;
+	-webkit-text-stroke: 1.5px #161616;
+	text-stroke: 1.5px #161616;
 	font-weight: 900;
 	text-transform: uppercase;
 	font-family: 'Silka';
@@ -93,7 +91,7 @@ const makeClass = (c: string) => `${props.class} ${c}`
 }
 
 .text-hero-title-dark.filled {
-	color: #E0492B;
+	color: #161616;
 }
 
 
