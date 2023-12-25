@@ -308,7 +308,7 @@ const keywords = [
 			<div class="px-layout container flex flex-col gap-12 py-20 leading-7">
 				<h2 data-aos="slide-up">
 					<nu-typography type="title">10 ans d'expérience<br />dans la formation
-						professionelle</nu-typography>
+						professionnelle</nu-typography>
 				</h2>
 				<p>
 					Avec près d'une vingtaine de projets pour différents acteur de la formation professionnel : des organismes de

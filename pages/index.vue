@@ -147,7 +147,7 @@ const services = [
 			<section id="projects" class="bg-chinese-black text-alabaster">
 				<div class="container px-layout py-16 flex flex-col gap-16">
 					<h2 data-aos="slide-up">
-						<nu-typography type="title" class="self-start">Ils ont crée<br />de la valeur.</nu-typography>
+						<nu-typography type="title" class="self-start">Ils ont créé<br />de la valeur.</nu-typography>
 					</h2>
 					<div class="flex flex-col items-end gap-8">
 						<div class="flex flex-col @lg:grid @lg:grid-cols-2 gap-6">
