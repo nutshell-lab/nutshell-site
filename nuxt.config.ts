@@ -7,7 +7,7 @@ export default defineNuxtConfig({
 		plugins: [vsharp()],
 	},
 	css: ['~/assets/css/main.css'],
-	modules: ['@nuxtjs/plausible', '@nuxtjs/tailwindcss', 'nuxt-simple-sitemap'],
+	modules: ['@nuxtjs/plausible', '@nuxtjs/tailwindcss', '@nuxt/content', 'nuxt-simple-sitemap'],
 	plausible: {
 		domain: 'nutshell-lab.com',
 		apiHost: 'https://plausible.nutshell-lab.com'
@@ -16,10 +16,12 @@ export default defineNuxtConfig({
 		url: 'https://nutshell-lab.com',
 	},
 	sitemap: {
+		strictNuxtContentPaths: true,
 		exclude: ['/mentions-legales'],
 	},
 	ignore: [
         process.env.CF_PAGES == "1" ? 'pages/dev/*' : '',
+        process.env.CF_PAGES == "1" ? 'pages/blog/*' : '',
         process.env.CF_PAGES == "1" ? 'pages/cases/enterprise-resource-planning.vue' : ''
     ],
 	app: {

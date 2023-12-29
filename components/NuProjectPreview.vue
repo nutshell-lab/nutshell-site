@@ -11,7 +11,7 @@ defineProps({
 </script>
 
 <template>
-	<article :style="`--image-url: ${picture}`" :class="`tile relative text-alabaster border border-alabaster min-w-[300px] w-full @md:w-[375px] h-[376px] flex flex-col bg-[image:var(--image-url)]`">
+	<article :style="{'--image-url': `url('${picture}')`}" :class="`tile relative text-alabaster border border-alabaster min-w-[300px] w-full @md:w-[375px] h-[376px] flex flex-col bg-[image:var(--image-url)]`">
 		<div class="overflow-hidden tile__inner relative h-full w-full">
 			<div class="mix-blend-multiply absolute h-full w-full" :class="{ 'bg-cinnabar': !disabled, 'bg-onyx': disabled }"/>
 			<div class="z-20 px-6 py-8 h-full w-full">
@@ -25,7 +25,7 @@ defineProps({
 							</div>
 						</div>
 						<div class="flex justify-between items-center">
-							<div class="px-2"><nu-arrow :top-right="true" :class="{ 'hidden': disabled }" /></div>
+							<div class="px-2"><nu-arrow top-right :class="{ 'hidden': disabled }" /></div>
 							<div class="font-black text-5xl">{{ highlight }}</div>
 						</div>
 					</div>

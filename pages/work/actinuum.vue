@@ -6,7 +6,7 @@ import prjct_broker from '~/assets/illustrations/prjct_broker.webp'
 import prjct_atlas from '~/assets/illustrations/prjct_atlas.webp'
 import prjct_constructys from '~/assets/illustrations/prjct_constructys.webp'
 
-import logo_nutshell from '~/assets/logo_nutshell.png'
+import logo_nutshell from '~/assets/logo_nutshell.webp'
 
 const route = useRoute()
 useSeoMeta({
@@ -98,7 +98,7 @@ const keywords = [
 
 <template>
 	<div class="h-full bg-alabaster">
-		<div class="pt-32 pb-32 bg-chinese-black text-alabaster flex flex-col @md:gap-20 gap-12 relative">
+		<section class="pt-32 pb-32 bg-chinese-black text-alabaster text-stroke-alabaster flex flex-col @md:gap-20 gap-12 relative">
 			<ClientOnly>
 				<template #fallback>
 					<!-- this will be rendered on server side -->
@@ -149,8 +149,8 @@ const keywords = [
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container px-layout py-20 flex flex-col gap-12 @md:py-40 justify-center">
+		</section>
+		<section class="container px-layout py-20 flex flex-col gap-12 @md:py-40 justify-center">
 			<h2 data-aos="slide-up">
 				<nu-typography type="title">Parce qu'Excel ne scale pas.</nu-typography>
 			</h2>
@@ -173,8 +173,8 @@ const keywords = [
 					<div :class="`w-full bg-cover bg-center h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_actinuum/board.webp')]`" />
 				</div>
 			</div>
-		</div>
-		<div class="container py-8 px-layout">
+		</section>
+		<section class="container py-8 px-layout">
 			<h2 data-aos="slide-up">
 				<nu-typography type="title" class="py-6">Un centre de contrôle de la formation</nu-typography>
 			</h2>
@@ -205,7 +205,7 @@ const keywords = [
 					</ul>
 				</div>
 			</div>
-		</div>
+		</section>
 		<div :class="`container w-full h-[400px] lg:my-20 my-12 overflow-hidden`">
 			<ClientOnly>
 				<Parallaxy :speed="100" axis="y">
@@ -213,7 +213,7 @@ const keywords = [
 				</Parallaxy>
 			</ClientOnly>
 		</div>
-		<div class="container px-layout py-12 lg:pb-32 mb-20">
+		<section class="container px-layout py-12 lg:pb-32 mb-20">
 			<div class="flex flex-col justify-center gap-12">
 				<h2 data-aos="slide-up">
 					<nu-typography type="title">Un espace d'apprentissage en ligne</nu-typography>
@@ -248,8 +248,8 @@ const keywords = [
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="bg-chinese-black text-alabaster py-32 mt-12">
+		</section>
+		<section class="bg-chinese-black text-alabaster text-stroke-alabaster py-32 mt-12">
 			<div class="container px-layout flex flex-col @xl:flex-row gap-28 justify-between mb-32">
 				<div class="flex flex-col gap-12">
 					<h2 data-aos="slide-up">
@@ -286,8 +286,8 @@ const keywords = [
 					</div>
 				</Parallaxy>
 			</ClientOnly>
-		</div>
-		<div class="px-layout container lg:py-40 py-20 flex flex-col gap-12">
+		</section>
+		<section class="px-layout container lg:py-40 py-20 flex flex-col gap-12">
 			<h2 data-aos="slide-up">
 				<nu-typography type="title">La recette pour digitaliser votre organisme de formation</nu-typography>
 			</h2>
@@ -303,8 +303,8 @@ const keywords = [
 					<li>Tracker les indicateurs clés de votre activité</li>
 				</ul>
 			</div>
-		</div>
-		<div class="bg-chinese-black text-alabaster">
+		</section>
+		<section class="bg-chinese-black text-alabaster">
 			<div class="px-layout container flex flex-col gap-12 py-20 leading-7">
 				<h2 data-aos="slide-up">
 					<nu-typography type="title">10 ans d'expérience<br />dans la formation
@@ -325,17 +325,16 @@ const keywords = [
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div class="overflow-hidden relative">
-			<nu-section-break class="container px-layout place-self-center" variant="light">
-				<nu-typography type="hero-title-dark">Commençons <br />à discuter.</nu-typography>
+		<section class="overflow-hidden relative">
+			<nu-section-break class="container px-layout place-self-center text-stroke-chinese-black" variant="light" watermark>
+				<nu-typography type="headline">Lançons la <br /> conversation.</nu-typography>
 				<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
-					<nu-button class="mt-4">Par email</nu-button>
+					<nu-button class="mt-4">Nous contacter</nu-button>
 				</nu-link>
-				<nu-watermark class="font-normal hidden @2xl:block"/>
 			</nu-section-break>
-		</div>
+		</section>
 	</div>
 </template>
 

@@ -54,6 +54,20 @@ module.exports = {
 				'2xl': '1536px',
 			},
 		},
+		textFillColor: theme => theme('borderColor'),
+		textStrokeColor: theme => theme('borderColor'),
+		textStrokeWidth: theme => theme('borderWidth'),
+		paintOrder: {
+			'fsm': { paintOrder: 'fill stroke markers' },
+			'fms': { paintOrder: 'fill markers stroke' },
+			'sfm': { paintOrder: 'stroke fill markers' },
+			'smf': { paintOrder: 'stroke markers fill' },
+			'mfs': { paintOrder: 'markers fill stroke' },
+			'msf': { paintOrder: 'markers stroke fill' },
+		},
 	},
-	plugins: [require('@tailwindcss/container-queries')],
+	plugins: [
+		require('tailwindcss-text-fill-stroke'),
+		require('@tailwindcss/container-queries')
+	],
 }

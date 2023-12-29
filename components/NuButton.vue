@@ -8,7 +8,7 @@ const props = defineProps({
 	<button :class="`button relative font-inter ${props.color} cursor-pointer text-sm w-fit uppercase text-center p-[5px]`" >
 		<div class="overflow-hidden button__inner relative transition ease-in-out duration-500">
 			<div class="z-10 relative px-6 py-4 ">
-				<nu-typography type="text-link"><slot /></nu-typography>
+				<nu-typography type="text-link" class="!font-medium"><slot /></nu-typography>
 			</div>
 		</div>
 	</button>

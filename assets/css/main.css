@@ -411,18 +411,60 @@
 	unicode-range: U+3000-9FFF, U+ff??;
 }
 
+
+@layer base {
+	.vertical-text {
+		writing-mode: vertical-lr;
+	}
+
+	.vertical-none {
+		writing-mode: unset;
+	}
+
+	.capitalize-first:first-letter {
+		text-transform: uppercase;
+	}
+	
+	.px-layout {
+		@apply @2xl:px-28 @xl:px-24 @lg:px-20 @md:px-12 @sm:px-10 px-8
+	}
+	
+	.pr-layout {
+		@apply @2xl:pr-28 @xl:pr-24 @lg:pr-20 @md:pr-12 @sm:pr-10 pr-8
+	}
+
+	.mr-layout {
+		@apply @2xl:mr-28 @xl:mr-24 @lg:mr-20 @md:mr-12 @sm:mr-10 mr-8
+	}
+	
+	.-mx-layout {
+		@apply @2xl:-mx-28 @xl:-mx-24 @lg:-mx-20 @md:-mx-12 @sm:-mx-10 -mx-8
+	}
+
+	.-mr-layout {
+		@apply @2xl:-mr-28 @xl:-mr-24 @lg:-mr-20 @md:-mr-12 @sm:-mr-10 -mr-8
+	}
+	
+	.pl-layout {
+		@apply @2xl:pl-28 @xl:pl-24 @lg:pl-20 @md:pl-12 @sm:pl-10 pl-8
+	}
+
+	.small-container {
+		@apply container
+	}
+
+	@media (min-width: 1536px) {
+		.small-container {
+			max-width: 1280px !important;
+		}
+	}
+}
+
+html {
+	scroll-behavior: smooth
+}
+
 body {
 	@apply font-inter font-normal;
 }
 
-.vertical-text {
-	writing-mode: vertical-lr;
-}
-
-.px-layout {
-	@apply @2xl:px-28 @xl:px-24 @lg:px-20 @md:px-12 @sm:px-10 px-8
-}
-
-.pl-layout {
-	@apply @2xl:pl-28 @xl:pl-24 @lg:pl-20 @md:pl-12 @sm:pl-10 pl-8
-}

@@ -171,12 +171,8 @@
 					</div>
 					<div class="grid grid-cols-2">
 						<nu-typography>hero-title:</nu-typography>
-						<div class="bg-chinese-black">
+						<div class="bg-chinese-black text-stroke-alabaster">
 							<nu-typography type="hero-title">Hero Title</nu-typography>
-						</div>
-						<nu-typography>hero-title-dark:</nu-typography>
-						<div>
-							<nu-typography type="hero-title-dark">Hero Title</nu-typography>
 						</div>
 						<nu-typography>title:</nu-typography>
 						<div>

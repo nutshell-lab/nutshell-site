@@ -7,17 +7,17 @@ import Parallaxy from '@lucien144/vue3-parallaxy'
         <div class="bg-alabaster font-inter">
             <div class="bg-chinese-black py-40 relative">
                 <div class="flex gap-14 absolute -right-12 bottom-0">
-                    <nu-typography type="hero-title-filled" class="!text-[220px] !leading-[148px]">404</nu-typography>
+                    <nu-typography type="hero-title-filled" class="text-alabaster !text-[220px] !leading-[148px]">404</nu-typography>
                 </div>
             </div>
             <section class="relative">
                 <div class="flex gap-14 vertical-text rotate-180 absolute -right-10 mt-10">
-                    <nu-typography type="hero-title-dark-filled" class="!text-[160px] !leading-[140px]">404</nu-typography>
+                    <nu-typography type="hero-title-filled" class="!text-[160px] !leading-[140px]">404</nu-typography>
                 </div>
                 <div class="container px-layout @lg:-mt-10 -mt-6 flex flex-col @lg:gap-8 gap-0">
-                    <nu-typography type="hero-title-primary" class="@lg:!text-[110px] !text-[70px] @lg:leading-[90px] leading-[80px]">Désolé.</nu-typography>
-                    <nu-typography type="hero-title-primary" class="@lg:!text-[110px] !text-[70px] @lg:leading-[90px] leading-[80px]">Page</nu-typography>
-                    <nu-typography type="hero-title-dark-filled" class="@lg:!text-[110px] !text-[70px] @lg:leading-[90px] leading-[80px]">Introu<br class="@md:hidden block"/>vable.</nu-typography>
+                    <nu-typography type="hero-title" class="text-stroke-cinnabar @lg:!text-[110px] !text-[70px] @lg:leading-[90px] leading-[80px]">Désolé.</nu-typography>
+                    <nu-typography type="hero-title-filled" class="@lg:!text-[110px] !text-[70px] @lg:leading-[90px] leading-[80px]">Page</nu-typography>
+                    <nu-typography type="hero-title-filled" class="@lg:!text-[110px] !text-[70px] @lg:leading-[90px] leading-[80px]">Introu<br class="@md:hidden block"/>vable.</nu-typography>
 
                     <div class="relative my-24 py-10">
                         <div class="ml-auto max-w-[600px] flex flex-col @md:flex-row gap-12 @lg:items-center relative>">

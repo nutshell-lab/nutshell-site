@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "HOST=0.0.0.0 nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -12,16 +12,19 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/plausible": "^0.2.1",
     "@nuxtjs/tailwindcss": "^6.8.0",
+    "@tailwindcss/container-queries": "^0.1.1",
     "@types/aos": "^3.0.7",
     "@types/node": "^18.17.0",
     "nuxt": "^3.8.0",
     "nuxt-simple-sitemap": "^4.1.10",
+    "tailwindcss-text-fill-stroke": "^2.0.0-beta.1",
     "vite-plugin-vsharp": "^1.6.0"
   },
   "dependencies": {
     "@lucien144/vue3-parallaxy": "^0.1.1",
-    "@tailwindcss/container-queries": "^0.1.1",
+    "@nuxt/content": "^2.9.0",
     "aos": "^2.3.4",
+    "sitemap": "^7.1.1",
     "swiper": "^11.0.0"
   }
 }

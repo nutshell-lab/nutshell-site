@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import logo_nutshell from '~/assets/logo_nutshell.png'
+import logo_nutshell from '~/assets/logo_nutshell.webp'
 import prjct_actinuum from '~/assets/illustrations/prjct_actinuum.webp'
 
 const route = useRoute()
@@ -115,7 +115,7 @@ const project = {
         <div class="pl-layout container relative pt-20">
             <div class="flex flex-row items-end relative">
                 <div class="absolute top-[-30px]">
-                    <nu-typography type="hero-title-primary">Un outil ultra connecté</nu-typography>
+                    <nu-typography type="hero-title" class="text-stroke-cinnabar">Un outil ultra connecté</nu-typography>
                 </div>
                 <div class="w-full h-[300px] @2xl:w-[500px]">
                     <div :class="`w-full bg-cover h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_actinuum/notes.webp')]`" />
@@ -178,10 +178,10 @@ const project = {
 		</div>
 
 		<div class="overflow-hidden relative">
-			<nu-section-break class="container px-layout place-self-center" variant="light">
-				<nu-typography type="hero-title-dark" class="text-cinnabar">Commençons <br />à discuter.</nu-typography>
+			<nu-section-break class="container px-layout place-self-center text-stroke-chinese-black" variant="light">
+				<nu-typography type="headline" class="text-cinnabar">Commençons <br />à discuter.</nu-typography>
 				<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
-					<nu-button class="mt-4">Par email</nu-button>
+					<nu-button class="mt-4">Nous contacter</nu-button>
 				</nu-link>
 				<nu-watermark class="hidden @2xl:block"/>
 			</nu-section-break>

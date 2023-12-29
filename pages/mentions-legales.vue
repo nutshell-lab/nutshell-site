@@ -1,6 +1,6 @@
 <template>
 	<div class="bg-alabaster container font-inter px-layout py-44 flex flex-col gap-12">
-		<h1><nu-typography type="hero-title-dark">Mentions légales</nu-typography></h1>
+		<h1><nu-typography type="hero-title" class="text-stroke-chinese-black">Mentions légales</nu-typography></h1>
 		<nu-typography type="title">Définitions</nu-typography>
 		<div class="flex flex-col gap-4">
 			<div><span class="font-bold">Client</span> : tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.</div>

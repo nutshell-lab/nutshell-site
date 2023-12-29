@@ -14,112 +14,44 @@
 	*/
 const props = defineProps({
 	type: { type: String, default: "regular" },
-	class: { type: String, default: "" },
 })
-
-const makeClass = (c: string) => `${props.class} ${c}`
 </script>
 
 <template>
-	<span v-if="type == 'gigantic'"
-		:class="makeClass('text-gigantic @md:text-[120px]')">
+	<span v-if="type == 'hero-title'" class="uppercase font-silka font-black @md:text-stroke-[1.5px] text-stroke-[1px] text-transparent @xl:text-[110px] @xl:leading-[100px] @md:text-[90px] @md:leading-[80px] @sm:text-[70px] @sm:leading-[60px] text-[40px] leading-[40px]">
 		<slot />
 	</span>
-	<span v-if="type == 'hero-title'"
-		:class="makeClass('text-hero-title-light @md:text-[80px] @md:leading-[76px] text-[40px]')">
+	<span v-else-if="type == 'hero-title-filled'" class="uppercase font-silka font-black @xl:text-[110px] @xl:leading-[100px] @md:text-[90px] @md:leading-[80px] @sm:text-[70px] @sm:leading-[60px] text-[40px] leading-[40px]">
 		<slot />
 	</span>
-	<span v-if="type == 'hero-title-filled'"
-		:class="makeClass('text-hero-title-light filled @md:text-[80px] @md:leading-[76px] text-[40px]')">
+	<span v-else-if="type == 'headline'" class="uppercase font-silka font-black @md:text-stroke-[1.5px] text-stroke-[1px] text-transparent  @md:text-[80px] @md:leading-[70px] @sm:text-[60px] @sm:leading-[50px] text-[40px] leading-[40px]">
 		<slot />
 	</span>
-	<span v-if="type == 'hero-title-dark'"
-		:class="makeClass('text-hero-title-dark @md:text-[80px] @md:leading-[76px] text-[40px]')">
+	<span v-else-if="type == 'headline-filled'" class="uppercase font-silka font-black @md:text-[80px] @md:leading-[70px] @sm:text-[60px] @sm:leading-[50px] text-[40px] leading-[40px]">
 		<slot />
 	</span>
-	<span v-if="type == 'hero-title-dark-filled'"
-		:class="makeClass('text-hero-title-dark filled @md:text-[80px] @md:leading-[76px] text-[40px]')">
+	<span v-else-if="type == 'title'" class="font-black font-silka text-4xl @md:text-5xl">
 		<slot />
 	</span>
-	<span v-if="type == 'hero-title-primary'"
-		:class="makeClass('text-hero-title-primary @md:text-[80px] @md:leading-[76px] text-[40px]')">
+	<span v-else-if="type == 'subtitle'" class="font-black font-silka text-2xl @md:text-3xl">
 		<slot />
 	</span>
-	<span v-if="type == 'hero-title-primary-filled'"
-		:class="makeClass('text-hero-title-primary filled @md:text-[80px] @md:leading-[76px] text-[40px]')">
+	<span v-else-if="type == 'large'" class="font-inter text-lg leading-[21px]">
 		<slot />
 	</span>
-	<span v-if="type == 'title'" :class="makeClass('font-black font-silka text-4xl @md:text-5xl')">
+	<span v-else-if="type == 'text-link'" class="font-inter uppercase font-normal">
 		<slot />
 	</span>
-	<span v-if="type == 'subtitle'" :class="makeClass('font-black font-silka text-2xl @md:text-3xl')">
+	<span v-else-if="type == 'cta-text'" class="text-sm uppercase font-inter font-bold">
 		<slot />
 	</span>
-	<span v-if="type == 'large'" :class="makeClass('font-inter text-lg leading-[21px]')">
+	<span v-else-if="type == 'caption'" class="text-sm font-inter font-normal">
 		<slot />
 	</span>
-	<span v-if="type == 'regular'" :class="makeClass('font-inter font-normal leading-7')">
+	<span v-else-if="type == 'mention'" class="text-xs font-inter font-light'">
 		<slot />
 	</span>
-	<span v-if="type == 'text-link'" :class="makeClass('font-inter uppercase font-normal')">
-		<slot />
-	</span>
-	<span v-if="type == 'cta-text'" :class="makeClass('text-sm uppercase font-inter font-normal')">
-		<slot />
-	</span>
-	<span v-if="type == 'caption'" :class="makeClass('text-sm font-inter font-normal')">
-		<slot />
-	</span>
-	<span v-if="type == 'mention'" :class="makeClass('text-xs font-inter font-light')">
+	<span v-else class="font-inter font-normal leading-7">
 		<slot />
 	</span>
 </template>
-
-<style>
-.text-hero-title-light {
-	-webkit-text-stroke: 1.5px #edebe8;
-	text-stroke: 1.5px #edebe8;
-	font-weight: 900;
-	text-transform: uppercase;
-	font-family: 'Silka';
-	color: transparent;
-}
-
-.text-hero-title-light.filled {
-	-webkit-text-stroke: unset;
-	text-stroke: unset;
-	color: #edebe8;
-}
-
-.text-hero-title-dark {
-	-webkit-text-stroke: 1.5px #161616;
-	text-stroke: 1.5px #161616;
-	font-weight: 900;
-	text-transform: uppercase;
-	font-family: 'Silka';
-	color: transparent;
-}
-
-.text-hero-title-dark.filled {
-	-webkit-text-stroke: unset;
-	text-stroke: unset;
-	color: #161616;
-}
-
-.text-hero-title-primary {
-	-webkit-text-stroke: 1.5px #E0492B;
-	text-stroke: 1.5px #E0492B;
-	font-weight: 900;
-	text-transform: uppercase;
-	font-family: 'Silka';
-	color: transparent;
-}
-
-.text-hero-title-primary.filled {
-	-webkit-text-stroke: unset;
-	text-stroke: unset;
-	color: #E0492B;
-}
-
-
-</style>

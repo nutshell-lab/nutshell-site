@@ -4,7 +4,7 @@
 		for accessibility and SEO purpose
 	*/
 defineProps({
-    to: { type: String, required: true },
+    to: { type: String, default: undefined },
     target: { type: String, default: '_self' },
 	hover: { type: Boolean, default: false },
 	disabled: { type: Boolean, default: false },

@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 defineProps({
     variant: { type: String, default: "dark" },
+	watermark: { type: Boolean, default: false }
 })
 </script>
 
@@ -10,6 +11,7 @@ defineProps({
 			<div class="flex flex-col items-center text-center h-[504px] justify-center gap-6">
 				<slot />
 			</div>
+			<nu-watermark v-if="watermark" class="font-normal hidden @2xl:block"/>
 		</div>
 		<div v-else>
 			<div class="flex flex-col h-[504px] justify-center gap-6">
@@ -17,7 +19,7 @@ defineProps({
 				<div class="z-10 flex flex-col justify-center gap-6">
 					<slot />
 				</div>
-				<nu-watermark />
+				<nu-watermark v-if="watermark" />
 			</div>
 		</div>
 	</div>

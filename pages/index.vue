@@ -11,7 +11,7 @@ import use_case_crm from '~/assets/illustrations/use_case_crm.webp'
 import use_case_analytics from '~/assets/illustrations/use_case_analytics.webp'
 import use_case_strategy from '~/assets/illustrations/use_case_strategy.webp'
 
-import logo_nutshell from '~/assets/logo_nutshell.png'
+import logo_nutshell from '~/assets/logo_nutshell.webp'
 
 const route = useRoute()
 useSeoMeta({
@@ -28,7 +28,7 @@ const projects = [
     {
         title: "Actinuum",
         highlight: "+2M€",
-        picture: `url('${prjct_actinuum}')`,
+        picture: prjct_actinuum,
         description:
             "Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.",
         slug: "actinuum",
@@ -36,7 +36,7 @@ const projects = [
     {
         title: "Brokers",
         highlight: "131Md€",
-        picture: `url('${prjct_broker}')`,
+        picture: prjct_broker,
         description:
             "Les marchés financiers tradent chaque jours des centaines de milliards d’actifs. En analysant les chats de ses traders, notre solution prépare des trades pertinents en temps réel.",
         slug: "brokers",
@@ -45,7 +45,7 @@ const projects = [
     {
         title: "Atlas",
         highlight: "1000+",
-        picture: `url('${prjct_atlas}')`,
+        picture: prjct_atlas,
         description:
             "L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié plus de 1000 apprenants.",
         slug: "atlas",
@@ -54,7 +54,7 @@ const projects = [
     {
         title: "Constructys",
         highlight: "180",
-        picture: `url('${prjct_constructys}')`,
+        picture: prjct_constructys,
         description:
             "Pour préparer les JO 2024, il faut augmenter massivement la masse salariale de la branche BTP. Pour se faire Constructys nous fait mettre en place une solution de reconversion de métier à 180 métiers cibles.",
         slug: "constructys",
@@ -66,7 +66,7 @@ const use_cases = [
     {
         title: "Un ERP sur-mesure est-il un choix judicieux pour votre entreprise ?",
         subtitle: "ERP",
-        picture: `url('${use_case_erp}')`,
+        picture: use_case_erp,
         id: "use case 001",
 		slug: "enterprise-resource-planning",
 		disabled: true,
@@ -74,7 +74,7 @@ const use_cases = [
     {
         title: "Un CRM personnalisé vous permet de proposer le meilleur à vos clients.",
         subtitle: "CRM",
-        picture: `url('${use_case_crm}')`,
+        picture: use_case_crm,
         id: "use case 002",
 		slug: "crm",
 		disabled: true,
@@ -82,7 +82,7 @@ const use_cases = [
     {
         title: "Tracker le progrès avec des sondes pensées pour votre métier.",
         subtitle: "ANALYTICS",
-        picture: `url('${use_case_analytics}')`,
+        picture: use_case_analytics,
         id: "use case 003",
 		slug: "analytics",
 		disabled: true,
@@ -90,7 +90,7 @@ const use_cases = [
     {
         title: "Introduction au marché du projet informatique.",
         subtitle: "STRATÉGIE",
-        picture: `url('${use_case_strategy}')`,
+        picture: use_case_strategy,
         id: "use case 004",
 		slug: "strategy",
 		disabled: true,
@@ -113,7 +113,7 @@ const services = [
 <template>
 	<div class="bg-alabaster font-inter">
 		<section id="agency" class="relative">
-			<nu-splash class="bg-chinese-black">
+			<nu-splash class="bg-chinese-black text-stroke-alabaster">
 				<h1 class="text-center">
 					<nu-typography type="hero-title">
 						Un studio de <br />développement<br /> sur-mesure à<br /> votre service
@@ -125,7 +125,7 @@ const services = [
 			</div>
 		</section>
 		<div class="flex flex-col">
-			<section class="container px-layout">
+			<section class="small-container px-layout">
 				<nu-hero-section cta="valorisons le votre">
 					<template #title>
 						<h2 class="max-w-[700px]" data-aos="slide-up">
@@ -145,7 +145,7 @@ const services = [
 			</section>
 
 			<section id="projects" class="bg-chinese-black text-alabaster">
-				<div class="container px-layout py-16 flex flex-col gap-16">
+				<div class="small-container px-layout py-16 flex flex-col gap-16">
 					<h2 data-aos="slide-up">
 						<nu-typography type="title" class="self-start">Ils ont créé<br />de la valeur.</nu-typography>
 					</h2>
@@ -159,8 +159,8 @@ const services = [
 						</div>
 						<!-- <nu-link label="Découvrez nos autres projets" to="#"> -->
 							<div class="flex items-center gap-4 justify-center">
-								<nu-typography type="text-link" class="">Découvrez (Bientôt) nos autres projets</nu-typography>
-								<nu-arrow :right="true" />
+								<nu-typography type="cta-text" class="">Découvrez (Bientôt) nos autres projets</nu-typography>
+								<nu-arrow right />
 							</div>
 						<!-- </nu-link> -->
 					</div>
@@ -168,7 +168,7 @@ const services = [
 			</section>
 
 			<section>
-				<nu-section-break class="container px-layout self-center overflow-hidden relative">
+				<nu-section-break class="small-container px-layout self-center overflow-hidden relative" watermark>
 					<h2 data-aos="slide-up">
 						<nu-typography type="title">Apprenez-nous <br />votre métier</nu-typography>
 					</h2>
@@ -179,12 +179,22 @@ const services = [
 			</section>
 
 			<section id="cases" class="py-20 bg-chinese-black text-alabaster flex flex-col">
-				<div class="container px-layout self-center flex flex-col justify-between pt-16 gap-16 relative">
+				<div class="small-container px-layout self-center flex flex-col justify-between pt-16 gap-16 relative">
 					<h2 data-aos="slide-up">
 						<nu-typography type="title" class="max-w-[776px]">Si vous en avez besoin, on peut sûrement vous le
 						fabriquer.</nu-typography>
 					</h2>
-					<nu-swipper :items="use_cases" class="" />
+					<nu-swiper :items="use_cases" v-slot="{ item }">
+						<nu-link :label="`Découvrez le cas ${item.title}`" :to="`/cases/${item.slug}`" :disabled="item.disabled">
+							<nu-tile
+								:title="item.title"
+								:subtitle="item.subtitle"
+								:picture="item.picture"
+								:id="item.id"
+								:disabled="item.disabled"
+							/>
+						</nu-link>
+					</nu-swiper>
 					<div class="relative">
 						<div class="absolute h-[1px] bg-alabaster w-screen left-0 bottom-0">
 							<ClientOnly>
@@ -195,7 +205,7 @@ const services = [
 						</div>
 					</div>
 				</div>
-				<div id="services" class="container px-layout w-full flex flex-col gap-12 py-20">
+				<div id="services" class="small-container px-layout w-full flex flex-col gap-12 py-20">
 					<div class="flex flex-col gap-12">
 						<div data-aos="slide-up">
 							<nu-typography type="title" class="py-10">Nos services</nu-typography>
@@ -206,10 +216,10 @@ const services = [
 			</section>
 
 			<section>
-				<nu-section-break class="container px-layout place-self-center" variant="light">
-					<nu-typography type="hero-title-dark">Commençons <br />à discuter.</nu-typography>
+				<nu-section-break class="small-container px-layout place-self-center text-stroke-chinese-black" variant="light">
+					<nu-typography type="headline">Commençons <br />à discuter.</nu-typography>
 					<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
-						<nu-button class="mt-4">Par email</nu-button>
+						<nu-button class="mt-4">Nous contacter</nu-button>
 					</nu-link>
 				</nu-section-break>
 			</section>
