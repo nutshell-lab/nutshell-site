@@ -7,17 +7,10 @@ export default defineNuxtConfig({
 		plugins: [vsharp()],
 	},
 	css: ['~/assets/css/main.css'],
-	modules: ['@nuxtjs/plausible', '@nuxtjs/tailwindcss', '@nuxt/content', 'nuxt-simple-sitemap', '@vite-pwa/nuxt'],
+	modules: ['@nuxtjs/plausible', '@nuxtjs/tailwindcss', '@nuxt/content', 'nuxt-simple-sitemap'],
 	plausible: {
 		domain: 'nutshell-lab.com',
 		apiHost: 'https://plausible.nutshell-lab.com'
-	},
-	pwa: {
-		manifest: {
-			name: 'Nutshell Lab',
-			short_name: 'Nutshell',
-			theme_color: '#161616',
-		},
 	},
 	site: {
 		url: 'https://nutshell-lab.com',
@@ -37,6 +30,12 @@ export default defineNuxtConfig({
 	app: {
 		pageTransition: { name: 'page', mode: 'out-in' },
 		head: {
+			meta: [
+				{
+					name: 'theme-color',
+					content: '#161616',
+				},
+			],
 			script: [
 				{
 					defer: true,
@@ -52,6 +51,10 @@ export default defineNuxtConfig({
 				{
 					rel: 'apple-touch-icon',
 					href: '/apple-touch-icon.png'
+				},
+				{
+					rel: 'manifest',
+					href: '/manifest.json'
 				}
 			]
 		}

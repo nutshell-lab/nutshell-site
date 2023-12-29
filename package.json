@@ -15,7 +15,6 @@
     "@tailwindcss/container-queries": "^0.1.1",
     "@types/aos": "^3.0.7",
     "@types/node": "^18.17.0",
-    "@vite-pwa/nuxt": "^0.4.0",
     "nuxt": "^3.8.0",
     "nuxt-simple-sitemap": "^4.1.10",
     "tailwindcss-text-fill-stroke": "^2.0.0-beta.1",
