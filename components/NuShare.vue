@@ -23,8 +23,8 @@ const copyToClipboard = () => {
 		<nu-link label="Partager avec facebook" target="_blank" :to="`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`">
 			<icon-facebook/>
 		</nu-link>
-		<nu-link label="Partager avec twitter" target="_blank" :to="`http://twitter.com/share?url=${encodeURIComponent(url)}`">
-			<icon-twitter/>
+		<nu-link label="Partager avec X" target="_blank" :to="`http://x.com/share?url=${encodeURIComponent(url)}`">
+			<icon-x/>
 		</nu-link>
 		<nu-link label="Partager avec reddit" target="_blank" :to="`https://www.reddit.com/submit?url=${encodeURIComponent(url)}`">
 			<icon-reddit/>
