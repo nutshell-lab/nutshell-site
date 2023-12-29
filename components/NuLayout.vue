@@ -32,11 +32,14 @@ const open = ref(false)
 							Études de cas
 						</nu-typography>
 					</nu-link>
-					<!-- <nu-link to="/blog" label="Trouvez votre service" hover @click="open = false">
-						<nu-typography type="title" class="text-center">
-							Blog
-						</nu-typography>
-					</nu-link> -->
+					<DevOnly>
+						<!-- TODO: remove that after one article is written -->
+						<nu-link to="/blog" label="Trouvez votre service" hover @click="open = false">
+							<nu-typography type="title" class="text-center">
+								Blog
+							</nu-typography>
+						</nu-link>
+					</DevOnly>
 				</nav>
 				<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
 					<nu-button class="w-full mt-auto">
