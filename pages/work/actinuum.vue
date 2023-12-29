@@ -317,7 +317,8 @@ const keywords = [
 				</p>
 				<div class="flex flex-col items-end gap-8">
 					<div class="@lg:pl-32 flex flex-col @lg:grid @lg:grid-cols-2 gap-6">
-						<nu-link :label="`Découvrez le projet ${p.title}`" :to="`/work/${p.slug}`" :disabled="p.disabled"
+						<!-- :to="`/work/${p.slug}`" -->
+						<nu-link :label="`Découvrez le projet ${p.title}`" :disabled="p.disabled"
 							v-for="(p, i) in other_projects.slice(0, 4)">
 							<nu-project-preview :class="{ '@lg:mt-8': i === 0, '@lg:-mt-8': i === 3 }" :line-break="i != 1" :title="p.title" :highlight="p.highlight"
 								:picture="p.picture" :description="p.description" :disabled="p.disabled" data-aos="slide-up"></nu-project-preview>
