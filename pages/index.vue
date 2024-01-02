@@ -11,6 +11,8 @@ import use_case_crm from '~/assets/illustrations/use_case_crm.webp'
 import use_case_analytics from '~/assets/illustrations/use_case_analytics.webp'
 import use_case_strategy from '~/assets/illustrations/use_case_strategy.webp'
 
+import logo_designrush from '~/assets/partners/logo_designrush.svg'
+
 import logo_nutshell from '~/assets/logo_nutshell.webp'
 
 const route = useRoute()
@@ -95,6 +97,14 @@ const use_cases = [
 		slug: "strategy",
 		disabled: true,
     },
+]
+
+const partners = [
+	{
+		name: 'DesignRush',
+		picture: logo_designrush,
+		link: 'https://www.designrush.com' ///agency/profile/nutshell-lab
+	}
 ]
 
 const services = [
@@ -211,6 +221,21 @@ const services = [
 							<nu-typography type="title" class="py-10">Nos services</nu-typography>
 						</div>
 						<nu-lined-list :entries="services" />
+					</div>
+				</div>
+			</section>
+
+			<section id="parnters" class="py-16 bg-onyx text-alabaster">
+				<div class="px-layout small-container flex gap-12 flex-col @md:flex-row justify-between @md:items-center">
+					<h2 data-aos="slide-up">
+						<nu-typography type="subtitle">Nos<br />partenaires.</nu-typography>
+					</h2>
+					<div class="flex gap-6 justify-center">
+						<div v-for="(partner, index) in partners" :key="index">
+							<nu-link :to="partner.link" :label="`Aller sur le site de notre partenaire ${partner.name}`" target="_blank">
+								<img :src="partner.picture" class="h-[50px] w-full"/>
+							</nu-link>
+						</div>
 					</div>
 				</div>
 			</section>
