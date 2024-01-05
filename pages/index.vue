@@ -103,7 +103,7 @@ const partners = [
 	{
 		name: 'DesignRush',
 		picture: logo_designrush,
-		link: 'https://www.designrush.com' ///agency/profile/nutshell-lab
+		link: 'https://www.designrush.com/agency/profile/nutshell-lab'
 	}
 ]
 
@@ -225,7 +225,7 @@ const services = [
 				</div>
 			</section>
 
-			<section id="parnters" class="py-16 bg-onyx text-alabaster">
+			<section id="partners" class="py-16 bg-onyx text-alabaster">
 				<div class="px-layout small-container flex gap-12 flex-col @md:flex-row justify-between @md:items-center">
 					<h2 data-aos="slide-up">
 						<nu-typography type="subtitle">Nos<br />partenaires.</nu-typography>
