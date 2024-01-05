@@ -13,6 +13,7 @@ module.exports = {
 			transparent: 'transparent',
 			cinnabar: '#E0492B',
 			alabaster: '#EDEBE8',
+			silver: '#E1E0DD',
 			'chinese-black': '#161616',
 			onyx: '#3C3C3F',
 			'raisin-black': '#2A2A2D',

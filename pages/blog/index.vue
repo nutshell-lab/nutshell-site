@@ -5,7 +5,7 @@ import Parallaxy from '@lucien144/vue3-parallaxy'
 
 <template>
     <div class="bg-alabaster font-inter">
-        <section id="agency" class="relative bg-chinese-black pt-24">
+        <section class="relative bg-chinese-black pt-24">
             <div><nu-typography type="hero-title" class="text-stroke-raisin-black !text-[300px] absolute top-[200px] whitespace-pre">En avant</nu-typography></div>
             <div class="absolute top-[650px] left-[5vw]">
                 <ClientOnly>

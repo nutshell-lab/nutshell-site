@@ -25,10 +25,10 @@ const table_of_content = (body: MarkdownRoot | null) => {
             <ContentDoc v-slot="{ doc }">
                 <ol>
                     <li v-for="heading_2 in table_of_content(doc.body)">
-                        <a :href="heading_2.link">{{ heading_2.value }}</a>
+                        <nu-link :to="heading_2.link" :label="`Aller vers la section ${heading_2.value}`">{{ heading_2.value }}</nu-link>
                         <ol v-if="heading_2.children.length > 0">
                             <li v-for="heading_3 in heading_2.children">
-                                <a :href="heading_3.link">{{ heading_3.value }}</a>
+                                <nu-link :to="heading_3.link" :label="`Aller vers la sous-section ${heading_3.value} de la section ${heading_2.value}`">{{ heading_3.value }}</nu-link>
                             </li>
                         </ol>
                     </li> 

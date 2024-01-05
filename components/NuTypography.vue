@@ -4,7 +4,7 @@
 	-----------|---------------|----------------|------|------
 	Hero Title | 40 | 80 | Silka Black | outlined uppercase
 	title | 32 | 48 | Silka Black |
-	subtitle | 24 | 40 | Silka Black |
+	subtitle | 24 | 40 | Inter Black |
 	large | 18 | 21 | Inter Regular
 	regular | 16 | 16 | Inter Regular
 	text-link | 16 | 16 | Inter Regular
@@ -33,7 +33,10 @@ const props = defineProps({
 	<span v-else-if="type == 'title'" class="font-black font-silka text-4xl @md:text-5xl">
 		<slot />
 	</span>
-	<span v-else-if="type == 'subtitle'" class="font-black font-silka text-2xl @md:text-3xl">
+	<span v-else-if="type == 'subtitle'" class="font-bold font-inter text-2xl @md:text-3xl">
+		<slot />
+	</span>
+	<span v-else-if="type == 'important'" class="font-medium font-inter text-lg @md:text-xl leading-[21px]">
 		<slot />
 	</span>
 	<span v-else-if="type == 'large'" class="font-inter text-lg leading-[21px]">
