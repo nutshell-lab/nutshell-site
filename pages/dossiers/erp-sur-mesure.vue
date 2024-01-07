@@ -19,7 +19,7 @@ const use_case = {
 	title: "Un ERP sur-mesure est-il un choix judicieux pour votre entreprise ?",
     subtitle: "ERP",
     case: "case_001",
-	slug: "entreprise-resource-planning",
+	slug: "erp-sur-mesure",
 }
 
 const connected_projects = [
@@ -36,7 +36,7 @@ const connected_projects = [
 		highlight: "10k",
         picture: prjct_actinuum,
 		description:
-			"Keyro est l'émergence d'un produit SAAS pour fournir aux organismes de formation un logiciel ERP+LMS pour digitaliser leur sessions de formations. La plateforme accueille déjà plus de 10k apprenant tous les ans.",
+			"Keyro est l'émergence d'un produit SAAS pour fournir aux organismes de formation un logiciel ERP+LMS pour digitaliser leur sessions de formations. La plateforme accueille déjà plus de 10k apprenants tous les ans.",
 		link: "#",
 		slug: "keyro",
 		disabled: true
@@ -349,7 +349,7 @@ const connected_projects = [
                     </div>
                     <div class="flex flex-col items-end gap-8">
                         <div class="@lg:pl-auto flex flex-col @lg:grid @lg:grid-cols-2 gap-6">
-                            <nu-link :label="`Découvrez le projet ${p.title}`" :to="`/work/${p.slug}`" :disabled="p.disabled"
+                            <nu-link :label="`Découvrez le projet ${p.title}`" :to="`/projets/${p.slug}`" :disabled="p.disabled"
                                 v-for="(p, i) in connected_projects.slice(0, 2)">
                                 <nu-project-preview
                                     :class="{ '@lg:mt-8': i === 0, '@lg:-mt-8': i === 1 }"

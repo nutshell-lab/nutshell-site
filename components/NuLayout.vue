@@ -27,9 +27,9 @@ const open = ref(false)
 							Projets
 						</nu-typography>
 					</nu-link>
-					<nu-link to="/#cases" label="Parcourez nos études de cas" hover @click="open = false">
+					<nu-link to="/#cases" label="Parcourez nos dossiers" hover @click="open = false">
 						<nu-typography type="title" class="text-center">
-							Études de cas
+							Dossiers
 						</nu-typography>
 					</nu-link>
 					<DevOnly>

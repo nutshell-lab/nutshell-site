@@ -70,8 +70,7 @@ const use_cases = [
         subtitle: "ERP",
         picture: use_case_erp,
         id: "use case 001",
-		slug: "enterprise-resource-planning",
-		disabled: true,
+		slug: "erp-sur-mesure",
     },
     {
         title: "Un CRM personnalisé vous permet de proposer le meilleur à vos clients.",
@@ -161,18 +160,18 @@ const services = [
 					</h2>
 					<div class="flex flex-col items-end gap-8">
 						<div class="flex flex-col @lg:grid @lg:grid-cols-2 gap-6">
-							<nu-link :label="`Découvrez le projet ${p.title}`" :to="`/work/${p.slug}`" :disabled="p.disabled"
+							<nu-link :label="`Découvrez le projet ${p.title}`" :to="`/projets/${p.slug}`" :disabled="p.disabled"
 								v-for="(p, i) in projects.slice(0, 4)">
 								<nu-project-preview :class="{ '@lg:mt-8': i === 0, '@lg:-mt-8': i === 3 }" :line-break="i != 1" :title="p.title" :highlight="p.highlight"
 									:picture="p.picture" :description="p.description" :disabled="p.disabled" data-aos="slide-up"></nu-project-preview>
 							</nu-link>
 						</div>
-						<!-- <nu-link label="Découvrez nos autres projets" to="#"> -->
-							<div class="flex items-center gap-4 justify-center">
+						<nu-link label="Découvrez nos autres projets" to="/projets">
+							<div class="flex items-center gap-4 justify-center transition-all duration-300 hover:gap-6">
 								<nu-typography type="cta-text" class="">Découvrez (Bientôt) nos autres projets</nu-typography>
 								<nu-arrow right />
 							</div>
-						<!-- </nu-link> -->
+						</nu-link>
 					</div>
 				</div>
 			</section>
@@ -195,7 +194,7 @@ const services = [
 						fabriquer.</nu-typography>
 					</h2>
 					<nu-swiper :items="use_cases" v-slot="{ item }">
-						<nu-link :label="`Découvrez le cas ${item.title}`" :to="`/cases/${item.slug}`" :disabled="item.disabled">
+						<nu-link :label="`Découvrez le cas ${item.title}`" :to="`/dossiers/${item.slug}`" :disabled="item.disabled">
 							<nu-tile
 								:title="item.title"
 								:subtitle="item.subtitle"

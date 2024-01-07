@@ -19,13 +19,12 @@ export default defineNuxtConfig({
 		strictNuxtContentPaths: true,
 		exclude: [
 			'/mentions-legales',
-			'/blog/**' // TODO: to remove after one article is written
+			'/blog/**', // TODO: to remove after one article is written
 		],
 	},
 	ignore: [
         process.env.CF_PAGES == "1" ? 'pages/dev/*' : '',
         process.env.CF_PAGES == "1" ? 'pages/blog/*' : '',  // TODO: to remove after one article is written
-        process.env.CF_PAGES == "1" ? 'pages/cases/enterprise-resource-planning.vue' : ''  // TODO: to remove when it's completed
     ],
 	app: {
 		pageTransition: { name: 'page', mode: 'out-in' },

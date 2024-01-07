@@ -35,7 +35,7 @@ const other_projects = [
 		highlight: "10k",
         picture: `url('${prjct_actinuum}')`,
 		description:
-			"Keyro est l'émergence d'un produit SAAS pour fournir aux organismes de formation un logiciel ERP+LMS pour digitaliser leur sessions de formations. La plateforme accueille déjà plus de 10k apprenant tous les ans.",
+			"Keyro est l'émergence d'un produit SAAS pour fournir aux organismes de formation un logiciel ERP+LMS pour digitaliser leur sessions de formations. La plateforme accueille déjà plus de 10k apprenants tous les ans.",
 		link: "#",
 		slug: "keyro",
 		disabled: true
@@ -317,7 +317,7 @@ const keywords = [
 				</p>
 				<div class="flex flex-col items-end gap-8">
 					<div class="@lg:pl-32 flex flex-col @lg:grid @lg:grid-cols-2 gap-6">
-						<nu-link :label="`Découvrez le projet ${p.title}`" :to="`/work/${p.slug}`" :disabled="p.disabled"
+						<nu-link :label="`Découvrez le projet ${p.title}`" :to="`/projets/${p.slug}`" :disabled="p.disabled"
 							v-for="(p, i) in other_projects.slice(0, 4)">
 							<nu-project-preview :class="{ '@lg:mt-8': i === 0, '@lg:-mt-8': i === 3 }" :line-break="i != 1" :title="p.title" :highlight="p.highlight"
 								:picture="p.picture" :description="p.description" :disabled="p.disabled" data-aos="slide-up"></nu-project-preview>
