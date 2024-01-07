@@ -166,12 +166,12 @@ const services = [
 									:picture="p.picture" :description="p.description" :disabled="p.disabled" data-aos="slide-up"></nu-project-preview>
 							</nu-link>
 						</div>
-						<nu-link label="Découvrez nos autres projets" to="/projets">
+						<!-- <nu-link label="Découvrez nos autres projets" to="/projets"> -->
 							<div class="flex items-center gap-4 justify-center transition-all duration-300 hover:gap-6">
 								<nu-typography type="cta-text" class="">Découvrez (Bientôt) nos autres projets</nu-typography>
 								<nu-arrow right />
 							</div>
-						</nu-link>
+						<!-- </nu-link> -->
 					</div>
 				</div>
 			</section>
