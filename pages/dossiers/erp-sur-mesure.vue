@@ -28,7 +28,7 @@ const connected_projects = [
         highlight: "+2M€",
         picture: prjct_actinuum,
         description:
-            "Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.",
+            "Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogiques d’Actinuum leur a permis de tripler leur chiffre d’affaire.",
         slug: "actinuum",
     },
 	{
@@ -109,7 +109,7 @@ const connected_projects = [
                         Il faudrait probablement songer à <strong>mettre en place un ERP</strong>. Il s'agit en effet d'un logiciel
                         qui vous permet de gérer ces différents aspects en planifiant l'acquisition et l'usage de vos ressources
                         au sein de votre activité. Un ERP <strong>(Entreprise Resources Planning)</strong> peut être installé directement chez vous
-                        ou bien consommer en ligne directement par internet (on en reparle par la suite).
+                        ou bien consommé en ligne directement par internet (on en reparle par la suite).
                     </p>
                 </div>
 			</div>
@@ -138,7 +138,7 @@ const connected_projects = [
                                     </nu-typography>
                                 </h3>
                                 <p>
-                                    Votre entreprise est une entreprise sérieuse, considérons que vous avez déjà <strong>formalisé l'ensemble des processus de votre entreprise</strong> et les resources qui permettent leur abouttisement. Vos processus permettent dors et déjà de produire un résultat d'une qualité <strong>répétable</strong> ; c'est-à-dire de fiabiliser vos procédés de fabrication de service ou de produit. <strong>En utilisant un ERP, vous allez pouvoir refléter cet ensemble de processus</strong>.
+                                    Votre entreprise est une entreprise sérieuse, considérons que vous avez déjà <strong>formalisé l'ensemble des processus de votre entreprise</strong> et les resources qui permettent leur aboutissement. Vos processus permettent dors et déjà de produire un résultat d'une qualité <strong>répétable</strong> ; c'est-à-dire de fiabiliser vos procédés de fabrication de service ou de produit. <strong>En utilisant un ERP, vous allez pouvoir refléter cet ensemble de processus</strong>.
                                 </p>
                             </div>
                         </div>
@@ -188,7 +188,7 @@ const connected_projects = [
                                         Relancer <strong>automatiquement</strong> un fournisseur ?
                                     </li>
                                     <li>
-                                        <strong>Surveiller les prix</strong> d'une ressources ?
+                                        <strong>Surveiller les prix</strong> d'une ressource ?
                                     </li>
                                     <li>
                                         <strong>Envoyer</strong> des documents administratifs ? Par email ? Par courrier postal ?
@@ -237,7 +237,7 @@ const connected_projects = [
                 <div class="flex flex-col @xl:flex-row gap-24">
                     <div class="flex flex-col gap-4">
                         <p>
-                            C'est là que ça se complique : trouver l'ERP <strong>adapté à vos besoins</strong>. Tous les directeurs d'entreprise ont déjà constaté la mise en place d'un logiciel de gestion inadapté qui a finalement fait perdre bien plus de temps qu'il n'en a fait gagné. Pourquoi ?
+                            C'est là que ça se complique : trouver l'ERP <strong>adapté à vos besoins</strong>. Tous les directeurs d'entreprise ont déjà constaté la mise en place d'un logiciel de gestion inadapté qui a finalement fait perdre bien plus de temps qu'il n'en a fait gagner. Pourquoi ?
                         </p>
                         <ul class="px-8 list-disc">
                             <li>
@@ -247,7 +247,7 @@ const connected_projects = [
                                 Parce que l'ERP ne faisait pas assez de choses ou imposait des <strong>contraintes absurdes</strong> pour le métiers concernés si bien que les équipes ont contournées l'outil
                             </li>
                             <li>
-                                Parce que les performances de l'outils ont freinées sa <strong>prise en main</strong> par l'équipe
+                                Parce que les performances de l'outil ont freiné sa <strong>prise en main</strong> par l'équipe
                             </li>
                             <li>
                                 Parce que les collaborateurs n'ont pas été suffisamment <strong>accompagné dans la mise en place</strong> de ce nouvel outil
@@ -263,7 +263,7 @@ const connected_projects = [
                                 <strong>La couverture fonctionnelle</strong> de l'ERP doit être adaptée au métier concerné : les processus enforcés par l'ERP doivent correspondre à ceux de l'entreprise sans les vulgariser.
                             </li>
                             <li>
-                                <strong>L'ergonomie</strong> doit être pensée pour l'entreprise, avec des facilités d'accès aux tâches récurrentes, un minimum d'interaction humain-machine et l'objectif que l'outil est là pour faire gagner du temps, pas l'inverse
+                                <strong>L'ergonomie</strong> doit être pensée pour l'entreprise, avec des facilités d'accès aux tâches récurrentes, un minimum d'interaction humain-machine et l'objectif que l'outil soit là pour faire gagner du temps, pas l'inverse
                             </li>
                             <li>
                                 <strong>La mise en place</strong> de l'outil doit être sensée : les parties prenantes doivent y voir l'intérêt pour elles et avoir à disposition les moyens de s'approprier l'outil.
@@ -303,7 +303,7 @@ const connected_projects = [
                     </h3>
 
                     <p>
-                        Un ERP sur étagère, c'est un ERP qui est <strong>déjà tout fait</strong>. Personne ne vous a demandé votre avis pour le concevoir et si vous avez <strong>un besoin particulier</strong>, il est peu probable que l'outil soit modifié rien que pour vous. Cependant si vous trouvez qu'il correspond bien à vos processus actuels et futurs, vous pouvez payer pour qu'il <strong>soit mis à la disposition</strong> des acteurs qui composent votre marché (vos collaborateurs, vous clients, vous fournisseurs, etc). Sur le marché, <strong>plusieurs formules existent</strong> : des abonnements avec/sans engagement, l'achat de licence ou des royalties sur votre chiffre d'affaire.
+                        Un ERP sur étagère, c'est un ERP qui est <strong>déjà tout fait</strong>. Personne ne vous a demandé votre avis pour le concevoir et si vous avez <strong>un besoin particulier</strong>, il est peu probable que l'outil soit modifié rien que pour vous. Cependant si vous trouvez qu'il correspond bien à vos processus actuels et futurs, vous pouvez payer pour qu'il <strong>soit mis à la disposition</strong> des acteurs qui composent votre marché (vos collaborateurs, vos clients, vous fournisseurs, etc). Sur le marché, <strong>plusieurs formules existent</strong> : des abonnements avec/sans engagement, l'achat de licence ou des royalties sur votre chiffre d'affaire.
                     </p>
                     <p>
                         Il existe <strong>pléthore d'ERP sur étagère sur le marché</strong> (puisque tout le monde en a besoin) et si vous nourrissez l'espoir que parmi toute cette offre il doit bien y en avoir un qui correspondra à vos besoins, vous n'avez plus qu'à vous lancer dans <strong>la quête épique-mais-néanmoins-laborieuse</strong> de trouver l'ERP qui comblera <strong>efficacement tous vos besoins</strong>.
@@ -316,7 +316,7 @@ const connected_projects = [
                         </nu-typography>
                     </h3>
                     <p>
-                        L'autre choix qui s'offre à vous, c'est de <strong>faire développer un ERP sur-mesure</strong> par une entreprise de développement de logiciels sur-mesure (comme Nutshell, excusez-nous cette modeste publicité). 
+                        L'autre choix qui s'offre à vous, c'est de <strong>faire développer un ERP sur-mesure</strong> par une entreprise de développement de logiciels sur-mesure (comme Nutshell, pardonnez-nous cette modeste publicité). 
                     </p>
                     <p>
                         Cette entreprise vous proposera l'application d'un de ses propres processus :
@@ -326,13 +326,13 @@ const connected_projects = [
                             <strong>Cartographier vos processus</strong> et proposer d'éventuelles optimisations
                         </li>
                         <li>
-                            Vous <strong>interroger sur les contraintes de votre métiers</strong> (obligations légales? Exigences des fournisseurs du milieux? Volontée de qualité qui vous est propre?)
+                            Vous <strong>interroger sur les contraintes de votre métiers</strong> (obligations légales? Exigences des fournisseurs du milieux? Volonté de qualité qui vous est propre?)
                         </li>
                         <li>
                             Déterminer les <strong>potentiels sous-processus</strong> qui soient <strong>automatisables</strong>
                         </li>
                         <li>
-                            Vous proposez un <strong>plan de développement</strong> (itératif, par lots ou migration totale)
+                            Vous proposer un <strong>plan de développement</strong> (itératif, par lots ou migration totale)
                         </li>
                     </ul>
                 </div>
@@ -436,7 +436,7 @@ const connected_projects = [
                                         Moins cher à la fin
                                     </div>
                                     <div class="@md:border-none border-b @md:h-auto h-[90px]">
-                                        Accentuation de vos critères différenciant
+                                        Accentuation de vos critères différenciants
                                     </div>
                                 </div>
                             </div>
@@ -490,11 +490,11 @@ const connected_projects = [
                     </h3>
                     <div class="w-full max-w-[1000px] flex flex-col gap-8">
                         <p>
-                            <strong>Un logiciel sur étagère est utilisable immédiatement</strong> tandis qu'un logiciel sur-mesure doit être conçu, développé et mis en production ; vous imposant un début d'opération plus long. Si pour un raison immuable vous avez <strong>un besoin soudain et immédiat d'un ERP</strong> (c'est étonnant mais les cas à la marge existent) ; prennez sans hésiter un ERP sur étagère et <strong>réaviser ultérieurement</strong> pour une éventuelle transition vers un ERP sur-mesure. Sinon, considérez bien que l'élaboration d'un <strong>ERP sur-mesure va déclencher chez vous l'étude et la remise en question de vos processus métier</strong> : une démarche non négligeable qui vous permet de prendre du <strong>recul sur votre savoir-faire</strong>. En effet, si vous simplifiez vos processus, vous <strong>économisez du même coup de l'argent</strong> (moins de travail à réaliser et/ou moins de ressources à consommer).
+                            <strong>Un logiciel sur étagère est utilisable immédiatement</strong> tandis qu'un logiciel sur-mesure doit être conçu, développé et mis en production ; vous imposant un début d'opération plus long. Si pour un raison immuable vous avez <strong>un besoin soudain et immédiat d'un ERP</strong> (c'est étonnant mais les cas à la marge existent) ; prenez sans hésiter un ERP sur étagère et <strong>réavisez ultérieurement</strong> pour une éventuelle transition vers un ERP sur-mesure. Sinon, considérez bien que l'élaboration d'un <strong>ERP sur-mesure va déclencher chez vous l'étude et la remise en question de vos processus métier</strong> : une démarche non négligeable qui vous permet de prendre du <strong>recul sur votre savoir-faire</strong>. En effet, si vous simplifiez vos processus, vous <strong>économisez du même coup de l'argent</strong> (moins de travail à réaliser et/ou moins de ressources à consommer).
                         </p>
 
                         <p>
-                            Un ERP sur-mesure chez Nutshell, au-delàs de cette étude de vos processus, va déployer <strong>dès ses débuts</strong> les premiers <strong>éléments de captation des données</strong> pour commencer à <strong>accumuler de la connaissance sur votre activité</strong>. Autour de ces systèmes fondammentaux viennent ensuite se <strong>greffer progressivement plusieurs fonctionnalités</strong> qui peuvent se <strong>déployer par lots</strong> et permettre d'avoir les premières fonctionnalités <strong>relativement tôt</strong>.
+                            Un ERP sur-mesure chez Nutshell, au-delà de cette étude de vos processus, va déployer <strong>dès ses débuts</strong> les premiers <strong>éléments de captation des données</strong> pour commencer à <strong>accumuler de la connaissance sur votre activité</strong>. Autour de ces systèmes fondammentaux viennent ensuite se <strong>greffer progressivement plusieurs fonctionnalités</strong> qui peuvent se <strong>déployer par lots</strong> et permettre d'avoir les premières fonctionnalités <strong>relativement tôt</strong>.
                         </p>
                     </div>
                 </div>
@@ -517,7 +517,7 @@ const connected_projects = [
                             Les logiciels sont de véritables petits <strong>êtres-vivants</strong> dont le corps serait des <strong>machines</strong>. Certes dénués d'intelligence, <strong>ils vivent un cycle de vie</strong> qui est <strong>impacté par leur environnement en constante évolution</strong>. Un ERP dit <strong>fiable</strong> sera ainsi <strong>résilient</strong> aux nombreux <strong>changements d'état</strong> que son environnement va subir tout au long de son fonctionnement. La présence de <strong>bugs et d'anomalies</strong> provient fondamentalement d'un <strong>environnement qui se trouve dans un état non prévu</strong>. Loi de Murphy obligeant, il est logique de dire que <strong>plus un logiciel est vieux et utilisé, plus il a subit des états différents</strong> et donc plus il a <strong>déjà été amélioré pour devenir fiable</strong>. La réalité est un peu plus compliqué mais l'estimation demeure plutôt juste.
                         </p>
                         <p>
-                            Un <strong>ERP sur-mesure</strong> quant à lui <strong>ne bénéficie pas de ce temps d'existence</strong>. Il est pourtant possible pour un <strong>logiciel sur-mesure d'avoir un très haut taux de résilience dès son premier jour</strong> de mise en production. Outre l'évidente rigueur méthodologique nécessaire, <strong>cette faculté est permise par une étape de pré-conception approfondie</strong> qui introduira dans le modèle du logiciel <strong>les leviers de résilience nécessaires à cette fiabilité</strong>. Ce <strong>coût supplémentaire</strong> au moment de la pré-conception est en fait <strong>à arbitrer</strong> : votre métier fait-il que le moindre service dégradé à des conséquences catastrophiques pour votre activité ? (fréquence d'achats, communication en temps réels, flottes d'objets connectés à tracker, etc.) Ou bien pouvez-vous vous permettre des bugs occasionnels ? (Ne vous en déplaise, la réponse est souvent oui).
+                            Un <strong>ERP sur-mesure</strong> quant à lui <strong>ne bénéficie pas de ce temps d'existence</strong>. Il est pourtant possible pour un <strong>logiciel sur-mesure d'avoir un très haut taux de résilience dès son premier jour</strong> de mise en production. Outre l'évidente rigueur méthodologique nécessaire, <strong>cette faculté est permise par une étape de pré-conception approfondie</strong> qui introduira dans le modèle du logiciel <strong>les leviers de résilience nécessaires à cette fiabilité</strong>. Ce <strong>coût supplémentaire</strong> au moment de la pré-conception est en fait <strong>à arbitrer</strong> : votre métier fait-il que le moindre service dégradé ait des conséquences catastrophiques pour votre activité ? (fréquence d'achats, communication en temps réel, flottes d'objets connectés à tracker, etc.) Ou bien pouvez-vous vous permettre des bugs occasionnels ? (Ne vous en déplaise, la réponse est souvent oui!).
                         </p>
                     </div>
                 </div>
@@ -537,12 +537,12 @@ const connected_projects = [
                     </h3>
                     <div class="w-full max-w-[1000px] flex flex-col gap-8">
                         <p>
-                            Un <strong>ERP sur étagère</strong> vous <strong>impose une couverture fonctionnelle prédéfinie</strong> par des acteurs extérieur à vous. Elle est pensée pour <strong>correspondre à la plupart de vos concurrents</strong>. Il y'a ainsi 3 options possibles :
+                            Un <strong>ERP sur étagère</strong> vous <strong>impose une couverture fonctionnelle prédéfinie</strong> par des acteurs extérieurs à vous. Elle est pensée pour <strong>correspondre à la plupart de vos concurrents</strong>. Il y'a ainsi 3 options possibles :
                         </p>
                         <ul class="px-8 list-disc">
-                            <li><strong>C'est moins que ce qu'il vous faut</strong> : certains de vos processus ne peuvent pas être couvert par l'ERP, certaines de vos ressources ne peuvent pas y être référencées ou certaines parties prenantes n'ont pas accès à votre système. <strong>Vous n'optimisez donc pas votre activité autant que vous le pourriez</strong>.</li>
-                            <li><strong>C'est exactement ce dont vous avez besoin</strong>. Félicitations, votre entreprise est <strong>banale</strong> (n'y voyez pas de jugement, c'est une stratégie qui se défend en fonction de l'offre et de la demande!) : vos processus et vos ressources <strong>correspondent exactement à la moyenne de vos concurrent</strong>.</li>
-                            <li><strong>C'est plus que ce dont vous avez besoin</strong>. Tous vos processus et vos ressources sont couvertes mais vous <strong>risquez de perdre vos collaborateurs</strong> avec un logiciel "usine à gaz". La <strong>complexité apparente</strong> les encouragera à <strong>détourner</strong> une partie des processus pour <strong>éviter d'avoir à intéragir avec l'outil</strong>. Cet ERP a probablement été pensé pour des acteurs <strong>plus gros que vous</strong>.</li>
+                            <li><strong>C'est moins que ce qu'il vous faut</strong> : certains de vos processus ne peuvent pas être couverts par l'ERP, certaines de vos ressources ne peuvent pas y être référencées ou certaines parties prenantes n'ont pas accès à votre système. <strong>Vous n'optimisez donc pas votre activité autant que vous le pourriez</strong>.</li>
+                            <li><strong>C'est exactement ce dont vous avez besoin</strong>. Félicitations, votre entreprise est <strong>banale</strong> (n'y voyez pas de jugement, c'est une stratégie qui se défend en fonction de l'offre et de la demande!) : vos processus et vos ressources <strong>correspondent exactement à la moyenne de ceux de vos concurrent</strong>.</li>
+                            <li><strong>C'est plus que ce dont vous avez besoin</strong>. Tous vos processus et vos ressources sont couverts mais vous <strong>risquez de perdre vos collaborateurs</strong> avec un logiciel "usine à gaz". La <strong>complexité apparente</strong> les encouragera à <strong>détourner</strong> une partie des processus pour <strong>éviter d'avoir à intéragir avec l'outil</strong>. Cet ERP a probablement été pensé pour des acteurs <strong>plus gros que vous</strong>.</li>
                         </ul>
                         <p>
                             Du côté de <strong>l'ERP sur-mesure</strong>, les choses sont <strong>simples</strong> : si vous le voulez, nous pouvons le faire pour vous. Si vous choisissez de développez avec nous, nous vous encouragerons probablement à <strong>vérifier</strong> que vous voulez ce que vous voulez. 
@@ -568,9 +568,9 @@ const connected_projects = [
                             En fonction de <strong>comment vous payez</strong> pour votre <strong>ERP sur-étagère</strong> : licence annuelle, abonnement avec/sans engagement ; différents critères sont à prendre en compte :
                         </p>
                         <ul class="px-8 list-disc">
-                            <li><strong>le coût d'acquisition</strong> (ce que vous débourser pour commencer les opérations)</li>
+                            <li><strong>le coût d'acquisition</strong> (ce que vous déboursez pour commencer les opérations)</li>
                             <li><strong>le coût récurrent</strong> (ce que vous allez payer tout au long de l'utilisation)</li>
-                            <li><strong>sur le long terme</strong> vous pairez plus que pour du sur-mesure</li>
+                            <li><strong>sur le long terme</strong> vous paierez plus que pour du sur-mesure</li>
                         </ul>
                         <p>
                             Du côté d'un développement <strong>sur-mesure classique</strong>, nous développons pour vous un <strong>code source</strong>. Autrement dit vous <strong>possédez</strong> l'outil, une différence fondammentale qui a les implications suivantes :
@@ -581,7 +581,7 @@ const connected_projects = [
                             <li><strong>sur le moyen terme</strong> vous aurez rentabilisé le coût d'acquisition</li>
                         </ul>
                         <p>
-                            Il y a également <strong>des rentrées d'argents cachées</strong> avec le sur-mesure !
+                            Il y a également <strong>des rentrées d'argent cachées</strong> avec le sur-mesure !
                         </p>
                         <ul class="px-8 list-disc">
                             <li>Puisque <strong>parfaitement adapté</strong> à vos besoins, vous <strong>économisez plus</strong> de temps et/ou de ressources</li>
@@ -605,7 +605,7 @@ const connected_projects = [
                     </h3>
                     <div class="w-full max-w-[1000px]">
                         <p>
-                            En définitive, si vous souhaitez vous différenciez de vos concurrents, vous devez disposer d'arguments différenciant. En développant un ERP sur-mesure, la porte est ouverte à l'optimisation de processus non-générique qui vous sont propres. Vous pourriez suivre l'exmemple de nos clients-maintenant-partenaires Actinuum, qui ont fait très tôt le choix de développer un ERP sur-mesure pour imposer leur savoir-faire dans la formation professionnelle, triplant dès la première année de mise en production leur chiffre d'affaire.
+                            En définitive, si vous souhaitez vous différencier de vos concurrents, vous devez disposer d'arguments différenciants. En développant un ERP sur-mesure, la porte est ouverte à l'optimisation de processus non-génériques qui vous sont propres. Vous pourriez suivre l'exemple de nos clients-maintenant-partenaires Actinuum, qui ont fait très tôt le choix de développer un ERP sur-mesure pour imposer leur savoir-faire dans la formation professionnelle, triplant dès la première année de mise en production leur chiffre d'affaire.
                         </p>
                     </div>
                 </div>
