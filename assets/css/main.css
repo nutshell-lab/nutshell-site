@@ -20,7 +20,7 @@
 		url('~/assets/fonts/Silka/silka-thin-webfont.woff2') format('woff2'),
 		url('~/assets/fonts/Silka/silka-thin-webfont.woff') format('woff');
 	font-display: swap;
-	unicode-range: U+000-5FF;
+	unicode-range: U+000-5FF, U+20AC;
 }
 @font-face {
 	font-family: 'Silka';
@@ -45,7 +45,7 @@
 		url('~/assets/fonts/Silka/silka-extralight-webfont.woff2') format('woff2'),
 		url('~/assets/fonts/Silka/silka-extralight-webfont.woff') format('woff');
 	font-display: swap;
-	unicode-range: U+000-5FF;
+	unicode-range: U+000-5FF, U+20AC;
 }
 @font-face {
 	font-family: 'Silka';
@@ -70,7 +70,7 @@
 		url('~/assets/fonts/Silka/silka-light-webfont.woff2') format('woff2'),
 		url('~/assets/fonts/Silka/silka-light-webfont.woff') format('woff');
 	font-display: swap;
-	unicode-range: U+000-5FF;
+	unicode-range: U+000-5FF, U+20AC;
 }
 @font-face {
 	font-family: 'Silka';
@@ -95,7 +95,7 @@
 		url('~/assets/fonts/Silka/silka-regular-webfont.woff2') format('woff2'),
 		url('~/assets/fonts/Silka/silka-regular-webfont.woff') format('woff');
 	font-display: swap;
-	unicode-range: U+000-5FF;
+	unicode-range: U+000-5FF, U+20AC;
 }
 @font-face {
 	font-family: 'Silka';
@@ -120,7 +120,7 @@
 		url('~/assets/fonts/Silka/silka-medium-webfont.woff2') format('woff2'),
 		url('~/assets/fonts/Silka/silka-medium-webfont.woff') format('woff');
 	font-display: swap;
-	unicode-range: U+000-5FF;
+	unicode-range: U+000-5FF, U+20AC;
 }
 @font-face {
 	font-family: 'Silka';
@@ -145,7 +145,7 @@
 		url('~/assets/fonts/Silka/silka-semibold-webfont.woff2') format('woff2'),
 		url('~/assets/fonts/Silka/silka-semibold-webfont.woff') format('woff');
 	font-display: swap;
-	unicode-range: U+000-5FF;
+	unicode-range: U+000-5FF, U+20AC;
 }
 @font-face {
 	font-family: 'Silka';
@@ -170,7 +170,7 @@
 		url('~/assets/fonts/Silka/silka-bold-webfont.woff2') format('woff2'),
 		url('~/assets/fonts/Silka/silka-bold-webfont.woff') format('woff');
 	font-display: swap;
-	unicode-range: U+000-5FF;
+	unicode-range: U+000-5FF, U+20AC;
 }
 @font-face {
 	font-family: 'Silka';
@@ -195,7 +195,7 @@
 		url('~/assets/fonts/Silka/silka-black-webfont.woff2') format('woff2'),
 		url('~/assets/fonts/Silka/silka-black-webfont.woff') format('woff');
 	font-display: swap;
-	unicode-range: U+000-5FF;
+	unicode-range: U+000-5FF, U+20AC;
 }
 @font-face {
 	font-family: 'Silka';
@@ -223,7 +223,7 @@
 		url('~/assets/fonts/Inter/Inter-Thin.woff2') format('woff2'),
 		url('~/assets/fonts/Inter/Inter-Thin.woff') format('woff');
 	font-display: swap;
-	unicode-range: U+000-5FF;
+	unicode-range: U+000-5FF, U+20AC;
 }
 @font-face {
 	font-family: 'Inter';
@@ -248,7 +248,7 @@
 		url('~/assets/fonts/Inter/Inter-ExtraLight.woff2') format('woff2'),
 		url('~/assets/fonts/Inter/Inter-ExtraLight.woff') format('woff');
 	font-display: swap;
-	unicode-range: U+000-5FF;
+	unicode-range: U+000-5FF, U+20AC;
 }
 @font-face {
 	font-family: 'Inter';
@@ -273,7 +273,7 @@
 		url('~/assets/fonts/Inter/Inter-Light.woff2') format('woff2'),
 		url('~/assets/fonts/Inter/Inter-Light.woff') format('woff');
 	font-display: swap;
-	unicode-range: U+000-5FF;
+	unicode-range: U+000-5FF, U+20AC;
 }
 @font-face {
 	font-family: 'Inter';
@@ -298,7 +298,7 @@
 		url('~/assets/fonts/Inter/Inter-Regular.woff2') format('woff2'),
 		url('~/assets/fonts/Inter/Inter-Regular.woff') format('woff');
 	font-display: swap;
-	unicode-range: U+000-5FF;
+	unicode-range: U+000-5FF, U+20AC;
 }
 @font-face {
 	font-family: 'Inter';
@@ -324,7 +324,7 @@
 		url('~/assets/fonts/Inter/Inter-Medium.woff2') format('woff2'),
 		url('~/assets/fonts/Inter/Inter-Medium.woff') format('woff');
 	font-display: swap;
-	unicode-range: U+000-5FF;
+	unicode-range: U+000-5FF, U+20AC;
 }
 @font-face {
 	font-family: 'Inter';
@@ -349,7 +349,7 @@
 		url('~/assets/fonts/Inter/Inter-SemiBold.woff2') format('woff2'),
 		url('~/assets/fonts/Inter/Inter-SemiBold.woff') format('woff');
 	font-display: swap;
-	unicode-range: U+000-5FF;
+	unicode-range: U+000-5FF, U+20AC;
 }
 @font-face {
 	font-family: 'Inter';
@@ -374,7 +374,7 @@
 		url('~/assets/fonts/Inter/Inter-Bold.woff2') format('woff2'),
 		url('~/assets/fonts/Inter/Inter-Bold.woff') format('woff');
 	font-display: swap;
-	unicode-range: U+000-5FF;
+	unicode-range: U+000-5FF, U+20AC;
 }
 @font-face {
 	font-family: 'Inter';
@@ -399,7 +399,7 @@
 		url('~/assets/fonts/Inter/Inter-Black.woff2') format('woff2'),
 		url('~/assets/fonts/Inter/Inter-Black.woff') format('woff');
 	font-display: swap;
-	unicode-range: U+000-5FF;
+	unicode-range: U+000-5FF, U+20AC;
 }
 @font-face {
 	font-family: 'Inter';
