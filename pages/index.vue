@@ -1,19 +1,7 @@
 <script lang="ts" setup>
 import Parallaxy from '@lucien144/vue3-parallaxy';
 
-import prjct_actinuum from '~/assets/illustrations/prjct_actinuum.webp'
-import prjct_broker from '~/assets/illustrations/prjct_broker.webp'
-import prjct_atlas from '~/assets/illustrations/prjct_atlas.webp'
-import prjct_constructys from '~/assets/illustrations/prjct_constructys.webp'
-
-import use_case_erp from '~/assets/illustrations/use_case_erp.webp'
-import use_case_crm from '~/assets/illustrations/use_case_crm.webp'
-import use_case_analytics from '~/assets/illustrations/use_case_analytics.webp'
-import use_case_strategy from '~/assets/illustrations/use_case_strategy.webp'
-
 import logo_designrush from '~/assets/partners/logo_designrush.svg'
-
-import logo_nutshell from '~/assets/logo_nutshell.webp'
 
 const route = useRoute()
 useSeoMeta({
@@ -21,82 +9,10 @@ useSeoMeta({
   ogTitle: 'Nutshell - Agence digitale sur-mesure',
   description: 'Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment pertinentes. ERP, CRM, logiciel Saas, si vous en avez besoin, on peut sûrement vous le fabriquer.',
   ogDescription: 'Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment pertinentes. ERP, CRM, logiciel Saas, si vous en avez besoin, on peut sûrement vous le fabriquer.',
-  ogImage: logo_nutshell,
+  ogImage: 'https://nutshell-lab.com/logo_nutshell.webp',
   ogUrl: 'https://nutshell-lab.com' + route.path,
   ogType: 'website'
 })
-
-const projects = [
-    {
-        title: "Actinuum",
-        highlight: "+2M€",
-        picture: prjct_actinuum,
-        description:
-            "Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.",
-        slug: "actinuum",
-    },
-    {
-        title: "Brokers",
-        highlight: "131Md€",
-        picture: prjct_broker,
-        description:
-            "Les marchés financiers tradent chaque jours des centaines de milliards d’actifs. En analysant les chats de ses traders, notre solution prépare des trades pertinents en temps réel.",
-        slug: "brokers",
-		disabled: true,
-    },
-    {
-        title: "Atlas",
-        highlight: "1000+",
-        picture: prjct_atlas,
-        description:
-            "L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié plus de 1000 apprenants.",
-        slug: "atlas",
-		disabled: true,
-    },
-    {
-        title: "Constructys",
-        highlight: "180",
-        picture: prjct_constructys,
-        description:
-            "Pour préparer les JO 2024, il faut augmenter massivement la masse salariale de la branche BTP. Pour se faire Constructys nous fait mettre en place une solution de reconversion de métier à 180 métiers cibles.",
-        slug: "constructys",
-		disabled: true,
-    },
-]
-
-const use_cases = [
-    {
-        title: "Un ERP sur-mesure est-il un choix judicieux pour votre entreprise ?",
-        subtitle: "ERP",
-        picture: use_case_erp,
-        id: "use case 001",
-		slug: "erp-sur-mesure",
-    },
-    {
-        title: "Un CRM personnalisé vous permet de proposer le meilleur à vos clients.",
-        subtitle: "CRM",
-        picture: use_case_crm,
-        id: "use case 002",
-		slug: "crm",
-		disabled: true,
-    },
-    {
-        title: "Tracker le progrès avec des sondes pensées pour votre métier.",
-        subtitle: "ANALYTICS",
-        picture: use_case_analytics,
-        id: "use case 003",
-		slug: "analytics",
-		disabled: true,
-    },
-    {
-        title: "Introduction au marché du projet informatique.",
-        subtitle: "STRATÉGIE",
-        picture: use_case_strategy,
-        id: "use case 004",
-		slug: "strategy",
-		disabled: true,
-    },
-]
 
 const partners = [
 	{
@@ -160,11 +76,13 @@ const services = [
 					</h2>
 					<div class="flex flex-col items-end gap-8">
 						<div class="flex flex-col @lg:grid @lg:grid-cols-2 gap-6">
-							<nu-link :label="`Découvrez le projet ${p.title}`" :to="`/projets/${p.slug}`" :disabled="p.disabled"
-								v-for="(p, i) in projects.slice(0, 4)">
-								<nu-project-preview :class="{ '@lg:mt-8': i === 0, '@lg:-mt-8': i === 3 }" :line-break="i != 1" :title="p.title" :highlight="p.highlight"
-									:picture="p.picture" :description="p.description" :disabled="p.disabled" data-aos="slide-up"></nu-project-preview>
-							</nu-link>
+							<DataQuery v-slot="{ data }" resource="projets" :where="(p) => ['actinuum', 'brokers', 'atlas', 'constructys'].includes(p.id)">
+								<nu-link :label="`Découvrez le projet ${p.title}`" :to="p.path" :disabled="p.disabled"
+									v-for="(p, i) in data.slice(0, 4)">
+									<nu-project-preview :class="{ '@lg:mt-8': i === 0, '@lg:-mt-8': i === 3 }" :title="p.title" :highlight="p.highlight"
+										:picture="p.picture" :description="p.description" :disabled="p.disabled" data-aos="slide-up"></nu-project-preview>
+								</nu-link>
+							</DataQuery>
 						</div>
 						<!-- <nu-link label="Découvrez nos autres projets" to="/projets"> -->
 							<div class="flex items-center gap-4 justify-center transition-all duration-300 hover:gap-6">
@@ -193,17 +111,19 @@ const services = [
 						<nu-typography type="title" class="max-w-[776px]">Si vous en avez besoin, on peut sûrement vous le
 						fabriquer.</nu-typography>
 					</h2>
-					<nu-swiper :items="use_cases" v-slot="{ item }">
-						<nu-link :label="`Découvrez le cas ${item.title}`" :to="`/dossiers/${item.slug}`" :disabled="item.disabled">
-							<nu-tile
-								:title="item.title"
-								:subtitle="item.subtitle"
-								:picture="item.picture"
-								:id="item.id"
-								:disabled="item.disabled"
-							/>
-						</nu-link>
-					</nu-swiper>
+					<DataQuery v-slot="{ data }" resource="dossiers">
+						<nu-swiper :items="data" v-slot="{ item }">
+							<nu-link :label="`Découvrez le cas ${item.title}`" :to="item.path" :disabled="item.disabled">
+								<nu-tile
+									:title="item.title"
+									:category="item.category"
+									:picture="item.picture"
+									:caption="item.caption"
+									:disabled="item.disabled"
+								/>
+							</nu-link>
+						</nu-swiper>
+					</DataQuery>
 					<div class="relative">
 						<div class="absolute h-[1px] bg-alabaster w-screen left-0 bottom-0">
 							<ClientOnly>

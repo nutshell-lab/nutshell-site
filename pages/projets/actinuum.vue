@@ -1,20 +1,13 @@
 <script lang="ts" setup>
 import Parallaxy from '@lucien144/vue3-parallaxy';
 
-import prjct_actinuum from '~/assets/illustrations/prjct_actinuum.webp'
-import prjct_broker from '~/assets/illustrations/prjct_broker.webp'
-import prjct_atlas from '~/assets/illustrations/prjct_atlas.webp'
-import prjct_constructys from '~/assets/illustrations/prjct_constructys.webp'
-
-import logo_nutshell from '~/assets/logo_nutshell.webp'
-
 const route = useRoute()
 useSeoMeta({
   title: 'Actinuum - Automatiser la formation professionnelle par Nutshell',
   ogTitle: 'Actinuum - Automatiser la formation professionnelle par Nutshell',
   description: 'Découvrez comment Nutshell a analysé les processus métier d\'un organisme de formation pour développer un logiciel type ERP sur mesure',
   ogDescription: 'Découvrez comment Nutshell a analysé les processus métier d\'un organisme de formation pour développer un logiciel type ERP sur mesure',
-  ogImage: logo_nutshell,
+  ogImage: 'https://nutshell-lab.com/logo_nutshell.webp',
   ogUrl: 'https://nutshell-lab.com' + route.path,
   ogType: 'website'
 })
@@ -29,58 +22,16 @@ const results = [
 	"Légitimité auprès des acteurs publiques",
 ]
 
-const other_projects = [
-	{
-		title: "Keyro",
-		highlight: "10k",
-        picture: `url('${prjct_actinuum}')`,
-		description:
-			"Keyro est l'émergence d'un produit SAAS pour fournir aux organismes de formation un logiciel ERP+LMS pour digitaliser leur sessions de formations. La plateforme accueille déjà plus de 10k apprenants tous les ans.",
-		link: "#",
-		slug: "keyro",
-		disabled: true
-	},
-	{
-		title: "Atlas",
-		highlight: "1000+",
-        picture: `url('${prjct_atlas}')`,
-		description:
-			"L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié plus de 1000 apprenants.",
-		link: "#",
-		slug: "atlas",
-		disabled: true
-	},
-	{
-		title: "Constructys",
-		highlight: "180",
-        picture: `url('${prjct_constructys}')`,
-		description:
-			"Pour préparer les JO 2024, il faut augmenter massivement la masse salariale de la branche BTP. Pour se faire Constructys nous fait mettre en place une solution de reconversion de métier à 180 métiers cibles.",
-		link: "#",
-		slug: "constructys",
-		disabled: true
-	},
-	{
-		title: "Olecio",
-		highlight: "500",
-        picture: `url('${prjct_broker}')`,
-		description:
-			"La plateforme Olecio permet à chacun de découvrir le métier de ses rêve en parcourant des milliers de contenus gratuits. En fonction du profil des visiteurs, des métiers puis des formations leurs sont suggérés tout au long de leur expérience de navigation.",
-		link: "#",
-		slug: "olecio",
-		disabled: true
-	},
-]
-const project = {
-	title: "Actinuum",
-	highlight: "+2M€",
-	description:
-		"Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.",
-	link: "#",
-	short_description: "Automatiser l'administratif de la formation professionnelle",
-	slug: "actinuum",
-	external_url: "https://actinuum.com/",
-}
+// const project = {
+// 	title: "Actinuum",
+// 	highlight: "+2M€",
+// 	description:
+// 		"Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.",
+// 	link: "#",
+// 	short_description: "Automatiser l'administratif de la formation professionnelle",
+// 	slug: "actinuum",
+// 	external_url: "https://actinuum.com/",
+// }
 
 const keywords = [
 	'Logiciel ERP',
@@ -103,27 +54,27 @@ const keywords = [
 				<template #fallback>
 					<!-- this will be rendered on server side -->
 					<div class="flex gap-14 relative left-[-267px]">
-						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title-filled">{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title-filled">{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
+						<nu-typography type="hero-title">Actinuum</nu-typography>
+						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
+						<nu-typography type="hero-title">Actinuum</nu-typography>
+						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
+						<nu-typography type="hero-title">Actinuum</nu-typography>
 					</div>
       			</template>
 				<Parallaxy :speed="300" axis="x">
 					<div class="flex gap-14">
-						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title-filled">{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title-filled">{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title-filled">{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title-filled">{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title-filled">{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title-filled">{{ project.title }}</nu-typography>
+						<nu-typography type="hero-title">Actinuum</nu-typography>
+						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
+						<nu-typography type="hero-title">Actinuum</nu-typography>
+						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
+						<nu-typography type="hero-title">Actinuum</nu-typography>
+						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
+						<nu-typography type="hero-title">Actinuum</nu-typography>
+						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
+						<nu-typography type="hero-title">Actinuum</nu-typography>
+						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
+						<nu-typography type="hero-title">Actinuum</nu-typography>
+						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
 					</div>
 				</Parallaxy>
 			</ClientOnly>
@@ -131,12 +82,12 @@ const keywords = [
 				<div class="flex-shrink w-[680px] gap-16 flex flex-col justify-between">
 					<h1>
 						<nu-typography type="title" class="text-alabaster font-normal">
-							{{ project.short_description }}
+							Automatiser l'administratif de la formation professionnelle
 						</nu-typography>
 					</h1>
 					<nu-lined-list :entries="keywords" class="!gap-10" />
 					<div class="w-full flex justify-start">
-						<nu-link target="_blank" :to="project.external_url" label="Découvrez le site Actinnuum">
+						<nu-link target="_blank" to="https://actinuum.com/" label="Découvrez le site Actinnuum">
 							<nu-button color="alabaster">
 								Découvrir le site
 							</nu-button>
@@ -271,18 +222,17 @@ const keywords = [
 			<ClientOnly>
 				<Parallaxy :speed="300" axis="x">
 					<div class="flex gap-14">
-						<nu-typography type="hero-title" >{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title-filled" >{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title" >{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title-filled" >{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title" >{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title-filled" >{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title" >{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title-filled" >{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title" >{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title-filled" >{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title">{{ project.title }}</nu-typography>
-						<nu-typography type="hero-title-filled">{{ project.title }}</nu-typography>
+						<nu-typography type="hero-title" >Actinuum</nu-typography>
+						<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
+						<nu-typography type="hero-title" >Actinuum</nu-typography>
+						<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
+						<nu-typography type="hero-title" >Actinuum</nu-typography>
+						<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
+						<nu-typography type="hero-title" >Actinuum</nu-typography>
+						<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
+						<nu-typography type="hero-title" >Actinuum</nu-typography>
+						<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
+						<nu-typography type="hero-title">Actinuum</nu-typography>
 					</div>
 				</Parallaxy>
 			</ClientOnly>
@@ -317,11 +267,13 @@ const keywords = [
 				</p>
 				<div class="flex flex-col items-end gap-8">
 					<div class="@lg:pl-32 flex flex-col @lg:grid @lg:grid-cols-2 gap-6">
-						<nu-link :label="`Découvrez le projet ${p.title}`" :to="`/projets/${p.slug}`" :disabled="p.disabled"
-							v-for="(p, i) in other_projects.slice(0, 4)">
-							<nu-project-preview :class="{ '@lg:mt-8': i === 0, '@lg:-mt-8': i === 3 }" :line-break="i != 1" :title="p.title" :highlight="p.highlight"
-								:picture="p.picture" :description="p.description" :disabled="p.disabled" data-aos="slide-up"></nu-project-preview>
-						</nu-link>
+						<DataQuery v-slot="{ data }" resource="projets" :where="(p) => ['keyro', 'atlas', 'constructys', 'olecio'].includes(p.id)">
+							<nu-link :label="`Découvrez le projet ${p.title}`" :to="`/projets/${p.slug}`" :disabled="p.disabled"
+								v-for="(p, i) in data">
+								<nu-project-preview :class="{ '@lg:mt-8': i === 0, '@lg:-mt-8': i === 3 }" :title="p.title" :highlight="p.highlight"
+									:picture="p.picture" :description="p.description" :disabled="p.disabled" data-aos="slide-up"></nu-project-preview>
+							</nu-link>
+						</DataQuery>
 					</div>
 				</div>
 			</div>

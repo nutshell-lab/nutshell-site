@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 const open = ref(false)
+const route = useRoute()
+
+const theme = computed(() => route.meta.theme || 'dark')
 </script>
 
 <template>
@@ -27,7 +30,7 @@ const open = ref(false)
 							Projets
 						</nu-typography>
 					</nu-link>
-					<nu-link to="/#cases" label="Parcourez nos dossiers" hover @click="open = false">
+					<nu-link to="/dossiers" label="Parcourez nos dossiers" hover @click="open = false">
 						<nu-typography type="title" class="text-center">
 							Dossiers
 						</nu-typography>
@@ -49,7 +52,7 @@ const open = ref(false)
 			</div>
     		<header>
 				<nu-link label="Retourner sur la homepage" to="/#agency" class="absolute z-20 left-[76px] top-[24px]">
-					<nu-logo text :width="130" :colors="['cinnabar', open ? 'chinese-black' : 'alabaster', open ? 'chinese-black' : 'alabaster']"/>
+					<nu-logo text :width="130" :colors="['cinnabar', open || theme === 'light' ? 'chinese-black' : 'alabaster', open ? 'chinese-black' : 'alabaster']"/>
 				</nu-link>
 				<nu-link label="Retourner sur la homepage" to="/#agency" class="fixed z-20 left-8 top-6">
 					<nu-logo symbol :width="38" :colors="['cinnabar']" />

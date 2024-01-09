@@ -4,9 +4,9 @@ import NuArrow from "./NuArrow.vue"
 defineProps({
     picture: String,
     title: String,
-    subtitle: String,
+    category: String,
     disabled: Boolean,
-    id: String,
+    caption: String,
 })
 </script>
 
@@ -16,9 +16,9 @@ defineProps({
 			<div class="picture__inner" :class="{ 'bg-cinnabar': !disabled, 'bg-onyx': disabled }"/>
 		</div>
 		<div class="flex gap-6 py-8">
-			<div class="vertical-text rotate-180 font-inter font-bold text-cinnabar h-40 text-center px-2 uppercase">{{id}}</div>
+			<div class="vertical-text rotate-180 font-inter font-bold text-cinnabar h-40 text-center px-2 uppercase">{{caption}}</div>
 			<div class="flex flex-col gap-4 pr-6">
-				<div>{{subtitle}}</div>
+				<div>{{category}}</div>
 				<header class="text-xl font-semibold font-inter">{{title}}</header>
 			</div>
 			<nu-arrow top-right class="w-6 absolute bottom-8 right-8" :class="{ 'hidden': disabled }" />

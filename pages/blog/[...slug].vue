@@ -93,9 +93,9 @@ const url = useRequestURL()
                                         <nu-link :label="`Lire l'article ${item.title}`" :to="item._path">
                                             <nu-tile
                                                 :title="item.title"
-                                                :subtitle="`${item.created_at} ${item.category}`"
+                                                :category="`${item.created_at} ${item.category}`"
                                                 :picture="item.image.src"
-                                                :id="`Article 00${index + 1}`"
+                                                :caption="`Article 00${index + 1}`"
                                             />
                                         </nu-link>
                                     </nu-swiper>

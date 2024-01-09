@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import Parallaxy from '@lucien144/vue3-parallaxy';
 
-import logo_nutshell from '~/assets/logo_nutshell.webp'
 import prjct_actinuum from '~/assets/illustrations/prjct_actinuum.webp'
 
 const route = useRoute()
@@ -10,7 +9,7 @@ useSeoMeta({
   ogTitle: 'Utiliser un ERP en entreprise - Nutshell',
   description: 'Votre ERP d’entreprise est-il efficace ? Vérifiez-le ! Découvrez les bénéfices et les possibilités de ce progiciel ainsi que le concept d’ERP sur-mesure.',
   ogDescription: 'Votre ERP d’entreprise est-il efficace ? Vérifiez-le ! Découvrez les bénéfices et les possibilités de ce progiciel ainsi que le concept d’ERP sur-mesure.',
-  ogImage: logo_nutshell,
+  ogImage: 'https://nutshell-lab.com/logo_nutshell.webp',
   ogUrl: 'https://nutshell-lab.com' + route.path,
   ogType: 'website'
 })
@@ -22,26 +21,6 @@ const use_case = {
 	slug: "erp-sur-mesure",
 }
 
-const connected_projects = [
-    {
-        title: "Actinuum",
-        highlight: "+2M€",
-        picture: prjct_actinuum,
-        description:
-            "Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogiques d’Actinuum leur a permis de tripler leur chiffre d’affaire.",
-        slug: "actinuum",
-    },
-	{
-		title: "Keyro",
-		highlight: "10k",
-        picture: prjct_actinuum,
-		description:
-			"Keyro est l'émergence d'un produit SAAS pour fournir aux organismes de formation un logiciel ERP+LMS pour digitaliser leur sessions de formations. La plateforme accueille déjà plus de 10k apprenants tous les ans.",
-		link: "#",
-		slug: "keyro",
-		disabled: true
-	},
-]
 </script>
 
 <template>
@@ -349,19 +328,20 @@ const connected_projects = [
                     </div>
                     <div class="flex flex-col items-end gap-8">
                         <div class="@lg:pl-auto flex flex-col @lg:grid @lg:grid-cols-2 gap-6">
-                            <nu-link :label="`Découvrez le projet ${p.title}`" :to="`/projets/${p.slug}`" :disabled="p.disabled"
-                                v-for="(p, i) in connected_projects.slice(0, 2)">
-                                <nu-project-preview
-                                    :class="{ '@lg:mt-8': i === 0, '@lg:-mt-8': i === 1 }"
-                                    :line-break="i != 1"
-                                    :title="p.title"
-                                    :highlight="p.highlight"
-                                    :picture="p.picture"
-                                    :description="p.description"
-                                    :disabled="p.disabled"
-                                    data-aos="slide-up"
-                                />
-                            </nu-link>
+                            <DataQuery v-slot="{ data }" resource="projets" :where="(p) => ['actinuum', 'keyro'].includes(p.id)">
+                                <nu-link :label="`Découvrez le projet ${p.title}`" :to="p.path" :disabled="p.disabled"
+                                    v-for="(p, i) in data">
+                                    <nu-project-preview
+                                        :class="{ '@lg:mt-8': i === 0, '@lg:-mt-8': i === 1 }"
+                                        :title="p.title"
+                                        :highlight="p.highlight"
+                                        :picture="p.picture"
+                                        :description="p.description"
+                                        :disabled="p.disabled"
+                                        data-aos="slide-up"
+                                    />
+                                </nu-link>
+                            </DataQuery>
                         </div>
                         <!-- <nu-link label="Découvrez nos autres projets" to="#"> -->
                             <div class="flex text-cinnabar items-center gap-4 justify-center transition-all duration-300">

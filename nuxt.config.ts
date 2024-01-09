@@ -7,7 +7,7 @@ export default defineNuxtConfig({
 		plugins: [vsharp()],
 	},
 	css: ['~/assets/css/main.css'],
-	modules: ['@nuxtjs/plausible', '@nuxtjs/tailwindcss', '@nuxt/content', 'nuxt-simple-sitemap'],
+	modules: ['@nuxtjs/plausible', '@nuxtjs/tailwindcss', '@nuxt/content', 'nuxt-simple-sitemap', 'nuxt-route-meta'],
 	plausible: {
 		domain: 'nutshell-lab.com',
 		apiHost: 'https://plausible.nutshell-lab.com'
