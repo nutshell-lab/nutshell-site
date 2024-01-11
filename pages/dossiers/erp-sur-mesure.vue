@@ -343,13 +343,12 @@ const use_case = {
                                 </nu-link>
                             </DataQuery>
                         </div>
-                        <!-- <nu-link label="Découvrez nos autres projets" to="#"> -->
-                            <div class="flex text-cinnabar items-center gap-4 justify-center transition-all duration-300">
-                                <!-- hover:gap-6 -->
-                                <nu-typography type="cta-text" class="">Voir (Bientôt) tous les projets</nu-typography>
+                        <nu-link label="Découvrez nos autres projets" to="/projets">
+                            <div class="flex text-cinnabar items-center gap-4 justify-center transition-all duration-300 hover:gap-6">
+                                <nu-typography type="cta-text" class="">Voir tous les projets</nu-typography>
                                 <nu-arrow right />
                             </div>
-                        <!-- </nu-link> -->
+                        </nu-link>
                     </div>
                 </div>
             </div>

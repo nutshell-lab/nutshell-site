@@ -76,12 +76,10 @@ import Parallaxy from '@lucien144/vue3-parallaxy'
                                                 </div>
                                                 <nu-typography type="subtitle">{{item.title}}</nu-typography>
                                                 <div>{{ item.short_description }}</div>
-                                                <nu-link label="Aller à la liste des articles" to="/blog"> 
-                                                    <div class="text-cinnabar link flex items-center gap-4 transition-all duration-500">
-                                                        <nu-typography type="cta-text">Lire l'article</nu-typography>
-                                                        <nu-arrow right />
-                                                    </div>
-                                                </nu-link>
+                                                <div class="text-cinnabar link flex items-center gap-4 transition-all duration-500">
+                                                    <nu-typography type="cta-text">Lire l'article</nu-typography>
+                                                    <nu-arrow right />
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="bg-onyx h-[1px] w-[45%] absolute right-0 -bottom-0" />

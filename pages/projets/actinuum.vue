@@ -254,7 +254,7 @@ const keywords = [
 				</ul>
 			</div>
 		</section>
-		<section class="bg-chinese-black text-alabaster">
+		<section class="bg-gradient-to-b from-chinese-black from-80% to-alabaster to-80% text-alabaster">
 			<div class="px-layout container flex flex-col gap-12 py-20 leading-7">
 				<h2 data-aos="slide-up">
 					<nu-typography type="title">10 ans d'expérience<br />dans la formation
@@ -275,12 +275,18 @@ const keywords = [
 							</nu-link>
 						</DataQuery>
 					</div>
+					<nu-link label="Découvrez nos autres projets" to="/projets">
+						<div class="flex text-cinnabar items-center gap-4 justify-center transition-all duration-300 hover:gap-6">
+							<nu-typography type="cta-text" class="">Voir tous les projets</nu-typography>
+							<nu-arrow right />
+						</div>
+					</nu-link>
 				</div>
 			</div>
 		</section>
 
 		<section class="overflow-hidden relative">
-			<nu-section-break class="container px-layout place-self-center text-stroke-chinese-black" variant="light" watermark>
+			<nu-section-break class="container px-layout place-self-center text-stroke-chinese-black" variant="light">
 				<nu-typography type="headline">Lançons la <br /> conversation.</nu-typography>
 				<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
 					<nu-button class="mt-4">Nous contacter</nu-button>

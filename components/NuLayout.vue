@@ -25,7 +25,7 @@ const theme = computed(() => route.meta.theme || 'dark')
 							L'agence
 						</nu-typography>
 					</nu-link>
-					<nu-link to="/#projects" label="Découvrez tous nos projets" hover @click="open = false">
+					<nu-link to="/projets" label="Découvrez tous nos projets" hover @click="open = false">
 						<nu-typography type="title" class="text-center">
 							Projets
 						</nu-typography>

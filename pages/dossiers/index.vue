@@ -16,12 +16,12 @@ definePageMeta({
         </section>
         <section id="cases" class="@lg:py-32 py-20 @lg:bg-gradient-to-b bg-chinese-black from-silver from-[240px] to-chinese-black to-[240px] text-alabaster flex flex-col">
             <div class="containr px-layout flex @lg:flex-row flex-col @lg:gap-24 gap-8 relative items-stretch">
-                <div class="left flex flex-col justify-end @lg:w-[300px] pr-8 pb-10 relative">
+                <div class="left flex flex-col justify-end @lg:w-[400px] pr-24 pb-10 relative">
                     <h2 data-aos="slide-up" class="@lg:text-right relative z-20">
-                        <nu-typography type="title">Découvrez tous nos dossiers</nu-typography>
+                        <nu-typography type="title" class="font-normal">Découvrez tous nos <strong>dossiers</strong></nu-typography>
                     </h2>
                 </div>
-                <div class="flex-1 flex flex-col @lg:max-w-[calc(100%-396px)]">
+                <div class="flex-1 flex flex-col @lg:max-w-[calc(100%-496px)]">
                     <DataQuery v-slot="{ data }" resource="dossiers">
                         <nu-swiper :items="data" v-slot="{ item }">
                             <nu-link :label="`Découvrez le cas ${item.title}`" :to="item.path" :disabled="item.disabled">

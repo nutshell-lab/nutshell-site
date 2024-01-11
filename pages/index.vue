@@ -2,6 +2,7 @@
 import Parallaxy from '@lucien144/vue3-parallaxy';
 
 import logo_designrush from '~/assets/partners/logo_designrush.svg'
+import logo_miosotisstudio from '~/assets/partners/logo_miosotisstudio.svg'
 
 const route = useRoute()
 useSeoMeta({
@@ -15,6 +16,11 @@ useSeoMeta({
 })
 
 const partners = [
+	{
+		name: 'Miosotis Studio',
+		picture: logo_miosotisstudio,
+		link: 'https://miosotisstudio.com/'
+	},
 	{
 		name: 'DesignRush',
 		picture: logo_designrush,
@@ -69,7 +75,7 @@ const services = [
 				</nu-hero-section>
 			</section>
 
-			<section id="projects" class="bg-chinese-black text-alabaster">
+			<section id="projects" class="bg-gradient-to-b from-chinese-black from-80% to-alabaster to-80% text-alabaster">
 				<div class="small-container px-layout py-16 flex flex-col gap-16">
 					<h2 data-aos="slide-up">
 						<nu-typography type="title" class="self-start">Ils ont créé<br />de la valeur.</nu-typography>
@@ -84,18 +90,18 @@ const services = [
 								</nu-link>
 							</DataQuery>
 						</div>
-						<!-- <nu-link label="Découvrez nos autres projets" to="/projets"> -->
-							<div class="flex items-center gap-4 justify-center transition-all duration-300 hover:gap-6">
-								<nu-typography type="cta-text" class="">Découvrez (Bientôt) nos autres projets</nu-typography>
+						<nu-link label="Découvrez nos autres projets" to="/projets">
+							<div class="flex text-cinnabar items-center gap-4 justify-center transition-all duration-300 hover:gap-6">
+								<nu-typography type="cta-text" class="">Découvrez nos autres projets</nu-typography>
 								<nu-arrow right />
 							</div>
-						<!-- </nu-link> -->
+						</nu-link>
 					</div>
 				</div>
 			</section>
 
 			<section>
-				<nu-section-break class="small-container px-layout self-center overflow-hidden relative" watermark>
+				<nu-section-break class="small-container px-layout self-center overflow-hidden relative">
 					<h2 data-aos="slide-up">
 						<nu-typography type="title">Apprenez-nous <br />votre métier</nu-typography>
 					</h2>
@@ -149,10 +155,10 @@ const services = [
 					<h2 data-aos="slide-up">
 						<nu-typography type="subtitle">Nos<br />partenaires.</nu-typography>
 					</h2>
-					<div class="flex gap-6 justify-center">
+					<div class="flex gap-8 justify-center">
 						<div v-for="(partner, index) in partners" :key="index">
 							<nu-link :to="partner.link" :label="`Aller sur le site de notre partenaire ${partner.name}`" target="_blank">
-								<img :src="partner.picture" class="h-[50px] w-full"/>
+								<img :src="partner.picture" class="h-[30px] w-full"/>
 							</nu-link>
 						</div>
 					</div>

@@ -15,8 +15,7 @@ const crumbs = computed(() => route.path.replace(/\/\/*/g,"/").replace(/\/+$/,""
 		<ul class="flex gap-6">
 			<li v-for="(crumb, i) in crumbs" :key="i" class="flex gap-6 items-center">
 				<div>
-					<!-- i === crumbs.length - 1 -->
-					<nu-link :label="`Aller sur la page ${crumb.name}`" :to="crumb.path" :disabled="true">
+					<nu-link :label="`Aller sur la page ${crumb.name}`" :to="crumb.path" :disabled="i === crumbs.length - 1">
 						<nu-typography type="cta-text" class="normal-case text-onyx" :class="{ 'opacity-50 font-medium': i === crumbs.length - 1, 'underline underline-offset-2': i !== crumbs.length - 1 }">
 							<div class="capitalize-first">{{ crumb.name }}</div>
 						</nu-typography>
