@@ -64,8 +64,12 @@ const theme = computed(() => route.meta.theme || 'dark')
 					<slot />
 				</main>
 				<footer class="bg-chinese-black text-alabaster flex flex-col justify-center items-center py-16 relative">
-					<div class="absolute @md:max-w-[700px] @md:left-[-240px] @md:top-[-160px] max-w-[200px] left-[-60px] top-[-40px]">
-						<img src="~/assets/logo_nutshell_red_full.webp" height="100%" width="100%" alt=""/>
+					<div class="text-cinnabar absolute @md:left-[-240px] @md:top-[-160px] left-[-60px] top-[-40px]">
+						<svg class="@md:h-[700px] h-[200px] @md:w-[700px] w-[200px]" viewBox="0 0 2000 2000">
+							<path fill="currentColor" class="cls-1" d="M1169.27,209.8l-84.74,46.37c-51.71,28.31-82,81.12-79.09,137.81l21.39,414.29L580.35,532.09,411.81,624.35,992.69,978.91,1199,866Z"/>
+							<path fill="currentColor" class="cls-1" d="M1641,1393.57l-474.12-230.66,456-222.09,18-8.8,0-185L1134.47,997.29c-65.42,32.34-106,96-106,166.17l0,112.72L1641,1578.65Z"/>
+							<path fill="currentColor" class="cls-1" d="M319.66,1227.44c-30.67,20.17-47.67,53.35-45.48,88.77s23.15,66.49,56.08,83.11l17.91,9,436.2-290.71-7.75,506.8,171.8,86.64,5.86-656.82L744,948.24Z"/>
+						</svg>
 					</div>
 					<div class="px-layout container">
 						<div class="flex flex-col text-right">
