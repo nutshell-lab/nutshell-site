@@ -52,6 +52,14 @@ export const useSeoMatrix = () => {
         ...default_meta,
         ...(route.name ? matrix[route.name] : {}),
     }))
+    useHead(() => ({
+        link: [
+            {
+            rel: 'canonical',
+            href: 'https://nutshell-lab.com' + route.path.replace(/\/\/*/g,"/").replace(/\/+$/,""),
+            },
+        ],
+    }))
     useSeoMeta({
         title: () => value.value.title,
         ogTitle: () => value.value.title?.toString(),
