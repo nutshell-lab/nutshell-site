@@ -81,7 +81,7 @@ const url = useRequestURL()
                                 </div>
                             </nu-link>
                             <div class="bg-cinnabar p-4 @lg:w-[160px] @md:w-[120px] w-[80px] @lg:h-[160px]  @md:h-[120px] h-[80px]">
-                                <img src="~/assets/logo_nutshell_white_full.webp" class="hover:rotate-180 transition-all duration-500"/>
+                                <img src="~/assets/logo_nutshell_white_full.webp" class="hover:rotate-180 transition-all duration-500" alt="" loading="lazy"/>
                             </div>
                         </div>
                     </div>

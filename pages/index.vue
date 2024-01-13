@@ -147,7 +147,7 @@ const services = [
 					<div class="flex gap-8 justify-center">
 						<div v-for="(partner, index) in partners" :key="index">
 							<nu-link :to="partner.link" :label="`Aller sur le site de notre partenaire ${partner.name}`" target="_blank">
-								<img :src="partner.picture" class="h-[30px] w-full" :alt="`Logo ${partner.name}`"/>
+								<img :src="partner.picture" height="100%" width="100%" class="h-[30px] w-full" :alt="`Logo ${partner.name}`" :title="`Logo ${partner.name}`" loading="lazy"/>
 							</nu-link>
 						</div>
 					</div>

@@ -6,7 +6,7 @@ type Matrix = { [n: RouteRecordName]: UseSeoMetaInput }
 const matrix = <Matrix>{
     'index': {
         title: 'Nutshell - Agence digitale sur-mesure',
-        description: 'Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment pertinentes. ERP, CRM, logiciel Saas, si vous en avez besoin, on peut sûrement vous le fabriquer.',
+        description: 'Nutshell explore votre secteur pour créer des technologies adaptées : ERP, CRM, logiciels en Saas, nous pouvons les concevoir selon vos besoins.',
     },
     'projets': {
         title: 'Nutshell - Sélection de projets',
@@ -17,7 +17,7 @@ const matrix = <Matrix>{
         description: 'Découvrez comment Nutshell a analysé les processus métier d\'un organisme de formation pour développer un logiciel type ERP sur-mesure',
     },
     'dossiers': {
-        title: 'Les dossiers Nutshell - Articles et Astuces pour vous aider à décider',
+        title: 'Astuces et Articles Nutshell',
         description: 'Explorez les dossiers Nutshell pour découvrir des articles détaillés et des ressources sur le fonctionnement des projets informatiques.'
     },
     'dossiers-erp-sur-mesure': {
@@ -35,7 +35,7 @@ const matrix = <Matrix>{
 
 const default_meta = <UseSeoMetaInput & { title: Title }>{
     title: 'Nutshell - Agence digitale sur-mesure',
-    description: 'Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment pertinentes. ERP, CRM, logiciel Saas, si vous en avez besoin, on peut sûrement vous le fabriquer.',
+    description: 'Nutshell explore votre secteur pour créer des technologies adaptées : ERP, CRM, logiciels en Saas, nous pouvons les concevoir selon vos besoins.',
     ogImage: {
         url: 'https://nutshell-lab.com/logo_nutshell.png',
         type: 'image/png',
