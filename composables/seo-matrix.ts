@@ -54,8 +54,8 @@ export const useSeoMatrix = () => {
     }))
     useSeoMeta({
         title: () => value.value.title,
-        ogTitle: () => value.value.ogTitle,
-        twitterTitle: () => value.value.ogTitle,
+        ogTitle: () => value.value.title?.toString(),
+        twitterTitle: () => value.value.title?.toString(),
         description: () => value.value.description,
         ogDescription: () => value.value.description,
         twitterDescription: () => value.value.description,
