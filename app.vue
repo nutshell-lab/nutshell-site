@@ -1,16 +1,14 @@
 <script setup lang="ts">
 const route = useRoute()
 useHead({
-  htmlAttrs: {
-    lang: 'fr'
-  },
   link: [
     {
       rel: 'canonical',
-      href: ('https://nutshell-lab.com' + route.path).replace(/\/\/*/g,"/").replace(/\/+$/,""),
+      href: route.path.replace(/\/\/*/g,"/").replace(/\/+$/,""),
     },
   ],
 })
+useSeoMatrix()
 </script>
 
 <template>

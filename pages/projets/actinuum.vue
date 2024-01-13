@@ -1,17 +1,6 @@
 <script lang="ts" setup>
 import Parallaxy from '@lucien144/vue3-parallaxy';
 
-const route = useRoute()
-useSeoMeta({
-  title: 'Actinuum - Automatiser la formation professionnelle par Nutshell',
-  ogTitle: 'Actinuum - Automatiser la formation professionnelle par Nutshell',
-  description: 'Découvrez comment Nutshell a analysé les processus métier d\'un organisme de formation pour développer un logiciel type ERP sur mesure',
-  ogDescription: 'Découvrez comment Nutshell a analysé les processus métier d\'un organisme de formation pour développer un logiciel type ERP sur mesure',
-  ogImage: 'https://nutshell-lab.com/logo_nutshell.webp',
-  ogUrl: 'https://nutshell-lab.com' + route.path,
-  ogType: 'website'
-})
-
 const results = [
 	"Chiffre d'affaire x3",
 	"Absorption de 3x plus de volume de formation",
@@ -21,17 +10,6 @@ const results = [
 	"Fidélisation des formateurs",
 	"Légitimité auprès des acteurs publiques",
 ]
-
-// const project = {
-// 	title: "Actinuum",
-// 	highlight: "+2M€",
-// 	description:
-// 		"Automatiser l’administratif de la formation professionnelle et le processus de formation spécifique aux innovations pédagogique d’Actinuum a permis de tripler leur chiffre d’affaire.",
-// 	link: "#",
-// 	short_description: "Automatiser l'administratif de la formation professionnelle",
-// 	slug: "actinuum",
-// 	external_url: "https://actinuum.com/",
-// }
 
 const keywords = [
 	'Logiciel ERP',

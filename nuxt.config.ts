@@ -15,6 +15,9 @@ export default defineNuxtConfig({
 	site: {
 		url: 'https://nutshell-lab.com',
 	},
+	content: {
+		contentHead: false
+	},
 	sitemap: {
 		strictNuxtContentPaths: true,
 		exclude: [
@@ -29,6 +32,9 @@ export default defineNuxtConfig({
 	app: {
 		pageTransition: { name: 'page', mode: 'out-in' },
 		head: {
+			htmlAttrs: {
+			  lang: 'fr'
+			},
 			meta: [
 				{
 					name: 'theme-color',
@@ -36,11 +42,11 @@ export default defineNuxtConfig({
 				},
 			],
 			script: [
-				{
+				process.env.CF_PAGES == "1" ? {
 					defer: true,
 					src: 'https://static.cloudflareinsights.com/beacon.min.js',
 					'data-cf-beacon': '{"token": "165b78a79b8741cea254d27e292c3442"}'
-				}
+				} : {}
 			],
 			link: [
 				{

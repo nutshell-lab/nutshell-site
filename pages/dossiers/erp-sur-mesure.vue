@@ -1,32 +1,11 @@
 <script lang="ts" setup>
 import Parallaxy from '@lucien144/vue3-parallaxy';
-
-import prjct_actinuum from '~/assets/illustrations/prjct_actinuum.webp'
-
-const route = useRoute()
-useSeoMeta({
-  title: 'Utiliser un ERP en entreprise - Nutshell',
-  ogTitle: 'Utiliser un ERP en entreprise - Nutshell',
-  description: 'Votre ERP d’entreprise est-il efficace ? Vérifiez-le ! Découvrez les bénéfices et les possibilités de ce progiciel ainsi que le concept d’ERP sur mesure.',
-  ogDescription: 'Votre ERP d’entreprise est-il efficace ? Vérifiez-le ! Découvrez les bénéfices et les possibilités de ce progiciel ainsi que le concept d’ERP sur mesure.',
-  ogImage: 'https://nutshell-lab.com/logo_nutshell.webp',
-  ogUrl: 'https://nutshell-lab.com' + route.path,
-  ogType: 'website'
-})
-
-const use_case = {
-	title: "Un ERP sur mesure est-il un choix judicieux pour votre entreprise ?",
-    subtitle: "ERP",
-    case: "case_001",
-	slug: "erp-sur mesure",
-}
-
 </script>
 
 <template>
 	<div class="h-full bg-alabaster relative leading-7">
         <section class="py-40 bg-chinese-black text-alabaster flex flex-col @md:gap-20 gap-12 relative overflow-hidden">
-            <div><nu-typography type="hero-title" class="text-stroke-raisin-black !text-[300px] absolute top-[200px] whitespace-pre">{{ use_case.case }}</nu-typography></div>
+            <div><nu-typography type="hero-title" class="text-stroke-raisin-black !text-[300px] absolute top-[200px] whitespace-pre">case_001</nu-typography></div>
             <div class="small-container px-layout flex gap-32 overflow-visible items-start">
 				<div class="flex-1 gap-32 flex flex-col justify-between relative">
 					<h1 class="max-w-[85%]">
@@ -49,7 +28,7 @@ const use_case = {
                     </div>
 				</div>
                 <div class="flex gap-14 vertical-text rotate-180 absolute @lg:relative right-4">
-                    <nu-typography type="headline" class="text-stroke-alabaster">{{ use_case.case }}</nu-typography>
+                    <nu-typography type="headline" class="text-stroke-alabaster">case_001</nu-typography>
                 </div>
 			</div>
 		</section>

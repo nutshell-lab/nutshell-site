@@ -27,7 +27,7 @@ import Parallaxy from '@lucien144/vue3-parallaxy'
                                 <nu-swiper :items="data" v-slot="{ item, index }" :space-between="220" centered-slides>
                                     <nu-link :label="`Lire l'article ${item.title}`" :to="item._path">
                                         <article class="tile max-w-full @lg:w-[700px] @sm:w-[600px] w-screen flex flex-col justify-between">
-                                            <div :style="{'--image-url': `url('${item.image.src}')`}" class="@md:border-x border-y border-alabaster h-[300px] @md:h-[400px] bg-center bg-cover picture bg-raisin-black relative overflow-hidden bg-[image:var(--image-url)]">
+                                            <div role="img" :alt="item.image?.alt" :style="{'--image-url': `url('${item.image?.src || '/blog/default.webp'}')`}" class="@md:border-x border-y border-alabaster h-[300px] @md:h-[400px] bg-center bg-cover picture bg-raisin-black relative overflow-hidden bg-[image:var(--image-url)]">
                                                 <div class="picture__inner bg-cinnabar" />
                                             </div>
                                             <div class="flex gap-12 py-8">
@@ -51,7 +51,6 @@ import Parallaxy from '@lucien144/vue3-parallaxy'
                     </ContentQuery>
                 </div>
             </div>
-            <!-- <div class="absolute h-[110px] w-[40vw] bg-alabaster bottom-0 left-0" /> -->
 		</section>
         <section class="container px-layout">
             <div class="@md:py-32 py-20 @lg:border-l flex flex-col gap-6">
@@ -64,7 +63,7 @@ import Parallaxy from '@lucien144/vue3-parallaxy'
                             <div v-for="(item, index) in data" data-aos="slide-up">
                                 <nu-link :label="`Lire l'article ${item.title}`" :to="item._path">
                                     <article class="tile flex @lg:flex-row flex-col @lg:gap-12 items-center">
-                                        <div :style="{'--image-url': `url('${item.image.src}')`}" class="border border-alabaster h-[240px] @lg:h-[280px] @sm:h-[320px] w-full @xl:w-[620px] bg-center bg-cover picture bg-raisin-black relative overflow-hidden bg-[image:var(--image-url)]">
+                                        <div role="img" :alt="item.image?.alt" :style="{'--image-url': `url('${item.image?.src || '/blog/default.webp'}')`}" class="border border-alabaster h-[240px] @lg:h-[280px] @sm:h-[320px] w-full @xl:w-[620px] bg-center bg-cover picture bg-raisin-black relative overflow-hidden bg-[image:var(--image-url)]">
                                             <div class="picture__inner bg-cinnabar" />
                                         </div>
                                         <div class="flex gap-12 py-8">
@@ -88,6 +87,9 @@ import Parallaxy from '@lucien144/vue3-parallaxy'
                             </div>
                         </template>
                     </ContentQuery>
+                </div>
+                <div class="text-center py-32">
+                    <nu-typography type="headline" class="text-stroke-chinese-black">Revenez prochainement !</nu-typography>
                 </div>
             </div>
         </section>

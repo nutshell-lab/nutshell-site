@@ -4,17 +4,6 @@ import Parallaxy from '@lucien144/vue3-parallaxy';
 import logo_designrush from '~/assets/partners/logo_designrush.svg'
 import logo_miosotisstudio from '~/assets/partners/logo_miosotisstudio.svg'
 
-const route = useRoute()
-useSeoMeta({
-  title: 'Nutshell - Agence digitale sur-mesure',
-  ogTitle: 'Nutshell - Agence digitale sur-mesure',
-  description: 'Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment pertinentes. ERP, CRM, logiciel Saas, si vous en avez besoin, on peut sûrement vous le fabriquer.',
-  ogDescription: 'Les équipes de Nutshell infiltrent votre domaine pour concevoir des technologies vraiment pertinentes. ERP, CRM, logiciel Saas, si vous en avez besoin, on peut sûrement vous le fabriquer.',
-  ogImage: 'https://nutshell-lab.com/logo_nutshell.webp',
-  ogUrl: 'https://nutshell-lab.com' + route.path,
-  ogType: 'website'
-})
-
 const partners = [
 	{
 		name: 'Miosotis Studio',
