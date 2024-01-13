@@ -4,7 +4,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: route.path.replace(/\/\/*/g,"/").replace(/\/+$/,""),
+      href: ('https://nutshell-lab.com' + route.path).replace(/\/\/*/g,"/").replace(/\/+$/,""),
     },
   ],
 })
