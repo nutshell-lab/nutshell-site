@@ -7,16 +7,6 @@ image:
   alt: "Une image illustrant les critères de l'article"
   width: 400
   height: 300
-head:
-  meta:
-    - name: 'keywords'
-      content: 'ERP, sur-mesure, processus, entreprise, outil, PGI, ressource, management, stratégie, choix optimal, critères, flexibilité, développer, scale'
-    - name: 'robots'
-      content: 'index, follow'
-    - name: 'author'
-      content: 'Nutshell-lab'
-    - name: 'copyright'
-      content: '© 2024 NutshellLab'
 created_at: 15/01/2024
 category: ERP
 featured: true

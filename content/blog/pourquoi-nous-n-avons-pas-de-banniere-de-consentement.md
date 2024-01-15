@@ -1,6 +1,6 @@
 ---
 title: "Pourquoi le site Nutshell n'a pas de bannière de consentement de cookies."
-short_description: "L'histoire d'un gateau qui souhaitait devenir un cookie."
+short_description: "Ces bannières qui perturbent l'expérience utilisateur sont-elles vraiment indispensables ?"
 description: "Découvrez pourquoi notre site n'a pas de bannière de consentement de cookies et pourquoi nous continuons de respecter le RGPD"
 image:
   src: '/blog/cookies.webp'
