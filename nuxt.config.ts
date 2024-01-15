@@ -22,6 +22,7 @@ export default defineNuxtConfig({
 		strictNuxtContentPaths: true,
 		exclude: [
 			'/mentions-legales',
+			'/faq'
 		],
 	},
 	ignore: [
