@@ -1,5 +1,5 @@
 ---
-title: "Pourquoi le site Nutshell n'a pas de bannière de consentement de cookies."
+title: "Pourquoi le site n'affiche pas de bannière cookies ?"
 short_description: "Ces bannières qui perturbent l'expérience utilisateur sont-elles vraiment indispensables ?"
 description: "Découvrez pourquoi notre site n'a pas de bannière de consentement de cookies et pourquoi nous continuons de respecter le RGPD"
 image:

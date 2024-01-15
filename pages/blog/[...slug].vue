@@ -27,7 +27,7 @@ const url = useRequestURL()
             <div class="bg-chinese-black pt-24 relative">
                 <div class="h-[64vh] overflow-hidden container @sm:px-layout">
                     <div class="hidden @lg:block absolute top-48 -left-4">
-                        <nu-link label="Aller à la liste des articles" to="/blog">
+                        <nu-link label="Aller à la liste des articles" to="/dossiers#articles">
                             <nu-button color="alabaster">
                                 <div class="ml-64 my-2 text-left leading-[18px]">Aller à la liste<br />des articles</div>
                             </nu-button>
@@ -74,14 +74,14 @@ const url = useRequestURL()
                             </div>
                         </nu-link>
                         <div class="flex gap-12 items-end">
-                            <nu-link label="Aller à la liste des articles" to="/blog" class="mb-6"> 
+                            <nu-link label="Aller à la liste des articles" to="/dossiers#articles" class="mb-6"> 
                                 <div class="flex items-center gap-4 hover:gap-6 transition-all duration-500 justify-center">
                                     <nu-arrow left />
                                     <nu-typography type="cta-text">Aller à la liste des articles</nu-typography>
                                 </div>
                             </nu-link>
-                            <div class="bg-cinnabar p-4 @lg:w-[160px] @md:w-[120px] w-[80px] @lg:h-[160px]  @md:h-[120px] h-[80px]">
-                                <img src="~/assets/logo_nutshell_white_full.webp" class="hover:rotate-180 transition-all duration-500" alt="" loading="lazy"/>
+                            <div class="bg-cinnabar p-4 @lg:w-[160px] @md:w-[120px] w-[80px] @lg:h-[160px] @md:h-[120px] h-[80px]">
+                                <img height="100%" width="100%" src="~/assets/logo_nutshell_white.svg" class="hover:rotate-180 transition-all duration-500" alt="" title="Logo nutshell" loading="lazy"/>
                             </div>
                         </div>
                     </div>
@@ -89,13 +89,13 @@ const url = useRequestURL()
             </article>
 
             <section class="py-32 bg-chinese-black text-alabaster flex flex-col">
-                <div class="container px-layout flex flex-col gap-10">
-                    <div data-aos="slide-up">
-                        <nu-typography type="hero-title-filled" class="normal-case max-w-[776px]">Explorer d'avantage</nu-typography>
-                    </div>
-                    <div>
-                        <ContentQuery v-slot="{ data }" path="/blog/" :limit="4" :where="{ category: doc.category, _path: { $ne: doc._path } }" :sort="{ created_at: -1 }" :without="['body']">
-                            <template v-if="data && Array.isArray(data) && data.length > 0">
+                <ContentQuery v-slot="{ data }" path="/blog/" :where="{ category: doc.category, _path: { $ne: doc._path } }" :limit="6" :sort="{ created_at: -1 }" :without="['body']">
+                    <template v-if="data && Array.isArray(data) && data.length > 0">
+                        <div class="container px-layout flex flex-col gap-12">
+                            <div data-aos="slide-up">
+                                <nu-typography type="title" class="font-normal">Explorer <strong>d'avantage</strong></nu-typography>
+                            </div>
+                            <div>
                                 <nu-swiper :items="data" v-slot="{ item, index }">
                                     <nu-link :label="`Lire l'article ${item.title}`" :to="item._path">
                                         <nu-tile
@@ -106,18 +106,35 @@ const url = useRequestURL()
                                         />
                                     </nu-link>
                                 </nu-swiper>
-                            </template>
-                            <template v-else>
-                                <div class="text-center py-16">
-                                    <nu-typography type="headline" class="text-stroke-alabaster">Revenez prochainement !</nu-typography>
-                                </div>
-                            </template>
-                        </ContentQuery>
-                    </div>
-                </div>
+                            </div>
+                        </div>
+                    </template>
+                    <template v-else>
+                        <div class="container px-layout flex flex-col gap-12">
+                            <div data-aos="slide-up">
+                                <nu-typography type="title" class="font-normal">Découvrez <strong>nos dossiers</strong></nu-typography>
+                            </div>
+                            <div>
+                                <DataQuery v-slot="{ data }" resource="dossiers">
+                                    <nu-swiper :items="data" v-slot="{ item }">
+                                        <nu-link :label="`Découvrez le cas ${item.title}`" :to="item.path" :disabled="item.disabled">
+                                            <nu-tile
+                                                :title="item.title"
+                                                :category="item.category"
+                                                :picture="item.picture"
+                                                :caption="item.caption"
+                                                :disabled="item.disabled"
+                                            />
+                                        </nu-link>
+                                    </nu-swiper>
+                                </DataQuery>
+                            </div>
+                        </div>
+                    </template>
+                </ContentQuery>
             </section>
 
-            <section class="overflow-hidden relative">
+            <section class="bg-silver overflow-hidden relative">
                 <nu-section-break class="container px-layout place-self-center text-stroke-chinese-black" variant="light" watermark>
                     <nu-typography type="headline">Échangeons <br />des idées.</nu-typography>
                     <nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
@@ -171,6 +188,10 @@ const url = useRequestURL()
 
 .content :deep(p:has(img)) {
     @apply my-20 @2xl:-mx-28 @xl:-mx-24 @lg:-mx-20 @md:-mx-12 @sm:-mx-10 -mx-8
+}
+
+.content :deep(img) {
+    @apply w-full h-full
 }
 
 

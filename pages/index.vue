@@ -64,8 +64,8 @@ const services = [
 				</nu-hero-section>
 			</section>
 
-			<section id="projects" class="bg-gradient-to-b from-chinese-black from-80% to-alabaster to-80% text-alabaster">
-				<div class="small-container px-layout py-16 flex flex-col gap-16">
+			<section id="projects" class="bg-gradient-to-b from-chinese-black from-85% to-alabaster to-85% text-alabaster">
+				<div class="small-container px-layout pt-16 flex flex-col gap-16">
 					<h2 data-aos="slide-up">
 						<nu-typography type="title" class="self-start">Ils ont créé<br />de la valeur.</nu-typography>
 					</h2>
@@ -154,7 +154,7 @@ const services = [
 				</div>
 			</section>
 
-			<section>
+			<section class="bg-silver relative overflow-hidden">
 				<nu-section-break class="small-container px-layout place-self-center text-stroke-chinese-black" variant="light">
 					<nu-typography type="headline">Commençons <br />à discuter.</nu-typography>
 					<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">

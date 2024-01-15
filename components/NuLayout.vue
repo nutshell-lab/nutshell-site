@@ -36,10 +36,9 @@ const theme = computed(() => route.meta.theme || 'dark')
 						</nu-typography>
 					</nu-link>
 					<DevOnly>
-						<!-- TODO: remove that after one article is written -->
-						<nu-link to="/blog" label="Trouvez votre service" hover @click="open = false">
+						<nu-link to="/faq" label="Parcourez notre FAQ" hover @click="open = false">
 							<nu-typography type="title" class="text-center">
-								Blog
+								FAQ
 							</nu-typography>
 						</nu-link>
 					</DevOnly>

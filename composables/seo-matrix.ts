@@ -17,16 +17,12 @@ const matrix = <Matrix>{
         description: 'Découvrez comment Nutshell a analysé les processus métier d\'un organisme de formation pour développer un logiciel type ERP sur-mesure',
     },
     'dossiers': {
-        title: 'Astuces et Articles Nutshell',
+        title: 'Dossiers et Articles Nutshell',
         description: 'Explorez les dossiers Nutshell pour découvrir des articles détaillés et des ressources sur le fonctionnement des projets informatiques.'
     },
     'dossiers-erp-sur-mesure': {
         title: 'Utiliser un ERP en entreprise - Nutshell',
         description: 'Votre ERP d’entreprise est-il efficace ? Vérifiez-le ! Découvrez les bénéfices et les possibilités de ce progiciel ainsi que le concept d’ERP sur-mesure.'
-    },
-    'blog': {
-        title: 'Blog Nutshell - Dernières actualités et tendances dans le monde du projet informatique',
-        description: 'Le blog Nutshell vous tient informé des dernières actualités, des tendances dans le domaine du projet informatique et offre des articles enrichissants.'
     },
     'blog-slug': {
         ogType: 'article',

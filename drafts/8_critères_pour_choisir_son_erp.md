@@ -7,16 +7,6 @@ image:
   alt: "Une image illustrant les critères de l'article"
   width: 400
   height: 300
-head:
-  meta:
-    - name: 'keywords'
-      content: 'ERP, sur-mesure, processus, entreprise, outil, PGI, ressource, management, stratégie, choix optimal, critères, flexibilité, développer, scale'
-    - name: 'robots'
-      content: 'index, follow'
-    - name: 'author'
-      content: 'Nutshell-lab'
-    - name: 'copyright'
-      content: '© 2024 NutshellLab'
 created_at: 15/01/2024
 category: ERP
 featured: true
@@ -47,8 +37,6 @@ Pensez-donc à inclure dans vos calculs les coûts liés à :
 
 Si vous choisissez d'ignorez le coût d'adoption de l'outil pour vos collaborateurs, vous vous exposez à des risques de "shadow IT" : quand vos utilisateurs utilisent des moyens détournées, non-approuvés et non-contrôlés pour accomplir leur tâche. Avec ces moyens détournés, la frustration s'accumule et les performances de votre entreprise chutent significativement.
 
-![Illustration des coûts d'adoption](/blog/adoption-cost.webp)
-
 
 ## 4. Coût de scaling
 En fonction des besoins que vous avez définis pour votre projet, il se peut que vous projectiez une croissance importante des ressources de votre entreprise. Quelles soit humaines ou matérielles, l'augmentation des ressources aura un impact non-négligeable sur les coûts de l'ERP si celui-ci vous est fourni par un fournisseur (ERP vendue avec licence ou au format SAAS/Cloud).
@@ -62,7 +50,7 @@ Si vous avez pour stratégie de vous démarquer de la concurrence pour acquérir
 
 Étude de cas : [Actinuum, un ERP sur mesure pour conquérir la formation en gestion de projet](https://nutshell-lab.com/projets/actinuum)
 
-![Leader la formation professionnelle](/blog/profesional-traning.webp)
+![Leader la formation professionnelle](/blog/meeting.webp)
 
 ## 6. Pérénnité de la solution choisie
 Vous outillez maintenant avec un ERP est une décision qui vous engage sur le long terme. Aussi, il est essentiel que la solution pour laquelle vous optez ne disparaissent pas dans le futur.
@@ -82,6 +70,7 @@ Que vous optiez pour un logiciel sur étagère en SAAS (paiement d'une location,
 
 Il est important de bien lire la grille tarifaire proposé par les fournisseurs d'ERP SAAS car ces différents coûts peuvent être dissimulés par différentes formule (prix par utilisateur supplémentaire, prix en fonction de la consommation de ressources, prix par pallier de consommation, etc.). En fonction de votre secteur et de votre traille, vous trouverez des prix de quelques dizaines d'euros par mois à plusieurs milliers d'euros par mois.
 
+![Illustration des coûts d'adoption](/blog/adoption-cost.webp)
 
 Du côté des bénéfices à envisager, vous trouverez :
 
