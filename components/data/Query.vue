@@ -5,7 +5,7 @@ type Resources = 'dossiers' | 'projets'
 const props = defineProps({
     resource: {
         type: String as PropType<Resources>,
-        requried: true,
+        required: true,
         default: 'dossiers'
     },
     /**
