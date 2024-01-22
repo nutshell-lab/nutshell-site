@@ -18,7 +18,7 @@ const partners = [
 ]
 
 const services = [
-    "Produits et SasS",
+    "Produits et SaaS",
     "Développement",
     "Design et ergonomie",
     "Data et Business Intelligence",
