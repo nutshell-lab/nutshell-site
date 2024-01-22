@@ -119,8 +119,10 @@ const grid = computed<GridTile[]>(() => [
         <section class="bg-silver">
             <nu-section-break class="small-container px-layout place-self-center text-stroke-chinese-black" variant="light">
                 <nu-typography type="headline">Et si le prochain<br />était le votre ? </nu-typography>
-                <nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
-                    <nu-button class="mt-4">Nous contacter</nu-button>
+                <nu-link label="Ouvrir le formulaire de contact" to="?contact">
+                    <nu-button class="mt-4">
+                        Nous contacter
+                    </nu-button>
                 </nu-link>
             </nu-section-break>
         </section>

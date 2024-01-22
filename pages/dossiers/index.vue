@@ -95,8 +95,10 @@ definePageMeta({
         <section class="bg-silver relative overflow-hidden">
             <nu-section-break class="small-container px-layout place-self-center text-stroke-chinese-black" variant="light" watermark>
                 <nu-typography type="headline">Commençons <br />à discuter.</nu-typography>
-                <nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
-                    <nu-button class="mt-4">Nous contacter</nu-button>
+                <nu-link label="Ouvrir le formulaire de contact" to="?contact">
+                    <nu-button class="mt-4">
+                        Nous contacter
+                    </nu-button>
                 </nu-link>
             </nu-section-break>
         </section>

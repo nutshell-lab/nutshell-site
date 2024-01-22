@@ -569,9 +569,11 @@ import Parallaxy from '@lucien144/vue3-parallaxy';
 		<section class="overflow-hidden relative">
 			<nu-section-break class="container px-layout place-self-center text-stroke-chinese-black" variant="light">
 				<nu-typography type="headline" class="text-cinnabar">Créons <br />ensemble.</nu-typography>
-				<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
-					<nu-button class="mt-4">Nous contacter</nu-button>
-				</nu-link>
+                <nu-link label="Ouvrir le formulaire de contact" to="?contact">
+                    <nu-button class="mt-4">
+                        Nous contacter
+                    </nu-button>
+                </nu-link>
 				<nu-watermark class="hidden @2xl:block"/>
 			</nu-section-break>
 		</section>

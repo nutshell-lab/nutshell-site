@@ -188,10 +188,10 @@ const keywords = [
 						<nu-lined-list :entries="results" class="gap-12" />
 					</div>
 				</div>
-				<div class="flex-1 flex flex-col gap-12">
-					<nu-typography type="title">Prêt à monter en puissance?</nu-typography>
-					<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
-						<nu-button color="alabaster">
+				<div class="flex-shrink max-w-[300px] flex flex-col gap-12">
+					<nu-typography type="title">Prêt à monter en puissance ?</nu-typography>
+					<nu-link label="Ouvrir le formulaire de contact" to="?contact">
+						<nu-button color="alabaster" class="mt-4">
 							Commençons à parler
 						</nu-button>
 					</nu-link>
@@ -266,9 +266,11 @@ const keywords = [
 		<section class="overflow-hidden relative">
 			<nu-section-break class="container px-layout place-self-center text-stroke-chinese-black" variant="light">
 				<nu-typography type="headline">Lançons la <br /> conversation.</nu-typography>
-				<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
-					<nu-button class="mt-4">Nous contacter</nu-button>
-				</nu-link>
+                <nu-link label="Ouvrir le formulaire de contact" to="?contact">
+                    <nu-button class="mt-4">
+                        Nous contacter
+                    </nu-button>
+                </nu-link>
 			</nu-section-break>
 		</section>
 	</div>

@@ -3,6 +3,14 @@ import vsharp from 'vite-plugin-vsharp';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	devtools: { enabled: true },
+	imports: {
+		presets: [
+			{
+			from: 'vee-validate',
+			imports: ['useForm']
+			}
+		]
+	},
 	vite: {
 		plugins: [vsharp()],
 	},
@@ -46,7 +54,10 @@ export default defineNuxtConfig({
 					defer: true,
 					src: 'https://static.cloudflareinsights.com/beacon.min.js',
 					'data-cf-beacon': '{"token": "165b78a79b8741cea254d27e292c3442"}'
-				} : {}
+				} : {},
+				{
+					src: '//embed.typeform.com/next/embed.js'
+				}
 			],
 			link: [
 				{

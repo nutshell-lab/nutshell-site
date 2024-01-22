@@ -5,7 +5,7 @@ const props = defineProps({
 </script>
 
 <template>
-	<button :class="`button relative font-inter ${props.color} cursor-pointer text-sm w-fit uppercase text-center p-[5px]`" >
+	<button :class="`!outline-none button relative font-inter ${props.color} cursor-pointer text-sm w-fit uppercase text-center p-[5px]`" >
 		<div class="overflow-hidden button__inner relative transition ease-in-out duration-500">
 			<div class="z-10 relative px-6 py-4 ">
 				<nu-typography type="text-link" class="!font-medium"><slot /></nu-typography>
@@ -53,11 +53,19 @@ const props = defineProps({
 	content: '';
 }
 
-.button:hover:hover .button__inner::before {
+.button:hover .button__inner::before {
 	transform: translate3d(100%, 0px, 0px) rotate(5deg);
 }
 
 .button:hover .button__inner {
+	@apply text-chinese-black
+}
+
+.button:focus .button__inner::before {
+	transform: translate3d(100%, 0px, 0px) rotate(5deg);
+}
+
+.button:focus .button__inner {
 	@apply text-chinese-black
 }
 

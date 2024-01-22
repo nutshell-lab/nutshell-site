@@ -94,8 +94,10 @@ const services = [
 					<h2 data-aos="slide-up">
 						<nu-typography type="title">Apprenez-nous <br />votre métier</nu-typography>
 					</h2>
-					<nu-link label="Envoyez-nous un mail" to="mailto:hello@nutshell-lab.com">
-						<nu-button class="mt-4">Créons de la valeur</nu-button>
+					<nu-link label="Ouvrir le formulaire de contact" to="?contact">
+						<nu-button class="mt-4">
+							Créons de la valeur
+						</nu-button>
 					</nu-link>
 				</nu-section-break>
 			</section>
@@ -157,8 +159,10 @@ const services = [
 			<section class="bg-silver relative overflow-hidden">
 				<nu-section-break class="small-container px-layout place-self-center text-stroke-chinese-black" variant="light">
 					<nu-typography type="headline">Commençons <br />à discuter.</nu-typography>
-					<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
-						<nu-button class="mt-4">Nous contacter</nu-button>
+					<nu-link label="Ouvrir le formulaire de contact" to="?contact">
+						<nu-button class="mt-4">
+							Nous contacter
+						</nu-button>
 					</nu-link>
 				</nu-section-break>
 			</section>

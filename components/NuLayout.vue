@@ -20,7 +20,7 @@ const theme = computed(() => route.meta.theme || 'dark')
 			<div class="bg-alabaster left-0 top-0 fixed w-screen sm:w-[517px] sm:px-32 px-8 h-screen py-6 flex flex-col justify-between" :class="{ 'block': open, 'hidden': !open }">
 				<div />
 				<nav class="flex flex-col items-center jusitfy-center gap-6">
-					<nu-link to="/#agency" label="Découvrez tous nos projets" hover @click="open = false">
+					<nu-link to="/" label="Découvrez tous nos projets" hover @click="open = false">
 						<nu-typography type="title" class="text-center">
 							L'agence
 						</nu-typography>
@@ -43,17 +43,17 @@ const theme = computed(() => route.meta.theme || 'dark')
 						</nu-link>
 					</DevOnly>
 				</nav>
-				<nu-link label="Envoyer nous un mail" to="mailto:hello@nutshell-lab.com">
+				<nu-link label="Ouvrir le formulaire de contact" to="?contact">
 					<nu-button class="w-full mt-auto">
 						Contactez-nous
 					</nu-button>
 				</nu-link>
 			</div>
     		<header>
-				<nu-link label="Retourner sur la homepage" to="/#agency" class="absolute z-20 left-[76px] top-[24px]">
+				<nu-link label="Retourner sur la homepage" to="/" class="absolute z-20 left-[76px] top-[24px]">
 					<nu-logo text :width="130" :colors="['cinnabar', open || theme === 'light' ? 'chinese-black' : 'alabaster', open ? 'chinese-black' : 'alabaster']"/>
 				</nu-link>
-				<nu-link label="Retourner sur la homepage" to="/#agency" class="fixed z-20 left-8 top-6">
+				<nu-link label="Retourner sur la homepage" to="/" class="fixed z-20 left-8 top-6">
 					<nu-logo symbol :width="38" :colors="['cinnabar']" />
 				</nu-link>
 			</header>
@@ -82,5 +82,6 @@ const theme = computed(() => route.meta.theme || 'dark')
 				</footer>
 			</div>
 		</div>
+		<nu-contact-form />
 	</div>
 </template>
