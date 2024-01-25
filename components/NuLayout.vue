@@ -21,23 +21,23 @@ const theme = computed(() => route.meta.theme || 'dark')
 				<div />
 				<nav class="flex flex-col items-center jusitfy-center gap-6">
 					<nu-link to="/" label="Découvrez tous nos projets" hover @click="open = false">
-						<nu-typography type="subtitle" class="text-center">
+						<nu-typography type="title" class="text-center !text-4xl">
 							L'agence
 						</nu-typography>
 					</nu-link>
 					<nu-link to="/projets" label="Découvrez tous nos projets" hover @click="open = false">
-						<nu-typography type="subtitle" class="text-center">
+						<nu-typography type="title" class="text-center !text-4xl">
 							Projets
 						</nu-typography>
 					</nu-link>
 					<nu-link to="/dossiers" label="Parcourez nos dossiers" hover @click="open = false">
-						<nu-typography type="subtitle" class="text-center">
+						<nu-typography type="title" class="text-center !text-4xl">
 							Dossiers
 						</nu-typography>
 					</nu-link>
 					<DevOnly>
 						<nu-link to="/faq" label="Parcourez notre FAQ" hover @click="open = false">
-							<nu-typography type="subtitle" class="text-center">
+							<nu-typography type="title" class="text-center !text-4xl">
 								FAQ
 							</nu-typography>
 						</nu-link>

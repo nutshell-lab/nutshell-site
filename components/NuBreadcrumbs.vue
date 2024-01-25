@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const route = useRoute()
 type Crumb = { path: string, name: string }
-const crumbs = computed(() => route.path.replace(/\/\/*/g,"/").replace(/\/+$/,"").split('/').reduce((acc, crumb) => {
+const crumbs = computed(() => route.path.split('/').reduce((acc, crumb) => {
 	const last_path = acc[acc.length - 1]?.path || ''
 	return acc.concat({
 		path: `${last_path}${crumb}/`,

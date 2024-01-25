@@ -14,6 +14,10 @@ const partners = [
 		name: 'DesignRush',
 		picture: logo_designrush,
 		link: 'https://www.designrush.com/agency/profile/nutshell-lab'
+	},
+	{
+		name: '@jesuisnumerique',
+		link: 'https://www.jesuisnumerique.fr'
 	}
 ]
 
@@ -146,10 +150,11 @@ const services = [
 					<h2 data-aos="slide-up">
 						<nu-typography type="subtitle">Nos<br />partenaires.</nu-typography>
 					</h2>
-					<div class="flex gap-8 justify-center">
-						<div v-for="(partner, index) in partners" :key="index">
+					<div class="flex gap-8 justify-center flex-col @md:flex-row items-center">
+						<div v-for="(partner, index) in partners" :key="index" class="flex items-center">
 							<nu-link :to="partner.link" :label="`Aller sur le site de notre partenaire ${partner.name}`" target="_blank">
-								<img :src="partner.picture" height="100%" width="100%" class="h-[30px] w-full" :alt="`Logo ${partner.name}`" :title="`Logo ${partner.name}`" loading="lazy"/>
+								<img v-if="partner.picture" :src="partner.picture" height="100%" width="100%" class="h-[30px] w-full" :alt="`Logo ${partner.name}`" :title="`Logo ${partner.name}`" loading="lazy"/>
+								<nu-typography v-else type="subtitle" class="!text-[20px]">{{ partner.name }}</nu-typography>
 							</nu-link>
 						</div>
 					</div>

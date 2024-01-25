@@ -52,7 +52,7 @@ export const useSeoMatrix = () => {
         link: [
             {
             rel: 'canonical',
-            href: 'https://nutshell-lab.com' + route.path.replace(/\/\/*/g,"/").replace(/\/+$/,""),
+            href: 'https://nutshell-lab.com' + route.path,
             },
         ],
     }))
