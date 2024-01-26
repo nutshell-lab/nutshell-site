@@ -22,7 +22,13 @@ const matrix = <Matrix>{
     },
     'dossiers-erp-sur-mesure': {
         title: 'Utiliser un ERP en entreprise - Nutshell',
-        description: 'Votre ERP d’entreprise est-il efficace ? Vérifiez-le ! Découvrez les bénéfices et les possibilités de ce progiciel ainsi que le concept d’ERP sur-mesure.'
+        description: 'Votre ERP d’entreprise est-il efficace ? Vérifiez-le ! Découvrez les bénéfices et les possibilités de ce progiciel ainsi que le concept d’ERP sur-mesure.',
+        ogImage: {
+            url: 'https://nutshell-lab.com/seo/erp-sur-mesure.png',
+            type: 'image/png',
+            width: '375',
+            height: '166',
+        },
     },
     'blog-slug': {
         ogType: 'article',
