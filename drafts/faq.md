@@ -13,7 +13,7 @@
 
 Quelle quantité minimale de contenu avez-vous besoin pour initier de nouvelles collaborations ? Un brouillon de ce qui sera présent, le contenu complet, ou quelque chose entre les deux ?
 
-Quel est le contenu minimal requis pour amorcer de nouvelles collaborations ? Un avant-projet de ce qui sera inclus, l'intégralité du contenu, ou une option intermédiaire ?
+Quel est le contenu minimal requis pour amorcer une collaborations ? Un avant-projet de ce qui sera inclus, l'intégralité du contenu, ou une option intermédiaire ?
 
 Pour entamer de nouvelles collaborations, quelle est la quantité minimale de contenu nécessaire ? Un projet initial de ce qui sera présent, l'intégralité du contenu, ou une solution intermédiaire ?
 
@@ -98,6 +98,96 @@ Chaque startup cherche à obtenir des investissements, une pratique professionne
 
 ## Réponse
 
+"En général, nous fournissons une estimation dans les deux jours ouvrables après réception de toutes les informations nécessaires de votre part. Parfois, cela peut prendre plus de temps en raison du volume de travail, mais vous serez informé à l'avance."
+
+"Généralement, nous fournissons une estimation dans les deux jours ouvrables après avoir reçu toutes les informations nécessaires de votre part. Il peut parfois y avoir des délais supplémentaires en raison de la charge de travail, mais vous serez prévenu à l'avance."
+
+"En règle générale, nous émettons une estimation dans les deux jours ouvrables suivant la réception de toutes les informations nécessaires de votre part. Il peut y avoir des délais occasionnels en raison du volume de travail, mais vous serez informé à l'avance."
+
 # Question 6
 
+"Pouvons-nous commencer la conception sans structure ou wireframes ?"
+
+"Est-il possible de débuter la conception sans structure ni wireframes ?"
+
+"Peut-on entamer la conception sans avoir de structure ou de wireframes en place ?"
+
 ## Réponseé
+
+"Oui, c'est possible. Nous le déterminerons lors de la phase de recherche et de flux utilisateur, et nous en discuterons avec vous pour que vous connaissiez la structure exacte et le nombre d'écrans ou de pages avant la phase UX. De plus, nous pouvons discuter avec vous et réviser cela afin d'établir la structure finale avant le début de la partie UI."
+
+"Absolument, nous le pouvons. Nous l'identifierons au cours des phases de recherche et de flux utilisateur, et nous en discuterons avec vous pour définir précisément la structure et le nombre d'écrans ou de pages avant d'entamer la phase UX. De plus, nous pourrons discuter avec vous et apporter des révisions si nécessaire afin de finaliser la structure avant le début de la partie UI."
+
+"Oui, c'est envisageable. Nous le déterminerons au cours des phases de recherche et de flux utilisateur, et nous en discuterons avec vous pour que vous ayez connaissance de la structure exacte et du nombre d'écrans ou de pages avant d'entrer dans la phase UX. De plus, nous pouvons discuter avec vous et effectuer des révisions si nécessaire pour finaliser la structure avant de commencer la partie UI."
+
+
+# Question 6
+
+
+"Limitez-vous les retours d'informations (par exemple, avons-nous des cycles de révision spécifiques) ?"
+
+"Y a-t-il une limitation sur les retours d'informations (par exemple, avons-nous des séries de révisions spécifiques) ?"
+
+"Est-ce qu'il y a des restrictions quant aux retours d'informations (par exemple, avons-nous des tours de révision définis) ?"
+
+## Réponseé
+
+"Étant donné que chaque étape de notre collaboration est approuvée avant de passer à la suivante, nous prévoyons une marge supplémentaire de 5% pour les révisions. Généralement, avant qu'une étape ne soit approuvée, il faut compter 2 tours de révision. Cela est largement suffisant pour livrer un projet qui vous rendra satisfait."
+
+"Puisque chaque étape de notre collaboration est validée avant de passer à la suivante, nous accordons une marge supplémentaire de 5% pour les révisions. Habituellement, avant qu'une étape ne soit approuvée, deux cycles de révision sont nécessaires. Cela devrait être plus que suffisant pour vous fournir un projet qui répond à vos attentes."
+
+"Comme chaque étape de notre collaboration est soumise à approbation avant de passer à la suivante, nous prévoyons une marge de 5% supplémentaire pour les révisions. Généralement, il faut compter deux cycles de révision avant l'approbation d'une étape. Cela devrait largement suffire pour vous offrir un projet qui vous satisfera pleinement."
+
+
+# Question 6
+
+"Combien de personnes travaillent sur le projet ?"
+
+"Quel est le nombre de personnes impliquées dans le projet ?"
+
+"Combien de collaborateurs sont mobilisés sur le projet ?"
+
+## Réponseé
+
+
+"Généralement, sur chaque projet, nous impliquons : un chef de projet qui gère l'ensemble du processus ; un designer UX/UI ; un illustrateur et un motion designer. Tout le travail est soumis à la révision du designer en chef, et si nécessaire, le directeur artistique peut également y participer."
+
+"Normalement, sur chaque projet, nous faisons intervenir : un chef de projet chargé de superviser l'ensemble du processus ; un designer UX/UI ; un illustrateur et un motion designer. Toutes les tâches passent par une révision du designer principal, et si besoin est, le directeur artistique peut également intervenir."
+
+"En règle générale, chaque projet implique : un chef de projet responsable de la gestion globale ; un designer UX/UI ; un illustrateur et un motion designer. Tout le travail est soumis à la révision du designer en chef, et si nécessaire, le directeur artistique peut également participer."
+
+
+# Question 6
+
+
+"Externalisons-nous certains éléments du projet, ou notre équipe est-elle entièrement interne ?"
+
+"Recourons-nous à des prestataires externes pour certains aspects du projet, ou notre équipe est-elle entièrement interne ?"
+
+"Faisons-nous appel à des services externes pour certaines parties du projet, ou notre équipe est-elle complètement interne ?"
+
+## Réponseé
+
+"Tout ce que vous pouvez voir sur notre portfolio est réalisé par Taras Migulko et son équipe. Nous couvrons entièrement, avec nos compétences internes, chaque partie du projet, de l'UX à l'animation. Aucun élément n'est externalisé."
+
+"Chaque élément présent sur notre portfolio a été créé par Taras Migulko et son équipe. Nous gérons entièrement, avec nos ressources internes, toutes les étapes du projet, de l'UX à l'animation. Aucun aspect n'est délégué à des tiers."
+
+"Tout ce que vous observez sur notre portfolio est le fruit du travail de Taras Migulko et de son équipe. Nous couvrons intégralement, avec nos compétences internes, chaque aspect du projet, de l'UX à l'animation. Aucun recours à l'externalisation n'est effectué."
+
+# Question 6
+
+
+"Fournissez-vous des rapports (par exemple, des avancements hebdomadaires) ? Si oui, à quelle fréquence et quel en est le format ?"
+
+"Élaborez-vous des rapports (par exemple, sur l'avancement hebdomadaire) ? Si oui, à quelle fréquence et quel est leur format ?"
+
+"Émettez-vous des rapports (comme des mises à jour hebdomadaires) ? Si oui, à quelle fréquence et comment sont-ils structurés ?"
+
+
+## Réponseé
+
+"La première étape est la Recherche, cela peut prendre quelques jours. Ensuite, vous recevrez régulièrement des mises à jour tous les deux jours, et chaque vendredi, vous obtiendrez un rapport chronométré indiquant le temps exact passé au cours de la semaine sur chaque tâche."
+
+"Le premier stade est la Recherche, qui peut prendre quelques jours. Ensuite, vous recevrez régulièrement des mises à jour tous les deux jours, et chaque vendredi, vous obtiendrez un rapport détaillé indiquant le temps exact passé au cours de la semaine sur chaque tâche."
+
+"La première phase est la Recherche, qui peut prendre quelques jours. Par la suite, vous recevrez régulièrement des mises à jour tous les deux jours, et chaque vendredi, vous recevrez un rapport minuté précisant le temps consacré à chaque tâche au cours de la semaine."

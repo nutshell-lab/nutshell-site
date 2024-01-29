@@ -30,12 +30,16 @@ export default defineNuxtConfig({
 		strictNuxtContentPaths: true,
 		exclude: [
 			'/mentions-legales',
-			'/faq'
+			'/faq',
+			'/cgv',
+			'/services'
 		],
 	},
 	ignore: [
         process.env.CF_PAGES == "1" ? 'pages/dev/*' : '',
         process.env.CF_PAGES == "1" ? 'pages/faq' : '',
+        process.env.CF_PAGES == "1" ? 'pages/cgv' : '',
+        process.env.CF_PAGES == "1" ? 'pages/services' : '',
     ],
 	app: {
 		pageTransition: { name: 'page', mode: 'out-in' },

@@ -490,7 +490,7 @@ html {
 }
 
 body {
-	@apply font-inter font-normal leading-7;
+	@apply font-inter font-normal leading-7 text-base;
 }
 
 [data-aos="line-through"] {

@@ -14,17 +14,15 @@ import Parallaxy from '@lucien144/vue3-parallaxy';
 						</nu-typography>
 					</h1>
                     <div class="flex flex-col gap-6 max-w-[700px]">
-                        <div>
-                            <nu-typography>
-                                <strong>Toutes les entreprises ont besoin d'un ERP.</strong> Enfin presque.
-                                <strong>Quel que soit le marché ou la taille</strong> de votre entreprise,
-                                <strong>des processus</strong>  y sont mis en place pour produire un service ou un produit.
-                                Pour permettre cette production, <strong>des ressources sont consommées</strong> :
-                                temps de travail humain, matière premières, énergie, matériel et autres outils de production.
-                                Pour gérer vos ressources, vos processus (vos secrets de fabrication!) et vos collaborateurs :
-                                <strong>il vous faut vous organiser</strong>.
-                            </nu-typography>
-                        </div>
+                        <p>
+                            <strong>Toutes les entreprises ont besoin d'un ERP.</strong> Enfin presque.
+                            <strong>Quel que soit le marché ou la taille</strong> de votre entreprise,
+                            <strong>des processus</strong>  y sont mis en place pour produire un service ou un produit.
+                            Pour permettre cette production, <strong>des ressources sont consommées</strong> :
+                            temps de travail humain, matière premières, énergie, matériel et autres outils de production.
+                            Pour gérer vos ressources, vos processus (vos secrets de fabrication!) et vos collaborateurs :
+                            <strong>il vous faut vous organiser</strong>.
+                        </p>
                     </div>
 				</div>
                 <div class="flex gap-14 vertical-text rotate-180 absolute @lg:relative right-4">
