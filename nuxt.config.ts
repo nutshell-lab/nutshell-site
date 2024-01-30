@@ -37,9 +37,9 @@ export default defineNuxtConfig({
 	},
 	ignore: [
         process.env.CF_PAGES == "1" ? 'pages/dev/*' : '',
-        process.env.CF_PAGES == "1" ? 'pages/faq/*' : '',
-        process.env.CF_PAGES == "1" ? 'pages/cgv/*' : '',
-        process.env.CF_PAGES == "1" ? 'pages/services/*' : '',
+        process.env.CF_PAGES == "1" ? 'pages/faq.vue' : '',
+        process.env.CF_PAGES == "1" ? 'pages/cgv.vue' : '',
+        process.env.CF_PAGES == "1" ? 'pages/services.vue' : '',
     ],
 	app: {
 		pageTransition: { name: 'page', mode: 'out-in' },
