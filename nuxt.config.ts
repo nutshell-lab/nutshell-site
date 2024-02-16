@@ -61,6 +61,12 @@ export default defineNuxtConfig({
 				{
 					rel: 'apple-touch-icon',
 					href: '/apple-touch-icon.png'
+				},
+				{
+					rel: 'preload',
+					as: 'font',
+					href: '_nuxt/assets/fonts/Silka/silka-black-webfont.woff2',
+					crossorigin: '',
 				}
 			]
 		}

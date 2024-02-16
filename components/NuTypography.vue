@@ -12,7 +12,7 @@
 	caption | 14 | 14 | Inter Regular | uppercase
 	mention | 12 | 12 | Inter Light
 	*/
-const props = defineProps({
+defineProps({
 	type: { type: String, default: "regular" },
 })
 </script>
