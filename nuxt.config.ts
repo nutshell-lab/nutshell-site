@@ -53,13 +53,6 @@ export default defineNuxtConfig({
 					content: '#161616',
 				},
 			],
-			script: [
-				process.env.CF_PAGES == "1" ? {
-					defer: true,
-					src: 'https://static.cloudflareinsights.com/beacon.min.js',
-					'data-cf-beacon': '{"token": "165b78a79b8741cea254d27e292c3442"}'
-				} : {}
-			],
 			link: [
 				{
 					rel: 'icon',
