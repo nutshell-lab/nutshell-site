@@ -1,6 +1,7 @@
 <script lang="ts" setup>
-import "swiper/css"
 import type Swiper from "swiper";
+
+import('swiper/css')
 
 const SwiperSlide = defineAsyncComponent(() =>
   import('swiper/vue').then(({ SwiperSlide }) => SwiperSlide)

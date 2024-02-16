@@ -1,8 +1,7 @@
-import AOS from 'aos'
+export default defineNuxtPlugin(async (nuxtApp) => {
+    import('aos/dist/aos.css')
+    const AOS = await import('aos')
 
-import 'aos/dist/aos.css'
-
-export default defineNuxtPlugin((nuxtApp) => {
     if (typeof window !== 'undefined') {
         nuxtApp.AOS = AOS.init({
             // Global settings:
