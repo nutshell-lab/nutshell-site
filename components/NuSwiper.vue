@@ -1,7 +1,14 @@
 <script lang="ts" setup>
-import { Swiper as SwiperComponent, SwiperSlide } from "swiper/vue"
 import "swiper/css"
 import type Swiper from "swiper";
+
+const SwiperSlide = defineAsyncComponent(() =>
+  import('swiper/vue').then(({ SwiperSlide }) => SwiperSlide)
+)
+
+const SwiperComponent = defineAsyncComponent(() =>
+  import('swiper/vue').then(({ Swiper }) => Swiper)
+)
 
 defineProps({
     items: { type: Array as PropType<any[]>, default: [] },

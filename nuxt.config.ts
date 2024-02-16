@@ -6,8 +6,8 @@ export default defineNuxtConfig({
 	imports: {
 		presets: [
 			{
-			from: 'vee-validate',
-			imports: ['useForm']
+				from: 'vee-validate',
+				imports: ['useForm']
 			}
 		]
 	},
