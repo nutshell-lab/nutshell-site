@@ -1,0 +1,67 @@
+* Atlas
+
+** Certifier à partir d'un référentiel de compétences
+
+	 + Plateforme de service
+	 + Temps réel
+	 + Digitalisation
+	 + Anti-triche
+		+ Valoriser la compétence
+		+ Évoluer avec les réformes
+
+** La compétence au centre de l'équation
+
+Suite à l'entrée en vigueur de la loi "Avenir profesionnel", le paradigme du monde de la formation professionnelle se recentre autour de la notion de compétence. Pour former une masse salariale toujours plus capable, il est souhaité l'indexation des formations professionnelles sur des référentiels de compétences reconnu par l'état (RNCP). Ce socle objective ainsi la compétence en tant qu'outil managerial pour mieux gérer ses ressources humaines :
+
+	 + Carthographier les compétences en interne
+	 + Comprendre les compétences nécessaires pour les postes à pourvoir
+	 + Planifier la formation de sa masse salariale
+	 + Orienter son recrutement
+
+
+Ainsi, un référentiel de compétence peut être visualisé sous la forme d'un arbre dont chaque macro-compétence se compose de plusieurs micro-compétences. Chaque ensemble de compétence peut se rassembler en des blocs de compétences et décrire différents concepts liés aux ressources humaines telles que des certifications, des fiches de postes, etc.
+
+** Certifier un ensemble de compétences
+	
+Pour valider l'acquisition des compétences au sein de la branche Syntech, l'OPCO Atlas a souhaité décerner ses certifications professionnelles via une plateforme en ligne qui permet de réaliser des sessions d'examen complètement dématérialisées et corrigées automatiquement. Pour ce faire, Nutshell a répondu en proposant une plateforme clefs-en-main de son cru qui allie une sécurité forte et un large ensemble de modalités d'examens.
+
+*** L'examen chronométré et randomisé
+
+Un candidat accrédité à passer une certification peut accéder à un espace sécurisé pour répondre à différentes modalités de questions : Associations de concepts, QCM, calculs sur schéma, ordonnancement, catégorisation d'élément, texte à trou, etc. Les questions posées aux candidats sont sélectionnées aléatoirement dans un vaste pool de questions spécifiques à chaque certification. Il aura un maximum de 2 tentatives pour parvenir à obtenir le score seuil qui lui permettra d'obtenir la certification concernée. L'ensemble de la certification est limité dans le temps et chaque question dispose de son propre timer, l'objectif étant de limiter la tentation de tricher en naviguant sur le web.
+
+*** Système anti-triche
+
+Pour aller au-delàs de la dissuasion et contrecarrer les tentatives de triches, un système d'anti-triches actif à été conçu par Nutshell pour détecter des comportements suspects lors du passage de la certification. En accédant aux différents périphériques de l'utilisateur (clavier, souris) et en surveillant les différentes actions et inactions durant l'examen, un taux de suspicion est systématiquement calculé. Dans le cas où le taux de suspicion dépasse un certain seuil, le résultat de la certification n'est pas immédiatement communiqué et un incident est déclaré pour qu'un responsable du service s'assure de la conformité des conditions de passage de l'examen.
+
+
+*** Correction automatisée
+
+Pour limiter significativement la quantité de temps qu'il faudrait à des humains de corriger toutes les examens au national, la plateforme C-Certif est capable de corriger automatiquement toutes les tentatives d'obtention des certifications référencées. Pour ce faire, Nutshell a mis en place différents algorithme de scoring qui peuvent être paramétrés par les ingénieurs pédagogique responsable de la certification.
+
+** Exposer les certifications disponible
+
+*** Se baser sur des référentiels de compétence
+
+Pour assurer la mise en valeur des compétences et leur évaluation objective, Nutshell a conçu un logiciel auteur qui permet de décrire les différentes ramifications d'un référentiel de compétence RNCP. Ainsi, la plateforme peut continuellement être enrichie en proposant de nouvelles certifications de compétences.
+
+*** Un catalogue des certifications
+
+Pour permettre aux particuliers et aux entreprises de gérer leurs compétences, Nutshell a mis en place un module de catalogue en ligne où chacun peut sélectionner à la carte des certifications pour soi ou pour ses salariés. Différentes sources de financement sont disponibles pour permettre une flexibilité de la prise en charge.
+
+** Gérer l'administratif
+
+*** Vérification de la prise en charge
+
+Pour accréditer les différents candidats à passer un examen financé par Atlas, une demande de prise en charge doit être formalisé par l'envoi d'un dossier dans les sytèmes d'information d'Atlas. Originellement réalisé au format papier par les organismes de formations où les responsables des ressources humaines de l'entreprise, Nutshell a mis en place une interopérabilité forte entre la plateforme C-Certif et le sytème d'informations de l'OPCO Atlas.
+
+*** Suivi des salariés
+
+Pour permettre aux entreprises inscrivant leur salariés aux certifications décernées par Atlas, Nutshell a mis en place une interface de suivi qui permet aux responsables des ressources humaines d'instruire des demandes de prise en charge, d'en suivre l'acceptation et le résultat qu'obtiennent leurs salariés suite à leur passage.
+
+** Résultats constatés
+
++ 5 ans de productions continues 7j/7 24h/24
++ 30+ certifications disponibles
++ plus de 25 000 certifiés
++ environs 800 000€ de certifications financées
+
