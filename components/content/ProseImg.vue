@@ -1,44 +1,44 @@
 <template>
-    <img
+    <NuxtImg
       :src="refinedSrc"
       :alt="alt"
       :title="alt"
       loading="lazy"
       width="100%"
-      height="100%"
-    >
-  </template>
-  
-  <script setup lang="ts">
-  import { withTrailingSlash, withLeadingSlash, joinURL } from 'ufo'
-  import { useRuntimeConfig, computed } from '#imports'
-  
-  const props = defineProps({
+      height="10X0%"
+    />
+</template>
+
+<script setup lang="ts">
+import { computed, useRuntimeConfig } from "#imports"
+import { joinURL, withLeadingSlash, withTrailingSlash } from "ufo"
+
+const props = defineProps({
     src: {
-      type: String,
-      default: ''
+        type: String,
+        default: "",
     },
     alt: {
-      type: String,
-      default: ''
+        type: String,
+        default: "",
     },
     width: {
-      type: [String, Number],
-      default: undefined
+        type: [String, Number],
+        default: undefined,
     },
     height: {
-      type: [String, Number],
-      default: undefined
-    }
-  })
-  
-  const refinedSrc = computed(() => {
-    if (props.src?.startsWith('/') && !props.src.startsWith('//')) {
-      const _base = withLeadingSlash(withTrailingSlash(useRuntimeConfig().app.baseURL))
-      if (_base !== '/' && !props.src.startsWith(_base)) {
-        return joinURL(_base, props.src)
-      }
+        type: [String, Number],
+        default: undefined,
+    },
+})
+
+const refinedSrc = computed(() => {
+    if (props.src?.startsWith("/") && !props.src.startsWith("//")) {
+        const _base = withLeadingSlash(withTrailingSlash(useRuntimeConfig().app.baseURL))
+        if (_base !== "/" && !props.src.startsWith(_base)) {
+            return joinURL(_base, props.src)
+        }
     }
     return props.src
-  })
-  </script>
+})
+</script>

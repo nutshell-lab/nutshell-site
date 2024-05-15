@@ -1,24 +1,21 @@
 <script lang="ts" setup>
-import Parallaxy from '@lucien144/vue3-parallaxy';
-
-import logo_designrush from '~/assets/partners/logo_designrush.svg'
-import logo_miosotisstudio from '~/assets/partners/logo_miosotisstudio.svg'
+import Parallaxy from "@lucien144/vue3-parallaxy"
 
 const partners = [
-	{
-		name: 'Miosotis Studio',
-		picture: logo_miosotisstudio,
-		link: 'https://miosotisstudio.com/'
-	},
-	{
-		name: 'DesignRush',
-		picture: logo_designrush,
-		link: 'https://www.designrush.com/agency/profile/nutshell-lab'
-	},
-	{
-		name: '@jesuisnumerique',
-		link: 'https://www.jesuisnumerique.fr'
-	}
+    {
+        name: "Miosotis Studio",
+        picture: "/partners/logo_miosotisstudio.svg",
+        link: "https://miosotisstudio.com/",
+    },
+    {
+        name: "DesignRush",
+        picture: "/partners/logo_designrush.svg",
+        link: "https://www.designrush.com/agency/profile/nutshell-lab",
+    },
+    {
+        name: "@jesuisnumerique",
+        link: "https://www.jesuisnumerique.fr",
+    },
 ]
 
 const services = [
@@ -31,7 +28,6 @@ const services = [
     "Analyse et Audit",
     "Analytics et SEO",
 ]
-
 </script>
 
 <template>
@@ -153,7 +149,7 @@ const services = [
 					<div class="flex gap-8 justify-center flex-col @md:flex-row items-center">
 						<div v-for="(partner, index) in partners" :key="index" class="flex items-center">
 							<nu-link :to="partner.link" :label="`Aller sur le site de notre partenaire ${partner.name}`" target="_blank">
-								<img v-if="partner.picture" :src="partner.picture" height="100%" width="100%" class="h-[30px] w-full" :alt="`Logo ${partner.name}`" :title="`Logo ${partner.name}`" loading="lazy"/>
+								<NuxtImg v-if="partner.picture" :src="partner.picture" height="100%" width="100%" class="h-[30px] w-full" :alt="`Logo ${partner.name}`" :title="`Logo ${partner.name}`" loading="lazy"/>
 								<nu-typography v-else type="subtitle" class="!text-[20px]">{{ partner.name }}</nu-typography>
 							</nu-link>
 						</div>

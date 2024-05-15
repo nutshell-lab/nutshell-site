@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import Parallaxy from '@lucien144/vue3-parallaxy'
-import Error from '/error.vue'
+import Parallaxy from "@lucien144/vue3-parallaxy"
+import Error from "~/error.vue"
 
 const route = useRoute()
 const { data: doc } = await useAsyncData(route.path, queryContent(route.path).findOne)
@@ -81,7 +81,7 @@ const url = useRequestURL()
                                 </div>
                             </nu-link>
                             <div class="bg-cinnabar p-4 @lg:w-[160px] @md:w-[120px] w-[80px] @lg:h-[160px] @md:h-[120px] h-[80px]">
-                                <img height="100%" width="100%" src="~/assets/logo_nutshell_white.svg" class="hover:rotate-180 transition-all duration-500" alt="" title="Logo nutshell" loading="lazy"/>
+                                <NuxtImg height="100%" width="100%" src="/logo_nutshell_white.svg" class="hover:rotate-180 transition-all duration-500" alt="" title="Logo nutshell" loading="lazy"/>
                             </div>
                         </div>
                     </div>
@@ -195,6 +195,4 @@ const url = useRequestURL()
 .content :deep(img) {
     @apply w-full h-full
 }
-
-
 </style>

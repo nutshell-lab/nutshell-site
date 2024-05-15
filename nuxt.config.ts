@@ -11,11 +11,18 @@ export default defineNuxtConfig({
 			}
 		]
 	},
-	vite: {
-		plugins: [vsharp()],
-	},
+	// vite: {
+	// 	plugins: [vsharp()],
+	// },
 	css: ['~/assets/css/main.css'],
-	modules: ['@nuxtjs/plausible', '@nuxtjs/tailwindcss', '@nuxt/content', 'nuxt-simple-sitemap', 'nuxt-route-meta'],
+	modules: [
+        '@nuxtjs/plausible',
+        '@nuxtjs/tailwindcss',
+        '@nuxt/content',
+        'nuxt-simple-sitemap',
+        'nuxt-route-meta',
+        "@nuxt/image"
+    ],
 	plausible: {
 		domain: 'nutshell-lab.com',
 		apiHost: 'https://plausible.nutshell-lab.com'

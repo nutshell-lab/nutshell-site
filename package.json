@@ -10,12 +10,13 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/image": "^1.7.0",
     "@nuxtjs/plausible": "^0.2.1",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/container-queries": "^0.1.1",
     "@types/aos": "^3.0.7",
     "@types/node": "^18.17.0",
-    "nuxt": "^3.8.0",
+    "nuxt": "^3.11.2",
     "nuxt-simple-sitemap": "^4.1.10",
     "tailwindcss-text-fill-stroke": "^2.0.0-beta.1",
     "vite-plugin-vsharp": "^1.6.0"
