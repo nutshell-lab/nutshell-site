@@ -2,26 +2,25 @@
 import Parallaxy from "@lucien144/vue3-parallaxy"
 
 const results = [
-    "Chiffre d'affaire x3",
-    "Absorption de 3x plus de volume de formation",
-    "Suppression significative d'erreurs humaines",
-    "Augmentation de la rapidité d'on-boarding collaborateur",
-    "Satisfaction clients et apprenants",
-    "Fidélisation des formateurs",
-    "Légitimité auprès des acteurs publiques",
+    "+22 000 étudiants formés",
+    "+3 000 sessions de formations",
+    "+12 000 000 euro de volume d'affaire",
+    "Allègement significatif de la charge des gestionaires",
+    "Charge administrative reduite",
+    "Mise en conformité facilité",
 ]
 
 const keywords = [
-    "Logiciel ERP",
-    "Qualopi",
-    "Digitalisation",
-    "Plateforme",
-    "Analyse d'assiduité",
-    "CRM",
-    "BPF automatique",
-    "Visioconférences",
+    "SaaS",
+    "Abonnement",
     "LMS intégré",
-    "Sur-mesure",
+    "ERP intégré",
+    "Connecteur Sage",
+    "Gestion formateurs",
+    "Sous-traitance",
+    "Emargement electronique",
+    "BPF automatique",
+    "Qualopi",
 ]
 </script>
 
@@ -32,27 +31,27 @@ const keywords = [
 				<template #fallback>
 					<!-- this will be rendered on server side -->
 					<div class="flex gap-14 relative left-[-267px]">
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-						<nu-typography type="hero-title">Actinuum</nu-typography>
+						<nu-typography type="hero-title">Keyro</nu-typography>
+						<nu-typography type="hero-title-filled">Keyro</nu-typography>
+						<nu-typography type="hero-title">Keyro</nu-typography>
+						<nu-typography type="hero-title-filled">Keyro</nu-typography>
+						<nu-typography type="hero-title">Keyro</nu-typography>
 					</div>
       			</template>
 				<Parallaxy :speed="300" axis="x">
 					<div class="flex gap-14">
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
+						<nu-typography type="hero-title">Keyro</nu-typography>
+						<nu-typography type="hero-title-filled">Keyro</nu-typography>
+						<nu-typography type="hero-title">Keyro</nu-typography>
+						<nu-typography type="hero-title-filled">Keyro</nu-typography>
+						<nu-typography type="hero-title">Keyro</nu-typography>
+						<nu-typography type="hero-title-filled">Keyro</nu-typography>
+						<nu-typography type="hero-title">Keyro</nu-typography>
+						<nu-typography type="hero-title-filled">Keyro</nu-typography>
+						<nu-typography type="hero-title">Keyro</nu-typography>
+						<nu-typography type="hero-title-filled">Keyro</nu-typography>
+						<nu-typography type="hero-title">Keyro</nu-typography>
+						<nu-typography type="hero-title-filled">Keyro</nu-typography>
 					</div>
 				</Parallaxy>
 			</ClientOnly>
@@ -60,12 +59,12 @@ const keywords = [
 				<div class="flex-shrink w-[680px] gap-16 flex flex-col justify-between">
 					<h1>
 						<nu-typography type="title" class="text-alabaster font-normal">
-							Automatiser l'administratif de la formation professionnelle
+							Proposer une plateforme SaaS pour les organismes de formation
 						</nu-typography>
 					</h1>
 					<nu-lined-list :entries="keywords" class="!gap-10" />
 					<div class="w-full flex justify-start">
-						<nu-link target="_blank" to="https://actinuum.com/" label="Découvrez le site Actinnuum">
+						<nu-link target="_blank" to="https://keyro.fr/" label="Découvrez le site Actinnuum">
 							<nu-button color="alabaster">
 								Découvrir le site
 							</nu-button>
@@ -74,54 +73,57 @@ const keywords = [
 				</div>
 				<div class="flex-1 overflow-visible relative hidden @sm:block">
 					<div class="absolute w-[1200px] h-full bg-cinnabar">
-						<div :class="`w-full h-full bg-cover bg-right bg-[url('~/assets/illustrations/prjct_actinuum/header.webp')] mix-blend-multiply`" />
+						<div :class="`w-full h-full bg-cover bg-right bg-[url('~/assets/illustrations/prjct_keyro/header.webp')] mix-blend-multiply`" />
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="container px-layout py-20 flex flex-col gap-12 @md:py-40 justify-center">
 			<h2 data-aos="slide-up">
-				<nu-typography type="title">Parce qu'Excel ne scale pas.</nu-typography>
+				<nu-typography type="title">Capitaliser sur un besoin interne.</nu-typography>
 			</h2>
 			<div class="flex flex-col @2xl:flex-row gap-12 h-full items-center">
 				<div class="flex flex-col @lg:flex-row gap-12 flex-1">
 					<p class="@lg:w-1/2">
-						À ces débuts, l'organisme de formation Actinuum, comme beaucoup d'entreprise par ailleurs, utilise Excel
-						comme outil principal pour planifier et suivre son activité.
-						Planing des formations, entreprises clients, compétences et disponibilité des formateurs, suivi des envois
-						administratifs, pilotage de l'activité et décompte des indicateurs pour le bilan pédagogique et financier.
+						La societé Actinuum a fait appel a nous <nu-link to="/projets/actinuum" label="Projet Actinuum" class="text-cinnabar">pour développer une suite d'outils</nu-link>
+						personnalisés pour gérer l'ensemble de son processus de formation.
+						Capitalisant sur cet investissement, le projet d'en faire une <strong>plateforme SaaS</strong> beneficiant a d'autres
+						organismes de formations s'est materialisé sous la forme de Keyro.
 					</p>
 					<p class="@lg:w-1/2">
+						<!-- todo -->
 						Autant d'éléments où les erreurs humaines viennent se glisser exponentiellement avec la croissance du volume
-						de formation. Actinuum, portée par ses dirigeant ambitieux détermine alors que faire développer son propre ERP
+						de formation. Keyro, portée par ses dirigeant ambitieux détermine alors que faire développer son propre ERP
 						sera rentabilisé en quelques années tout en augmentant significativement leur capacité à absorber du volume de
 						sessions de formations.
 					</p>
 				</div>
 				<div class="w-full h-[300px] @2xl:w-[500px]">
-					<div :class="`w-full bg-cover bg-center h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_actinuum/board.webp')]`" />
+					<div :class="`w-full bg-cover bg-center h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_keyro/board.webp')]`" />
 				</div>
 			</div>
 		</section>
 		<section class="container py-8 px-layout">
 			<h2 data-aos="slide-up">
-				<nu-typography type="title" class="py-6">Un centre de contrôle de la formation</nu-typography>
+				<nu-typography type="title" class="py-6">Une plateforme tout-en-un.</nu-typography>
 			</h2>
 			<div class="py-10 flex flex-col @lg:flex-row gap-12 leading-7">
 				<p class="@lg:w-1/2">
-					Pour permettre à Actinuum <strong>d'avoir la main mise sur son outil opérationnel</strong>, Nutshell a mis
+					<!-- todo -->
+					Pour permettre à Keyro <strong>d'avoir la main mise sur son outil opérationnel</strong>, Nutshell a mis
 					en place un centre
 					de contrôle permettant de <strong>gérer l'ensemble de l'activité de formation.</strong>
 					Véritable ERP de la formation, la solution précise le programme de chaque formation, leurs modalités
 					pédagogiques, les dates des sessions, le choix des intervenants internes ou externes. Il fournit les
 					renseignements nécessaires aux futurs participants et leur indique les moyens de financement possibles.
-					C'est ainsi qu'Actinuum peut <strong>gérer l'ensemble de son catalogue</strong> de formations, de
+					C'est ainsi qu'Keyro peut <strong>gérer l'ensemble de son catalogue</strong> de formations, de
 					formateurs, de
 					clients et de participants.
 
 				</p>
 				<div class="@lg:w-1/2">
 					<ul class="pl-4 list-disc">
+						<!-- todo -->
 						<li>Durant le cycle de vie de la session de formation, plusieurs déclencheurs ont été paramétrés pour
 							l’envoi
 							des convocations, des conventions, etc. Cette automatisation permet de se passer de l’action
@@ -138,7 +140,7 @@ const keywords = [
 		<div :class="`container w-full h-[400px] lg:my-20 my-12 overflow-hidden`">
 			<ClientOnly>
 				<Parallaxy :speed="100" axis="y">
-					<div class="w-screen h-[700px] bg-onyx bg-center bg-cover bg-[url('~/assets/illustrations/prjct_actinuum/group.webp')]" />
+					<div class="w-screen h-[700px] bg-onyx bg-center bg-cover bg-[url('~/assets/illustrations/prjct_keyro/group.webp')]" />
 				</Parallaxy>
 			</ClientOnly>
 		</div>
@@ -150,13 +152,15 @@ const keywords = [
 				<div class="flex flex-col @xl:flex-row items-center justify-center gap-12 leading-7">
 					<div class="@xl:w-1/2 flex flex-col gap-6">
 						<p>
+							<!-- todo -->
 							Afin d'engager un <strong>maximum de qualité</strong> tout au long du processus de formation, nous avons
-							conçu pour Actinuum
+							conçu pour Keyro
 							un LMS (Learning Management System) integré avec son ERP qui permet aux participants et au formateurs de
 							disposer d'un <strong>support</strong> pour toute la durée de la formation, qu'elle soit en présentielle ou
 							bien à distance.
 						</p>
 						<p>
+							<!-- todo -->
 							Permettant de collecter du même coup un ensemble de <strong>données propres à la session</strong> de
 							formation, le LMS traque <strong>l'assiduité des utilisateurs</strong> et la qualité de la prestation
 							effectuée par le formateur. L'humain est au coeur de cette collecte d'information grâce à des entretiens
@@ -166,6 +170,7 @@ const keywords = [
 					</div>
 					<div class="@xl:w-1/2">
 						<ul class="pl-4 list-disc">
+							<!-- todo -->
 							<li>Comprend 16 modalités d’apprentissages différentes : micro-learning, certification, exercices en ligne,
 								évaluation ou autre module SCORM.</li>
 							<li>Un espace de formation ergonomique pour suivre les cours de manière simple et intuitive</li>
@@ -200,17 +205,17 @@ const keywords = [
 			<ClientOnly>
 				<Parallaxy :speed="300" axis="x">
 					<div class="flex gap-14">
-						<nu-typography type="hero-title" >Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
-						<nu-typography type="hero-title" >Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
-						<nu-typography type="hero-title" >Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
-						<nu-typography type="hero-title" >Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
-						<nu-typography type="hero-title" >Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
-						<nu-typography type="hero-title">Actinuum</nu-typography>
+						<nu-typography type="hero-title" >Keyro</nu-typography>
+						<nu-typography type="hero-title-filled" >Keyro</nu-typography>
+						<nu-typography type="hero-title" >Keyro</nu-typography>
+						<nu-typography type="hero-title-filled" >Keyro</nu-typography>
+						<nu-typography type="hero-title" >Keyro</nu-typography>
+						<nu-typography type="hero-title-filled" >Keyro</nu-typography>
+						<nu-typography type="hero-title" >Keyro</nu-typography>
+						<nu-typography type="hero-title-filled" >Keyro</nu-typography>
+						<nu-typography type="hero-title" >Keyro</nu-typography>
+						<nu-typography type="hero-title-filled" >Keyro</nu-typography>
+						<nu-typography type="hero-title">Keyro</nu-typography>
 					</div>
 				</Parallaxy>
 			</ClientOnly>
@@ -221,9 +226,10 @@ const keywords = [
 			</h2>
 			<div class="flex flex-col @lg:flex-row gap-12 items-center leading-7">
 				<div class="w-full h-[250px] @2xl:w-[500px]">
-					<div :class="`w-full bg-cover h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_actinuum/notes.webp')]`" />
+					<div :class="`w-full bg-cover h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_keyro/notes.webp')]`" />
 				</div>
 				<ul class="pl-4 list-disc">
+					<!-- todo -->
 					<li>Auditer et revisiter l'ensemble de vos processus avec la méthodologie LEAN</li>
 					<li>Identifier les freins et les goulots d'étranglement de votre activité de formation</li>
 					<li>Déterminer la data critique et les moyens pour l'obtenir (sourcing clients, sourcing formateurs)</li>
@@ -234,6 +240,7 @@ const keywords = [
 		</section>
 		<section class="bg-gradient-to-b from-chinese-black from-80% to-alabaster to-80% text-alabaster">
 			<div class="px-layout container flex flex-col gap-12 py-20 leading-7">
+				<!-- todo -->
 				<h2 data-aos="slide-up">
 					<nu-typography type="title">10 ans d'expérience<br />dans la formation
 						professionnelle</nu-typography>

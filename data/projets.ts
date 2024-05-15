@@ -22,8 +22,7 @@ export default [
         picture: prjct_keyro,
 		description:
 			"Keyro est l'émergence d'un produit SAAS pour fournir aux organismes de formation un logiciel ERP+LMS pour digitaliser leur sessions de formations. La plateforme accueille déjà plus de 10k apprenants tous les ans.",
-        path: "/projets/keyro",
-		disabled: true
+        path: "/projets/keyro"
 	},
     {
         id: 'brokers',
