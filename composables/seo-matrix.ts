@@ -30,6 +30,16 @@ const matrix = <Matrix>{
             height: '166',
         },
     },
+    'dossiers-generer-des-documents-automatiquement': {
+        title: 'Quelle est la meilleure solution pour générer des documents ? - Nutshell',
+        description: 'Découvrez comment générer automatiquement des documents via l\'utilisation des modèles Word.',
+        ogImage: {
+            url: 'https://nutshell-lab.com/seo/generer-des-documents-automatiquement.jpg',
+            type: 'image/jpeg',
+            width: '375',
+            height: '166',
+        },
+    },
     'blog-slug': {
         ogType: 'article',
     }

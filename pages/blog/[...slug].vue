@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Error from '/error.vue'
+import Error from '~/error.vue'
 
 const route = useRoute()
 const { data: doc } = await useAsyncData(route.path, queryContent(route.path).findOne)

@@ -39,11 +39,14 @@ import Parallaxy from '@lucien144/vue3-parallaxy';
 				</div>
 			</div>
 		</section>
+			
+		<div :class="`container w-full h-[400px] lg:mb-32 mb-20 overflow-hidden`">
+			<nu-parallax :speed="100" axis="y">
+				<div class="w-screen h-[700px] bg-onyx bg-center bg-cover bg-[url('~/assets/illustrations/use_case_generation/print_press.jpg')]" />
+			</nu-parallax>
+		</div>
 
 		<section class="px-layout container pb-32 flex flex-col gap-24 @md:pb-64 justify-center">
-			<div>
-				<div :style="`--image-url: url('/blog/print_press.jpg')`" :class="`w-full h-[100vh] bg-center bg-cover bg-[image:var(--image-url)]`" />
-			</div>
 			<h2>
 				<nu-typography type="title">Le fonctionnement de la génération automatique</nu-typography>
 			</h2>
