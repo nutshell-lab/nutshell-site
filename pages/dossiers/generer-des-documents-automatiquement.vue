@@ -41,6 +41,9 @@ import Parallaxy from '@lucien144/vue3-parallaxy';
 		</section>
 
 		<section class="px-layout container pb-32 flex flex-col gap-24 @md:pb-64 justify-center">
+			<div>
+				<div :style="`--image-url: url('/blog/print_press.jpg')`" :class="`w-full h-[100vh] bg-center bg-cover bg-[image:var(--image-url)]`" />
+			</div>
 			<h2>
 				<nu-typography type="title">Le fonctionnement de la génération automatique</nu-typography>
 			</h2>
