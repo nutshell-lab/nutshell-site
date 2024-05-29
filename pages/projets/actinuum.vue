@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import Parallaxy from '@lucien144/vue3-parallaxy';
 
 const results = [
 	"Chiffre d'affaire x3",
@@ -28,8 +27,8 @@ const keywords = [
 <template>
 	<div class="h-full bg-alabaster">
 		<section class="pt-32 pb-32 bg-chinese-black text-alabaster text-stroke-alabaster flex flex-col @md:gap-20 gap-12 relative">
-			<ClientOnly>
-				<template #fallback>
+			<nu-parallax :speed="300" axis="x">
+      			<template #fallback>
 					<!-- this will be rendered on server side -->
 					<div class="flex gap-14 relative left-[-267px]">
 						<nu-typography type="hero-title">Actinuum</nu-typography>
@@ -39,23 +38,21 @@ const keywords = [
 						<nu-typography type="hero-title">Actinuum</nu-typography>
 					</div>
       			</template>
-				<Parallaxy :speed="300" axis="x">
-					<div class="flex gap-14">
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-					</div>
-				</Parallaxy>
-			</ClientOnly>
+				<div class="flex gap-14">
+					<nu-typography type="hero-title">Actinuum</nu-typography>
+					<nu-typography type="hero-title-filled">Actinuum</nu-typography>
+					<nu-typography type="hero-title">Actinuum</nu-typography>
+					<nu-typography type="hero-title-filled">Actinuum</nu-typography>
+					<nu-typography type="hero-title">Actinuum</nu-typography>
+					<nu-typography type="hero-title-filled">Actinuum</nu-typography>
+					<nu-typography type="hero-title">Actinuum</nu-typography>
+					<nu-typography type="hero-title-filled">Actinuum</nu-typography>
+					<nu-typography type="hero-title">Actinuum</nu-typography>
+					<nu-typography type="hero-title-filled">Actinuum</nu-typography>
+					<nu-typography type="hero-title">Actinuum</nu-typography>
+					<nu-typography type="hero-title-filled">Actinuum</nu-typography>
+				</div>
+			</nu-parallax>
 			<div class="container px-layout flex gap-16 overflow-visible">
 				<div class="flex-shrink w-[680px] gap-16 flex flex-col justify-between">
 					<h1>
@@ -136,11 +133,9 @@ const keywords = [
 			</div>
 		</section>
 		<div :class="`container w-full h-[400px] lg:my-20 my-12 overflow-hidden`">
-			<ClientOnly>
-				<Parallaxy :speed="100" axis="y">
-					<div class="w-screen h-[700px] bg-onyx bg-center bg-cover bg-[url('~/assets/illustrations/prjct_actinuum/group.webp')]" />
-				</Parallaxy>
-			</ClientOnly>
+			<nu-parallax :speed="100" axis="y">
+				<div class="w-screen h-[700px] bg-onyx bg-center bg-cover bg-[url('~/assets/illustrations/prjct_actinuum/group.webp')]" />
+			</nu-parallax>
 		</div>
 		<section class="container px-layout py-12 lg:pb-32 mb-20">
 			<div class="flex flex-col justify-center gap-12">
@@ -197,23 +192,21 @@ const keywords = [
 					</nu-link>
 				</div>
 			</div>
-			<ClientOnly>
-				<Parallaxy :speed="300" axis="x">
-					<div class="flex gap-14">
-						<nu-typography type="hero-title" >Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
-						<nu-typography type="hero-title" >Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
-						<nu-typography type="hero-title" >Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
-						<nu-typography type="hero-title" >Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
-						<nu-typography type="hero-title" >Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-					</div>
-				</Parallaxy>
-			</ClientOnly>
+			<nu-parallax :speed="300" axis="x">
+				<div class="flex gap-14">
+					<nu-typography type="hero-title" >Actinuum</nu-typography>
+					<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
+					<nu-typography type="hero-title" >Actinuum</nu-typography>
+					<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
+					<nu-typography type="hero-title" >Actinuum</nu-typography>
+					<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
+					<nu-typography type="hero-title" >Actinuum</nu-typography>
+					<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
+					<nu-typography type="hero-title" >Actinuum</nu-typography>
+					<nu-typography type="hero-title-filled" >Actinuum</nu-typography>
+					<nu-typography type="hero-title">Actinuum</nu-typography>
+				</div>
+			</nu-parallax>
 		</section>
 		<section class="px-layout container lg:py-40 py-20 flex flex-col gap-12">
 			<h2 data-aos="slide-up">

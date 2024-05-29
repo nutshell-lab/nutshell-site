@@ -1,299 +1,233 @@
 <template>
-	<div class="bg-alabaster container font-inter px-layout py-44 flex flex-col gap-12">
-		<h1><nu-typography type="hero-title" class="text-stroke-chinese-black">Mentions légales</nu-typography></h1>
-		<nu-typography type="title">Définitions</nu-typography>
-		<div class="flex flex-col gap-4">
-			<div><span class="font-bold">Client</span> : tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.</div>
-			<div><span class="font-bold">Prestations et Services</span> : ce que Nutshell Lab met à disposition de ses Clients.</div>
-			<div><span class="font-bold">Contenu</span> : ensemble des éléments constituants l’information présente sur le Site, notamment textes – images – vidéos.</div>
-			<div><span class="font-bold">Informations clients</span> : Ci après dénommé « Information (s) » qui correspondent à l’ensemble des données personnelles susceptibles d’être détenues par Nutshell Lab pour la gestion de votre compte, de la gestion de la relation client et à des fins d’analyses et de statistiques.</div>
-			<div><span class="font-bold">Utilisateur</span> : Internaute se connectant, utilisant le site susnommé.</div>
-			<div><span class="font-bold">Informations personnelles</span> : « Les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).</div>
-			<div>Les termes « données à caractère personnel », « personne concernée », « sous traitant » et « données sensibles » ont le sens défini par le Règlement Général sur la Protection des Données (RGPD : n° 2016-679)</div>
+	<div class="bg-alabaster max-container font-inter px-layout py-44 flex flex-col @xl:flex-row gap-32">
+		<div class="flex flex-col gap-12">
+			<h1><nu-typography type="headline" class="text-stroke-chinese-black">CONDITIONS GÉNÉRALES DE VENTE</nu-typography></h1>
+			<nu-typography type="large">
+				Dernière modification le 30 janvier 2024.
+			</nu-typography>
 		</div>
-		<nu-typography type="title">Présentation du site internet</nu-typography>
-		<div class="flex flex-col gap-4">
-			<div>
-				En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet Nutshell Lab l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :
-			</div>
-			<div>
-				<span class="font-bold">Propriétaire</span> : SAS Nutshell Lab Capital social de 3000€ – 229, rue Solférino 59000 Lille
-			</div>
-			<div>
-				<span class="font-bold">Responsable publication</span> : Sorian Slimani – sorian@nutshell-lab.com
-			</div>
-			<div>
-				<span class="font-bold">Webmaster</span> : Victor Crépin – victor@nutshell-lab.com
-			</div>
-			<div>
-				<span class="font-bold">Hébergeur</span> : Cloudflare – 101 Townsend Street, San Francisco
-			</div>
-			<div>
-				<span class="font-bold">Délégué à la protection des données</span> : Nathan Boutté – nathan@nutshell-lab.com
-			</div>
-			<div>
-				Les mentions légales sont issues du modèle proposé par Orson.io
-			</div>
-		</div>
-		<nu-typography type="title">Conditions générales d’utilisation du site et des services proposés</nu-typography>
-		<div class="flex flex-col gap-4">
-			<div>
-				Le Site constitue une œuvre de l’esprit protégée par les dispositions du Code de la Propriété Intellectuelle et des Réglementations Internationales applicables. Le Client ne peut en aucune manière réutiliser, céder ou exploiter pour son propre compte tout ou partie des éléments ou travaux du Site.
-			</div>
-			<div>
-				L’utilisation du site Nutshell Lab implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site Nutshell Lab sont donc invités à les consulter de manière régulière.
-			</div>
-			<div>
-				Ce site internet est normalement accessible à tout moment aux utilisateurs. Une interruption pour raison de maintenance technique peut être toutefois décidée par Nutshell Lab, qui s’efforcera alors de communiquer préalablement aux utilisateurs les dates et heures de l’intervention. Le site web Nutshell Lab est mis à jour régulièrement par Nutshell Lab responsable. De la même façon, les mentions légales peuvent être modifiées à tout moment : elles s’imposent néanmoins à l’utilisateur qui est invité à s’y référer le plus souvent possible afin d’en prendre connaissance.
-			</div>
-			<div>
-				Ce site internet est normalement accessible à tout moment aux utilisateurs. Une interruption pour raison de maintenance technique peut être toutefois décidée par Nutshell Lab, qui s’efforcera alors de communiquer préalablement aux utilisateurs les dates et heures de l’intervention. Le site web Nutshell Lab est mis à jour régulièrement par Nutshell Lab responsable. De la même façon, les mentions légales peuvent être modifiées à tout moment : elles s’imposent néanmoins à l’utilisateur qui est invité à s’y référer le plus souvent possible afin d’en prendre connaissance.
-			</div>
-		</div>
-		<nu-typography type="title">Description des services fournis</nu-typography>
-		<div class="flex flex-col gap-4">
-			<div>
-				Le site internet Nutshell Lab a pour objet de fournir une information concernant l’ensemble des activités de la société. Nutshell Lab s’efforce de fournir sur le site Nutshell Lab des informations aussi précises que possible. Toutefois, il ne pourra être tenu responsable des oublis, des inexactitudes et des carences dans la mise à jour, qu’elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations.
-			</div>
-			<div>
-				Toutes les informations indiquées sur le site Nutshell Lab sont données à titre indicatif, et sont susceptibles d’évoluer. Par ailleurs, les renseignements figurant sur le site Nutshell Lab ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne.
-			</div>
-			<div>
-				
-			</div>
-			<div>
-				
-			</div>
-		</div>
-		<nu-typography type="title">Limitations contractuelles sur les données techniques</nu-typography>
-		<div class="flex flex-col gap-4">
-			<div>
-				Le site utilise la technologie JavaScript
-			</div>
-			<div>
-				Le site Internet ne pourra être tenu responsable de dommages matériels liés à l’utilisation du site. De plus, l’utilisateur du site s’engage à accéder au site en utilisant un matériel récent, ne contenant pas de virus et avec un navigateur de dernière génération mis-à-jour.
-			</div>
-			<div>
-				L’objectif est d’apporter une prestation qui assure le meilleur taux d’accessibilité. L’hébergeur assure la continuité de son service 24 Heures sur 24, tous les jours de l’année. Il se réserve néanmoins la possibilité d’interrompre le service d’hébergement pour les durées les plus courtes possibles notamment à des fins de maintenance, d’amélioration de ses infrastructures, de défaillance de ses infrastructures ou si les Prestations et Services génèrent un trafic réputé anormal.
-			</div>
-			<div>
-				Nutshell Lab et l’hébergeur ne pourront être tenus responsables en cas de dysfonctionnement du réseau Internet, des lignes téléphoniques ou du matériel informatique et de téléphonie lié notamment à l’encombrement du réseau empêchant l’accès au serveur.
-			</div>
-			<div>
-				
-			</div>
-		</div>
-		<nu-typography type="title">Propriété intellectuelle et contrefaçons</nu-typography>
-		<div class="flex flex-col gap-4">
-			<div>
-				Nutshell Lab est propriétaire des droits de propriété intellectuelle et détient les droits d’usage sur tous les éléments accessibles sur le site internet, notamment les textes, images, graphismes, logos, vidéos, icônes et sons. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de : Nutshell Lab.
-			</div>
-			<div>
-				Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient sera considérée comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.
-			</div>
-		</div>
-		<nu-typography type="title">Limitations de responsabilité</nu-typography>
-		<div class="flex flex-col gap-4">
-			<div>
-				Nutshell Lab agit en tant qu’éditeur du site. Nutshell Lab  est responsable de la qualité et de la véracité du Contenu qu’il publie.
-			</div>
-			<div>
-				Nutshell Lab ne pourra être tenu responsable des dommages directs et indirects causés au matériel de l’utilisateur, lors de l’accès au site internet Nutshell Lab, et résultant soit de l’utilisation d’un matériel ne répondant pas aux spécifications indiquées au point 4, soit de l’apparition d’un bug ou d’une incompatibilité.
-			</div>
-			<div>
-				Nutshell Lab ne pourra également être tenu responsable des dommages indirects (tels par exemple qu’une perte de marché ou perte d’une chance) consécutifs à l’utilisation du site Nutshell Lab.
-			</div>
-			<div>
-				Des espaces interactifs (possibilité de poser des questions dans l’espace contact) sont à la disposition des utilisateurs. Nutshell Lab se réserve le droit de supprimer, sans mise en demeure préalable, tout contenu déposé dans cet espace qui contreviendrait à la législation applicable en France, en particulier aux dispositions relatives à la protection des données. Le cas échéant, Nutshell Lab se réserve également la possibilité de mettre en cause la responsabilité civile et/ou pénale de l’utilisateur, notamment en cas de message à caractère raciste, injurieux, diffamant, ou pornographique, quel que soit le support utilisé (texte, photographie …).
-			</div>
-		</div>
-		<nu-typography type="title">Gestion des données personnelles</nu-typography>
-		<div class="flex flex-col gap-4">
-			<div>
-				Le Client est informé des réglementations concernant la communication marketing, la loi du 21 Juin 2014 pour la confiance dans l’Economie Numérique, la Loi Informatique et Liberté du 06 Août 2004 ainsi que du Règlement Général sur la Protection des Données (RGPD : n° 2016-679).
-			</div>
-			<div class="mt-6">
-				<nu-typography type="subtitle">Responsables de la collecte des données personnelles</nu-typography>
-			</div>
-			<div class="flex flex-col gap-4 ml-12">
-				<div>
-					Pour les Données Personnelles collectées dans le cadre de la création du compte personnel de l’Utilisateur et de sa navigation sur le Site, le responsable du traitement des Données Personnelles est : Nutshell Lab. Nutshell Lab est représenté par Victor Crépin, son représentant légal.
-				</div>
-				<div>
-					En tant que responsable du traitement des données qu’il collecte, Nutshell Lab s’engage à respecter le cadre des dispositions légales en vigueur. Il lui appartient notamment au Client d’établir les finalités de ses traitements de données, de fournir à ses prospects et clients, à partir de la collecte de leurs consentements, une information complète sur le traitement de leurs données personnelles et de maintenir un registre des traitements conforme à la réalité.
-				</div>
-				<div>
-					Chaque fois que Nutshell Lab traite des Données Personnelles, Nutshell Lab prend toutes les mesures raisonnables pour s’assurer de l’exactitude et de la pertinence des Données Personnelles au regard des finalités pour lesquelles Nutshell Lab les traite.
-				</div>
-			</div>
-			<div class="mt-6">
-				<nu-typography type="subtitle">Finalité des données collectées</nu-typography>
-			</div>
-			<div class="flex flex-col gap-4 ml-12">
-				<div>
-					Nutshell Lab est susceptible de traiter tout ou partie des données :
-					<ul class="pl-8 list-disc">
-						<li>
-							pour permettre la navigation sur le Site et la gestion et la traçabilité des prestations et services commandés par l’utilisateur : données de connexion et d’utilisation du Site, facturation, historique des commandes, etc.
-						</li>
-						<li>
-							pour prévenir et lutter contre la fraude informatique (spamming, hacking…) : matériel informatique utilisé pour la navigation, l’adresse IP, le mot de passe (hashé)
-						</li>
-						<li>
-							pour améliorer la navigation sur le Site : données de connexion et d’utilisation
-						</li>
-						<li>
-							pour mener des enquêtes de satisfaction facultatives sur Nutshell Lab : adresse email
-						</li>
-						<li>
-							pour mener des campagnes de communication (sms, mail) : numéro de téléphone, adresse email
-						</li>
-					</ul>
-				</div>
-				<div>
-					Nutshell Lab ne commercialise pas vos données personnelles qui sont donc uniquement utilisées par nécessité ou à des fins statistiques et d’analyses.
-				</div>
-			</div>
-			<div class="mt-6">
-				<nu-typography type="subtitle">Droit d’accès, de rectification et d’opposition</nu-typography>
-			</div>
-			<div class="flex flex-col gap-4 ml-12">
-				<div>
-					Conformément à la réglementation européenne en vigueur, les Utilisateurs de Nutshell Lab disposent des droits suivants :
-					<ul class="pl-8 list-disc">
-						<li>
-							droit d'accès (article 15 RGPD) et de rectification (article 16 RGPD), de mise à jour, de complétude des données des Utilisateurs droit de verrouillage ou d’effacement des données des Utilisateurs à caractère personnel (article 17 du RGPD), lorsqu’elles sont inexactes, incomplètes, équivoques, périmées, ou dont la collecte, l'utilisation, la communication ou la conservation est interdite
-						</li>
-						<li>
-							droit de retirer à tout moment un consentement (article 13-2c RGPD)
-						</li>
-						<li>
-							droit à la limitation du traitement des données des Utilisateurs (article 18 RGPD)
-						</li>
-						<li>
-							droit d’opposition au traitement des données des Utilisateurs (article 21 RGPD)
-						</li>
-						<li>
-							droit à la portabilité des données que les Utilisateurs auront fournies, lorsque ces données font l’objet de traitements automatisés fondés sur leur consentement ou sur un contrat (article 20 RGPD)
-						</li>
-						<li>
-							droit de définir le sort des données des Utilisateurs après leur mort et de choisir à qui Nutshell Lab devra communiquer (ou non) ses données à un tiers qu’ils aura préalablement désigné
-						</li>
-					</ul>
-				</div>
-				<div>
-					Dès que Nutshell Lab a connaissance du décès d’un Utilisateur et à défaut d’instructions de sa part, Nutshell Lab s’engage à détruire ses données, sauf si leur conservation s’avère nécessaire à des fins probatoires ou pour répondre à une obligation légale.
-				</div>
-				<div>
-					Si l’Utilisateur souhaite savoir comment Nutshell Lab utilise ses Données Personnelles, demander à les rectifier ou s’oppose à leur traitement, l’Utilisateur peut contacter Nutshell Lab par écrit à l’adresse suivante
-					Nutshell Lab – DPO, Victor Crépin
-					229, rue Solférino 59000 Lille
-				</div>
-				<div>
-					Dans ce cas, l’Utilisateur doit indiquer les Données Personnelles qu’il souhaiterait que Nutshell Lab corrige, mette à jour ou supprime, en s’identifiant précisément avec une copie d’une pièce d’identité (carte d’identité ou passeport).
-				</div>
-				<div>
-					Les demandes de suppression de Données Personnelles seront soumises aux obligations qui sont imposées à Nutshell Lab par la loi, notamment en matière de conservation ou d’archivage des documents. Enfin, les Utilisateurs de Nutshell Lab peuvent déposer une réclamation auprès des autorités de contrôle, et notamment de la CNIL (https://www.cnil.fr/fr/plaintes).
-				</div>
-			</div>
-			<div class="mt-6">
-				<nu-typography type="subtitle">Non-communication des données personnelles</nu-typography>
-			</div>
-			<div class="flex flex-col gap-4 ml-12">
-				<div>
-					Nutshell Lab s’interdit de traiter, héberger ou transférer les Informations collectées sur ses Clients vers un pays situé en dehors de l’Union européenne ou reconnu comme « non adéquat » par la Commission européenne sans en informer préalablement le client. Pour autant, Nutshell Lab reste libre du choix de ses sous-traitants techniques et commerciaux à la condition qu’il présentent les garanties suffisantes au regard des exigences du Règlement Général sur la Protection des Données (RGPD : n° 2016-679).
-				</div>
-				<div>
-					Nutshell Lab s’engage à prendre toutes les précautions nécessaires afin de préserver la sécurité des Informations et notamment qu’elles ne soient pas communiquées à des personnes non autorisées. Cependant, si un incident impactant l’intégrité ou la confidentialité des Informations du Client est portée à la connaissance de Nutshell Lab, celle-ci devra dans les meilleurs délais informer le Client et lui communiquer les mesures de corrections prises. Par ailleurs Nutshell Lab ne collecte aucune « données sensibles ».
-				</div>
-				<div>
-					Les Données Personnelles de l’Utilisateur peuvent être traitées par des filiales de Nutshell Lab et des sous-traitants (prestataires de services), exclusivement afin de réaliser les finalités de la présente politique.
-				</div>
-				<div>
-					Dans la limite de leurs attributions respectives et pour les finalités rappelées ci-dessus, les principales personnes susceptibles d’avoir accès aux données des Utilisateurs de Nutshell Lab sont principalement les agents de notre service client.
-				</div>
-			</div>
-		</div>
-		<nu-typography type="title">Notification d’incident</nu-typography>
-		<div class="flex flex-col gap-4">
-			<div>
-				Quels que soient les efforts fournis, aucune méthode de transmission sur Internet et aucune méthode de stockage électronique n'est complètement sûre. Nous ne pouvons en conséquence pas garantir une sécurité absolue. Si nous prenions connaissance d'une brèche de la sécurité, nous avertirions les utilisateurs concernés afin qu'ils puissent prendre les mesures appropriées. Nos procédures de notification d’incident tiennent compte de nos obligations légales, qu'elles se situent au niveau national ou européen. Nous nous engageons à informer pleinement nos clients de toutes les questions relevant de la sécurité de leur compte et à leur fournir toutes les informations nécessaires pour les aider à respecter leurs propres obligations réglementaires en matière de reporting.
-			</div>
-			<div>
-				Aucune information personnelle de l'utilisateur du site Nutshell Lab n'est publiée à l'insu de l'utilisateur, échangée, transférée, cédée ou vendue sur un support quelconque à des tiers. Seule l'hypothèse du rachat de Nutshell Lab et de ses droits permettrait la transmission des dites informations à l'éventuel acquéreur qui serait à son tour tenu de la même obligation de conservation et de modification des données vis à vis de l'utilisateur du site Nutshell Lab.
-			</div>
-			<div class="mt-6">
-				<nu-typography type="subtitle">Sécurité</nu-typography>
-			</div>
-			<div class="flex flex-col gap-4 ml-12">
-				<div>
-					Pour assurer la sécurité et la confidentialité des Données Personnelles et des Données Personnelles de Santé, Nutshell Lab utilise des réseaux protégés par des dispositifs standards tels que par pare-feu, la pseudonymisation, l’encryption et mot de passe.
-				</div>
-				<div>
-					Lors du traitement des Données Personnelles, Nutshell Labprend toutes les mesures raisonnables visant à les protéger contre toute perte, utilisation détournée, accès non autorisé, divulgation, altération ou destruction.
-				</div>
-			</div>
-		</div>
-		<nu-typography type="title">Liens hypertextes « cookies » et balises (“tags”) internet</nu-typography>
-		<div class="flex flex-col gap-4">
-			<div>
-				Le site Nutshell Lab contient un certain nombre de liens hypertextes vers d’autres sites, mis en place avec l’autorisation de Nutshell Lab. Cependant, Nutshell Lab n’a pas la possibilité de vérifier le contenu des sites ainsi visités, et n’assumera en conséquence aucune responsabilité de ce fait.
-			</div>
-			<div>
-				Sauf si vous décidez de désactiver les cookies, vous acceptez que le site puisse les utiliser. Vous pouvez à tout moment désactiver ces cookies et ce gratuitement à partir des possibilités de désactivation qui vous sont offertes et rappelées ci-après, sachant que cela peut réduire ou empêcher l’accessibilité à tout ou partie des Services proposés par le site.
-			</div>
-			<div class="mt-6">
-				<nu-typography type="subtitle">« COOKIES »</nu-typography>
-			</div>
-			<div class="flex flex-col gap-4 ml-12">
-				<div>
-					Un « cookie » est un petit fichier d’information envoyé sur le navigateur de l’Utilisateur et enregistré au sein du terminal de l’Utilisateur (ex : ordinateur, smartphone), (ci-après « Cookies »). Ce fichier comprend des informations telles que le nom de domaine de l’Utilisateur, le fournisseur d’accès Internet de l’Utilisateur, le système d’exploitation de l’Utilisateur, ainsi que la date et l’heure d’accès. Les Cookies ne risquent en aucun cas d’endommager le terminal de l’Utilisateur.
-				</div>
-				<div>
-					Nutshell Lab est susceptible de traiter les informations de l’Utilisateur concernant sa visite du Site, telles que les pages consultées, les recherches effectuées. Ces informations permettent à Nutshell Lab d’améliorer le contenu du Site, de la navigation de l’Utilisateur.
-				</div>
-				<div>
-					Les Cookies facilitant la navigation et/ou la fourniture des services proposés par le Site, l’Utilisateur peut configurer son navigateur pour qu’il lui permette de décider s’il souhaite ou non les accepter de manière à ce que des Cookies soient enregistrés dans le terminal ou, au contraire, qu’ils soient rejetés, soit systématiquement, soit selon leur émetteur. L’Utilisateur peut également configurer son logiciel de navigation de manière à ce que l’acceptation ou le refus des Cookies lui soient proposés ponctuellement, avant qu’un Cookie soit susceptible d’être enregistré dans son terminal. Nutshell Lab informe l’Utilisateur que, dans ce cas, il se peut que les fonctionnalités de son logiciel de navigation ne soient pas toutes disponibles.
-				</div>
-				<div>
-					Si l’Utilisateur refuse l’enregistrement de Cookies dans son terminal ou son navigateur, ou si l’Utilisateur supprime ceux qui y sont enregistrés, l’Utilisateur est informé que sa navigation et son expérience sur le Site peuvent être limitées. Cela pourrait également être le cas lorsque Nutshell Lab ou l’un de ses prestataires ne peut pas reconnaître, à des fins de compatibilité technique, le type de navigateur utilisé par le terminal, les paramètres de langue et d’affichage ou le pays depuis lequel le terminal semble connecté à Internet.
-				</div>
-				<div>
-					Le cas échéant, Nutshell Lab décline toute responsabilité pour les conséquences liées au fonctionnement dégradé du Site et des services éventuellement proposés par Nutshell Lab, résultant (i) du refus de Cookies par l’Utilisateur (ii) de l’impossibilité pour Nutshell Lab d’enregistrer ou de consulter les Cookies nécessaires à leur fonctionnement du fait du choix de l’Utilisateur. Pour la gestion des Cookies et des choix de l’Utilisateur, la configuration de chaque navigateur est différente. Elle est décrite dans le menu d’aide du navigateur, qui permettra de savoir de quelle manière l’Utilisateur peut modifier ses souhaits en matière de Cookies.
-				</div>
-				<div>
-					À tout moment, l’Utilisateur peut faire le choix d’exprimer et de modifier ses souhaits en matière de Cookies. Nutshell Lab pourra en outre faire appel aux services de prestataires externes pour l’aider à recueillir et traiter les informations décrites dans cette section.
-				</div>
-				<div>
-					Enfin, en cliquant sur les icônes dédiées aux réseaux sociaux Twitter, Facebook, Linkedin et Google Plus figurant sur le Site de Nutshell Lab ou dans son application mobile et si l’Utilisateur a accepté le dépôt de cookies en poursuivant sa navigation sur le Site Internet ou l’application mobile de Nutshell Lab, Twitter, Facebook, Linkedin et Google Plus peuvent également déposer des cookies sur vos terminaux (ordinateur, tablette, téléphone portable).
-				</div>
-				<div>
-					Ces types de cookies ne sont déposés sur vos terminaux qu’à condition que vous y consentiez, en continuant votre navigation sur le Site Internet ou l’application mobile de Nutshell Lab. À tout moment, l’Utilisateur peut néanmoins revenir sur son consentement à ce que Nutshell Lab dépose ce type de cookies.
-				</div>
-			</div>
-			<div class="mt-6">
-				<nu-typography type="subtitle">BALISES (“TAGS”) INTERNET</nu-typography>
-			</div>
-			<div class="flex flex-col gap-4 ml-12">
-				<div>
-					Nutshell Lab peut employer occasionnellement des balises Internet (également appelées « tags », ou balises d’action, GIF à un pixel, GIF transparents, GIF invisibles et GIF un à un) et les déployer par l’intermédiaire d’un partenaire spécialiste d’analyses Web susceptible de se trouver (et donc de stocker les informations correspondantes, y compris l’adresse IP de l’Utilisateur) dans un pays étranger.
-				</div>
-				<div>
-					Ces balises sont placées à la fois dans les publicités en ligne permettant aux internautes d’accéder au Site, et sur les différentes pages de celui-ci.
-				</div>
-				<div>
-					Cette technologie permet à Nutshell Lab d’évaluer les réponses des visiteurs face au Site et l’efficacité de ses actions (par exemple, le nombre de fois où une page est ouverte et les informations consultées), ainsi que l’utilisation de ce Site par l’Utilisateur.
-				</div>
-				<div>
-					Le prestataire externe pourra éventuellement recueillir des informations sur les visiteurs du Site et d’autres sites Internet grâce à ces balises, constituer des rapports sur l’activité du Site à l’attention de Nutshell Lab, et fournir d’autres services relatifs à l’utilisation de celui-ci et d’Internet.
-				</div>
-			</div>
-		</div>
-		<nu-typography type="title">Droit applicable et attribution de juridiction</nu-typography>
-		<div class="flex flex-col gap-4">
-			<div>
-				Tout litige en relation avec l’utilisation du site Nutshell Lab est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de Lille
-			</div>
+		<div class="flex flex-col gap-12">
+			<section class="flex flex-col gap-2">
+				<div><span class="font-bold">N° Siret</span> : 83889368300022</div>
+				<div><span class="font-bold">Siège Social</span> : 229 RUE SOLFERINO 59000 LILLE</div>
+				<div><span class="font-bold">E-mail</span> : <nu-link :label="`Envoyer un email à hello@nutshell-lab.com`" to="mailto:hello@nutshell-lab.com" class="underline underline-offset-2">hello@nutshell-lab.com</nu-link></div>
+				<div><span class="font-bold">Site</span> : <nu-link :label="`Aller sur le site Nutshell`" to="/" class="underline underline-offset-2">nutshell-lab.com</nu-link></div>
+			</section>
+			<section class="flex flex-col gap-2">
+				<nu-typography type="title">Article 1 – Champ d’application</nu-typography>
+			</section>
+
+Article 1 – Champ d’application
+
+Les présentes Conditions Générales de Vente constituent, conformément à l’article L 441-1 du Code du Commerce, le socle unique de la relation commerciale entre les parties.
+
+Elles ont pour objet de définir les conditions dans lesquelles Verônica Bossardi – Miosotis Studio (« le Prestataire ») fournit aux Clients personne physique ou morale (« les Clients ou le Client ») qui lui en font la demande, via le site internet du Prestataire, par contact direct ou via un support papier, toute création dans le cadre de ses compétences de graphiste (« les Services ou le Service »).
+
+Elles s’appliquent, sans restriction ni réserve, à tous les Services rendus par le Prestataire auprès des Clients, quelles que soit les clauses pouvant figurer sur les documents du Client, et notamment ses conditions générales d’achat.
+
+Conformément à la réglementation en vigueur, ces Conditions Générales de Vente sont systématiquement communiquées à tout Client qui en fait la demande, pour lui permettre de passer commande auprès du Prestataire. Elles sont également communiquées à tout Client préalablement à la conclusion d’une convention unique visée aux articles L 441-3 et suivants du Code du Commerce, dans les délais légaux.
+
+Toute commande passé ou devis signé entraîne l’acceptation entière et sans réserve de la part du Client des présentes Conditions Générales de Vente.
+
+Le Prestataire se réserve le droit de modifier ses Conditions Générales de Vente, ses formules et ses tarifs à tout moment et sans préavis. Dans ce cas, les conditions applicables seront celles en vigueur à la date de la commande par le Client.
+
+Aucune condition particulière ne peut, sauf exception formelle écrite et signée par le Client et le Prestataire prévaloir contre les présentes Conditions Générales de Vente. Si l’une des clauses des présentes Conditions Générales de Vente se trouvait nulle ou annulée, les autres clauses n’en seraient pas pour autant annulées.
+
+Article 2 – Commandes
+
+2.1. Validité d’une commande
+
+Les ventes de Services ne sont parfaites qu’après établissement d’un devis et acceptation expresse et par écrit de la commande par le Client, matérialisée par sa signature du devis et puis un accusé de réception émanant du Prestataire.
+
+2.2. Modification des commandes
+
+Les éventuelles modifications de la commande demandées par le Client ne seront prises en compte, dans la limite des possibilités du Prestataire, que si elles sont notifiées par écrit, 10 (dix) jours au moins avant la date prévue pour la Fourniture de Services commandés, après signature par le Client d’un bon de commande spécifique et ajustement éventuel du prix.
+
+Le Client reconnaît et accepte que toute demande de modification ou aménagement des Prestations non compris dans le devis initial signé et validé par le Client, auront pour conséquence une facturation et un délai supplémentaires.
+
+2.3. Annulation de la commande
+
+En cas d’annulation de la commande par le Client après son acceptation par le Prestataire, pour quelque raison que ce soit hormis la force majeure, l’acompte versé à la commande, tel que défini à l’article « Conditions de règlement - Délais de règlement » des présentes Conditions Générales de Vente sera de plein droit acquis au Prestataire et ne pourra donner lieu à un quelconque remboursement.
+
+Article 3 – Tarifs
+
+Les prestations de Services sont fournies aux tarifs du Prestataire en vigueur au jour de la passation de la commande, selon le devis préalablement établi par le Prestataire et accepté par le Client, comme indiqué à l’article « Commandes » ci-dessus.
+
+Les tarifs s’entendent nets et HT.
+
+Une facture est établie par le Prestataire et remise au Client lors de chaque Fourniture de Services.
+
+Les conditions de détermination du coût des Services dont le prix ne peut être connu a priori ni indiqué avec exactitude, ainsi que la méthode de calcul du prix permettant de vérifier ce dernier, seront communiquées au Client ou feront l’objet d’un devis détaillé, à la demande du Client conformément aux dispositions de l’article L. 441-1, III du code de commerce.
+
+Le Client pourra bénéficier de réductions de prix, remises et ristournes, en fonction du nombre et de la fréquence, des Services commandées, ou de la régularité de ses commandes de Services, dans les conditions et selon les modalités décrites aux tarifs du Prestataire.
+
+Article 4 – Conditions de règlement
+
+4.1. Délais de règlement
+
+Un acompte correspondant à 50% (cinquante pourcent) du prix total des Services commandés est exigé lors de la signature du devis.
+
+Le solde du prix est payable au jour de la fourniture desdites prestations, dans les conditions définies à l’article « Modalités de Fourniture des Services » ci-après.
+
+Le Prestataire ne sera pas tenu de procéder à la fourniture des Services commandés par le Client si celui-ci ne lui en paye pas le prix dans les conditions et selon les modalités indiquées aux présentes Conditions Générales de Vente.
+
+4.2. Modalités de paiement
+
+Le prix est payable par carte bancaire sur la plateforme Stripe ou par virement bancaire sur le compte bancaire dont les informations ont été fournies par le Prestataire.
+
+4.3. Pénalités de retard
+
+En cas de retard de paiement et de versement des sommes dues par le Client au-delà du délai ci-dessus fixé, et après la date de paiement figurant sur la facture adressée à celui-ci, des pénalités de retard calculées sur la base de trois fois le taux d’intérêt légal en vigueur le jour de l’émission de la facture et d’une indemnité forfaitaire de quarante (40) euros seront automatiquement et de plein droit acquises au Prestataire, sans formalité aucune ni mise en demeure préalable.
+
+4.4. Non-respect des conditions de paiement
+
+En cas de non-respect des conditions de paiement figurant ci-dessus, le Prestataire se réserve en outre le droit de suspendre et/ou d’annuler la fourniture des services commandés par le Client, de suspendre l’exécution de ses obligations et d’annuler les éventuelles remises accordées à ce dernier.
+
+4.5. Absence de compensation
+
+Sauf accord exprès, préalable et écrit du Prestataire, et à condition que les créances et dettes réciproques soient certaines, liquides et exigibles, aucune compensation ne pourra être valablement effectuée par le Client entre d’éventuelles pénalités pour retard dans la Fourniture des Services commandés ou non-conformité à la commande, d’une part, et les sommes par le Client au Prestataire au titre de l’achat desdits Services, d’autre part.
+
+5. Modalités de fourniture des Services
+
+5.1. Planning
+
+Pour la bonne exécution des Prestations, les parties établiront un planning pour la réalisation des Services. Chacune s’engageant à respecter ledit planning, précision étant faite que le retard d’une étape peut impacter les étapes suivantes et le respect du délai de réalisation des Prestations.
+
+Pour la bonne exécution de la Prestation, le Client devra fournir des informations relatives au projet et/ou remplir un questionnaire (le « Brief ») créatif envoyé par le Prestataire. Ces informations, étant essentielles pour débuter la Prestation.
+
+5.2. Obligations du Prestataire
+
+Les Services demandés par le Client seront fournis dans un délai maximum établi sur le devis à compter de la réception par le Prestataire du Brief dûment rempli, ainsi que toutes informations nécessaires pour le début du projet.
+
+Ce délai ne constitue pas un délai de rigueur et le Prestataire ne pourra voir sa responsabilité engagée à l’égard du Client en cas de retard dans la fourniture des Services n’excédant pas 2 (deux) fois le délai initial ou au minimum 60 (soixante) jours. En cas de retard supérieur à (trois) fois le délai initial ou au minimum 120 (cent-vingt) jours, le Client pourra demander la résolution de la vente. Les acomptes déjà versés lui seront alors restitués par le Prestataire.
+
+La responsabilité du Prestataire ne pourra en aucun cas être engagée en cas de retard ou de suspension de la fourniture de la prestation imputable au Client, ou en cas de force majeure, d’incapacité de travail par suite de maladie ou d’accident. Le Prestataire devant avertir le Client dès le premier jour de son incapacité.
+
+Les Services seront fournis à distance.
+
+5.3. Obligations du Client
+
+Pour la bonne exécution des Prestations, le Client s’engage à :
+
+a) répondre à toutes les questions du Prestataire en lien avec les Prestations ;
+
+b) transmettre au Prestataire tous éléments, documents, informations nécessaires à la réalisation des Prestations et ce dans le respect du planning établi par les parties ;
+
+c) procéder au paiement du prix de la prestation conformément aux modalités de paiement décrites dans les présentes Conditions Générales de Vente ;
+
+d) s’assurer d’avoir les autorisations nécessaires pour l’utilisation de toute source communiquée au Prestataire en vue de leur insertion dans les différentes Prestations fournies. Le Client demeure seule et unique responsable de l’utilisation vis-à-vis de toute personne. Il revient au Client de se renseigner sur les conditions d’utilisation de ladite Source. Le Prestataire ne se verra jamais engager sa responsabilité pour l’utilisation d’une Source fournie par le Client.
+
+Une source pouvant être définie comme : tout document ou élément préexistant inclus dans l’œuvre ou partie de l’œuvre, objet de la commande, et qui peut, pour son utilisation, sa divulgation, sa reproduction ou son exploitation, exiger un paiement à son ou ses ayant(s) droit. Les sources peuvent être de natures variées : images, illustrations, sons, polices de caractères, etc.
+
+5.4. Frais Annexes
+
+Des frais techniques et éléments divers éventuellement nécessaires à la réalisation des prestations fournies par le Prestataire et ne relevant pas de ses offres ne sont pas compris dans les prix indiqués. Il s’agit par exemple des polices typographiques, des photographies ou illustrations issues de banques d’images, de la création ou révision de textes, des frais de gravure ou d’impression.
+
+Les frais de déplacement : coursier, avion, train, voiture, hébergement, repas seront facturés en sus (location ou frais kilométrique selon le tarif fiscal en valeur) si un rendez-vous avec le Client est nécessaire.
+
+5.5. Validations des Prestations
+
+Après la (ou les) phase(s) de création du projet, le Client s'engage à transmettre au Prestaire ses validations de manière claire et explicite par écrit. La validation des documents produits à chaque étape du projet est une condition indispensable au lancement de l’étape suivante.
+
+Le Client disposera d’un délai de 14 (quatorze) jours à compter de la fourniture des Services pour émettre, par écrit, selon la quantité précisée dans le devis, des demandes de modifications ou ajustements, auprès du Prestataire. Aucune réclamation ne pourra être valablement acceptée en cas de non-respect de ces formalités et délais par le Client.
+
+Le Prestataire n’est pas tenu responsable des retards entraînés par le délai dans la validation des documents et dans l’envoi d'informations pertinentes au projet par le Client.
+
+6. Responsabilité du Prestataire - Garantie
+
+Le Prestataire garantit, conformément aux dispositions légales, le Client, contre tout défaut de conformité des Services et tout vice caché, provenant d’un défaut de conception ou de fourniture desdits Services à l’exclusion de toute négligence ou faute du Client.
+
+La responsabilité du Prestataire ne peut être engagée qu’en cas de faute ou de négligence prouvée et est limitée aux préjudices directs à l’exclusion de tout préjudice indirect, de quelque nature que ce soit.
+
+Afin de faire valoir ses droits, le Client devra, sous peine de déchéance de toute action s’y rapportant, informer le Prestataire, par écrit, de l’existence des vices dans un délai maximum de 30 (trente) jours à compter de leur découverte. Le Prestataire rectifiera ou fera rectifier, à ses frais exclusifs, selon les modalités adéquates et agréées par le Client, les Services jugés défectueux.
+
+En tout état de cause, au cas où la responsabilité du Prestataire serait retenue, la garantie du Prestataire serait limitée au montant HT payé par le Client pour la fourniture des Services.
+
+7. Droit de propriété intellectuelle
+
+Aux termes des articles L.121-1 à L.121-9 du code de la propriété intellectuelle, le droit moral d’une création (comprenant droit de divulgation, droit au respect de l’œuvre et droit au retrait) est attaché à son créateur de manière perpétuelle et imprescriptible. Il est également rappelé qu’aux termes de l’article L.122-4 du même code, toute représentation ou reproduction intégrale ou partielle d’une œuvre faite sans le consentement de l’auteur ou de ses ayants droit est illicite, et punie selon les lois relatives au délit de contrefaçon. Il en est de même pour la traduction, l’adaptation ou la transformation, l’arrangement ou la reproduction par un art ou un procédé quelconque.
+
+La totalité de la production et des droits s’y rapportant, objet de la présente commande, demeure la propriété entière et exclusive du Prestataire tant que les factures émises ne sont pas payées en totalité par le Client, à concurrence du montant global de la commande et des avenants éventuels conclus en cours de prestation.
+
+Le Prestataire cède donc les droits d’utilisation sur les Prestations au Client sous les formes suivantes : tous supports destinés à la vente et à la communication auprès du public ainsi que sur des supports imprimés et numériques.
+
+Le Client s’oblige à respecter l’intégrité des Prestations. Le Client ne peut procéder à une modification de l’œuvre définitive sans le consentement préalable du Prestataire. La Prestation fournie fera l’objet d’une exploitation par le Client à compter de la conclusion du présent contrat pour une durée indéterminée.
+
+Sauf mention contraire figurant sur le devis, les fichiers de production et les sources restent la propriété du Prestataire.
+
+8. Mentions commerciales
+
+Le Prestataire se réserve la possibilité d’inclure dans la réalisation une mention commerciale indiquant clairement sa contribution, telle la formule « Design par Verônica Bossardi - Miosotis Studio » et lorsque le support le permet d’un lien hypertexte pointant vers le site commercial de son activité (www.miosotisstudio.com). La société cliente s’engage à ne pas s’y opposer, et à ne jamais supprimer ces informations.
+
+Le Prestataire se réserve le droit de diffuser publiquement les réalisations effectuées pour le Client, de les présenter dans le cadre de ses démarches de prospection commerciale, de communication externe, de publicité, d’afficher publiquement tous les éléments constitutifs de la Prestation, y compris les éléments créés par des auteurs tiers et inclus dans l’œuvre à la demande du Client (contenus textuels ou iconographiques) et la société cliente s’engage à ne jamais s’y opposer.
+
+9. Données personnelles
+
+Les données personnelles recueillies auprès des Clients font l’objet d’un traitement informatique réalisé par le Prestataire. Elles sont enregistrées dans son fichier Clients et sont indispensables au traitement de sa commande. Ces informations et données personnelles sont également conservées à des fins de sécurité, afin de respecter les obligations légales et réglementaires. Elles seront conservées aussi longtemps que nécessaire pour l’exécution des commandes et des garanties éventuellement applicables.
+
+Le responsable du traitement des données est le Prestataire. L’accès aux données personnelles sera strictement limité aux employés du responsable de traitement, habilités à les traiter en raison de leurs fonctions. Les informations recueillies pourront éventuellement être communiquées à des tiers liés à l’entreprise par contrat pour l’exécution de tâches sous-traitées, sans que l’autorisation du Client soit nécessaire.
+
+Dans le cadre de l’exécution de leurs prestations, les tiers n’ont qu’un accès limité aux données et ont l’obligation de les utiliser en conformité avec les dispositions de la législation applicable en matière de protection des données personnelles. En dehors des cas énoncés ci-dessus, le Prestataire s’interdit de vendre, louer, céder ou donner accès à des tiers aux données sans consentement préalable du Client, à moins d’y être contrainte en raison d’un motif légitime.
+
+Conformément à la réglementation applicable, le Client dispose d’un droit d’accès, de rectification, d’effacement, et de portabilité des données le concernant, ainsi que du droit de s’opposer au traitement pour motif légitime, droits qu’il peut exercer en s’adressant au responsable de traitement à l’adresse postale ou e-mail suivante : veronica@miosotisstudio.com. En cas de réclamation, le Client peut adresser une réclamation auprès du délégué à la protection des données personnelles du Prestataire.
+
+10. Imprévision
+
+Les présentes Conditions Générales de Vente excluent expressément le régime légal de l’imprévision prévu à l’article 1195 du code civil pour toutes les opérations de fourniture de Services du Prestataire au Client. Le Prestataire et le Client renoncent donc chacun à se prévaloir des dispositions de l’article 1195 du code civil et du régime de l’imprévision qui y est prévu, s’engageant à assumer ses obligations même si l’équilibre contractuel se trouve bouleversé par des circonstances qui étaient imprévisibles lors de la conclusion de la vente, quand bien même leur exécution s’avérerait excessivement onéreuse et à en supporter toutes les conséquences économiques et financières.
+
+11. Force majeure
+
+Les Parties ne pourront être tenues pour responsables si la non-exécution ou le retard dans l’exécution de l’une quelconque de leurs obligations, telles que décrites dans les présentes découle d’un cas de force majeure, au sens de l’article 1218 du code civil ou d’aléas sanitaires ou climatiques exceptionnels indépendants de la volonté des Parties.
+
+La Partie constatant l’événement devra sans délai informer l’autre Partie de son impossibilité à exécuter sa prestation et s’en justifier auprès de celle-ci. La suspension des obligations ne pourra en aucun cas être une cause de responsabilité pour non-exécution de l’obligation en cause, ni induire le versement de dommages et intérêts ou pénalités de retard.
+
+L’exécution de l’obligation est suspendue pendant toute la durée de la force majeure si elle est temporaire et ne dépasse pas une durée de 30 (trente) jours. Par conséquent, dès la disparition de la cause de la suspension de leurs obligations réciproques, les Parties feront tous leurs efforts pour reprendre le plus rapidement possible l’exécution normale de leurs obligations contractuelles. A cet effet, la Partie empêchée avertira l’autre de la reprise de son obligation par écrit ou tout acte extrajudiciaire. Si l’empêchement est définitif ou dépasse une durée de 30 (trente) jours, les présentes seront purement et simplement résolues selon les modalités définies à l’article « Résolution pour force majeure ».
+
+Pendant cette suspension, les Parties conviennent que les frais engendrés par la situation seront à la charge de la partie empêchée.
+
+12. Résolution du contrat
+
+12.1. Résolution pour force majeure
+
+La résolution de plein droit pour force majeure, ne pourra, nonobstant la clause Résolution pour manquement d’une partie à ses obligations figurant ci-après, avoir lieu que quatorze (14) jours après l’envoi d’une mise en demeure notifiée par lettre recommandée avec demande d’avis de réception ou tout acte extrajudiciaire.
+
+Toutefois, cette mise en demeure devra mentionner l’intention d’appliquer la présente clause.
+
+12.2. Résolution pour manquement d’une partie à ses obligations
+
+En cas de non-respect par l’une ou l’autre des parties des obligations mentionnées dans les présentes conditions générales de vente, le contrat pourra être résolu au gré de la Partie lésée. Il est expressément entendu que cette résolution pour manquement d’une partie à ses obligations aura lieu de plein droit 14 (quatorze) jours après la réception d’une mise en demeure de s’exécuter, restée, en tout ou partie, sans effet. La mise en demeure pourra être notifiée par lettre recommandée avec demande d’avis de réception ou tout acte extrajudiciaire.
+
+Cette mise en demeure devra mentionner l’intention d’appliquer la présente clause.
+
+12.3. Dispositions communes aux cas de résolution
+
+Il est expressément convenu entre les Parties que le débiteur d’une obligation de payer aux termes de la présente convention, sera valablement mis en demeure par la seule exigibilité de l’obligation, conformément aux dispositions de l’article 1344 du code civil.
+
+Les prestations échangées entre les Parties depuis la conclusion du contrat et jusqu’à sa résolution ne pouvant trouver leur utilité que par l’exécution complète de celui-ci, elles donneront lieu à restitution intégrale.
+
+13. Litiges
+
+13.1. Règlement amiable
+
+En vue de trouver ensemble une solution à tout litige qui surviendrait dans l’exécution du présent contrat, les contractants conviennent de se réunir dans les 15 (quinze) jours à compter de la réception d’une lettre recommandée avec demande d’avis de réception, notifiée par l’une des deux parties.
+
+La présente procédure de règlement amiable constitue un préalable obligatoire à l’introduction d’une action en justice entre les Parties. Toute action introduite en justice en violation de la présente clause serait déclarée irrecevable.
+
+Toutefois, si au terme d’un délai de 60 (soixante) jours, les Parties n’arrivaient pas à se mettre d’accord sur un compromis ou une solution, le litige serait alors soumis à la compétence juridictionnelle désignée ci-après.
+
+13.2. Attribution de juridiction
+
+Tous les litiges auxquels le présent contrat et les accords qui en découlent pourraient donner lieu, concernant tant leur validité, leur interprétation, leur exécution, leur résolution, leurs conséquences et leurs suites seront soumis aux tribunaux compétents dans les conditions de droit commun.
+
+14. Langue du contrat - Droit applicable
+
+Les présentes Conditions Générales de Vente et les opérations qui en découlent sont régies par le droit français.
+
+Elles sont rédigées en langue française. Dans le cas où elles seraient traduites en une ou plusieurs langues, seul le texte français ferait foi en cas de litige.
+
+15. Acceptation du Client
+
+Les présentes Conditions Générales de Vente sont expressément agréées et acceptés par le Client, qui déclare et reconnaît en avoir une parfaite connaissance, et renonce, de ce fait, à se prévaloir de tout document contradictoire et, notamment, ses propres conditions générales d’achat, qui seront inopposables au Prestataire, même s’il en a eu connaissance.
 		</div>
 	</div>
 </template>

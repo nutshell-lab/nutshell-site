@@ -1,6 +1,5 @@
 <script lang="ts" setup>
-import Parallaxy from "@lucien144/vue3-parallaxy"
-import Error from "~/error.vue"
+import Error from '/error.vue'
 
 const route = useRoute()
 const { data: doc } = await useAsyncData(route.path, queryContent(route.path).findOne)
@@ -33,11 +32,9 @@ const url = useRequestURL()
                             </nu-button>
                         </nu-link>
                     </div>
-                    <ClientOnly>
-                        <Parallaxy :speed="70" axis="y" class="h-full">
-                            <div :style="`--image-url: url(${doc.image?.src || '/blog/default.webp'})`" :class="`w-full h-[100vh] bg-center bg-cover bg-[image:var(--image-url)]`" />
-                        </Parallaxy>
-                    </ClientOnly>
+                    <nu-parallax :speed="70" axis="y" class="h-full">
+                        <div :style="`--image-url: url(${doc.image?.src || '/blog/default.webp'})`" :class="`w-full h-[100vh] bg-center bg-cover bg-[image:var(--image-url)]`" />
+                    </nu-parallax>
                 </div>
             </div>
             <article class="container px-layout">

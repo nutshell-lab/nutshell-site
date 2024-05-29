@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import Parallaxy from '@lucien144/vue3-parallaxy'
 
 const props = defineProps({
   error: Object
@@ -37,11 +36,9 @@ const code = computed(() => {
                         <div class="ml-auto max-w-[600px] flex flex-col @md:flex-row gap-12 @lg:items-center relative>">
                             <div class="absolute top-0 right-0">
                                 <div class="absolute h-[1px] bg-chinese-black w-screen right-0 bottom-0">
-                                    <ClientOnly>
-                                        <Parallaxy :speed="200" axis="x">
-                                            <div class="bg-cinnabar h-[1px] w-[30px] z-20 relative"/>
-                                        </Parallaxy>
-                                    </ClientOnly>
+                                    <nu-parallax :speed="200" axis="x">
+                                        <div class="bg-cinnabar h-[1px] w-[30px] z-20 relative"/>
+                                    </nu-parallax>
                                 </div>
                             </div>
                             <div class="flex-1"><nu-typography type="subtitle">Pas de panique on vous raccompagne</nu-typography></div>

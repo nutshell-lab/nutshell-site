@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import Parallaxy from '@lucien144/vue3-parallaxy'
 
 definePageMeta({
   theme: 'light',
@@ -42,11 +41,9 @@ definePageMeta({
         </section>
         <section id="articles" class="px-layout relative overflow-hidden">
             <div class="@2xl:ml-[400px] @lg:border-l @lg:pl-24 @md:py-32 py-20 flex flex-col gap-6">
-                <ClientOnly>
-                    <Parallaxy :speed="200" axis="y">
-                        <div class="vertical-text rotate-180"><nu-typography type="hero-title" class="text-stroke-silver !text-[380px] absolute bottom-0 -right-[372px] whitespace-pre">articles articles articles articles</nu-typography></div>
-                    </Parallaxy>
-                </ClientOnly>        
+                <nu-parallax :speed="200" axis="y">
+                    <div class="vertical-text rotate-180"><nu-typography type="hero-title" class="text-stroke-silver !text-[380px] absolute bottom-0 -right-[372px] whitespace-pre">articles articles articles articles</nu-typography></div>
+                </nu-parallax>        
                 <div class="flex flex-col gap-20">
                     <h2 data-aos="slide-up" class="relative z-20">
                         <nu-typography type="title" class="font-normal">Ou parcourez<br />nos <strong>derniers articles</strong></nu-typography>

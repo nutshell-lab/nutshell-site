@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import Parallaxy from '@lucien144/vue3-parallaxy'
 
 </script>
 
@@ -8,11 +7,9 @@ import Parallaxy from '@lucien144/vue3-parallaxy'
         <section class="relative bg-chinese-black pt-24">
             <div><nu-typography type="hero-title" class="text-stroke-raisin-black !text-[300px] absolute top-[200px] whitespace-pre">En avant</nu-typography></div>
             <div class="absolute top-[650px] left-[5vw]">
-                <ClientOnly>
-                    <Parallaxy :speed="200" axis="x" direction="opposite">
-                        <div><nu-typography type="hero-title" class="text-stroke-raisin-black !text-[300px] whitespace-pre">Featured</nu-typography></div>
-                    </Parallaxy>
-                </ClientOnly>
+                <nu-parallax :speed="200" axis="x" direction="opposite">
+                    <div><nu-typography type="hero-title" class="text-stroke-raisin-black !text-[300px] whitespace-pre">Featured</nu-typography></div>
+                </nu-parallax>
             </div>
             <div class="container @lg:px-layout w-full h-full relative">
                 <div class="text-alabaster @md:py-20 py-12 h-full flex flex-col justify-center relative overflow-hidden">

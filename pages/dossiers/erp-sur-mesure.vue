@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import Parallaxy from '@lucien144/vue3-parallaxy';
 </script>
 
 <template>
@@ -170,11 +169,9 @@ import Parallaxy from '@lucien144/vue3-parallaxy';
                     </div>
                     <div class="flex-1 overflow-visible relative hidden @lg:block">
                         <div class="absolute w-[800px] h-full top-24">
-                            <ClientOnly>
-                                <Parallaxy :speed="100" axis="y" class="w-full h-full">
-                                    <div :class="`w-full h-full bg-cover bg-center bg-[url('~/assets/illustrations/use_case_erp/view.webp')]`" />
-                                </Parallaxy>
-                            </ClientOnly>
+                            <nu-parallax :speed="100" axis="y" class="w-full h-full">
+                                <div :class="`w-full h-full bg-cover bg-center bg-[url('~/assets/illustrations/use_case_erp/view.webp')]`" />
+                            </nu-parallax>
                         </div>
                     </div>
                 </div>
@@ -229,11 +226,9 @@ import Parallaxy from '@lucien144/vue3-parallaxy';
         <section class="px-layout container relative flex gap-20 items-end">
             <div class="flex-shrink w-[300px] @lg:w-[500px] relative hidden @sm:block h-[500px]">
                 <div class="absolute w-full h-[140%] top-0">
-                    <ClientOnly>
-                        <Parallaxy :speed="100" axis="y" class="w-full h-full">
-                            <div :class="`w-full h-full bg-cover bg-center bg-[url('~/assets/illustrations/use_case_erp/roads.webp')]`" />
-                        </Parallaxy>
-                    </ClientOnly>
+                    <nu-parallax :speed="100" axis="y" class="w-full h-full">
+                        <div :class="`w-full h-full bg-cover bg-center bg-[url('~/assets/illustrations/use_case_erp/roads.webp')]`" />
+                    </nu-parallax>
                 </div>
             </div>
             <div class="flex-1 flex flex-col gap-4 pt-24 relative">
@@ -336,64 +331,60 @@ import Parallaxy from '@lucien144/vue3-parallaxy';
 
             <div class="flex flex-col-reverse @xl:flex-row @2xl:gap-32 gap-16 items-center pb-24">
                 <div class="@xl:pt-16 pt-8">
-                    <!-- <ClientOnly>
-                        <Parallaxy :speed="200" axis="y" class="w-full h-full"> -->
-                            <div class="flex @md:gap-12 gap-4 relative">
-                                <div class="flex flex-col gap-2 @md:text-right">
-                                    <div class="mb-8">
-                                        <nu-typography type="subtitle" class="font-normal">Sur-étagère</nu-typography>
-                                    </div>
-                                    <div class="@md:border-none border-b @md:h-auto h-[90px]">
-                                        Prêt à être utilisé
-                                    </div>
-                                    <div class="@md:border-none border-b @md:h-auto h-[90px]">
-                                        Logiciel éprouvé par le temps et stable
-                                    </div>
-                                    <div class="@md:border-none border-b @md:h-auto h-[90px]">
-                                        Pas d'évolutions à votre initiative
-                                    </div>
-                                    <div class="@md:border-none border-b @md:h-auto h-[90px]">
-                                        Taux de correspondance variable
-                                    </div>
-                                    <div class="@md:border-none border-b @md:h-auto h-[90px]">
-                                        Moins cher au début
-                                    </div>
-                                    <div class="@md:border-none border-b @md:h-auto h-[90px]">
-                                        Plus cher à la fin
-                                    </div>
-                                    <div class="@md:border-none border-b @md:h-auto h-[90px]">
-                                        Conformisation de vos processus
-                                    </div>
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <div class="mb-8">
-                                        <nu-typography type="subtitle" class="font-normal">sur mesure</nu-typography>
-                                    </div>
-                                    <div class="@md:border-none border-b @md:h-auto h-[90px]">
-                                        Temps de développement
-                                    </div>
-                                    <div class="@md:border-none border-b @md:h-auto h-[90px]">
-                                        Ajustements et bugs plus présents
-                                    </div>
-                                    <div class="@md:border-none border-b @md:h-auto h-[90px]">
-                                        Evolutions à la demande
-                                    </div>
-                                    <div class="@md:border-none border-b @md:h-auto h-[90px]">
-                                        100% adaptés à vos besoins
-                                    </div>
-                                    <div class="@md:border-none border-b @md:h-auto h-[90px]">
-                                        Plus cher au début
-                                    </div>
-                                    <div class="@md:border-none border-b @md:h-auto h-[90px]">
-                                        Moins cher à la fin
-                                    </div>
-                                    <div class="@md:border-none border-b @md:h-auto h-[90px]">
-                                        Accentuation de vos critères différenciants
-                                    </div>
-                                </div>
+                    <div class="flex @md:gap-12 gap-4 relative">
+                        <div class="flex flex-col gap-2 @md:text-right">
+                            <div class="mb-8">
+                                <nu-typography type="subtitle" class="font-normal">Sur-étagère</nu-typography>
                             </div>
-                        <!-- </Parallaxy>
-                    </ClientOnly> -->
+                            <div class="@md:border-none border-b @md:h-auto h-[90px]">
+                                Prêt à être utilisé
+                            </div>
+                            <div class="@md:border-none border-b @md:h-auto h-[90px]">
+                                Logiciel éprouvé par le temps et stable
+                            </div>
+                            <div class="@md:border-none border-b @md:h-auto h-[90px]">
+                                Pas d'évolutions à votre initiative
+                            </div>
+                            <div class="@md:border-none border-b @md:h-auto h-[90px]">
+                                Taux de correspondance variable
+                            </div>
+                            <div class="@md:border-none border-b @md:h-auto h-[90px]">
+                                Moins cher au début
+                            </div>
+                            <div class="@md:border-none border-b @md:h-auto h-[90px]">
+                                Plus cher à la fin
+                            </div>
+                            <div class="@md:border-none border-b @md:h-auto h-[90px]">
+                                Conformisation de vos processus
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="mb-8">
+                                <nu-typography type="subtitle" class="font-normal">sur mesure</nu-typography>
+                            </div>
+                            <div class="@md:border-none border-b @md:h-auto h-[90px]">
+                                Temps de développement
+                            </div>
+                            <div class="@md:border-none border-b @md:h-auto h-[90px]">
+                                Ajustements et bugs plus présents
+                            </div>
+                            <div class="@md:border-none border-b @md:h-auto h-[90px]">
+                                Evolutions à la demande
+                            </div>
+                            <div class="@md:border-none border-b @md:h-auto h-[90px]">
+                                100% adaptés à vos besoins
+                            </div>
+                            <div class="@md:border-none border-b @md:h-auto h-[90px]">
+                                Plus cher au début
+                            </div>
+                            <div class="@md:border-none border-b @md:h-auto h-[90px]">
+                                Moins cher à la fin
+                            </div>
+                            <div class="@md:border-none border-b @md:h-auto h-[90px]">
+                                Accentuation de vos critères différenciants
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="flex flex-row @xl:flex-col gap-16 @2xl:max-w-[400px] @xl:max-w-[300px]">
                     <div class="flex-1 flex flex-col gap-6">

@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import Parallaxy from '@lucien144/vue3-parallaxy';
 </script>
 
 <template>
@@ -7,22 +6,18 @@ import Parallaxy from '@lucien144/vue3-parallaxy';
 		<div>
 			<nu-typography type="hero-title" class="!font-bold text-stroke-white !normal-case !text-[12rem] !leading-[6.75rem]">nutshellnutshellnutshell</nu-typography>
 		</div>
-		<ClientOnly>
-			<Parallaxy :speed="200" axis="y">
-				<div>
-					<nu-typography type="hero-title" class="!font-bold text-stroke-white !normal-case !text-[12rem] !leading-[6.75rem]">nutshellnutshellnutshell</nu-typography>
-				</div>
-			</Parallaxy>
-		</ClientOnly>
+		<nu-parallax :speed="200" axis="y">
+			<div>
+				<nu-typography type="hero-title" class="!font-bold text-stroke-white !normal-case !text-[12rem] !leading-[6.75rem]">nutshellnutshellnutshell</nu-typography>
+			</div>
+		</nu-parallax>
 		<div>
 			<nu-typography type="hero-title" class="!font-bold text-stroke-white !normal-case !text-[12rem] !leading-[6.75rem]">nutshellnutshellnutshell</nu-typography>
 		</div>
-		<ClientOnly>
-			<Parallaxy :speed="375" axis="y">
-				<div>
-					<nu-typography type="hero-title" class="!font-bold text-stroke-white !normal-case !text-[12rem] !leading-[6.75rem]">nutshellnutshellnutshell</nu-typography>
-				</div>
-			</Parallaxy>
-		</ClientOnly>
+		<nu-parallax :speed="375" axis="y">
+			<div>
+				<nu-typography type="hero-title" class="!font-bold text-stroke-white !normal-case !text-[12rem] !leading-[6.75rem]">nutshellnutshellnutshell</nu-typography>
+			</div>
+		</nu-parallax>
 	</div>
 </template>

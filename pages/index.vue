@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import Parallaxy from "@lucien144/vue3-parallaxy"
+import logo_designrush from '~/assets/partners/logo_designrush.svg'
+import logo_miosotisstudio from '~/assets/partners/logo_miosotisstudio.svg'
 
 const partners = [
     {
@@ -49,7 +50,7 @@ const services = [
 				<nu-hero-section cta="valorisons le votre">
 					<template #title>
 						<h2 class="max-w-[700px]" data-aos="slide-up">
-							<nu-typography type="title">
+							<nu-typography type="title" class="font-regular">
 								Comprendre le métier et le valoriser avec la tech.
 							</nu-typography>
 						</h2>
@@ -123,11 +124,9 @@ const services = [
 					</DataQuery>
 					<div class="relative">
 						<div class="absolute h-[1px] bg-alabaster w-screen left-0 bottom-0">
-							<ClientOnly>
-								<Parallaxy :speed="800" axis="x" direction="opposite">
-									<div class="bg-cinnabar h-[1px] w-[30px] z-20 relative"/>
-								</Parallaxy>
-							</ClientOnly>
+							<nu-parallax :speed="800" axis="x" direction="opposite">
+								<div class="bg-cinnabar h-[1px] w-[30px] z-20 relative"/>
+							</nu-parallax>
 						</div>
 					</div>
 				</div>

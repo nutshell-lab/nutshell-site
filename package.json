@@ -19,6 +19,7 @@
     "nuxt": "^3.11.2",
     "nuxt-simple-sitemap": "^4.1.10",
     "tailwindcss-text-fill-stroke": "^2.0.0-beta.1",
+    "typescript": "^5.4.2",
     "vite-plugin-vsharp": "^1.6.0"
   },
   "dependencies": {
