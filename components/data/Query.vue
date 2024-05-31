@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import projects from '~/data/projets'
+import dossiers from '~/data/dossiers'
 
 type Resources = 'dossiers' | 'projets'
 
@@ -18,26 +20,20 @@ const props = defineProps({
     },
 })
 
-const { data: _data, pending, error, refresh } = await useAsyncData(
-  `data-${props.resource}`,
-  async () => {
-    let data
-    switch(props.resource) {
-        case 'projets':
-            data = await import('~/data/projets').then(m => m.default || m)
-            break;
-        default: data = await import('~/data/dossiers').then(m => m.default || m);
+const data = computed(() => {
+        let data
+        switch(props.resource) {
+            case 'projets':
+                data = projects
+                break;
+            default: data = dossiers
+        }
+        return (data || [])?.filter((item) => !!props.where ? props.where(item) : item)
     }
-    return data as any[]
-  }
-)
-
-const data = computed(() => (_data.value || [])
-    ?.filter((item) => !!props.where ? props.where(item) : item)
 )
 
 </script>
 
 <template>
-    <slot v-bind="{ data, pending, error, refresh }" />
+    <slot v-bind="{ data }" />
 </template>

@@ -24,27 +24,24 @@ const onSwiper = (s: Swiper) => {
 </script>
 
 <template>
-	<ClientOnly>
-		<slot name="fallback" />
-		<div class="flex flex-col gap-6">
-			<div>
-				<swiper-component
-					:slides-per-view="'auto'"
-					:space-between="spaceBetween"
-					:centered-slides="centeredSlides"
-					class="!overflow-visible w-full"
-					@swiper="onSwiper"
-				>
-					<swiper-slide class="@sm:!w-[fit-content]" v-for="(item, index) in items">
-						<div data-aos="slide-up" :data-aos-delay="50 * index">
-							<slot v-bind="{ item, index }"/>
-						</div>
-					</swiper-slide>
-				</swiper-component>
-			</div>
-			<button v-if="swiper" @click="swiper.slideNext()" class="flex items-center gap-4 justify-start @md:justify-end @md:px-32 px-8">
-				<nu-typography type="cta-text">SWIPE</nu-typography><nu-arrow right />
-			</button>
+	<div class="flex flex-col gap-6">
+		<div>
+			<swiper-component
+				:slides-per-view="'auto'"
+				:space-between="spaceBetween"
+				:centered-slides="centeredSlides"
+				class="!overflow-visible w-full"
+				@swiper="onSwiper"
+			>
+				<swiper-slide class="@sm:!w-[fit-content]" v-for="(item, index) in items">
+					<div data-aos="slide-up" :data-aos-delay="50 * index">
+						<slot v-bind="{ item, index }"/>
+					</div>
+				</swiper-slide>
+			</swiper-component>
 		</div>
-	</ClientOnly>
+		<button v-if="swiper" @click="swiper.slideNext()" class="flex items-center gap-4 justify-start @md:justify-end @md:px-32 px-8">
+			<nu-typography type="cta-text">SWIPE</nu-typography><nu-arrow right />
+		</button>
+	</div>
 </template>
