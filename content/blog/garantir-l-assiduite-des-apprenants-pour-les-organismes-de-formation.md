@@ -3,8 +3,8 @@ title: "Garantir l'assiduité des apprenants pour les organismes de formation"
 short_description: "Parce qu'il est critique pour votre entreprise, un ERP doit être soigneusement choisi pour correspondre au cas particulier qu'est votre entreprise."
 description: 'Choisir un ERP, pas facile ? Retrouvez nos 8 critères pour prendre en compte toutes les implications et faire un choix avisé.'
 image:
-  src: '/blog/criteria.webp'
-  alt: "Une image illustrant les critères de l'article"
+  src: '/blog/hardwork.webp'
+  alt: "Un individus travaillant d'arrache pied"
   width: 400
   height: 300
 created_at: 2024-03-24
