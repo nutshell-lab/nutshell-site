@@ -7,7 +7,7 @@ image:
   alt: "Une image peignant le beau paysage lillois"
   width: 400
   height: 300
-created_at: 18/05/2024
+created_at: 2024-05-18
 category: NOUS
 featured: true
 ---

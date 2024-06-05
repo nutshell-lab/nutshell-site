@@ -7,7 +7,7 @@ image:
   alt: "2 membres de Nutshell travaillant sur des sujets complexes"
   width: 400
   height: 300
-created_at: 14/02/2024
+created_at: 2024-02-14
 category: MARCHE
 featured: true
 ---

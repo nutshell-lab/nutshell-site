@@ -7,7 +7,7 @@ image:
   alt: "Le logo des activateurs france num"
   width: 400
   height: 300
-created_at: 24/05/2024
+created_at: 2024-05-24
 category: MARCHE
 featured: true
 ---

@@ -61,7 +61,7 @@ definePageMeta({
                                         <div class="flex-1 flex gap-12 py-8">
                                             <div class="flex flex-col gap-4 pr-6 w-full justify-center">
                                                 <div class="flex gap-6 items-center">
-                                                    <div><nu-typography type="caption" class="!font-bold">{{ item.created_at }}</nu-typography></div>
+                                                    <div><nu-typography type="caption" class="!font-bold">{{ new Date(item.created_at).toLocaleDateString() }}</nu-typography></div>
                                                     <div class="bg-onyx h-[6px] w-[6px]" />
                                                     <div><nu-typography type="cta-text" class="!font-bold">{{ item.category }}</nu-typography></div>
                                                 </div>

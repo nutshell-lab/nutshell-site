@@ -7,7 +7,7 @@ image:
   alt: "Une image illustrant les critères de l'article"
   width: 400
   height: 300
-created_at: 24/03/2024
+created_at: 2024-03-24
 category: FORMATION PRO
 featured: true
 ---

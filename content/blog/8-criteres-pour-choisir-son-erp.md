@@ -7,7 +7,7 @@ image:
   alt: "Une image illustrant les critères de l'article"
   width: 400
   height: 300
-created_at: 15/01/2024
+created_at: 2024-01-15
 category: ERP
 featured: true
 ---

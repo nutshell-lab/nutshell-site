@@ -7,7 +7,7 @@ image:
   alt: 'Une incroyable image de cookies.'
   width: 1024
   height: 819
-created_at: 12/01/2024
+created_at: 2024-01-12
 category: RGPD
 featured: true
 ---

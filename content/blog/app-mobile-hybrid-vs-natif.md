@@ -7,7 +7,7 @@ image:
   alt: ""
   width: 400
   height: 300
-created_at: 05/06/2024
+created_at: 2024-06-05
 category: PRODUIT
 featured: true
 ---
