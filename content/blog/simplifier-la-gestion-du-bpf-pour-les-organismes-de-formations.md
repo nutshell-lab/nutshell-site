@@ -1,5 +1,5 @@
 ---
-title: "Simplifiez la gestion de votre BPF avec Nutshell Lab"
+title: "Simplifiez la gestion de votre BPF"
 short_description: "Dites adieu au BPF laborieux ! Nutshell Lab automatise la gestion de votre bilan pour vous faire gagner du temps et simplifier votre vie. Contactez-nous pour un audit gratuit !"
 description: "Piloter votre activité et automatiser votre BPF, c'est possible avec Nutshell Lab."
 image:
