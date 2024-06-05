@@ -44,7 +44,7 @@ const url = useRequestURL()
                     </h1>
                     <div class="relative pb-6 flex justify-between @sm:pr-layout gap-6">
                         <div class="flex gap-6 items-center">
-                            <div><nu-typography type="caption" class="text-chinese-black !font-bold">{{ doc.created_at }}</nu-typography></div>
+                            <div><nu-typography type="caption" class="text-chinese-black !font-bold">{{ new Date(doc.created_at).toLocaleDateString() }}</nu-typography></div>
                             <div class="bg-cinnabar h-[6px] w-[6px]" />
                             <div><nu-typography type="cta-text" class="text-cinnabar !font-bold">{{ doc.category }}</nu-typography></div>
                         </div>
@@ -97,7 +97,7 @@ const url = useRequestURL()
                                     <nu-link :label="`Lire l'article ${item.title}`" :to="item._path">
                                         <nu-tile
                                             :title="item.title"
-                                            :category="`${item.created_at} ${item.category}`"
+                                            :category="`${new Date(item.created_at).toLocaleDateString()} ${item.category}`"
                                             :picture="item.image?.src"
                                             :caption="`Article 00${index + 1}`"
                                         />
