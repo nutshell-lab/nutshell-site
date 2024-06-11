@@ -53,7 +53,7 @@ Nutshell Lab est une société d'innovation spécialisée dans la conception de 
 
 * [Keyro.fr](https://keyro.fr?utm_source=nutshell-lab)
 * [Olecio.fr](https://olecio.fr?utm_source=nutshell-lab)
-* [Rigular.com](https://rigular.com?utm_source=nutshell-lab)
+* [Rigular.com](https://www.rigular.com/fr?utm_source=nutshell-lab)
 
 Vous souhaitez vous aussi mettre en place un produit innovant sous la forme d'une plateforme SaaS et vous comptez proposer :
 
