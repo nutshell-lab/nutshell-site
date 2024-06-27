@@ -12,6 +12,7 @@ category: PRODUIT
 featured: true
 ---
 
+:table-of-content
 
 Développer une application mobile est devenu une étape incontournable pour de nombreuses entreprises. Mais face aux deux options principales, native ou hybride, le choix peut s'avérer cornélien.
 

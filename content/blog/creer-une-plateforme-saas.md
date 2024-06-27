@@ -12,6 +12,8 @@ category: SAAS
 featured: true
 ---
 
+:table-of-content
+
 Le marché du logiciel connait une transformation majeure avec l'essor des plateformes SaaS (Software as a Service). Ce modèle, qui propose des logiciels hébergés dans le cloud et accessibles via une simple connexion internet, attire de plus en plus d'entreprises et bouleverse les pratiques traditionnelles.
 
 ## Un modèle plébiscité par les entreprises

@@ -14,6 +14,8 @@ featured: true
 
 Keyro, éditeur de solutions SaaS pour les organismes de formation, souhaitait proposer une technologie permettant de jauger l'assiduité des participants. Nutshell Lab a relevé le défi en mettant en place un système performant de collecte et d'analyse de données.
 
+:table-of-content
+
 ## Un système de suivi granulaire
 
 Des sondes intelligentes ont été intégrées au produit SaaS de Keyro. Elles permettent de capter des informations détaillées sur le comportement des participants :
