@@ -2,6 +2,44 @@
 import logo_designrush from '~/assets/partners/logo_designrush.svg'
 import logo_miosotisstudio from '~/assets/partners/logo_miosotisstudio.svg'
 
+const mockups = [
+	{
+		project: "C-Certif",
+		path: "/projets",
+		picture: "/mockups/mock_c_certif_intro.jpg.webp"
+	},
+	{
+		project: "Constructys",
+		path: "/projets",
+		picture: "/mockups/mock_constructys_intro.jpg.webp"
+	},
+	{
+		project: "Keyro",
+		path: "/projets",
+		picture: "/mockups/mock_keyro_intro.jpg.webp"
+	},
+	{
+		project: "Keyro",
+		path: "/projets",
+		picture: "/mockups/mock_keyro_responsive.jpg.webp"
+	},
+	{
+		project: "Olecio",
+		path: "/projets",
+		picture: "/mockups/mock_olecio_app.jpg.webp"
+	},
+	{
+		project: "Olecio",
+		path: "/projets",
+		picture: "/mockups/mock_olecio_admin.jpg.webp"
+	},
+	{
+		project: "Olecio",
+		path: "/projets",
+		picture: "/mockups/mock_olecio_laptop.jpg.webp"
+	},
+]
+
 const partners = [
     {
         name: "Miosotis Studio",
@@ -63,6 +101,16 @@ const services = [
 						</div>
 					</template>
 				</nu-hero-section>
+			</section>
+
+			<section id="mockups" class="">
+				<div class="small-container px-layout grid grid-cols-2 w-full gap-4 py-16">
+					<div v-for="(m, i) in mockups" :key="i" class="">
+						<nu-link :label="`Découvrez le projet ${m.project}`" :to="m.path">
+							<NuxtImg v-if="m.picture" :src="m.picture" height="100%" width="100%" class="" :alt="`Mockup présentant un projet`" :title="`Mockup présentant un projet`" loading="lazy"/>
+						</nu-link>
+					</div>
+				</div>
 			</section>
 
 			<section id="projects" class="bg-gradient-to-b from-chinese-black from-85% to-alabaster to-85% text-alabaster">
