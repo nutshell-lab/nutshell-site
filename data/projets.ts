@@ -23,17 +23,15 @@ export default [
 		description:
 			"Keyro est l'émergence d'un produit SAAS pour fournir aux organismes de formation un logiciel ERP+LMS pour digitaliser leur sessions de formations. La plateforme accueille déjà plus de 10k apprenants tous les ans.",
         path: "/projets/keyro",
-		disabled: true
 	},
     {
         id: 'brokers',
-        title: "Brokers",
+        title: "Rigular",
         highlight: "131Md€",
         picture: prjct_broker,
         description:
             "Les marchés financiers tradent chaque jours des centaines de milliards d’actifs. En analysant les chats de ses traders, notre solution prépare des trades pertinents en temps réel.",
-        path: "/projets/brokers",
-		disabled: true,
+        path: "/projets/rigular",
     },
     {
         id: 'atlas',
@@ -43,7 +41,6 @@ export default [
         description:
             "L’évolution de la législation autour de la formation professionnelle a poussé Atlas à se doter d’une plateforme d’examens en ligne automatisée ayant déjà certifié plus de 1000 apprenants.",
         path: "/projets/atlas",
-		disabled: true,
     },
     {
         id: 'constructys',
@@ -53,7 +50,6 @@ export default [
         description:
             "Pour préparer les JO 2024, il faut augmenter massivement la masse salariale de la branche BTP. Pour se faire Constructys nous fait mettre en place une solution de reconversion de métier à 180 métiers cibles.",
         path: "/projets/constructys",
-		disabled: true,
     },
     {
         id: 'olecio',
@@ -63,6 +59,5 @@ export default [
 		description:
 			"La plateforme Olecio permet à chacun de découvrir le métier de ses rêve en parcourant des milliers de contenus gratuits. En fonction du profil des visiteurs, des métiers puis des formations leurs sont suggérés tout au long de leur expérience de navigation.",
         path: "/projets/olecio",
-		disabled: true
 	},
 ]

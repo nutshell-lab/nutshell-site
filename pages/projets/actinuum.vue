@@ -27,32 +27,7 @@ const keywords = [
 <template>
 	<div class="h-full bg-alabaster">
 		<section class="pt-32 pb-32 bg-chinese-black text-alabaster text-stroke-alabaster flex flex-col @md:gap-20 gap-12 relative">
-			<nu-parallax :speed="300" axis="x">
-      			<template #fallback>
-					<!-- this will be rendered on server side -->
-					<div class="flex gap-14 relative left-[-267px]">
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-						<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-						<nu-typography type="hero-title">Actinuum</nu-typography>
-					</div>
-      			</template>
-				<div class="flex gap-14">
-					<nu-typography type="hero-title">Actinuum</nu-typography>
-					<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-					<nu-typography type="hero-title">Actinuum</nu-typography>
-					<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-					<nu-typography type="hero-title">Actinuum</nu-typography>
-					<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-					<nu-typography type="hero-title">Actinuum</nu-typography>
-					<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-					<nu-typography type="hero-title">Actinuum</nu-typography>
-					<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-					<nu-typography type="hero-title">Actinuum</nu-typography>
-					<nu-typography type="hero-title-filled">Actinuum</nu-typography>
-				</div>
-			</nu-parallax>
+			<nu-striped-word word="actinuum" />
 			<div class="container px-layout flex gap-16 overflow-visible">
 				<div class="flex-shrink w-[680px] gap-16 flex flex-col justify-between">
 					<h1>
