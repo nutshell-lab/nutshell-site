@@ -87,6 +87,42 @@ const testimonials = [
 			</div>
 		</section>
 
+		<section class="bg-gradient-to-b from-chinese-black from-80% to-alabaster to-80% text-alabaster">
+			<div class="px-layout container flex flex-col gap-12 py-20 leading-7">
+				<h2 data-aos="slide-up">
+					<nu-typography type="title">10 ans d'expérience<br />dans la formation
+						professionnelle</nu-typography>
+				</h2>
+				<p>
+					Avec près d'une vingtaine de projets pour différents acteur de la formation professionnel : des organismes de
+					formations, aux organes publiques en passant par les EdStartup, les équipes de Nutshell disposent d'un solide
+					arsenal pour concevoir des solutions sur-mesures pour le secteur.
+				</p>
+				<div class="flex flex-col items-end gap-8">
+					<div class="@lg:pl-32 flex flex-col @lg:grid @lg:grid-cols-2 gap-6">
+						<DataQuery v-slot="{ data }" resource="projets"
+							:where="(p) => ['actinuum', 'keyro', 'atlas', 'constructys'].includes(p.id)">
+							<nu-link :label="`Découvrez le projet ${p.title}`" :to="p.path" :disabled="p.disabled"
+								v-for="(p, i) in data">
+								<nu-project-preview :class="{ '@lg:mt-8': i === 0, '@lg:-mt-8': i === 3 }" :title="p.title"
+									:highlight="p.highlight" :picture="p.picture" :description="p.description" :disabled="p.disabled"
+									data-aos="slide-up"></nu-project-preview>
+							</nu-link>
+						</DataQuery>
+					</div>
+					<nu-link label="Découvrez nos autres projets" to="/projets">
+						<div class="flex text-cinnabar items-center gap-4 justify-center transition-all duration-300 hover:gap-6">
+							<nu-typography type="cta-text" class="">Voir tous les projets</nu-typography>
+							<nu-arrow right />
+						</div>
+					</nu-link>
+				</div>
+			</div>
+		</section>
+
+
+
+
 		<!-- Section Fonctionnalités -->
 		<section class="container py-8 px-layout">
 			<h2 data-aos="slide-up">
@@ -107,7 +143,7 @@ const testimonials = [
 					</ul>
 				</div>
 			</div>
-			<div class="w-full h-[500px] @2xl:w-[500px]">
+			<div class="w-full h-[500px]">
 				<div
 					:class="`w-full bg-cover bg-center h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_olecio/admin.webp')] mix-blend-multiply`" />
 			</div>

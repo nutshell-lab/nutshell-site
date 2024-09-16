@@ -214,7 +214,7 @@ const keywords = [
 				<div class="flex flex-col items-end gap-8">
 					<div class="@lg:pl-32 flex flex-col @lg:grid @lg:grid-cols-2 gap-6">
 						<DataQuery v-slot="{ data }" resource="projets" :where="(p) => ['keyro', 'atlas', 'constructys', 'olecio'].includes(p.id)">
-							<nu-link :label="`Découvrez le projet ${p.title}`" :to="`/projets/${p.slug}`" :disabled="p.disabled"
+							<nu-link :label="`Découvrez le projet ${p.title}`" :to="p.path" :disabled="p.disabled"
 								v-for="(p, i) in data">
 								<nu-project-preview :class="{ '@lg:mt-8': i === 0, '@lg:-mt-8': i === 3 }" :title="p.title" :highlight="p.highlight"
 									:picture="p.picture" :description="p.description" :disabled="p.disabled" data-aos="slide-up"></nu-project-preview>
