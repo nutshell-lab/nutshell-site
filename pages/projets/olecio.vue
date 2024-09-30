@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 
 const results = [
-	"Plateforme accueillant des dizaines de milliers d'utilisateurs",
+	"Plateforme accueillant des milliers d'utilisateurs",
 	"Système de notification personnalisé basé sur le comportement utilisateur",
 	"Expérience utilisateur engageante via des contenus distracto-pédagogiques",
 	"Profilage automatique des utilisateurs pour personnaliser les parcours",
