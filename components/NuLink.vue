@@ -22,6 +22,8 @@ defineProps({
 </template>
 
 <style>
+@reference "~/assets/css/main.css";
+
 .link.hover .link__inner::before {
 	@apply bg-cinnabar w-[0%] absolute left-[-10%] transition-all ease-in-out z-10 duration-500 h-[18px] bottom-[1%];
 	transform: rotate(-2deg);

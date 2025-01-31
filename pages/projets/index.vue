@@ -130,6 +130,8 @@ const grid = computed<GridTile[]>(() => [
 </template>
 
 <style scoped>
+@reference "~/assets/css/main.css";
+
 .tile::before {
 	@apply bg-gradient-to-r from-cinnabar from-50% to-onyx to-50% w-[350%] h-[350%] left-[-210%] top-[-50%] absolute transition z-10 ease-in-out duration-500 mix-blend-multiply;
 	transform: rotate(5deg);

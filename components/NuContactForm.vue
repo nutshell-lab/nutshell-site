@@ -79,6 +79,7 @@ const onSubmit = handleSubmit(values => {
 </template>
 
 <style scoped>
+@reference "~/assets/css/main.css";
 
 .modal::before {
     @apply w-full h-full absolute bg-dark-black opacity-95;

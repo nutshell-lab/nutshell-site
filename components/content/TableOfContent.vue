@@ -39,6 +39,7 @@ const table_of_content = (body: MarkdownRoot | null) => {
 </template>
 
 <style scoped>
+@reference "~/assets/css/main.css";
 
 nav :deep(ol) {
     @apply !list-none font-silka !mb-0;

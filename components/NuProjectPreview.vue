@@ -34,6 +34,8 @@ defineProps({
 </template>
 
 <style scoped>
+@reference "~/assets/css/main.css";
+
 .tile__inner::before {
 	@apply bg-chinese-black w-[130%] h-[130%] left-[-15%] top-[-10%] absolute transition z-10 ease-in-out duration-500 mix-blend-normal;
 	transform: rotate(5deg);

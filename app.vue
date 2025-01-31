@@ -24,6 +24,8 @@ useSeoMatrix()
 </template>
 
 <style>
+@reference "~/assets/css/main.css";
+
 html, body, #__nuxt {
   height: 100%;
   width: 100%;

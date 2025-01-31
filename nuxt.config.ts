@@ -1,60 +1,62 @@
-import vsharp from 'vite-plugin-vsharp';
+import tailwindcss from "@tailwindcss/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
- devtools: { enabled: true },
+  devtools: { enabled: true },
 
- imports: {
-					presets: [
-									{
-													from: 'vee-validate',
-													imports: ['useForm']
-									}
-					]
+	vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+  },
+
+  imports: {
+		presets: [
+			{
+				from: 'vee-validate',
+				imports: ['useForm']
+			}
+		]
 	},
 
- // vite: {
-	// 	plugins: [vsharp()],
-	// },
+
 	css: ['~/assets/css/main.css'],
 
- modules: [
-					'@nuxtjs/plausible',
-					'@nuxtjs/tailwindcss',
-					'@nuxt/content',
-					'nuxt-simple-sitemap',
-					'nuxt-route-meta',
-					"@nuxt/image"
+  modules: [
+		'@nuxtjs/plausible',
+		'@nuxt/content',
+		'nuxt-simple-sitemap',
+		"@nuxt/image"
 	],
 
- plausible: {
-					domain: 'nutshell-lab.com',
-					apiHost: 'https://plausible.nutshell-lab.com'
+  plausible: {
+		domain: 'nutshell-lab.com',
+		apiHost: 'https://plausible.nutshell-lab.com'
 	},
 
- site: {
-					url: 'https://nutshell-lab.com',
+  site: {
+		url: 'https://nutshell-lab.com',
 	},
 
- content: {
+ 	content: {
 					contentHead: false
 	},
 
- sitemap: {
-					strictNuxtContentPaths: true,
-					exclude: [
-									'/mentions-legales',
-									'/faq',
-									'/cgv',
-									'/services'
-					],
+ 	sitemap: {
+		strictNuxtContentPaths: true,
+		exclude: [
+			'/mentions-legales',
+			'/faq',
+			'/cgv',
+			'/services'
+		],
 	},
 
- ignore: [
-					process.env.CF_PAGES == "1" ? 'pages/dev/*' : '',
-					process.env.CF_PAGES == "1" ? 'pages/faq.vue' : '',
-					process.env.CF_PAGES == "1" ? 'pages/cgv.vue' : '',
-					process.env.CF_PAGES == "1" ? 'pages/services.vue' : '',
+ 	ignore: [
+		process.env.CF_PAGES == "1" ? 'pages/dev/*' : '',
+		process.env.CF_PAGES == "1" ? 'pages/faq.vue' : '',
+		process.env.CF_PAGES == "1" ? 'pages/cgv.vue' : '',
+		process.env.CF_PAGES == "1" ? 'pages/services.vue' : '',
 	],
 
  // fonts: {
@@ -71,29 +73,28 @@ export default defineNuxtConfig({
 	// 	}
 	// },
 	app: {
-					pageTransition: { name: 'page', mode: 'out-in' },
-					head: {
-									htmlAttrs: {
-											lang: 'fr'
-									},
-									meta: [
-													{
-																	name: 'theme-color',
-																	content: '#161616',
-													},
-									],
-									link: [
-													{
-																	rel: 'icon',
-																	href: '/favicon.ico'
-													},
-													{
-																	rel: 'apple-touch-icon',
-																	href: '/apple-touch-icon.png'
-													}
-									]
-					}
+		pageTransition: { name: 'page', mode: 'out-in' },
+		head: {
+			htmlAttrs: {
+				lang: 'fr'
+			},
+			meta: [
+				{
+					name: 'theme-color',
+					content: '#161616',
+				},
+			],
+			link: [
+				{
+					rel: 'icon',
+					href: '/favicon.ico'
+				},
+				{
+					rel: 'apple-touch-icon',
+					href: '/apple-touch-icon.png'
+				}
+			]
+		}
 	},
-
- compatibilityDate: '2024-09-16'
+	compatibilityDate: '2025-01-31',
 })

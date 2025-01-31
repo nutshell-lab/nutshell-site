@@ -103,6 +103,7 @@ definePageMeta({
 </template>
 
 <style scoped>
+@reference "~/assets/css/main.css";
 
 .left::before {
     @apply hidden @lg:block absolute bg-gradient-to-b from-alabaster from-[112px] to-chinese-black to-[112px] z-10 h-full w-[50vw] right-0 top-0;

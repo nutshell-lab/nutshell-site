@@ -15,6 +15,8 @@ const props = defineProps({
 </template>
 
 <style>
+@reference "~/assets/css/main.css";
+
 .button.alabaster {
 	@apply text-chinese-black
 }

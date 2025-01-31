@@ -93,6 +93,7 @@ definePageMeta({
 </template>
 
 <style>
+@reference "~/assets/css/main.css";
 
 .test div {
     @apply w-[150px]

@@ -1,8 +1,37 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+	--font-inter: "Inter", "sans-serif";
+	--font-silka: "Silka", "sans-serif";
+
+  --color-*: initial;
+  --color-current: currentColor;
+  --color-transparent: transparent;
+  --color-cinnabar: #E0492B;
+  --color-alabaster: #EDEBE8;
+  --color-silver: #E1E0DD;
+  --color-dark-black: #000000;
+  --color-chinese-black: #161616;
+  --color-onyx: #3C3C3F;
+  --color-raisin-black: #2A2A2D;
+  --color-lime: #DBF447;
+  --color-white: #FFF;
+
+	--container-xs: 320px;
+	--container-sm: 640px;
+	--container-md: 768px;
+	--container-lg: 1024px;
+	--container-xl: 1280px;
+	--container-2xl: 1536px;
+
+	--text-stroke: 
+}
+
+@utility container {
+  margin-inline: auto;
+}
 
 /* SILKA */
 
@@ -411,8 +440,55 @@
 	unicode-range: U+3000-9FFF, U+ff??;
 }
 
-
 @layer base {
+	.text-stroke-cinnabar {
+		-webkit-text-stroke-color: var(--color-cinnabar)
+	}
+
+	.text-stroke-alabaster {
+		-webkit-text-stroke-color: var(--color-alabaster)
+	}
+
+	.text-stroke-transparent {
+		-webkit-text-stroke-color: var(--color-transparent)
+	}
+
+	.text-stroke-silver {
+		-webkit-text-stroke-color: var(--color-silver)
+	}
+
+	.text-stroke-dark-black {
+		-webkit-text-stroke-color: var(--color-dark-black)
+	}
+
+	.text-stroke-chinese-black {
+		-webkit-text-stroke-color: var(--color-chinese-black)
+	}
+
+	.text-stroke-onyx {
+		-webkit-text-stroke-color: var(--color-onyx)
+	}
+
+	.text-stroke-lime {
+		-webkit-text-stroke-color: var(--color-lime)
+	}
+
+	.text-stroke-raisin-black {
+		-webkit-text-stroke-color: var(--color-raisin-black)
+	}
+
+	.text-stroke-white {
+		-webkit-text-stroke-color: var(--color-white)
+	}
+
+	.\@md:text-stroke-base {
+		-webkit-text-stroke-width: 1.5px
+	}
+
+	.text-stroke-sm {
+		-webkit-text-stroke-width: 1px
+	}
+
 	.vertical-text {
 		writing-mode: vertical-lr;
 	}

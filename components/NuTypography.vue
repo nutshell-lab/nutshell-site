@@ -18,13 +18,13 @@ defineProps({
 </script>
 
 <template>
-	<span v-if="type == 'hero-title'" class="uppercase font-silka font-black @md:text-stroke-[1.5px] text-stroke-[1px] text-transparent @xl:text-[110px] @xl:leading-[100px] @md:text-[90px] @md:leading-[80px] @sm:text-[70px] @sm:leading-[60px] xl:text-[110px] xl:leading-[100px] md:text-[90px] md:leading-[80px] sm:text-[70px] sm:leading-[60px] text-[40px] leading-[40px]">
+	<span v-if="type == 'hero-title'" class="uppercase font-silka font-black @md:text-stroke-base text-stroke-sm text-transparent @xl:text-[110px] @xl:leading-[100px] @md:text-[90px] @md:leading-[80px] @sm:text-[70px] @sm:leading-[60px] xl:text-[110px] xl:leading-[100px] md:text-[90px] md:leading-[80px] sm:text-[70px] sm:leading-[60px] text-[40px] leading-[40px]">
 		<slot />
 	</span>
 	<span v-else-if="type == 'hero-title-filled'" class="uppercase font-silka font-black @xl:text-[110px] @xl:leading-[100px] @md:text-[90px] @md:leading-[80px] @sm:text-[70px] @sm:leading-[60px] xl:text-[110px] xl:leading-[100px] md:text-[90px] md:leading-[80px] sm:text-[70px] sm:leading-[60px] text-[40px] leading-[40px]">
 		<slot />
 	</span>
-	<span v-else-if="type == 'headline'" class="uppercase font-silka font-black @md:text-stroke-[1.5px] text-stroke-[1px] text-transparent  @md:text-[80px] @md:leading-[70px] @sm:text-[60px] @sm:leading-[50px] md:text-[80px] md:leading-[70px] sm:text-[60px] sm:leading-[50px] text-[40px] leading-[40px]">
+	<span v-else-if="type == 'headline'" class="uppercase font-silka font-black @md:text-stroke-base text-stroke-sm text-transparent  @md:text-[80px] @md:leading-[70px] @sm:text-[60px] @sm:leading-[50px] md:text-[80px] md:leading-[70px] sm:text-[60px] sm:leading-[50px] text-[40px] leading-[40px]">
 		<slot />
 	</span>
 	<span v-else-if="type == 'headline-filled'" class="uppercase font-silka font-black @md:text-[80px] @md:leading-[70px] @sm:text-[60px] @sm:leading-[50px] md:text-[80px] md:leading-[70px] sm:text-[60px] sm:leading-[50px] text-[40px] leading-[40px]">

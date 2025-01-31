@@ -146,6 +146,8 @@ const url = useRequestURL()
 </template>
 
 <style scoped>
+@reference "~/assets/css/main.css";
+
 .content {
     @apply w-full @sm:max-w-[640px] @md:max-w-[872px] mx-auto
 }

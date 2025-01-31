@@ -28,6 +28,8 @@ defineProps({
 </template>
 
 <style scoped>
+@reference "~/assets/css/main.css";
+
 .picture__inner {
 	@apply w-[130%] h-[130%] left-[-140%] top-[-15%] absolute transition z-10 ease-in-out duration-500 mix-blend-multiply;
 	transform: rotate(5deg);
