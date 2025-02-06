@@ -67,8 +67,8 @@ export const useSeoMatrix = () => {
     useHead(() => ({
         link: [
             {
-            rel: 'canonical',
-            href: 'https://nutshell-lab.com' + route.path,
+                rel: 'canonical',
+                href: 'https://nutshell-lab.com' + route.path,
             },
         ],
     }))

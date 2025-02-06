@@ -23,7 +23,7 @@ const theme = computed(() => route.meta.theme || 'dark')
 				:class="{ 'block': open, 'hidden': !open }">
 				<div />
 				<nav class="flex flex-col items-center jusitfy-center gap-6">
-					<nu-link to="/" label="Découvrez tous nos projets" hover @click="open = false">
+					<nu-link to="/agence" label="Découvrez tous nos projets" hover @click="open = false">
 						<nu-typography type="title" class="text-center !text-4xl">
 							L'agence
 						</nu-typography>

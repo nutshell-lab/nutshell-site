@@ -1,6 +1,6 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-// TODO how to make that async ?
+// TODO virer aos
 
 export default defineNuxtPlugin((nuxtApp) => {
     if (typeof window !== 'undefined') {

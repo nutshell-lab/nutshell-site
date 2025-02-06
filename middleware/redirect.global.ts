@@ -1,4 +1,5 @@
 export default defineNuxtRouteMiddleware((to, from) => {
+  //TODO check if this is good for google ?
   // Redirect all trailling / to non trailling / url
   if (to.path !== '/' && to.path.endsWith('/')) {
     const { path, query, hash } = to;
