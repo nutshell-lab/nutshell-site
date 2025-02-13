@@ -14,7 +14,24 @@ const [name] = defineField('name')
 const [email] = defineField('email')
 const [message] = defineField('message')
 
+const altchaPayload = ref<string>('')
+
 const onSubmit = handleSubmit(values => {
+    $fetch('https://platform.nutshell-lab.com/api/contacts', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams({
+            'name': values.name,
+            'email': values.email,
+            'message': values.message,
+            'payload': altchaPayload.value
+        })
+    }).then(() => (completed.value = true))
+})
+const onSubmit_old = handleSubmit(values => {
     $fetch('https://docs.google.com/forms/d/e/1FAIpQLSeYHzMwoY3nc5NqMHrjxPgw237rjQ2D9t-X0BHxD6BrwT3rLA/formResponse', {
         method: 'POST',
         mode: 'no-cors',
@@ -62,9 +79,13 @@ const onSubmit = handleSubmit(values => {
                             </div>
                             <div class="col-span-2 flex flex-col gap-2">
                                 <div class="grow-wrap grid min-h-[120px] text-[20px] text-onyx transition-all border-b border-onyx " :data-value="message">
-                                    <textarea placeholder="Message" v-model="message" class="min-h-[120px] resize-none overflow-hidden py-2 text-[20px] placeholder-onyx text-alabaster transition-all appearance-none bg-transparent border-b border-onyx !outline-none focus:border-alabaster"/>
+                                    <textarea placeholder="Votre besoin" v-model="message" class="min-h-[120px] resize-none overflow-hidden py-2 text-[20px] placeholder-onyx text-alabaster transition-all appearance-none bg-transparent border-b border-onyx !outline-none focus:border-alabaster"/>
                                 </div>
                                 <nu-typography type="caption" class="h-[20px] w-full">{{ errors.message }}</nu-typography>
+                            </div>
+
+                            <div class="text-white">
+                              <AltchaClient ref="altcha" @update:payload="p => altchaPayload = p" />
                             </div>
                             
                             <nu-button color="alabaster">
