@@ -311,5 +311,11 @@
         </div>
       </div>
     </section>
+    <section>
+      <h2>Discutons de votre projet.</h2>
+      <!-- <div>
+        TODO: form devis
+      </div> -->
+    </section>
 	</div>
 </template>
