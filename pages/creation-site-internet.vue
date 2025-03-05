@@ -252,7 +252,7 @@
         <div>
           Nutshell place l'éco-conception et l'accessibilité au centre de ses priorités. En tant qu'agence web, nous nous engageons à créer des sites internet qui respectent l'environnement et sont accessibles à tous. Nous intégrons des pratiques durables dans la conception de site et veillons à ce que chaque utilisateur puisse accéder facilement à nos plateformes. Notre objectif est de garantir une expérience utilisateur inclusive et écologiquement responsable.
         </div>
-        <div>En savoir plus sur <nu-link label="Découvrir nos engagements" to="/engagements">nos engagements</nu-link></div>
+        <div>En savoir plus sur <nu-link label="Découvrir nos engagements" to="/nos-engagements">nos engagements</nu-link></div>
       </div>
     </section>
     <section id="projects" class="bg-gradient-to-b from-chinese-black from-85% to-alabaster to-85% text-alabaster">
