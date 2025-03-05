@@ -149,7 +149,7 @@
         </div>
         <div>
           <h3>Une connaissance approfondie de votre secteur pour des solutions sur-mesure.</h3>
-          <div>Notre agence fonctionne avec une organisation sectorielle inspirée des cabinets de conseil. Nous analysons les spécificités de votre secteur tout en intégrant des idées novatrices issues d’autres industries, afin de vous aider à innover et prendre l’avantage sur vos concurrents.</div>
+          <div>Notre agence digitale fonctionne avec une organisation sectorielle inspirée des cabinets de conseil. Nous analysons les spécificités de votre secteur tout en intégrant des idées novatrices issues d’autres industries, afin de vous aider à innover et prendre l’avantage sur vos concurrents.</div>
         </div>
       </div>
     </section>
@@ -169,12 +169,12 @@
       <div>Secteur à l'honneur</div>
       <h2>Le digital au service de la formation professionnelle</h2>
       <div>
-        La transition numérique d’un organisme de formation ne se limite pas à la création d’un site internet.
+        La transition numérique d’un organisme de formation ne se limite pas à la création d’un site web.
         C’est l’opportunité d’optimiser l’ensemble de vos outils digitaux : <nu-link label="Site vitrine" to="/site-internet-pour-organisme-de-formation">site vitrine</nu-link>, <nu-link label="Plateforme E-learning" to="/plateforme-e-learning">plateforme e-learning</nu-link>, <nu-link label="Catalogue de formation" to="/catalogue-de-formation">gestion des inscriptions</nu-link> et
         <nu-link label="Confirmité Qualiopi" to="/site-internet-conforme-qualiopi">conformité réglementaire (Qualiopi, accessibilité, RGPD)</nu-link>.
       </div>
       <div>
-        Depuis 2018, notre équipe conjugue compétences et expérience pour offrir un service sur-mesure qui répond précisément à vos attentes.
+        Depuis 2018, notre agence web conjugue compétences et expérience pour offrir un service sur-mesure qui répond précisément à vos attentes.
         Notre objectif est clair : vous propulser en tête des résultats avec un site internet captivant, une visibilité maximale sur les réseaux sociaux, et des campagnes publicitaires qui augmentent votre taux de conversion.
       </div>
       <div>
