@@ -1,5 +1,3 @@
-import vsharp from 'vite-plugin-vsharp';
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -7,55 +5,47 @@ export default defineNuxtConfig({
   imports: {
     presets: [
       {
-        from: 'vee-validate',
-        imports: ['useForm']
-      }
-    ]
+        from: "vee-validate",
+        imports: ["useForm"],
+      },
+    ],
   },
 
-  // vite: {
-  // 	plugins: [vsharp()],
-  // },
-  css: ['~/assets/css/main.css'],
+  css: ["~/assets/css/main.css"],
 
   modules: [
-    '@nuxtjs/plausible',
-    '@nuxtjs/tailwindcss',
-    '@nuxt/content',
-    'nuxt-simple-sitemap',
-    'nuxt-route-meta',
-    'nuxt-security',
-    "@nuxt/image"
+    "@nuxtjs/plausible",
+    "@nuxtjs/tailwindcss",
+    "@nuxt/content",
+    "nuxt-route-meta",
+    "nuxt-security",
+    "@nuxt/image",
+    "@nuxtjs/sitemap",
   ],
 
   plausible: {
-    domain: 'nutshell-lab.com',
-    apiHost: 'https://plausible.nutshell-lab.com'
+    domain: "nutshell-lab.com",
+    apiHost: "https://plausible.nutshell-lab.com",
   },
 
   site: {
-    url: 'https://nutshell-lab.com',
+    url: "https://nutshell-lab.com",
   },
 
   content: {
-    contentHead: false
+    contentHead: false,
   },
 
   sitemap: {
     strictNuxtContentPaths: true,
-    exclude: [
-      '/mentions-legales',
-      '/faq',
-      '/cgv',
-      '/services'
-    ],
+    exclude: ["/mentions-legales", "/faq", "/cgv", "/services"],
   },
 
   ignore: [
-    process.env.CF_PAGES == "1" ? 'pages/dev/*' : '',
-    process.env.CF_PAGES == "1" ? 'pages/faq.vue' : '',
-    process.env.CF_PAGES == "1" ? 'pages/cgv.vue' : '',
-    process.env.CF_PAGES == "1" ? 'pages/services.vue' : '',
+    process.env.CF_PAGES == "1" ? "pages/dev/*" : "",
+    process.env.CF_PAGES == "1" ? "pages/faq.vue" : "",
+    process.env.CF_PAGES == "1" ? "pages/cgv.vue" : "",
+    process.env.CF_PAGES == "1" ? "pages/services.vue" : "",
   ],
 
   // fonts: {
@@ -72,29 +62,29 @@ export default defineNuxtConfig({
   // 	}
   // },
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' },
+    pageTransition: { name: "page", mode: "out-in" },
     head: {
       htmlAttrs: {
-        lang: 'fr'
+        lang: "fr",
       },
       meta: [
         {
-          name: 'theme-color',
-          content: '#161616',
+          name: "theme-color",
+          content: "#161616",
         },
       ],
       link: [
         {
-          rel: 'icon',
-          href: '/favicon.ico'
+          rel: "icon",
+          href: "/favicon.ico",
         },
         {
-          rel: 'apple-touch-icon',
-          href: '/apple-touch-icon.png'
-        }
-      ]
-    }
+          rel: "apple-touch-icon",
+          href: "/apple-touch-icon.png",
+        },
+      ],
+    },
   },
 
-  compatibilityDate: '2024-09-16'
-})
+  compatibilityDate: "2024-09-16",
+});

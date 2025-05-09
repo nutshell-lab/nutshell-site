@@ -1,5 +1,6 @@
 {
   "name": "nuxt-app",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -9,23 +10,23 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxt/content": "^3.5.1",
     "@nuxt/devtools": "^2.4.0",
     "@nuxt/image": "^1.7.0",
-    "@nuxtjs/plausible": "^0.2.1",
+    "@nuxtjs/plausible": "^1.2.0",
+    "@nuxtjs/sitemap": "^7.2.10",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/container-queries": "^0.1.1",
     "@types/aos": "^3.0.7",
-    "@types/node": "^18.17.0",
-    "nuxt": "^3.9.1",
+    "@types/node": "^22.15.17",
+    "nuxt": "^3.17.2",
     "nuxt-security": "^2.2.0",
-    "nuxt-simple-sitemap": "^4.1.10",
     "tailwindcss-text-fill-stroke": "^2.0.0-beta.1",
-    "typescript": "^5.4.2",
-    "vite-plugin-vsharp": "^1.4.2"
+    "typescript": "^5.4.2"
   },
   "dependencies": {
     "@lucien144/vue3-parallaxy": "^0.1.1",
-    "@nuxt/content": "^3.4.0",
+    "@vueuse/core": "^13.1.0",
     "altcha": "^1.1.1",
     "altcha-lib": "^1.2.0",
     "aos": "^2.3.4",
