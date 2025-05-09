@@ -72,9 +72,9 @@
         <div>
           <h3>Supports Digitaux Efficaces pour OF</h3>
           <div>Nous concevons des programmes de formation et des certificats de participation, pour offrir des expériences pédagogiques interactives et engageantes.</div>
-          <!-- <nu-link label="Découvrir notre agence sur mesure" to="/creation-site-internet/sur-mesure">
+          <!-- <nu-link label="Découvrir notre agence d'identité pour OF" to="/webdesign/support-pour-organisme-de-formation/catalogue-de-formation">
             <nu-button class="w-full mt-auto">
-              Agence sur mesure 
+              Agence d'identité pour OF
             </nu-button>
           </nu-link> -->
         </div>
