@@ -54,7 +54,7 @@ export default defineNuxtConfig({
     headers: {
       contentSecurityPolicy: {
         'script-src': [
-          "'wasm-eval'",
+          "'wasm-unsafe-eval'",
           "'self'",  // Fallback value, will be ignored by most modern browsers (level 3)
           "https:", // Fallback value, will be ignored by most modern browsers (level 3)
           "'unsafe-inline'", // Fallback value, will be ignored by almost any browser (level 2)
