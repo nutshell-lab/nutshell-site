@@ -43,7 +43,7 @@ export default defineNuxtConfig({
   content: {
     database: {
       type: 'd1',
-      bindingName: 'CF_BINDING_NAME'
+      bindingName: 'DB'
     }
   },
 
