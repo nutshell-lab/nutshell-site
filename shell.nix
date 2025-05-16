@@ -1,7 +1,7 @@
 with import <nixpkgs> {};
 let 
   basePackages = [
-    nodejs_18
+    nodejs_22
     pnpm
   ];
 

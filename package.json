@@ -5,7 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "HOST=0.0.0.0 nuxt dev",
-    "generate": "nuxt generate --preset=cloudflare_pages",
+    "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },

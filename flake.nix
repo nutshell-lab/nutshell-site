@@ -14,7 +14,7 @@
     in {
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = [
-          pkgs.nodejs_20
+          pkgs.nodejs_22
           pkgs.typescript
           pkgs.typescript-language-server
           pkgs.nixfmt
