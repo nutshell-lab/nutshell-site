@@ -1,7 +1,0 @@
-User-agent: *
-
-Allow: /*
-
-Disallow: /mentions-legales
-
-Sitemap: https://nutshell-lab.com/sitemap.xml

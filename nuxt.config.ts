@@ -18,6 +18,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'cloudflare_pages',
     prerender: {
+      crawlLinks: true,
       autoSubfolderIndex: false
     }
   },
@@ -27,11 +28,12 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/plausible",
     "@nuxtjs/tailwindcss",
+    "@nuxtjs/sitemap",
     "@nuxt/content",
     "nuxt-route-meta",
     "nuxt-security",
     "@nuxt/image",
-    "@nuxtjs/sitemap",
+    "@nuxtjs/robots",
   ],
 
   plausible: {
@@ -80,6 +82,10 @@ export default defineNuxtConfig({
     exclude: ["/mentions-legales", "/faq", "/cgv", "/services"],
   },
 
+  robots: {
+    disallow: ['/mentions-legales'],
+  },
+
   ignore: [
     process.env.CF_PAGES == "1" ? "pages/dev/*" : "",
     process.env.CF_PAGES == "1" ? "pages/faq.vue" : "",
@@ -87,19 +93,6 @@ export default defineNuxtConfig({
     process.env.CF_PAGES == "1" ? "pages/services.vue" : "",
   ],
 
-  // fonts: {
-  // 	families: [
-  // 		// do not resolve this font with any provider from `@nuxt/fonts`
-  // 		{ name: 'Silka', provider: 'local' },
-  // 		// only resolve this font with the `google` provider
-  // 		{ name: 'Inter', provider: 'local' },
-  // 	],
-  // 	experimental: {
-  // 	  // You can enable support for adding preload links to the initially rendered HTML.
-  // 	  // There is a known upstream issue with rendering unaesthetic links with a `../` in the URL.
-  // 	  addPreloadLinks: true
-  // 	}
-  // },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
