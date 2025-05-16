@@ -16,10 +16,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: 'cloudflare_pages',
-    prerender: {
-      autoSubfolderIndex: false
-    }
+    preset: 'cloudflare_pages'
   },
 
   css: ["~/assets/css/main.css"],
