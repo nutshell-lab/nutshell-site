@@ -1,5 +1,11 @@
 <script lang="ts" setup>
 
+const route = useRoute()
+const { data: articles } = await useAsyncData(route.path, () => queryCollection('blog')
+    .select('path', 'image', 'title', 'short_description', 'category', 'created_at')
+    .order('created_at', 'DESC')
+    .all()
+)
 definePageMeta({
   theme: 'light',
 })
@@ -11,7 +17,7 @@ definePageMeta({
             <div class="px-layout container pt-44 pb-24">
                 <h1 data-aos="slide-up">
                     <nu-typography type="hero-title-filled">Si vous en avez besoin, on peut sûrement vous le
-                    fabriquer.</nu-typography>
+                    réaliser.</nu-typography>
                 </h1>
             </div>
         </section>
@@ -48,37 +54,33 @@ definePageMeta({
                     <h2 data-aos="slide-up" class="relative z-20">
                         <nu-typography type="title" class="font-normal">Ou parcourez<br />nos <strong>derniers articles</strong></nu-typography>
                     </h2>
-                    <ContentQuery v-slot="{ data }" path="/blog/" :sort="{ created_at: -1 }" :without="['body']">
-                        <template v-if="data && Array.isArray(data)">
-                            <div v-for="(item, index) in data" data-aos="slide-up">
-                                <nu-link :label="`Lire l'article ${item.title}`" :to="item._path">
-                                    <article class="tile flex @xl:flex-row flex-col @xl:gap-12 items-center">
-                                        <div class="picture__wrapper w-full @xl:w-[fit-content] relative">
-                                            <div role="img" :alt="item.image?.alt" :style="{'--image-url': `url('${item.image?.src || '/blog/default.webp'}')`}" class="w-full h-[300px] @xl:aspect-video bg-center bg-cover picture bg-raisin-black relative bg-[image:var(--image-url)] overflow-hidden">
-                                                <div class="picture__inner bg-cinnabar" />
-                                            </div>
+                    <div v-for="(item, index) in articles" data-aos="slide-up">
+                        <nu-link :label="`Lire l'article ${item.title}`" :to="item.path">
+                            <article class="tile flex @xl:flex-row flex-col @xl:gap-12 items-center">
+                                <div class="picture__wrapper w-full @xl:w-[fit-content] relative">
+                                    <div role="img" :alt="item.image?.alt" :style="{'--image-url': `url('${item.image?.url || '/blog/default.webp'}')`}" class="w-full h-[300px] @xl:aspect-video bg-center bg-cover picture bg-raisin-black relative bg-[image:var(--image-url)] overflow-hidden">
+                                        <div class="picture__inner bg-cinnabar" />
+                                    </div>
+                                </div>
+                                <div class="flex-1 flex gap-12 py-8">
+                                    <div class="flex flex-col gap-4 pr-6 w-full justify-center">
+                                        <div class="flex gap-6 items-center">
+                                            <div><nu-typography type="caption" class="!font-bold">{{ new Date(item.created_at).toLocaleDateString() }}</nu-typography></div>
+                                            <div class="bg-onyx h-[6px] w-[6px]" />
+                                            <div><nu-typography type="cta-text" class="!font-bold">{{ item.category }}</nu-typography></div>
                                         </div>
-                                        <div class="flex-1 flex gap-12 py-8">
-                                            <div class="flex flex-col gap-4 pr-6 w-full justify-center">
-                                                <div class="flex gap-6 items-center">
-                                                    <div><nu-typography type="caption" class="!font-bold">{{ new Date(item.created_at).toLocaleDateString() }}</nu-typography></div>
-                                                    <div class="bg-onyx h-[6px] w-[6px]" />
-                                                    <div><nu-typography type="cta-text" class="!font-bold">{{ item.category }}</nu-typography></div>
-                                                </div>
-                                                <nu-typography type="subtitle">{{item.title}}</nu-typography>
-                                                <div>{{ item.short_description }}</div>
-                                                <div class="text-cinnabar link flex items-center gap-4 transition-all duration-500">
-                                                    <nu-typography type="cta-text">Lire l'article</nu-typography>
-                                                    <nu-arrow right />
-                                                </div>
-                                            </div>
+                                        <nu-typography type="subtitle">{{item.title}}</nu-typography>
+                                        <div>{{ item.short_description }}</div>
+                                        <div class="text-cinnabar link flex items-center gap-4 transition-all duration-500">
+                                            <nu-typography type="cta-text">Lire l'article</nu-typography>
+                                            <nu-arrow right />
                                         </div>
-                                        <div class="bg-onyx h-[1px] w-[45%] absolute right-0 -bottom-0" />
-                                    </article>
-                                </nu-link>
-                            </div>
-                        </template>
-                    </ContentQuery>
+                                    </div>
+                                </div>
+                                <div class="bg-onyx h-[1px] w-[45%] absolute right-0 -bottom-0" />
+                            </article>
+                        </nu-link>
+                    </div>
                 </div>
                 <div class="text-center pt-32">
                     <nu-typography type="subtitle" class="font-normal">

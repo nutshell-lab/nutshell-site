@@ -3,7 +3,7 @@ title: "Simplifiez la gestion de votre BPF"
 short_description: "Dites adieu au BPF laborieux ! Nutshell Lab automatise la gestion de votre bilan pour vous faire gagner du temps et simplifier votre vie. Contactez-nous pour un audit gratuit !"
 description: "Piloter votre activité et automatiser votre BPF, c'est possible avec Nutshell Lab."
 image:
-  src: '/blog/burnout.webp'
+  url: '/blog/burnout.webp'
   alt: "Une image illustrant le burnout administratif"
   width: 400
   height: 300

@@ -3,7 +3,7 @@ title: "La plateforme SaaS : entre profit et complexité de développement"
 short_description: "Découvrez les avantages et les défis des plateformes SaaS, ces logiciels hébergés dans le cloud qui révolutionnent le paysage informatique actuel. Nutshell Lab vous accompagne dans le développement et le scale-up de votre plateforme SaaS."
 description: 'Plateforme SaaS : les avantages et le défi'
 image:
-  src: '/blog/rocket.webp'
+  url: '/blog/rocket.webp'
   alt: "Une image représentant une fusée"
   width: 400
   height: 300

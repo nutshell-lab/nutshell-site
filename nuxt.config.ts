@@ -1,6 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  
+  $development: {
+    ssr: false
+  },
 
   imports: {
     presets: [
@@ -9,6 +13,10 @@ export default defineNuxtConfig({
         imports: ["useForm"],
       },
     ],
+  },
+
+  nitro: {
+    preset: 'cloudflare_pages',
   },
 
   css: ["~/assets/css/main.css"],
@@ -33,11 +41,39 @@ export default defineNuxtConfig({
   },
 
   content: {
-    contentHead: false,
+    database: {
+      type: 'd1',
+      bindingName: 'CF_BINDING_NAME'
+    }
+  },
+
+  security: {
+    headers: {
+      contentSecurityPolicy: {
+        'script-src': [
+          process.env.NODE_ENV !== 'production' ? "'unsafe-eval'" : '',
+          "'self'",  // Fallback value, will be ignored by most modern browsers (level 3)
+          "https:", // Fallback value, will be ignored by most modern browsers (level 3)
+          "'unsafe-inline'", // Fallback value, will be ignored by almost any browser (level 2)
+          "'strict-dynamic'", // Strict CSP via 'strict-dynamic', supported by most modern browsers (level 3)
+          "'nonce-{{nonce}}'" // Enables CSP nonce support for scripts in SSR mode, supported by almost any browser (level 2)
+        ],
+        'style-src': [
+          "'self'", // Enables loading of stylesheets hosted on same origin
+          "https:", // For increased security, replace by the specific hosting domain or file name of your external stylesheets
+          "'unsafe-inline'" // Recommended default for most Nuxt apps
+        ],
+        'base-uri': ["'none'"],
+        'img-src': ["'self'", "data:"], // Add relevant https://... sources if you load images from external sources 
+        'font-src': ["'self'", "https:", "data:"], //  For increased security, replace by the specific sources for fonts
+        'object-src': ["'none'"],
+        'script-src-attr': ["'none'"],
+        'upgrade-insecure-requests': true
+      }
+    }
   },
 
   sitemap: {
-    strictNuxtContentPaths: true,
     exclude: ["/mentions-legales", "/faq", "/cgv", "/services"],
   },
 

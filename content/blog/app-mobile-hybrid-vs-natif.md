@@ -3,7 +3,7 @@ title: 'Applications mobiles : natives vs hybrides'
 short_description: "Découvrez les différences clés entre les applications natives et hybrides pour choisir la solution adaptée à vos besoins. Contactez Nutshell Lab pour une analyse personnalisée et un développement sur-mesure de votre application mobile !"
 description: 'Natives vs hybrides : quelle app mobile pour vous ?'
 image:
-  src: '/blog/mobile_phone.webp'
+  url: '/blog/mobile_phone.webp'
   alt: ""
   width: 400
   height: 300

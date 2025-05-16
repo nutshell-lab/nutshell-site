@@ -2,7 +2,15 @@
 import Error from '~/error.vue'
 
 const route = useRoute()
-const { data: doc } = await useAsyncData(route.path, queryContent(route.path).findOne)
+const { data: doc } = await useAsyncData(route.path + '#doc', () => queryCollection('blog').path(route.path).first())
+const { data: articles } = await useAsyncData(route.path + '#articles', () => queryCollection('blog')
+    .select('path', 'image', 'title', 'short_description', 'category', 'created_at')
+    .where('category', '=', doc.value?.category)
+    .andWhere(query => query.where('path', '<>', doc.value?.path))
+    .limit(6)
+    .order('created_at', 'DESC')
+    .all()
+)
 useSeoMeta({
     title: doc.value?.title,
     ogTitle: doc.value?.title,
@@ -33,7 +41,7 @@ const url = useRequestURL()
                         </nu-link>
                     </div>
                     <nu-parallax :speed="70" axis="y" class="h-full">
-                        <div :style="`--image-url: url(${doc.image?.src || '/blog/default.webp'})`" :class="`w-full h-[100vh] bg-center bg-cover bg-[image:var(--image-url)]`" />
+                        <div :style="`--image-url: url(${doc.image?.url || '/blog/default.webp'})`" :class="`w-full h-[100vh] bg-center bg-cover bg-[image:var(--image-url)]`" />
                     </nu-parallax>
                 </div>
             </div>
@@ -86,49 +94,47 @@ const url = useRequestURL()
             </article>
 
             <section class="py-32 bg-chinese-black text-alabaster flex flex-col">
-                <ContentQuery v-slot="{ data }" path="/blog/" :where="{ category: doc.category, _path: { $ne: doc._path } }" :limit="6" :sort="{ created_at: -1 }" :without="['body']">
-                    <template v-if="data && Array.isArray(data) && data.length > 0">
-                        <div class="container px-layout flex flex-col gap-12">
-                            <div data-aos="slide-up">
-                                <nu-typography type="title" class="font-normal">Explorer <strong>d'avantage</strong></nu-typography>
-                            </div>
-                            <div>
-                                <nu-swiper :items="data" v-slot="{ item, index }">
-                                    <nu-link :label="`Lire l'article ${item.title}`" :to="item._path">
+                <template v-if="articles && Array.isArray(articles) && articles.length > 0">
+                    <div class="container px-layout flex flex-col gap-12">
+                        <div data-aos="slide-up">
+                            <nu-typography type="title" class="font-normal">Explorer <strong>d'avantage</strong></nu-typography>
+                        </div>
+                        <div>
+                            <nu-swiper :items="articles" v-slot="{ item, index }">
+                                <nu-link :label="`Lire l'article ${item.title}`" :to="item._path">
+                                    <nu-tile
+                                        :title="item.title"
+                                        :category="`${new Date(item.created_at).toLocaleDateString()} ${item.category}`"
+                                        :picture="item.image?.src"
+                                        :caption="`Article 00${index + 1}`"
+                                    />
+                                </nu-link>
+                            </nu-swiper>
+                        </div>
+                    </div>
+                </template>
+                <template v-else>
+                    <div class="container px-layout flex flex-col gap-12">
+                        <div data-aos="slide-up">
+                            <nu-typography type="title" class="font-normal">Découvrez <strong>nos dossiers</strong></nu-typography>
+                        </div>
+                        <div>
+                            <DataQuery v-slot="{ data }" resource="dossiers">
+                                <nu-swiper :items="data" v-slot="{ item }">
+                                    <nu-link :label="`Découvrez le cas ${item.title}`" :to="item.path" :disabled="item.disabled">
                                         <nu-tile
                                             :title="item.title"
-                                            :category="`${new Date(item.created_at).toLocaleDateString()} ${item.category}`"
-                                            :picture="item.image?.src"
-                                            :caption="`Article 00${index + 1}`"
+                                            :category="item.category"
+                                            :picture="item.picture"
+                                            :caption="item.caption"
+                                            :disabled="item.disabled"
                                         />
                                     </nu-link>
                                 </nu-swiper>
-                            </div>
+                            </DataQuery>
                         </div>
-                    </template>
-                    <template v-else>
-                        <div class="container px-layout flex flex-col gap-12">
-                            <div data-aos="slide-up">
-                                <nu-typography type="title" class="font-normal">Découvrez <strong>nos dossiers</strong></nu-typography>
-                            </div>
-                            <div>
-                                <DataQuery v-slot="{ data }" resource="dossiers">
-                                    <nu-swiper :items="data" v-slot="{ item }">
-                                        <nu-link :label="`Découvrez le cas ${item.title}`" :to="item.path" :disabled="item.disabled">
-                                            <nu-tile
-                                                :title="item.title"
-                                                :category="item.category"
-                                                :picture="item.picture"
-                                                :caption="item.caption"
-                                                :disabled="item.disabled"
-                                            />
-                                        </nu-link>
-                                    </nu-swiper>
-                                </DataQuery>
-                            </div>
-                        </div>
-                    </template>
-                </ContentQuery>
+                    </div>
+                </template>
             </section>
 
             <section class="bg-silver overflow-hidden relative">

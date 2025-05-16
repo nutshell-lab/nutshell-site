@@ -1,39 +1,25 @@
 <script setup lang="ts">
-import type { MarkdownRoot } from '@nuxt/content/dist/runtime/types';
 
-type HeadingNode = { link: string, value?: string, children: HeadingNode[]}
-const table_of_content = (body: MarkdownRoot | null) => {
-    const headings = body?.children.filter(({ tag }) => tag === 'h2' || tag === 'h3')
-    return headings?.reduce((acc, h) => {
-        const heading = {
-            link: `#${h.props?.id}`,
-            value: h.children?.[0]?.value,
-            children: []
-        }
-        if (h.tag === 'h2') return acc.concat(heading)
-        else return acc.map((head, i) => i === (acc.length - 1) ? { ...head, children: head.children.concat(heading) } : head)
-    }, <HeadingNode[]>[])
-}
+const route = useRoute()
+const { data: doc } = await useAsyncData(route.path, () => queryCollection('blog').path(route.path).first())
 </script>
 
 <template>
-    <nav class="flex flex-col sm:flex-row py-12 gap-8 border-t border-b mt-12 items-center">
+    <nav v-if="doc" class="flex flex-col sm:flex-row py-12 gap-8 border-t border-b mt-12 items-center">
         <div class="sm:vertical-text flex-shrink sm:rotate-180">
             <nu-typography type="title" class="uppercase">Sommaire</nu-typography>
         </div>
         <div class="flex-1">
-            <ContentDoc v-slot="{ doc }">
-                <ol>
-                    <li v-for="heading_2 in table_of_content(doc.body)">
-                        <nu-link :to="heading_2.link" :label="`Aller vers la section ${heading_2.value}`">{{ heading_2.value }}</nu-link>
-                        <ol v-if="heading_2.children.length > 0">
-                            <li v-for="heading_3 in heading_2.children">
-                                <nu-link :to="heading_3.link" :label="`Aller vers la sous-section ${heading_3.value} de la section ${heading_2.value}`">{{ heading_3.value }}</nu-link>
-                            </li>
-                        </ol>
-                    </li> 
-                </ol>
-            </ContentDoc>
+            <ol>
+                <li v-for="h2 in doc.body?.toc?.links">
+                    <nu-link :to="`#${h2.id}`" :label="`Aller vers la section ${h2.text}`">{{ h2.text }}</nu-link>
+                    <ol v-if="h2.children && h2.children.length > 0">
+                        <li v-for="h3 in h2.children">
+                            <nu-link :to="`#${h3.id}`" :label="`Aller vers la sous-section ${h3.text} de la section ${h2.text}`">{{ h3.text }}</nu-link>
+                        </li>
+                    </ol>
+                </li> 
+            </ol>
         </div>
     </nav>
 </template>

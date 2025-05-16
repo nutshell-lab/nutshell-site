@@ -3,7 +3,7 @@ title: "Nutshell Lab : Accompagner votre transformation digitale avec un activat
 short_description: "Transformation digitale réussie avec Nutshell Lab, activateur France Num reconnu ! Contactez-nous pour un audit gratuit et découvrez comment nous pouvons vous accompagner."
 description: "Nutshell Lab, fier d'être un activateur France Num"
 image:
-  src: '/blog/francenum_dark.webp'
+  url: '/blog/francenum_dark.webp'
   alt: "Le logo des activateurs france num"
   width: 400
   height: 300

@@ -3,7 +3,7 @@ title: 'Nutshell Lab : Votre partenaire ESN au cœur de Lille'
 short_description: "Nutshell Lab est une entreprise de services numériques (ESN) implantée à Lille, dans les Hauts-de-France. Notre équipe d'experts accompagne les entreprises de toutes tailles dans la conception et la mise en place de solutions numériques sur-mesure."
 description: 'Solution numérique sur-mesure : Nutshell Lab, votre ESN à Lille'
 image:
-  src: '/blog/lille.webp'
+  url: '/blog/lille.webp'
   alt: "Une image peignant le beau paysage lillois"
   width: 400
   height: 300

@@ -3,7 +3,7 @@ title: 'ERP : 8 critères pour bien choisir'
 short_description: "Parce qu'il est critique pour votre entreprise, un ERP doit être soigneusement choisi pour correspondre au cas particulier qu'est votre entreprise."
 description: 'Choisir un ERP, pas facile ? Retrouvez nos 8 critères pour prendre en compte toutes les implications et faire un choix avisé.'
 image:
-  src: '/blog/criteria.webp'
+  url: '/blog/criteria.webp'
   alt: "Une image illustrant les critères de l'article"
   width: 400
   height: 300

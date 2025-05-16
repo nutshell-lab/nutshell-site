@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import "altcha";
 import { watchOnce } from "@vueuse/core";
-import { defineExpose } from "vue";
 
 const widget = ref<(AltchaWidgetMethods & HTMLElement) | null>(null);
 const props = defineProps({

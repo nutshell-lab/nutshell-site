@@ -3,7 +3,7 @@ title: 'Les clefs pour bien choisir ses développeurs'
 short_description: "Vous cherchez le développeur idéal pour votre projet informatique ? Découvrez nos conseils pour faire le bon choix et assurez-vous de maîtriser l'ensemble de la chaîne de valeur de votre projet. Nutshell Lab, votre partenaire pour des projets réussis !"
 description: 'Développeur informatique : le guide Nutshell Lab pour un projet réussi.'
 image:
-  src: '/blog/project.webp'
+  url: '/blog/project.webp'
   alt: "2 membres de Nutshell travaillant sur des sujets complexes"
   width: 400
   height: 300

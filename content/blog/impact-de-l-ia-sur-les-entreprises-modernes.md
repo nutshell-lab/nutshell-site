@@ -3,7 +3,7 @@ title: "L'impact de l'IA sur les entreprises modernes"
 short_description: "Découvrez comment l'intelligence artificielle transforme les entreprises en améliorant l'efficacité, la prise de décision et en relevant les défis technologiques et éthiques."
 description: "L'IA révolutionne le paysage commercial moderne. Cet article explore ses impacts, les défis de son adoption et comment les services sur-mesure de Nutshell Lab peuvent aider les entreprises à intégrer l'IA de manière efficace et responsable."
 image:
-  src: '/blog/ai-business-impact.webp'
+  url: '/blog/ai-business-impact.webp'
   alt: "Illustration de l'impact de l'intelligence artificielle sur les entreprises"
   width: 400
   height: 300
