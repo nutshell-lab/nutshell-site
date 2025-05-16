@@ -1,15 +1,9 @@
-// import use_case_erp from '~/assets/illustrations/use_case_erp.webp'
-// import use_case_doc_gen from '~/assets/illustrations/use_case_document_generation.webp'
-// import use_case_crm from '~/assets/illustrations/use_case_crm.webp'
-// import use_case_analytics from '~/assets/illustrations/use_case_analytics.webp'
-// import use_case_strategy from '~/assets/illustrations/use_case_strategy.webp'
-
 export default [
 	{
 		id: 'erp',
 		title: "Un ERP sur-mesure est-il un choix judicieux pour votre entreprise ?",
 		category: "ERP",
-		// picture: use_case_erp,
+		picture: '/illustrations/use_case_erp.webp',
 		caption: "use case 001",
 		path: "/dossiers/erp-sur-mesure",
 	},
@@ -17,7 +11,7 @@ export default [
 		id: 'doc_gen',
 		title: "Quelle est la meilleure solution pour générer des documents ?",
 		category: "TECH",
-		// picture: use_case_doc_gen,
+		picture: '/illustrations/use_case_document_generation.webp',
 		caption: "use case 002",
 		path: "/dossiers/generer-des-documents-automatiquement",
 	},
@@ -25,7 +19,7 @@ export default [
 		id: 'crm',
 		title: "Un CRM personnalisé vous permet de proposer le meilleur à vos clients.",
 		category: "CRM",
-		// picture: use_case_crm,
+		picture: '/illustrations/use_case_crm.webp',
 		caption: "use case 003",
 		path: "/dossiers/crm-sur-mesure",
 		disabled: true,
@@ -34,7 +28,7 @@ export default [
 		id: 'analytics',
 		title: "Tracker le progrès avec des sondes pensées pour votre métier.",
 		category: "ANALYTICS",
-		// picture: use_case_analytics,
+		picture: '/illustrations/use_case_analytics.webp',
 		caption: "use case 004",
 		path: "/dossiers/analytics",
 		disabled: true,
@@ -43,7 +37,7 @@ export default [
 		id: 'strategy',
 		title: "Introduction au marché du projet informatique.",
 		category: "STRATÉGIE",
-		// picture: use_case_strategy,
+		picture: '/illustrations/use_case_strategy.webp',
 		caption: "use case 005",
 		path: "/dossiers/strategy",
 		disabled: true,
