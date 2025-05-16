@@ -46,7 +46,7 @@ const keywords = [
 				</div>
 				<div class="flex-1 overflow-visible relative hidden @sm:block">
 					<div class="absolute w-[1200px] h-full bg-cinnabar">
-						<div :class="`w-full h-full bg-cover bg-right bg-[url('~/assets/illustrations/prjct_actinuum/header.webp')] mix-blend-multiply`" />
+						<div :class="`w-full h-full bg-cover bg-right bg-[url('/illustrations/prjct_actinuum/header.webp')] mix-blend-multiply`" />
 					</div>
 				</div>
 			</div>
@@ -71,7 +71,7 @@ const keywords = [
 					</p>
 				</div>
 				<div class="w-full h-[300px] @2xl:w-[500px]">
-					<div :class="`w-full bg-cover bg-center h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_actinuum/board.webp')]`" />
+					<div :class="`w-full bg-cover bg-center h-full bg-cinnabar bg-[url('/illustrations/prjct_actinuum/board.webp')]`" />
 				</div>
 			</div>
 		</section>
@@ -109,7 +109,7 @@ const keywords = [
 		</section>
 		<div :class="`container w-full h-[400px] lg:my-20 my-12 overflow-hidden`">
 			<nu-parallax :speed="100" axis="y">
-				<div class="w-screen h-[700px] bg-onyx bg-center bg-cover bg-[url('~/assets/illustrations/prjct_actinuum/group.webp')]" />
+				<div class="w-screen h-[700px] bg-onyx bg-center bg-cover bg-[url('/illustrations/prjct_actinuum/group.webp')]" />
 			</nu-parallax>
 		</div>
 		<section class="container px-layout py-12 lg:pb-32 mb-20">
@@ -189,7 +189,7 @@ const keywords = [
 			</h2>
 			<div class="flex flex-col @lg:flex-row gap-12 items-center leading-7">
 				<div class="w-full h-[250px] @2xl:w-[500px]">
-					<div :class="`w-full bg-cover h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_actinuum/notes.webp')]`" />
+					<div :class="`w-full bg-cover h-full bg-cinnabar bg-[url('/illustrations/prjct_actinuum/notes.webp')]`" />
 				</div>
 				<ul class="pl-4 list-disc">
 					<li>Auditer et revisiter l'ensemble de vos processus avec la méthodologie LEAN</li>

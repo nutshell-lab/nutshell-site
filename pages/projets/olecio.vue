@@ -57,7 +57,7 @@ const testimonials = [
 				<div class="flex-1 overflow-visible relative hidden @sm:block">
 					<div class="absolute w-[1200px] h-full bg-cinnabar">
 						<div
-							:class="`w-full h-full bg-cover bg-right bg-[url('~/assets/illustrations/prjct_olecio/header.webp')] mix-blend-multiply`" />
+							:class="`w-full h-full bg-cover bg-right bg-[url('/illustrations/prjct_olecio/header.webp')] mix-blend-multiply`" />
 					</div>
 				</div>
 			</div>
@@ -82,7 +82,7 @@ const testimonials = [
 				</div>
 				<div class="w-full h-[500px] @2xl:w-[500px]">
 					<div
-						:class="`w-full bg-cover bg-center h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_olecio/app.webp')] mix-blend-multiply`" />
+						:class="`w-full bg-cover bg-center h-full bg-cinnabar bg-[url('/illustrations/prjct_olecio/app.webp')] mix-blend-multiply`" />
 				</div>
 			</div>
 		</section>
@@ -145,7 +145,7 @@ const testimonials = [
 			</div>
 			<div class="w-full h-[500px]">
 				<div
-					:class="`w-full bg-cover bg-center h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_olecio/admin.webp')] mix-blend-multiply`" />
+					:class="`w-full bg-cover bg-center h-full bg-cinnabar bg-[url('/illustrations/prjct_olecio/admin.webp')] mix-blend-multiply`" />
 			</div>
 		</section>
 		<section class="container py-20 px-layout bg-light-gray">

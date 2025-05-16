@@ -57,7 +57,7 @@ const testimonials = [
 				<div class="flex-1 overflow-visible relative hidden @sm:block">
 					<div class="absolute w-[1200px] h-full">
 						<div
-							:class="`w-full h-full bg-cover bg-right bg-[url('~/assets/illustrations/prjct_rigular/header.webp')]`" />
+							:class="`w-full h-full bg-cover bg-right bg-[url('/illustrations/prjct_rigular/header.webp')]`" />
 					</div>
 				</div>
 			</div>
@@ -83,7 +83,7 @@ const testimonials = [
 				</div>
 				<div class="w-full h-[400px] @2xl:w-[500px] bg-cinnabar">
 					<div
-						:class="`w-full bg-cover bg-center h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_rigular/energy.webp')] mix-blend-multiply`" />
+						:class="`w-full bg-cover bg-center h-full bg-cinnabar bg-[url('/illustrations/prjct_rigular/energy.webp')] mix-blend-multiply`" />
 				</div>
 			</div>
 		</section>

@@ -42,7 +42,7 @@ import Parallaxy from '@lucien144/vue3-parallaxy';
 			
 		<div :class="`container w-full h-[400px] lg:mb-32 mb-20 overflow-hidden`">
 			<nu-parallax :speed="100" axis="y">
-				<div class="w-screen h-[700px] bg-onyx bg-center bg-cover bg-[url('~/assets/illustrations/use_case_generation/print_press.jpg')]" />
+				<div class="w-screen h-[700px] bg-onyx bg-center bg-cover bg-[url('/illustrations/use_case_generation/print_press.jpg')]" />
 			</nu-parallax>
 		</div>
 
@@ -151,7 +151,7 @@ import Parallaxy from '@lucien144/vue3-parallaxy';
 							<ClientOnly>
 								<Parallaxy :speed="100" axis="y" class="w-full h-full">
 									<div
-										:class="`w-full h-full bg-cover bg-center bg-[url('~/assets/illustrations/use_case_erp/view.webp')]`" />
+										:class="`w-full h-full bg-cover bg-center bg-[url('/illustrations/use_case_erp/view.webp')]`" />
 								</Parallaxy>
 							</ClientOnly>
 						</div>

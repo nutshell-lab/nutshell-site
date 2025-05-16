@@ -170,7 +170,7 @@
                     <div class="flex-1 overflow-visible relative hidden @lg:block">
                         <div class="absolute w-[800px] h-full top-24">
                             <nu-parallax :speed="100" axis="y" class="w-full h-full">
-                                <div :class="`w-full h-full bg-cover bg-center bg-[url('~/assets/illustrations/use_case_erp/view.webp')]`" />
+                                <div :class="`w-full h-full bg-cover bg-center bg-[url('/illustrations/use_case_erp/view.webp')]`" />
                             </nu-parallax>
                         </div>
                     </div>
@@ -227,7 +227,7 @@
             <div class="flex-shrink w-[300px] @lg:w-[500px] relative hidden @sm:block h-[500px]">
                 <div class="absolute w-full h-[140%] top-0">
                     <nu-parallax :speed="100" axis="y" class="w-full h-full">
-                        <div :class="`w-full h-full bg-cover bg-center bg-[url('~/assets/illustrations/use_case_erp/roads.webp')]`" />
+                        <div :class="`w-full h-full bg-cover bg-center bg-[url('/illustrations/use_case_erp/roads.webp')]`" />
                     </nu-parallax>
                 </div>
             </div>

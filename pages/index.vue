@@ -1,7 +1,4 @@
 <script lang="ts" setup>
-import logo_designrush from '~/assets/partners/logo_designrush.svg'
-import logo_miosotisstudio from '~/assets/partners/logo_miosotisstudio.svg'
-
 const mockups = [
 	{
 		project: "C-Certif",

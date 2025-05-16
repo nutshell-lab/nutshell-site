@@ -57,7 +57,7 @@ const testimonials = [
 				<div class="flex-1 overflow-visible relative hidden @sm:block">
 					<div class="absolute w-[1200px] h-full bg-cinnabar">
 						<div
-							:class="`w-full h-full bg-cover bg-right bg-[url('~/assets/illustrations/prjct_atlas/header.webp')] mix-blend-multiply`" />
+							:class="`w-full h-full bg-cover bg-right bg-[url('/illustrations/prjct_atlas/header.webp')] mix-blend-multiply`" />
 					</div>
 				</div>
 			</div>
@@ -83,7 +83,7 @@ const testimonials = [
 				</div>
 				<div class="w-full h-[300px] @2xl:w-[500px] bg-cinnabar">
 					<div
-						:class="`w-full bg-cover bg-center h-full bg-cinnabar bg-[url('~/assets/illustrations/prjct_atlas/exam.webp')] mix-blend-multiply`" />
+						:class="`w-full bg-cover bg-center h-full bg-cinnabar bg-[url('/illustrations/prjct_atlas/exam.webp')] mix-blend-multiply`" />
 				</div>
 			</div>
 		</section>
@@ -123,7 +123,7 @@ const testimonials = [
 				</p>
 				<div class="flex flex-col items-end gap-8">
 					<div class="@lg:pl-32 flex flex-col @lg:grid @lg:grid-cols-2 gap-6">
-						<DataQuery v-slot="{ data }" resource="projets" :where="(p) => ['actinuum', 'keyro', 'constructys', 'olecio'].includes(p.id)">
+						<DataQuery v-slot="{ data }" resource="projets" :where="(p: any) => ['actinuum', 'keyro', 'constructys', 'olecio'].includes(p.id)">
 							<nu-link :label="`Découvrez le projet ${p.title}`" :to="p.path" :disabled="p.disabled"
 								v-for="(p, i) in data">
 								<nu-project-preview :class="{ '@lg:mt-8': i === 0, '@lg:-mt-8': i === 3 }" :title="p.title" :highlight="p.highlight"
