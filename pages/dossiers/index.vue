@@ -3,6 +3,7 @@
 const route = useRoute()
 const { data: articles } = await useAsyncData(route.path, () => queryCollection('blog')
     .select('path', 'image', 'title', 'short_description', 'category', 'created_at')
+    .where('published_at', '<', new Date().toISOString().split('T')[0])
     .order('created_at', 'DESC')
     .all()
 )

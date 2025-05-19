@@ -8,6 +8,7 @@ image:
   width: 400
   height: 300
 created_at: 2024-05-24
+published_at: 2024-05-24
 category: MARCHE
 featured: true
 ---

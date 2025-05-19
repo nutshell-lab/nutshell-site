@@ -8,6 +8,7 @@ image:
   width: 1024
   height: 819
 created_at: 2024-01-12
+published_at: 2024-01-12
 category: RGPD
 featured: true
 ---

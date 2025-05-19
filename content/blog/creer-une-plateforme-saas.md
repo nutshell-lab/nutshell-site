@@ -8,6 +8,7 @@ image:
   width: 400
   height: 300
 created_at: 2024-06-04
+published_at: 2024-06-04
 category: SAAS
 featured: true
 ---

@@ -8,6 +8,7 @@ image:
   width: 400
   height: 300
 created_at: 2024-05-15
+published_at: 2024-05-15
 category: FORMATION PRO
 featured: true
 ---

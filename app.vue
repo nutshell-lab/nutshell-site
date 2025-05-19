@@ -1,20 +1,5 @@
 <script setup lang="ts">
-// import SilkaRegular from '/fonts/Silka/Silka-Regular.woff2'
-
 useSeoMatrix()
-// if (process.server) {
-//   useHead({
-//     link: [
-//       {
-//         rel: 'preload',
-//         href: SilkaRegular,
-//         crossorigin: '',
-//         as: 'font',
-//         type: 'font/woff2',
-//       }
-//     ]
-//   })
-// }
 </script>
 
 <template>
